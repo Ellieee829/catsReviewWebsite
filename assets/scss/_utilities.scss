@@ -1,0 +1,18 @@
+$utilities: map-merge(
+    $utilities,
+    (
+        "font-size":
+        map-merge(
+            map-get($utilities, "font-size"),
+            (
+            responsive: true,
+            )
+        ),
+    )
+);
+
+//
+
+.Noto{
+    font-family: "Noto Sans TC", sans-serif;
+}
