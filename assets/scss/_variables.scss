@@ -480,12 +480,15 @@ $spacers: (
   1: $spacer * 0.5,
   2: $spacer * 0.75,
   3: $spacer,
-  4: $spacer * 1.25,
-  5: $spacer * 1.5,
-  6: $spacer * 1.75,
-  7: $spacer * 2,
-  8: $spacer * 2.5,
-  9: $spacer * 4.5
+  4: $spacer * 1.125,
+  5: $spacer * 1.25,
+  6: $spacer * 1.5,
+  7: $spacer * 1.75,
+  8: $spacer * 2,
+  9: $spacer * 2.25,
+  10: $spacer * 2.5,
+  11: $spacer * 3,
+  12: $spacer * 4.5
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -1119,7 +1122,8 @@ $input-group-addon-border-color: $input-border-color !default;
 // scss-docs-start form-select-variables
 $form-select-padding-y: $input-padding-y !default;
 $form-select-padding-x: $input-padding-x !default;
-$form-select-font-family: $input-font-family !default;
+// $form-select-font-family: $input-font-family !default;
+$form-select-font-family: "Noto Sans TC", sans-serif !default;
 $form-select-font-size: $input-font-size !default;
 $form-select-indicator-padding: $form-select-padding-x * 3 !default; // Extra padding for background-image
 $form-select-font-weight: $input-font-weight !default;
