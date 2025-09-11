@@ -68,6 +68,27 @@
   padding-bottom: 375px;
 }
 
+.section-service {
+  margin: 0 auto;
+  background-image: url("../images/index/section02_backgroundTexture.jpg");
+  background-repeat: repeat;
+  padding-top: 32px;
+  padding-bottom: 48px;
+}
+
+.service-card {
+  background-color: rgba(#fff, 0.67);
+  border-radius: 200px 200px 48px 48px;
+  padding-top: 16px;
+  padding-bottom: 24px;
+  padding-left: 17px;
+  padding-right: 17px;
+
+  img {
+    filter: drop-shadow(0 0.25rem 0.5rem rgba($secondary-500, 0.5));
+  }
+}
+
 @media (min-width: 992px) {
   .section-brand {
     background-image: url("../images/index/banner_desktop.jpg");
@@ -94,6 +115,24 @@
       min-height: 426px;
     }
   }
+
+  .section-service {
+    padding-top: 96px;
+    padding-bottom: 144px;
+  }
+
+  .service-card {
+    background-color: unset;
+    border-radius: 0;
+    padding-top: 96px;
+    padding-bottom: 48px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    img {
+      filter: unset;
+    }
+  }
 }
 
 @media (min-width: 1200px) {
@@ -111,6 +150,10 @@
       min-height: 455px;
     }
   }
+  .section-service {
+    padding-top: 96px;
+    padding-bottom: 144px;
+  }
 }
 
 @media (min-width: 1400px) {
@@ -127,5 +170,9 @@
     img {
       min-height: 455px;
     }
+  }
+  .section-service {
+    padding-top: 96px;
+    padding-bottom: 144px;
   }
 }
