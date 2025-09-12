@@ -176,7 +176,6 @@
 
 //section6
 .section-post {
-  height: 667px;
   padding-top: 50px;
   padding-bottom: 317px;
   background-image: url("../images/index/section05_image_mobile.jpg");
@@ -315,6 +314,8 @@
 
   //section6
   .section-post {
+    padding-top: 212px;
+    padding-bottom: 340px;
     background-image: url("../images/index/section05_image_desktop.jpg");
   }
 
@@ -335,6 +336,10 @@
 
 @media (min-width: 1200px) {
   //section2
+  .index-idea-container {
+    text-align: center;
+  }
+
   .index-section2-words-bg {
     max-width: 636px;
     height: 455px;
