@@ -1,19 +1,237 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
     <title>喵皇御膳房</title>
   </head>
   <body>
     <%- include('./layout/header'); -%>
+    <!-- 頁首end -->
 
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, dicta neque! Deleniti itaque at eveniet nostrum delectus, pariatur officiis beatae unde, consequatur sequi distinctio nobis mollitia. Quasi quos laborum quo a qui, temporibus ducimus optio doloribus architecto quisquam sunt dolor consectetur ea, quaerat obcaecati placeat nemo, provident aperiam fuga velit! Optio ratione voluptatum non fugit cum accusantium corrupti placeat corporis. Aliquam eveniet quis beatae reiciendis illum ad quaerat magni debitis quasi! Minima doloremque numquam deserunt vel suscipit natus hic expedita repudiandae accusamus earum sed beatae cum quam magni neque, tempora laudantium culpa nam doloribus id dolorum eveniet, delectus error excepturi. Cum vero rerum temporibus amet voluptate hic commodi enim nisi repudiandae libero, saepe accusantium at ut? Blanditiis quia expedita ab est sint. Cupiditate corporis voluptatem amet nesciunt numquam perspiciatis nemo repellat neque vel earum repellendus voluptatibus, dolorem non molestias. Aliquam minus possimus amet sint tenetur molestiae quod in dolore praesentium. Reprehenderit ipsam voluptas suscipit. Voluptate nesciunt excepturi perspiciatis nam natus repellat reiciendis quam distinctio repellendus tempore repudiandae velit dolorem omnis necessitatibus sunt, expedita cumque beatae. Earum laboriosam nobis praesentium eveniet dolore voluptatem provident, dicta sunt facere vel at exercitationem explicabo nisi nostrum eum. Consequatur magnam similique omnis nisi sunt hic?
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate aut, laudantium eaque inventore fugiat accusamus ducimus rem! Beatae rerum iste reprehenderit, numquam tempora veniam fugiat, expedita culpa id earum repudiandae sed corporis deleniti eaque velit! Velit asperiores ab necessitatibus laudantium laboriosam sunt quae voluptas quaerat blanditiis! Et dolor laboriosam natus!
-    </p>
+    <div class="container-fluid p-0">
+      <!-- banner section1 -->
+      <section class="section-brand">
+        <!-- 文字區塊 -->
+        <div class="container">
+          <div class="row justify-content-lg-end">
+            <div class="col-lg-6 col-12">
+              <div class="d-flex flex-column">
+                <img
+                  class="mb-lg-11 mb-9 align-self-center"
+                  src="../assets/images/index/herotitle_frame_top.svg"
+                  alt="herotitle_frame_top"
+                />
+                <h1
+                  class="fs-2 fs-lg-1 mb-lg-7 mb-3 text-secondary-200 align-self-center"
+                >
+                  想給主子最好的
+                </h1>
+                <div
+                  class="d-flex mb-lg-7 mb-9 align-items-center justify-content-center"
+                >
+                  <img src="../assets/images/logotype.svg" alt="logotype" />
+                  <h3 class="fs-7 fs-lg-5 text-secondary-200 ms-2">來幫忙</h3>
+                </div>
+                <img
+                  class="mt-lg-7 mb-lg-8 mb-9 align-self-center"
+                  src="../assets/images/index/herotitle_frame_bottom.svg"
+                  alt="herotitle_frame_bottom"
+                />
+                <!-- cta btn -->
+                <div
+                  class="pics d-flex align-items-center justify-content-center mt-lg-8 align-self-center"
+                >
+                  <p class="text-secondary-200">前往探索</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 品牌理念 section2 -->
+      <section class="section-idea">
+        <!-- 背景花紋 -->
+        <div class="texture position-relative pt-7">
+          <!-- 下方圓弧 -->
+          <img
+            class="position-absolute bottom-0 start-50 translate-middle-x z-1 w-100"
+            src="../assets/images/index/section01_border.png"
+            alt="section01_border"
+          />
+          <!-- 內容 -->
+          <div class="container position-relative">
+            <!-- desktop -->
+            <!-- 女孩desktop -->
+            <div class="col-6">
+              <img
+                class="girl-hug-desktop position-absolute top-50 translate-middle-y d-none d-lg-block"
+                src="../assets/images/index/section01_image.png"
+                alt="girl-hug"
+              />
+            </div>
+            <!-- 文字desktop -->
+            <div class="d-lg-flex justify-content-end d-none">
+              <div class="col-6 idea-container">
+                <h2
+                  class="text-left text-xl-center fs-2 text-primary-800 mb-11 ms-4 ms-xl-0"
+                >
+                  為何創立此平台？
+                </h2>
+                <div class="words-bg position-relative">
+                  <picture>
+                    <source
+                      srcset="../assets/images/index/section01_card_desktop.svg"
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      src="../assets/images/index/section01_card_mobile.svg"
+                      alt="card_desktop"
+                    />
+                  </picture>
+                  <div class="word position-absolute">
+                    <p class="text-neutral-900 mb-6">
+                      當在選購貓咪罐頭與飼料時，飼主常需耗費大量時間比對與閱讀資料，卻時常面臨資訊不完整、內容過時，甚至受到商業偏頗影響的困擾。
+                    </p>
+                    <p class="text-neutral-900 mb-6">
+                      市面上缺乏一個真正中立透明、可自由篩選且知識豐富的平台，來協助貓奴們
+                      <span class="fw-bold text-primary-500"
+                        >「理性挑食」。</span
+                      >
+                    </p>
+                    <p class="text-neutral-900">
+                      因此我們打造了這個網站，致力於成為一個
+                      <span class="fw-bold text-primary-500"
+                        >「選品有依據、購買有信心」</span
+                      >的貓咪食品資料整合平台。
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- mobile -->
+            <div
+              class="d-flex flex-column align-items-center pt-7 d-lg-none girl-hug-mobile-padding"
+            >
+              <!-- 文字mobile -->
+              <div>
+                <h2 class="text-center fs-4 text-primary-800 mb-8">
+                  為何創立此平台？
+                </h2>
+                <div class="word-mobile">
+                  <p class="text-neutral-900 mb-6">
+                    當在選購貓咪罐頭與飼料時，飼主常需耗費大量時間比對與閱讀資料，卻時常面臨資訊不完整、內容過時，甚至受到商業偏頗影響的困擾。
+                  </p>
+                  <p class="text-neutral-900 mb-6">
+                    市面上缺乏一個真正中立透明、可自由篩選且知識豐富的平台，來協助貓奴們
+                    <span class="fw-bold text-primary-500">「理性挑食」。</span>
+                  </p>
+                  <p class="text-neutral-900">
+                    因此我們打造了這個網站，致力於成為一個
+                    <span class="fw-bold text-primary-500"
+                      >「選品有依據、購買有信心」</span
+                    >的貓咪食品資料整合平台。
+                  </p>
+                </div>
+              </div>
+              <!-- 女孩mobile -->
+              <img
+                class="girl-hug-mobile d-lg-none position-absolute bottom-0 start-50 translate-middle-x"
+                src="../assets/images/index/section01_image.png"
+                alt="girl-hug"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 主要服務 section3 -->
+      <section class="section-service">
+        <div class="container">
+          <!-- 標題 -->
+          <div
+            class="section3-title d-flex flex-column align-items-center mb-lg-12 mb-11"
+          >
+            <img
+              class="mb-lg-11 mb-6"
+              src="../assets/images/index/section02_decoration.svg"
+              alt="section02_decoration"
+            />
+            <h2 class="fs-lg-2 fs-4 text-center text-secondary-800">
+              <span class="d-block d-lg-inline">獻給各位奴才</span>
+              <span class="d-block d-lg-inline">最方便的功能</span>
+            </h2>
+          </div>
+          <!-- 圖片區塊 -->
+          <div class="row gx-lg-3">
+            <div class="col-lg-4 p-lg-0 mb-6">
+              <div class="service-card">
+                <img
+                  class="mb-2"
+                  src="../assets/images/index/section2-item1.png"
+                  alt="膳食探索"
+                />
+                <h4
+                  class="fs-5 text-lg-neutral-900 text-secondary-800 text-center mb-2 fw-500"
+                >
+                  膳食探索
+                </h4>
+                <p
+                  class="fs-8 fs-lg-7 text-lg-neutral-600 text-secondary-500 text-center"
+                >
+                  聰明篩選・詳細說明・心得分享
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 p-lg-0 mb-6">
+              <div class="service-card">
+                <img
+                  class="mb-2"
+                  src="../assets/images/index/section2-item2.png"
+                  alt="喵皇學堂"
+                />
+                <h4
+                  class="fs-5 text-lg-neutral-900 text-secondary-800 text-center mb-2 fw-500"
+                >
+                  喵皇學堂
+                </h4>
+                <p
+                  class="fs-8 fs-lg-7 text-lg-neutral-600 text-secondary-500 text-center"
+                >
+                  知識拓展・類別分區
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 p-lg-0">
+              <div class="service-card">
+                <img
+                  class="mb-2"
+                  src="../assets/images/index/section2-item3.png"
+                  alt="會員制度"
+                />
+                <h4
+                  class="fs-5 text-lg-neutral-900 text-secondary-800 text-center mb-2 fw-500"
+                >
+                  會員制度
+                </h4>
+                <p
+                  class="fs-8 fs-lg-7 text-lg-neutral-600 text-secondary-500 text-center"
+                >
+                  收藏功能・分享投稿
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- 頁尾 -->
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
