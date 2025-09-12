@@ -1,5 +1,5 @@
 //section1
-.pics {
+.index-cta {
   margin: 0 auto;
   width: 308px;
   height: 48px;
@@ -10,7 +10,7 @@
   background-image: url("../images/index/btn_cta_default.svg");
 }
 
-.pics:hover {
+.index-cta:hover {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -34,13 +34,13 @@
     rgba(238, 222, 217, 1) 100%
   );
 
-  .texture {
+  .index-texture {
     background-image: url("../images/index/section01_backgroundTexture.png");
     background-repeat: repeat;
   }
 }
 
-.idea-container {
+.index-idea-container {
   padding-top: clamp(80px, 13.78vw, 264.5px);
   padding-bottom: clamp(80px, 13.78vw, 264.5px);
 }
@@ -79,7 +79,7 @@
   padding-bottom: 48px;
 }
 
-.service-card {
+.index-service-card {
   background-color: rgba(#fff, 0.67);
   border-radius: 200px 200px 48px 48px;
   padding-top: 16px;
@@ -219,17 +219,17 @@
     padding-bottom: 374px;
   }
 
-  .pics {
+  .index-cta {
     width: 416px;
     height: 65px;
   }
 
   //section2
-  .words-bg {
+  .index-section2-words-bg {
     max-width: 351px;
     height: 426px;
 
-    .word {
+    .index-section-2-words {
       top: calc(50 / 351 * 100%);
       left: calc(60 / 426 * 100%);
       padding-right: calc(50 / 351 * 100%);
@@ -250,7 +250,7 @@
     padding-bottom: 144px;
   }
 
-  .service-card {
+  .index-service-card {
     background-color: unset;
     border-radius: 0;
     padding-top: 96px;
@@ -335,11 +335,11 @@
 
 @media (min-width: 1200px) {
   //section2
-  .words-bg {
+  .index-section2-words-bg {
     max-width: 636px;
     height: 455px;
 
-    .word {
+    .index-section-2-words {
       top: calc(120 / 455 * 100%);
       left: calc(110 / 636 * 100%);
       padding-right: calc(110 / 636 * 100%);
@@ -357,11 +357,11 @@
 
 @media (min-width: 1400px) {
   //section2
-  .words-bg {
+  .index-section2-words-bg {
     max-width: 636px;
     height: 455px;
 
-    .word {
+    .index-section-2-words {
       top: calc(120 / 455 * 100%);
       left: calc(110 / 636 * 100%);
       padding-right: calc(110 / 636 * 100%);
