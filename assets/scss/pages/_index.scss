@@ -1,3 +1,4 @@
+//section1
 .pics {
   margin: 0 auto;
   width: 308px;
@@ -25,6 +26,7 @@
   padding-bottom: 396px;
 }
 
+//section2
 .section-idea {
   background: radial-gradient(
     ellipse at center,
@@ -68,6 +70,7 @@
   padding-bottom: 375px;
 }
 
+//section3
 .section-service {
   margin: 0 auto;
   background-image: url("../images/index/section02_backgroundTexture.jpg");
@@ -89,6 +92,7 @@
   }
 }
 
+//section4
 .index-deco-word-1 {
   margin: 0 auto;
   font-size: 48px;
@@ -129,6 +133,7 @@
   }
 }
 
+//section5
 .index-knowledge-left {
   max-width: 100%;
   height: 240px;
@@ -169,6 +174,7 @@
   max-width: 375px;
 }
 
+//section6
 .section-post {
   height: 667px;
   padding-top: 50px;
@@ -206,6 +212,7 @@
 }
 
 @media (min-width: 992px) {
+  //section1
   .section-brand {
     background-image: url("../images/index/banner_desktop.jpg");
     padding-top: 128px;
@@ -217,6 +224,7 @@
     height: 65px;
   }
 
+  //section2
   .words-bg {
     max-width: 351px;
     height: 426px;
@@ -236,6 +244,7 @@
     margin-top: 30px;
   }
 
+  //section3
   .section-service {
     padding-top: 96px;
     padding-bottom: 144px;
@@ -254,6 +263,7 @@
     }
   }
 
+  //section4
   .index-food-right {
     background-image: url("../images/index/section03_image.jpg");
     max-width: 100%;
@@ -278,6 +288,7 @@
     padding-right: 260px;
   }
 
+  //section5
   .index-deco-word-2 {
     margin: 0 0;
     font-size: 72px;
@@ -302,6 +313,7 @@
     padding-left: 272px;
   }
 
+  //section6
   .section-post {
     background-image: url("../images/index/section05_image_desktop.jpg");
   }
@@ -322,6 +334,7 @@
 }
 
 @media (min-width: 1200px) {
+  //section2
   .words-bg {
     max-width: 636px;
     height: 455px;
@@ -340,14 +353,10 @@
   .girl-hug-desktop {
     margin-top: 0px;
   }
-
-  .section-service {
-    padding-top: 96px;
-    padding-bottom: 144px;
-  }
 }
 
 @media (min-width: 1400px) {
+  //section2
   .words-bg {
     max-width: 636px;
     height: 455px;
@@ -365,10 +374,5 @@
 
   .girl-hug-desktop {
     margin-top: -30px;
-  }
-
-  .section-service {
-    padding-top: 96px;
-    padding-bottom: 144px;
   }
 }
