@@ -89,6 +89,16 @@
   }
 }
 
+.index-deco-word-1 {
+  margin: 0 auto;
+  font-size: 48px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  opacity: 0.5;
+  white-space: nowrap;
+  max-width: 375px;
+}
+
 .index-food-right {
   max-width: 100%;
   height: 240px;
@@ -102,7 +112,7 @@
   padding-top: 36px;
   padding-bottom: 64px;
 
-  button {
+  a {
     color: $primary-500;
     &:hover {
       background-color: $primary-500;
@@ -132,7 +142,7 @@
   padding-top: 36px;
   padding-bottom: 64px;
 
-  button {
+  a {
     color: $primary-500;
     &:hover {
       background-color: $primary-500;
@@ -149,7 +159,7 @@
   }
 }
 
-.index-deco-word-1 {
+.index-deco-word-2 {
   margin: 0 auto;
   font-size: 48px;
   line-height: 1.2;
@@ -159,14 +169,40 @@
   max-width: 375px;
 }
 
-.index-deco-word-2 {
-  margin: 0 auto;
-  font-size: 48px;
-  line-height: 1.2;
-  letter-spacing: 0.04em;
-  opacity: 0.5;
-  white-space: nowrap;
-  max-width: 375px;
+.section-post {
+  height: 667px;
+  padding-top: 50px;
+  padding-bottom: 317px;
+  background-image: url("../images/index/section05_image_mobile.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .index-post-word {
+    filter: drop-shadow(0 0.75rem 1.5rem rgba($secondary-500, 0.25));
+  }
+}
+
+.index-post-deco {
+  width: 84px;
+  height: 84px;
+}
+
+.quill-pen {
+  width: 20.82px;
+  height: 20.82px;
+}
+
+.index-post-share {
+  background-color: $primary-500;
+
+  &:active {
+    background-color: $primary-800 !important;
+  }
+
+  &:hover {
+    background-color: $primary-300 !important;
+  }
 }
 
 @media (min-width: 992px) {
@@ -194,6 +230,10 @@
     img {
       min-height: 426px;
     }
+  }
+
+  .girl-hug-desktop {
+    margin-top: 30px;
   }
 
   .section-service {
@@ -232,6 +272,12 @@
     padding-right: 232px;
   }
 
+  .index-food-words {
+    padding-top: 190px;
+    padding-bottom: 334px;
+    padding-right: 260px;
+  }
+
   .index-deco-word-2 {
     margin: 0 0;
     font-size: 72px;
@@ -242,12 +288,6 @@
     width: 100%;
     max-width: 788px;
     padding-left: 268px;
-  }
-
-  .index-food-words {
-    padding-top: 190px;
-    padding-bottom: 334px;
-    padding-right: 260px;
   }
 
   .index-knowledge-left {
@@ -262,8 +302,22 @@
     padding-left: 272px;
   }
 
-  .girl-hug-desktop {
-    margin-top: 30px;
+  .section-post {
+    background-image: url("../images/index/section05_image_desktop.jpg");
+  }
+
+  .index-post-word {
+    filter: drop-shadow(0 2.25rem 3rem rgba($secondary-500, 0.25));
+  }
+
+  .index-post-deco {
+    width: unset;
+    height: unset;
+  }
+
+  .quill-pen {
+    width: 24.29px;
+    height: 24.29px;
   }
 }
 
@@ -282,13 +336,14 @@
       min-height: 455px;
     }
   }
-  .section-service {
-    padding-top: 96px;
-    padding-bottom: 144px;
-  }
 
   .girl-hug-desktop {
     margin-top: 0px;
+  }
+
+  .section-service {
+    padding-top: 96px;
+    padding-bottom: 144px;
   }
 }
 
@@ -307,12 +362,13 @@
       min-height: 455px;
     }
   }
-  .section-service {
-    padding-top: 96px;
-    padding-bottom: 144px;
-  }
 
   .girl-hug-desktop {
     margin-top: -30px;
+  }
+
+  .section-service {
+    padding-top: 96px;
+    padding-bottom: 144px;
   }
 }
