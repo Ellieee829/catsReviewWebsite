@@ -1,28 +1,465 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
     <title>喵皇御膳房</title>
-    <script type="module" crossorigin src="/catsReviewWebsite/assets/main-Dt3CGP2M.js"></script>
-    <link rel="stylesheet" crossorigin href="/catsReviewWebsite/assets/main-CNXqIDYa.css">
+    <script type="module" crossorigin src="/catsReviewWebsite/assets/main-BMWTwxHb.js"></script>
+    <link rel="stylesheet" crossorigin href="/catsReviewWebsite/assets/main-Oh9rVgT3.css">
   </head>
   <body>
-    <h1 class="header">header</h1>
-<a href="index.html">index</a>
-<a href="about.html">about</a>
-<a href="contact.html">contact</a>
-    <button type="button" class="btn btn-primary">Primary</button>
-    <button type="button" class="btn btn-secondary">Secondary</button>
-    <button type="button" class="btn btn-success">Success</button>
-    <button type="button" class="btn btn-danger">Danger</button>
-    <button type="button" class="btn btn-warning">Warning</button>
-    <button type="button" class="btn btn-info">Info</button>
-    <button type="button" class="btn btn-light">Light</button>
-    <button type="button" class="btn btn-dark">Dark</button>
+    <!-- 引入Material Icons -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=pets" />
 
-<button type="button" class="btn btn-link">Link</button>
-    <footer class="footer">footer</footer>
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+        <img src="/catsReviewWebsite/assets/logo-BiAbFSc0.svg" alt="logo" class="me-72">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item me-40">
+          <a class="nav-link" href="#">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAILSURBVHgBzVVRctpADJV2oZ+tmSQf/aH4BnSadKZfcW+QniBwgqQnAE6Q9gSFE5SeAPpb6ISewCb9C2SSz0yGXUVa2wnDgGNP8oFmPCvL0tM+SbsG2CaZh38bs3AUFIkpFXFGTS0FGLE6zBuj8jrOL8ZHvNQIICjCIncCdjxJda2xVSDuaZn9HwWy8/S9CItcCRTh8aotL4u8JTpaNTCLGuQQN0VheO691uYsAfJ4Xrp35q7z1v8UOTCCHuJjDxLbr1S/DP/US1qdcdJ6bMG+MuprxX9/4xi80eYHL40Y3IU3XunyuQTG/mvG0sY28dFaDZIeefFDDdLmZxzKcnUxJlgvN8po3+Fpc738ge2VW7j1eCMD2FCuneo+OgZk4AsZbFpDn51Otpf4eAu1OBWqkmw5sdjKqnyagvMOh8sYsord9WDX3++vJO/PpqNIIbYUKpmgNnONGKWegE0cfQWH8mKJOnvvDtrrWGycIgngRn5nuJoDtfAv/YbxdQFxQuxuAs9MIKKtbqc6AUWpbslOHwB42rIwMhNInWMWvE+Lk9Se6lLzSjLKLyLz6fgb96YN2yT4lIOccq9kT4goMEgdWHBdNR4T2N+71Y/dZyfgQxiC+w/YJoI6lBBrbI+TDGSCdqofmlnxuS47mXO3W3TnINjzD4Zi4zYH8JIiV0rGtbJWCv2T+TBMYNvkHiCK3IAkMCJVAAAAAElFTkSuQmCC" alt="decoration" class="align-bottom me-1"> 膳食探索
+          </a>
+        </li>
+        <li class="nav-item me-40">
+          <a class="nav-link" href="#">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAILSURBVHgBzVVRctpADJV2oZ+tmSQf/aH4BnSadKZfcW+QniBwgqQnAE6Q9gSFE5SeAPpb6ISewCb9C2SSz0yGXUVa2wnDgGNP8oFmPCvL0tM+SbsG2CaZh38bs3AUFIkpFXFGTS0FGLE6zBuj8jrOL8ZHvNQIICjCIncCdjxJda2xVSDuaZn9HwWy8/S9CItcCRTh8aotL4u8JTpaNTCLGuQQN0VheO691uYsAfJ4Xrp35q7z1v8UOTCCHuJjDxLbr1S/DP/US1qdcdJ6bMG+MuprxX9/4xi80eYHL40Y3IU3XunyuQTG/mvG0sY28dFaDZIeefFDDdLmZxzKcnUxJlgvN8po3+Fpc738ge2VW7j1eCMD2FCuneo+OgZk4AsZbFpDn51Otpf4eAu1OBWqkmw5sdjKqnyagvMOh8sYsord9WDX3++vJO/PpqNIIbYUKpmgNnONGKWegE0cfQWH8mKJOnvvDtrrWGycIgngRn5nuJoDtfAv/YbxdQFxQuxuAs9MIKKtbqc6AUWpbslOHwB42rIwMhNInWMWvE+Lk9Se6lLzSjLKLyLz6fgb96YN2yT4lIOccq9kT4goMEgdWHBdNR4T2N+71Y/dZyfgQxiC+w/YJoI6lBBrbI+TDGSCdqofmlnxuS47mXO3W3TnINjzD4Zi4zYH8JIiV0rGtbJWCv2T+TBMYNvkHiCK3IAkMCJVAAAAAElFTkSuQmCC" alt="decoration" class="align-bottom me-1">喵皇學堂
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAILSURBVHgBzVVRctpADJV2oZ+tmSQf/aH4BnSadKZfcW+QniBwgqQnAE6Q9gSFE5SeAPpb6ISewCb9C2SSz0yGXUVa2wnDgGNP8oFmPCvL0tM+SbsG2CaZh38bs3AUFIkpFXFGTS0FGLE6zBuj8jrOL8ZHvNQIICjCIncCdjxJda2xVSDuaZn9HwWy8/S9CItcCRTh8aotL4u8JTpaNTCLGuQQN0VheO691uYsAfJ4Xrp35q7z1v8UOTCCHuJjDxLbr1S/DP/US1qdcdJ6bMG+MuprxX9/4xi80eYHL40Y3IU3XunyuQTG/mvG0sY28dFaDZIeefFDDdLmZxzKcnUxJlgvN8po3+Fpc738ge2VW7j1eCMD2FCuneo+OgZk4AsZbFpDn51Otpf4eAu1OBWqkmw5sdjKqnyagvMOh8sYsord9WDX3++vJO/PpqNIIbYUKpmgNnONGKWegE0cfQWH8mKJOnvvDtrrWGycIgngRn5nuJoDtfAv/YbxdQFxQuxuAs9MIKKtbqc6AUWpbslOHwB42rIwMhNInWMWvE+Lk9Se6lLzSjLKLyLz6fgb96YN2yT4lIOccq9kT4goMEgdWHBdNR4T2N+71Y/dZyfgQxiC+w/YJoI6lBBrbI+TDGSCdqofmlnxuS47mXO3W3TnINjzD4Zi4zYH8JIiV0rGtbJWCv2T+TBMYNvkHiCK3IAkMCJVAAAAAElFTkSuQmCC" alt="decoration" class="align-bottom me-1">我要投稿
+          </a>
+        </li>
+        
+      </ul>
+      <a href="#">
+        <span class="material-symbols-outlined secondary-300 align-bottom me-2">pets</span>註冊 / 登入
+      </a>
+    </div>
+    
+  </div>
+</nav>    <!-- 頁首end -->
+
+    <div class="container-fluid p-0">
+      <!-- banner section1 -->
+      <section class="section-brand">
+        <!-- 文字區塊 -->
+        <div class="container">
+          <div class="row justify-content-lg-end">
+            <div class="col-lg-6 col-12">
+              <div class="d-flex flex-column">
+                <img
+                  class="mb-lg-11 mb-9 align-self-center"
+                  src="/catsReviewWebsite/assets/herotitle_frame_top-BrQLbH70.svg"
+                  alt="herotitle_frame_top"
+                />
+                <h1
+                  class="fs-2 fs-lg-1 mb-lg-7 mb-3 text-secondary-200 align-self-center"
+                >
+                  想給主子最好的
+                </h1>
+                <div
+                  class="d-flex mb-lg-7 mb-9 align-items-center justify-content-center"
+                >
+                  <img src="/catsReviewWebsite/assets/logotype-CvAouUCW.svg" alt="logotype" />
+                  <h3 class="fs-7 fs-lg-5 text-secondary-200 ms-2">來幫忙</h3>
+                </div>
+                <img
+                  class="mt-lg-7 mb-lg-8 mb-9 align-self-center"
+                  src="data:image/svg+xml,%3csvg%20width='520'%20height='12'%20viewBox='0%200%20520%2012'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_4048_2586)'%3e%3cpath%20d='M0.800937%201.64441H519.19C520.264%201.64441%20520.264%200%20519.19%200H0.800937C-0.264375%200%20-0.264375%201.64441%200.800937%201.64441Z'%20fill='url(%23paint0_linear_4048_2586)'/%3e%3cpath%20d='M267.683%204.5453H517.869C518.568%204.5453%20519.139%205.1103%20519.139%205.8018V5.8271C519.139%206.51859%20518.568%207.0836%20517.869%207.0836C499.716%207.04143%20292.748%206.66195%20267.947%2011.9662C267.155%2012.1349%20266.413%2011.5362%20266.413%2010.735V5.79337C266.413%205.10187%20266.984%204.53687%20267.683%204.53687V4.5453Z'%20fill='url(%23paint1_linear_4048_2586)'/%3e%3cpath%20d='M262.868%207.20164C262.868%205.74275%20261.666%204.55371%20260.192%204.55371C258.717%204.55371%20257.516%205.74275%20257.516%207.20164C257.516%208.66053%20258.717%209.84957%20260.192%209.84957C261.666%209.84957%20262.868%208.66053%20262.868%207.20164Z'%20fill='url(%23paint2_linear_4048_2586)'/%3e%3cpath%20d='M252.317%204.5453H2.1302C1.43136%204.5453%200.860352%205.1103%200.860352%205.8018V5.8271C0.860352%206.51859%201.43136%207.0836%202.1302%207.0836C20.2831%207.04143%20227.252%206.66195%20252.052%2011.9662C252.845%2012.1349%20253.586%2011.5362%20253.586%2010.735V5.79337C253.586%205.10187%20253.015%204.53687%20252.317%204.53687V4.5453Z'%20fill='url(%23paint3_linear_4048_2586)'/%3e%3c/g%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_4048_2586'%20x1='59.3675'%20y1='94.2797'%20x2='442.936'%20y2='-88.2126'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23EEDEBC'/%3e%3cstop%20offset='0.15'%20stop-color='%23EEDEBC'/%3e%3cstop%20offset='0.35'%20stop-color='%23DDC5A3'/%3e%3cstop%20offset='0.61'%20stop-color='%23C9A885'/%3e%3cstop%20offset='0.72'%20stop-color='%239A7A5F'/%3e%3cstop%20offset='0.84'%20stop-color='%23C9A885'/%3e%3cstop%20offset='1'%20stop-color='%23EEDEBC'/%3e%3c/linearGradient%3e%3clinearGradient%20id='paint1_linear_4048_2586'%20x1='85.3953'%20y1='149.001'%20x2='468.972'%20y2='-33.4917'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23EEDEBC'/%3e%3cstop%20offset='0.15'%20stop-color='%23EEDEBC'/%3e%3cstop%20offset='0.35'%20stop-color='%23DDC5A3'/%3e%3cstop%20offset='0.61'%20stop-color='%23C9A885'/%3e%3cstop%20offset='0.72'%20stop-color='%239A7A5F'/%3e%3cstop%20offset='0.84'%20stop-color='%23C9A885'/%3e%3cstop%20offset='1'%20stop-color='%23EEDEBC'/%3e%3c/linearGradient%3e%3clinearGradient%20id='paint2_linear_4048_2586'%20x1='61.8818'%20y1='99.5755'%20x2='445.458'%20y2='-82.9167'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23EEDEBC'/%3e%3cstop%20offset='0.15'%20stop-color='%23EEDEBC'/%3e%3cstop%20offset='0.35'%20stop-color='%23DDC5A3'/%3e%3cstop%20offset='0.61'%20stop-color='%23C9A885'/%3e%3cstop%20offset='0.72'%20stop-color='%239A7A5F'/%3e%3cstop%20offset='0.84'%20stop-color='%23C9A885'/%3e%3cstop%20offset='1'%20stop-color='%23EEDEBC'/%3e%3c/linearGradient%3e%3clinearGradient%20id='paint3_linear_4048_2586'%20x1='38.1804'%20y1='49.754'%20x2='421.757'%20y2='-132.738'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23EEDEBC'/%3e%3cstop%20offset='0.346169'%20stop-color='%23C9A885'/%3e%3cstop%20offset='0.596175'%20stop-color='%239A7A5F'/%3e%3cstop%20offset='0.84'%20stop-color='%23C9A885'/%3e%3cstop%20offset='1'%20stop-color='%23EEDEBC'/%3e%3c/linearGradient%3e%3cclipPath%20id='clip0_4048_2586'%3e%3crect%20width='520'%20height='12'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                  alt="herotitle_frame_bottom"
+                />
+                <!-- cta btn -->
+                <div
+                  class="index-cta d-flex align-items-center justify-content-center mt-lg-8 align-self-center"
+                >
+                  <p class="text-secondary-200">前往探索</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 品牌理念 section2 -->
+      <section class="section-idea">
+        <!-- 背景花紋 -->
+        <div class="index-texture position-relative pt-7">
+          <!-- 下方圓弧 -->
+          <img
+            class="position-absolute bottom-0 start-50 translate-middle-x z-1 w-100"
+            src="/catsReviewWebsite/assets/section01_border-B00mQlGV.png"
+            alt="section01_border"
+          />
+          <!-- 內容 -->
+          <div class="container position-relative">
+            <!-- desktop -->
+            <!-- 女孩desktop -->
+            <div class="col-6">
+              <img
+                class="girl-hug-desktop position-absolute top-50 translate-middle-y d-none d-lg-block"
+                src="/catsReviewWebsite/assets/section01_image-D2c9kf0h.png"
+                alt="girl-hug"
+              />
+            </div>
+            <!-- 文字desktop -->
+            <div class="d-lg-flex justify-content-end d-none">
+              <div class="col-6 index-idea-container">
+                <h2
+                  class="=text-center fs-2 text-primary-800 mb-11 ms-4 ms-xl-0"
+                >
+                  為何創立此平台？
+                </h2>
+                <div class="index-section2-words-bg position-relative">
+                  <picture>
+                    <source
+                      srcset="data:image/svg+xml,%3csvg%20width='652'%20height='471'%20viewBox='0%200%20652%20471'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20filter='url(%23filter0_d_3478_2948)'%3e%3cpath%20d='M586.225%2055.3336C574.074%2025.1714%20545.593%204%20512.394%204H139.44C106.241%204%2077.7599%2025.1714%2065.6084%2055.3336C32.3666%2065.1692%208%2097.1763%208%20135.163V327.837C8%20365.824%2032.3666%20397.831%2065.6084%20407.666C77.7599%20437.829%20106.241%20459%20139.44%20459H512.394C545.593%20459%20574.074%20437.829%20586.225%20407.666C619.467%20397.831%20643.834%20365.824%20643.834%20327.837V135.163C643.834%2097.1763%20619.467%2065.1692%20586.225%2055.3336Z'%20fill='%23F4F1EB'/%3e%3cpath%20d='M148.859%2021.2681H503.141C534.463%2021.2681%20561.343%2040.7382%20572.813%2068.4907L572.906%2068.7134L573.138%2068.7808C604.501%2077.8262%20627.5%20107.267%20627.5%20142.217V320.623C627.5%20355.573%20604.501%20385.014%20573.138%20394.059L572.906%20394.125L572.813%20394.348C561.343%20422.101%20534.463%20441.571%20503.141%20441.571H148.859C117.537%20441.571%2090.657%20422.101%2079.1865%20394.348L79.0938%20394.125L78.8623%20394.059L78.1289%20393.843C47.1414%20384.553%2024.5001%20355.3%2024.5%20320.623V142.217C24.5%20107.267%2047.4994%2077.8262%2078.8623%2068.7808L79.0938%2068.7134L79.1865%2068.4907C90.6571%2040.7382%20117.537%2021.2681%20148.859%2021.2681Z'%20stroke='%23E1BEB6'/%3e%3c/g%3e%3cdefs%3e%3cfilter%20id='filter0_d_3478_2948'%20x='0'%20y='0'%20width='651.834'%20height='471'%20filterUnits='userSpaceOnUse'%20color-interpolation-filters='sRGB'%3e%3cfeFlood%20flood-opacity='0'%20result='BackgroundImageFix'/%3e%3cfeColorMatrix%20in='SourceAlpha'%20type='matrix'%20values='0%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%20127%200'%20result='hardAlpha'/%3e%3cfeOffset%20dy='4'/%3e%3cfeGaussianBlur%20stdDeviation='4'/%3e%3cfeComposite%20in2='hardAlpha'%20operator='out'/%3e%3cfeColorMatrix%20type='matrix'%20values='0%200%200%200%200.741176%200%200%200%200%200.568627%200%200%200%200%200.552941%200%200%200%200.5%200'/%3e%3cfeBlend%20mode='normal'%20in2='BackgroundImageFix'%20result='effect1_dropShadow_3478_2948'/%3e%3cfeBlend%20mode='normal'%20in='SourceGraphic'%20in2='effect1_dropShadow_3478_2948'%20result='shape'/%3e%3c/filter%3e%3c/defs%3e%3c/svg%3e"
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      src="data:image/svg+xml,%3csvg%20width='367'%20height='442'%20viewBox='0%200%20367%20442'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20filter='url(%23filter0_d_3478_3057)'%3e%3cpath%20d='M327.198%2034.1793C320.49%2016.4467%20304.768%204%20286.441%204H80.5589C62.2319%204%2046.5096%2016.4467%2039.8016%2034.1793C21.4511%2039.9616%208%2058.7788%208%2081.1111V352.889C8%20375.221%2021.4511%20394.038%2039.8016%20399.821C46.5096%20417.553%2062.2319%20430%2080.5589%20430H286.441C304.768%20430%20320.49%20417.553%20327.198%20399.821C345.549%20394.038%20359%20375.221%20359%20352.889V81.1111C359%2058.7788%20345.549%2039.9616%20327.198%2034.1793Z'%20fill='%23F4F1EB'/%3e%3cpath%20d='M87.5977%2016.5H279.402C296.232%2016.5%20310.714%2028.0801%20316.904%2044.6543L316.989%2044.8818L317.221%2044.9551C334.083%2050.3371%20346.5%2067.8813%20346.5%2088.7666V345.233C346.5%20366.119%20334.083%20383.663%20317.221%20389.045L316.989%20389.118L316.904%20389.346C310.714%20405.92%20296.232%20417.5%20279.402%20417.5H87.5977C70.7685%20417.5%2056.2855%20405.92%2050.0957%20389.346L50.0107%20389.118L49.7793%20389.045L48.9922%20388.783C32.5321%20383.113%2020.5001%20365.792%2020.5%20345.233V88.7666C20.5001%2067.8813%2032.9171%2050.3371%2049.7793%2044.9551L50.0107%2044.8818L50.0957%2044.6543C56.2855%2028.0801%2070.7685%2016.5%2087.5977%2016.5Z'%20stroke='%23E1BEB6'/%3e%3c/g%3e%3cdefs%3e%3cfilter%20id='filter0_d_3478_3057'%20x='0'%20y='0'%20width='367'%20height='442'%20filterUnits='userSpaceOnUse'%20color-interpolation-filters='sRGB'%3e%3cfeFlood%20flood-opacity='0'%20result='BackgroundImageFix'/%3e%3cfeColorMatrix%20in='SourceAlpha'%20type='matrix'%20values='0%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%20127%200'%20result='hardAlpha'/%3e%3cfeOffset%20dy='4'/%3e%3cfeGaussianBlur%20stdDeviation='4'/%3e%3cfeComposite%20in2='hardAlpha'%20operator='out'/%3e%3cfeColorMatrix%20type='matrix'%20values='0%200%200%200%200.741176%200%200%200%200%200.568627%200%200%200%200%200.552941%200%200%200%200.5%200'/%3e%3cfeBlend%20mode='normal'%20in2='BackgroundImageFix'%20result='effect1_dropShadow_3478_3057'/%3e%3cfeBlend%20mode='normal'%20in='SourceGraphic'%20in2='effect1_dropShadow_3478_3057'%20result='shape'/%3e%3c/filter%3e%3c/defs%3e%3c/svg%3e"
+                      alt="card_desktop"
+                    />
+                  </picture>
+                  <div class="index-section-2-words position-absolute">
+                    <p class="text-neutral-900 mb-6">
+                      當在選購貓咪罐頭與飼料時，飼主常需耗費大量時間比對與閱讀資料，卻時常面臨資訊不完整、內容過時，甚至受到商業偏頗影響的困擾。
+                    </p>
+                    <p class="text-neutral-900 mb-6">
+                      市面上缺乏一個真正中立透明、可自由篩選且知識豐富的平台，來協助貓奴們
+                      <span class="fw-bold text-primary-500"
+                        >「理性挑食」。</span
+                      >
+                    </p>
+                    <p class="text-neutral-900">
+                      因此我們打造了這個網站，致力於成為一個
+                      <span class="fw-bold text-primary-500"
+                        >「選品有依據、購買有信心」</span
+                      >的貓咪食品資料整合平台。
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- mobile -->
+            <div
+              class="d-flex flex-column align-items-center pt-7 d-lg-none girl-hug-mobile-padding"
+            >
+              <!-- 文字mobile -->
+              <div>
+                <h2 class="text-center fs-4 text-primary-800 mb-8">
+                  為何創立此平台？
+                </h2>
+                <div class="word-mobile">
+                  <p class="text-neutral-900 mb-6">
+                    當在選購貓咪罐頭與飼料時，飼主常需耗費大量時間比對與閱讀資料，卻時常面臨資訊不完整、內容過時，甚至受到商業偏頗影響的困擾。
+                  </p>
+                  <p class="text-neutral-900 mb-6">
+                    市面上缺乏一個真正中立透明、可自由篩選且知識豐富的平台，來協助貓奴們
+                    <span class="fw-bold text-primary-500">「理性挑食」。</span>
+                  </p>
+                  <p class="text-neutral-900">
+                    因此我們打造了這個網站，致力於成為一個
+                    <span class="fw-bold text-primary-500"
+                      >「選品有依據、購買有信心」</span
+                    >的貓咪食品資料整合平台。
+                  </p>
+                </div>
+              </div>
+              <!-- 女孩mobile -->
+              <img
+                class="girl-hug-mobile d-lg-none position-absolute bottom-0 start-50 translate-middle-x"
+                src="/catsReviewWebsite/assets/section01_image-D2c9kf0h.png"
+                alt="girl-hug"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 主要服務 section3 -->
+      <section class="section-service">
+        <div class="container">
+          <!-- 標題 -->
+          <div
+            class="section3-title d-flex flex-column align-items-center mb-lg-12 mb-11"
+          >
+            <img
+              class="mb-lg-11 mb-6"
+              src="/catsReviewWebsite/assets/section02_decoration-C5-sfnmg.svg"
+              alt="section02_decoration"
+            />
+            <h2 class="fs-lg-2 fs-4 text-center text-secondary-800">
+              <span class="d-block d-lg-inline">獻給各位奴才</span>
+              <span class="d-block d-lg-inline">最方便的功能</span>
+            </h2>
+          </div>
+          <!-- 圖片區塊 -->
+          <div class="row gx-lg-3">
+            <div class="col-lg-4 p-lg-0 mb-6">
+              <div class="index-service-card">
+                <img
+                  class="mb-2"
+                  src="/catsReviewWebsite/assets/section2-item1-hKJGH6e3.png"
+                  alt="膳食探索"
+                />
+                <h4
+                  class="fs-5 text-lg-neutral-900 text-secondary-800 text-center mb-2"
+                >
+                  膳食探索
+                </h4>
+                <p
+                  class="fs-8 fs-lg-7 text-lg-neutral-600 text-secondary-500 text-center"
+                >
+                  聰明篩選・詳細說明・心得分享
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 p-lg-0 mb-6">
+              <div class="index-service-card">
+                <img
+                  class="mb-2"
+                  src="/catsReviewWebsite/assets/section2-item2-GEY36fuH.png"
+                  alt="喵皇學堂"
+                />
+                <h4
+                  class="fs-5 text-lg-neutral-900 text-secondary-800 text-center mb-2"
+                >
+                  喵皇學堂
+                </h4>
+                <p
+                  class="fs-8 fs-lg-7 text-lg-neutral-600 text-secondary-500 text-center"
+                >
+                  知識拓展・類別分區
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 p-lg-0">
+              <div class="index-service-card">
+                <img
+                  class="mb-2"
+                  src="/catsReviewWebsite/assets/section2-item3-BCWwXNWU.png"
+                  alt="會員制度"
+                />
+                <h4
+                  class="fs-5 text-lg-neutral-900 text-secondary-800 text-center mb-2"
+                >
+                  會員制度
+                </h4>
+                <p
+                  class="fs-8 fs-lg-7 text-lg-neutral-600 text-secondary-500 text-center"
+                >
+                  收藏功能・分享投稿
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 食物篩選 section4 -->
+      <section class="section-food">
+        <div class="container-fluid p-0">
+          <div class="d-lg-flex flex-row-reverse d-block">
+            <!-- 右區塊 -->
+            <div class="index-food-right col-lg-6 p-0"></div>
+            <!-- 左區塊 -->
+            <div class="col-lg-6 p-0 position-relative">
+              <!-- 左區塊文字 -->
+              <div
+                class="d-flex justify-content-lg-end justify-content-center ps-lg-11 px-2"
+              >
+                <div class="index-food-words">
+                  <h2 class="fs-lg-2 fs-4 text-primary-800 mb-lg-11 mb-6">
+                    貓食種類也太多！？
+                  </h2>
+                  <p class="text-neutral-900 mb-lg-11 mb-6">
+                    不知道怎麼選？
+                    <br />
+                    買回家主子不賞臉？
+                    <br />
+                    快來使用膳食挑選功能
+                    <br />
+                    找到喵皇命定美食！
+                  </p>
+                  <a
+                    class="btn border-primary-300 py-lg-5 px-lg-8 py-3 px-6 rounded-pill d-flex align-items-center"
+                    href="#"
+                  >
+                    前往探索
+                    <img
+                      class="ms-3"
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHYAAAAKCAYAAABhR6qrAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACvSURBVHgB7daxDcIwEEDROxe4ZQJINmAEoogCRUhsgJgANoBswgYUxEQCGbMBbHB4EHJAEYkCpLS27pU+d18nHYAICtX7pMs/BSIYdD6MldauS1wJG5B0Mrs2zKXSvRudzAhEXD5R/eVI3lULEHFp45Kt1r/mCCJY5OpEMTtg3g3zovyeSdjA/Ysrx1Pg0mz6aBAzQJx7azbtO5I1WxAx6CvEFb43d5AXSwkbI37eX5bpReGk6Lg9AAAAAElFTkSuQmCC"
+                      alt="arrow_right"
+                    />
+                  </a>
+                </div>
+              </div>
+              <!-- 裝飾hashtag -->
+              <div
+                class="index-deco-word-1 text-primary-200 Cactus position-lg-absolute bottom-0 start-0 ps-2"
+              >
+                <p>＃清楚成分</p>
+                <p class="ms-11 ps-lg-5">＃簡單篩選</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 知識專欄 section5 -->
+      <section class="section-knowledge">
+        <div class="container-fluid p-0">
+          <div class="d-lg-flex d-block">
+            <!-- 左區塊 -->
+            <div class="index-knowledge-left col-lg-6 p-0"></div>
+            <!-- 右區塊 -->
+            <div class="col-lg-6 p-0 position-relative">
+              <!-- 右區塊文字 -->
+              <div
+                class="d-flex justify-content-lg-start justify-content-center pe-lg-11 px-2"
+              >
+                <div class="index-knowledge-words text-lg-end">
+                  <h2 class="fs-lg-2 fs-4 text-primary-800 mb-lg-11 mb-6">
+                    第一次養貓就上手！
+                  </h2>
+                  <p class="text-neutral-900 mb-lg-11 mb-6">
+                    裡面的成分代表什麼？
+                    <br />
+                    服侍主子需要注意哪些事？
+                    <br />
+                    進入學堂告訴你！
+                  </p>
+                  <a
+                    class="btn border-primary-300 rounded-pill d-flex align-items-center py-lg-5 px-lg-8 py-3 px-6"
+                    href="#"
+                  >
+                    前往學堂
+                    <img
+                      class="ms-3"
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHYAAAAKCAYAAABhR6qrAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACvSURBVHgB7daxDcIwEEDROxe4ZQJINmAEoogCRUhsgJgANoBswgYUxEQCGbMBbHB4EHJAEYkCpLS27pU+d18nHYAICtX7pMs/BSIYdD6MldauS1wJG5B0Mrs2zKXSvRudzAhEXD5R/eVI3lULEHFp45Kt1r/mCCJY5OpEMTtg3g3zovyeSdjA/Ysrx1Pg0mz6aBAzQJx7azbtO5I1WxAx6CvEFb43d5AXSwkbI37eX5bpReGk6Lg9AAAAAElFTkSuQmCC"
+                      alt="arrow_right"
+                    />
+                  </a>
+                </div>
+              </div>
+              <!-- 裝飾hashtag -->
+              <div
+                class="index-deco-word-2 text-primary-200 Cactus position-lg-absolute bottom-0 end-0 ps-2"
+              >
+                <p class="text-end">＃知識專欄</p>
+                <p class="text-end me-11 pe-lg-5">＃專業鏟屎官</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 投稿功能 section6 -->
+      <section class="section-post">
+        <!-- 內容 -->
+        <div class="container">
+          <div class="col-lg-6">
+            <div
+              class="index-post-word bg-white p-lg-12 py-12 px-11 position-relative"
+            >
+              <!-- 文字 -->
+              <div class="d-flex flex-column align-items-center">
+                <h4 class="fs-5 text-secondary-800 mb-lg-6 mb-3">
+                  想分享好東西嗎？
+                </h4>
+                <h2 class="fs-lg-2 fs-3 text-secondary-800 mb-lg-9 mb-8">
+                  歡迎投稿
+                </h2>
+                <a
+                  class="index-post-share btn rounded-pill mt-lg-1 d-flex align-items-center px-lg-6 py-lg-2 px-3 py-1"
+                  href="#"
+                >
+                  <img
+                    class="quill-pen"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALhSURBVHgBtVVvUtNQEN99SUGFgbZ4gLYofz4ZTmA5gXgC7AkoJ6A9AeUE1BOAJ2g4AeWLLVVI/MSMSsEZh3EY+9Z9SV6TxoR2pO5MJu/l7e5vd3/7NgARuep0Cv3Lbuv6orsPUxQR3WQyUAbAMiJWFSA8Qq6c0B6HH9np7Kxo8dI/JDjOL6++hQnl26dOWQjxGpHKHLvFDrLs3s6XVjbROT3NLiw821HRBwe3/tsTV0pZf/5ivZnkOLSFLd5aSTqDgdwUi9mnR6xU046lhF0iPAh0Chzd4fXFx+pfkV90q4uLc45vqwHwlgDeo5QVP1jOSZBlkoQPrFjWxojyFWf1JnTHhgSu3vllxUPFnaqpL3TCZarliuu21utf9obN43FywyQRmPtAcisaLTuvC3HXyBU3vKi+9nqWadIRaN4856KaK660o3bXzvkekpehCrqI0cO+02ux57JnPoD60svV2mgGxqnmjUjWl5bXGlF7n6O5Pc6q6gNgkwOomFElOaADIfzSiZ93jVEA1Xk+AJd3M19aa486jzaPlvuDYbmi8v1z551hgDta327L58CLbkOXR4FnMlQVwtwede6Jmy+tFtXCjIPE21WBagAi2mXDYQYzs1BDMLbDBkCb1zoYW+sJGCPcwnueEUA7zgFJccyvM9UgiHc5QrLD00Fdr/AhAJWFuid+ZLLIJXTTdAPenCALj/CJMhHC2PEWkk4mAGgFWzeaxYMg/oAk7yZLoGaanro70ZnHGVfiAZlpxjMzqC/mbdLsCtuWavqblFhhXTuumwrCZPLI91YnUcfz808sdrwVa1tXZZAEoCSV+P7luSKxwE+bENo8JlTpYpNW3Xx1gcPRMzHIjeNkie5v0ow4zS8E2BznXEtiuX7DL8sIe+KMH5cjdgVRGwywc6X0TpsYBAciqzH4hlvwSElsYSa2ECzHluKfQaJdA/8NBIOfkqQfMAVJ5ETwf1vyYBWGaMAU5A9moTyaNLd/1gAAAABJRU5ErkJggg=="
+                    alt="quill-pen"
+                  />
+                  <p class="text-white ms-1">分享好料</p>
+                </a>
+              </div>
+              <!-- 裝飾 -->
+              <img
+                class="index-post-deco position-absolute top-0 start-0 p-3"
+                src="/catsReviewWebsite/assets/section05_decoration_lt-CaetvSYX.svg"
+                alt="deco"
+              />
+              <img
+                class="index-post-deco position-absolute bottom-0 start-0 p-3"
+                src="/catsReviewWebsite/assets/section05_decoration_lb-CFDCUvA4.svg"
+                alt="deco"
+              />
+              <img
+                class="index-post-deco position-absolute top-0 end-0 p-3"
+                src="/catsReviewWebsite/assets/section05_decoration_rt-CAkqtLqc.svg"
+                alt="deco"
+              />
+              <img
+                class="index-post-deco position-absolute bottom-0 end-0 p-3"
+                src="/catsReviewWebsite/assets/section05_decoration_rb-Dv5K0lhC.svg"
+                alt="deco"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- 頁尾 -->
+    <!-- 引入Material Icons -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=pets" />
+
+<nav class="navbar navbar-expand-lg navbar-light footer-border-bottom ">
+  <div class="container my-32 ">
+    <a class="navbar-brand" href="#">
+        <img src="/catsReviewWebsite/assets/logo-BiAbFSc0.svg" alt="logo" >
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item me-40">
+          <a class="nav-link" href="#">
+            膳食探索
+          </a>
+        </li>
+        <li class="nav-item me-40">
+          <a class="nav-link" href="#">
+            喵皇學堂
+          </a>
+        </li>
+        <li class="nav-item  me-40">
+          <a class="nav-link" href="#">
+            我要投稿
+          </a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="#">
+            會員中心
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="text-center text-sm my-32">
+    <p class="neutral-600">本作品為專題製作使用，所有內容均受版權法保護</p>
+    <p class="neutral-600">未經作者書面許可，禁止任何形式的複製、修改、發佈或商業使用</p>
+    <p class="neutral-600">若需使用，請聯繫作者取得授權。感謝您的理解與尊重</p>
+
+  </div>
   </body>
 </html>
