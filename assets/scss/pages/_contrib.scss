@@ -1,0 +1,46 @@
+.contrib-side-menu{
+    width: 312px;
+    padding: 36px 16px;
+    border: 1px solid #DEE2E6;
+    box-shadow: 2px 4px 8px rgba(184, 150, 104, 0.5);
+}
+.contrib-position-relative{
+    position: relative;
+}
+.contrib-position-abolute{
+    position: absolute;
+}
+.contrib-information-circle{
+    position: absolute;
+    top: 16px;   
+    right: 16px; 
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.contrib-vectorImg{
+    width: 24px;
+    height: 24px;
+}
+.contrib-tab-content{
+    width: calc(100% - 312px);
+}
+.contrib-tab-pane{
+    max-width: 1032px;
+    margin: 0 auto;
+}
+.contrib-highlight{
+    color: #bf0e46;
+}
+.contrib-font-size-sm{
+    font-size: 14px;
+}
+.contrib-font-size-xs{
+    font-size: 12px;
+}
+.contrib-input-heigh{
+    height: 48px;
+}
+.form-control::placeholder {
+  color: rgba(173, 181, 189, 1);
+}
