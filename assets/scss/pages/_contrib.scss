@@ -29,9 +29,6 @@
     max-width: 1032px;
     margin: 0 auto;
 }
-.contrib-highlight{
-    color: #bf0e46;
-}
 .contrib-font-size-sm{
     font-size: 14px;
 }
@@ -55,5 +52,19 @@
 }
 .form-check-label {
   margin-top: 0.25rem;
+}
+.contrib-delete-btn {
+  width: 52px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contrib-delete-btn img {
+  width: 28px;
+  height: auto;
+}
+.font-weight-bold{
+    font-weight: 700;
 }
 

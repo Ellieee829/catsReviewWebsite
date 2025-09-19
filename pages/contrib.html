@@ -77,7 +77,7 @@
               <h3 class="me-3 neutral-900">１. 基本資訊</h3>
               <p>
                 <span class="neutral-600">(</span>
-                <span class="contrib-highlight">*</span>
+                <span class="text-highlight">*</span>
                 <span class="neutral-600">為必填欄位)</span>
               </p>
               <img
@@ -93,32 +93,13 @@
               />
             </div>
             <div class="mb-8">
-              <p class="px-2 d-flex mb-2">
-                <span class="contrib-font-size-sm neutral-900">食品名稱</span>
-                <span class="contrib-font-size-sm contrib-highlight ms-1"
-                  >*</span
-                >
-                <span class="contrib-font-size-xs contrib-highlight ms-auto"
-                  >必填</span
-                >
-              </p>
-              <div>
-                <input
-                  type="text"
-                  class="form-control border-radius contrib-input-heigh"
-                  id="foodName"
-                  placeholder="請輸入食品名稱"
-                />
-              </div>
-            </div>
-            <div class="mb-8 d-flex">
-              <div class="me-6 w-100">
+              <label for="foodName" class="w-100">
                 <p class="px-2 d-flex mb-2">
-                  <span class="contrib-font-size-sm neutral-900">品牌名稱</span>
-                  <span class="contrib-font-size-sm contrib-highlight ms-1"
+                  <span class="contrib-font-size-sm neutral-900">食品名稱</span>
+                  <span class="contrib-font-size-sm text-highlight ms-1"
                     >*</span
                   >
-                  <span class="contrib-font-size-xs contrib-highlight ms-auto"
+                  <span class="contrib-font-size-xs text-highlight ms-auto"
                     >必填</span
                   >
                 </p>
@@ -126,42 +107,71 @@
                   <input
                     type="text"
                     class="form-control border-radius contrib-input-heigh"
-                    id="brandName"
-                    placeholder="請輸入品牌名稱"
+                    id="foodName"
+                    placeholder="請輸入食品名稱"
                   />
                 </div>
-              </div>
-              <div class="w-100">
-                <p class="px-2 d-flex mb-2">
-                  <span class="contrib-font-size-sm neutral-900">參考價格</span>
-                  <span class="contrib-font-size-sm contrib-highlight ms-1"
-                    >*</span
-                  >
-                  <span class="contrib-font-size-xs contrib-highlight ms-auto"
-                    >必填</span
-                  >
-                </p>
-                <div class="input-group">
-                  <div class="input-group-text neutral-800 bg-neutral-100">
-                    NT$
+              </label>
+            </div>
+            <div class="mb-8 d-flex">
+              <label for="brandName" class="w-100 me-6">
+                <div>
+                  <p class="px-2 d-flex mb-2">
+                    <span class="contrib-font-size-sm neutral-900"
+                      >品牌名稱</span
+                    >
+                    <span class="contrib-font-size-sm text-highlight ms-1"
+                      >*</span
+                    >
+                    <span class="contrib-font-size-xs text-highlight ms-auto"
+                      >必填</span
+                    >
+                  </p>
+                  <div>
+                    <input
+                      type="text"
+                      class="form-control border-radius contrib-input-heigh"
+                      id="brandName"
+                      placeholder="請輸入品牌名稱"
+                    />
                   </div>
-                  <input
-                    type="text"
-                    class="form-control border-radius contrib-input-heigh"
-                    id="price"
-                    placeholder="請輸入參考價格（NT$新台幣）"
-                  />
                 </div>
-              </div>
+              </label>
+              <label for="price" class="w-100">
+                <div>
+                  <p class="px-2 d-flex mb-2">
+                    <span class="contrib-font-size-sm neutral-900"
+                      >參考價格</span
+                    >
+                    <span class="contrib-font-size-sm text-highlight ms-1"
+                      >*</span
+                    >
+                    <span class="contrib-font-size-xs text-highlight ms-auto"
+                      >必填</span
+                    >
+                  </p>
+                  <div class="input-group">
+                    <div class="input-group-text neutral-800 bg-neutral-100">
+                      NT$
+                    </div>
+                    <input
+                      type="text"
+                      class="form-control border-radius contrib-input-heigh"
+                      id="price"
+                      placeholder="請輸入參考價格（NT$新台幣）"
+                    />
+                  </div>
+                </div>
+              </label>
             </div>
             <div class="mb-8 d-flex">
               <div class="me-6 w-100">
                 <p class="px-2 d-flex mb-2">
                   <span class="contrib-font-size-sm neutral-900">產地</span>
-                  <span class="contrib-font-size-sm contrib-highlight ms-1"
+                  <span class="contrib-font-size-sm text-highlight ms-1"
                     >*</span
                   >
-                  <span class="contrib-font-size-xs contrib-highlight ms-auto"
+                  <span class="contrib-font-size-xs text-highlight ms-auto"
                     >必填</span
                   >
                 </p>
@@ -184,28 +194,30 @@
                   </select>
                 </div>
               </div>
-              <div class="w-100">
-                <p class="px-2 d-flex mb-2">
-                  <span class="contrib-font-size-sm neutral-900">重量</span>
-                  <span class="contrib-font-size-sm contrib-highlight ms-1"
-                    >*</span
-                  >
-                  <span class="contrib-font-size-xs contrib-highlight ms-auto"
-                    >必填</span
-                  >
-                </p>
-                <div class="input-group">
-                  <input
-                    type="text"
-                    class="form-control border-radius contrib-input-heigh"
-                    id="price"
-                    placeholder="請輸入食品重量"
-                  />
-                  <div class="input-group-text neutral-800 bg-neutral-100">
-                    g
+              <label for="foodWeight" class="w-100">
+                <div>
+                  <p class="px-2 d-flex mb-2">
+                    <span class="contrib-font-size-sm neutral-900">重量</span>
+                    <span class="contrib-font-size-sm text-highlight ms-1"
+                      >*</span
+                    >
+                    <span class="contrib-font-size-xs text-highlight ms-auto"
+                      >必填</span
+                    >
+                  </p>
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      class="form-control border-radius contrib-input-heigh"
+                      id="foodWeight"
+                      placeholder="請輸入食品重量"
+                    />
+                    <div class="input-group-text neutral-800 bg-neutral-100">
+                      g
+                    </div>
                   </div>
                 </div>
-              </div>
+              </label>
             </div>
           </div>
           <!-- 2. 成分描述 -->
@@ -216,39 +228,43 @@
               <h3 class="me-3 neutral-900">2. 成分描述</h3>
               <p>
                 <span class="neutral-600">(</span>
-                <span class="contrib-highlight">*</span>
+                <span class="text-highlight">*</span>
                 <span class="neutral-600">為必填欄位)</span>
               </p>
             </div>
             <div class="mb-8 d-flex">
-              <div class="me-6 w-100">
-                <p class="px-2 d-flex mb-2">
-                  <span class="contrib-font-size-sm neutral-900">口味種類</span>
-                  <span class="contrib-font-size-sm contrib-highlight ms-1"
-                    >*</span
-                  >
-                  <span class="contrib-font-size-xs contrib-highlight ms-auto"
-                    >必填</span
-                  >
-                </p>
+              <label for="flavor" class="w-100 me-6">
                 <div>
-                  <input
-                    type="text"
-                    class="form-control border-radius contrib-input-heigh"
-                    id="brandName"
-                    placeholder="請輸入口味種類（例如：雞肉）"
-                  />
+                  <p class="px-2 d-flex mb-2">
+                    <span class="contrib-font-size-sm neutral-900"
+                      >口味種類</span
+                    >
+                    <span class="contrib-font-size-sm text-highlight ms-1"
+                      >*</span
+                    >
+                    <span class="contrib-font-size-xs text-highlight ms-auto"
+                      >必填</span
+                    >
+                  </p>
+                  <div>
+                    <input
+                      type="text"
+                      class="form-control border-radius contrib-input-heigh"
+                      id="flavor"
+                      placeholder="請輸入口味種類（例如：雞肉）"
+                    />
+                  </div>
                 </div>
-              </div>
+              </label>
               <div class="w-100">
                 <p class="px-2 d-flex mb-2">
                   <span class="contrib-font-size-sm neutral-900"
                     >內容物類型</span
                   >
-                  <span class="contrib-font-size-sm contrib-highlight ms-1"
+                  <span class="contrib-font-size-sm text-highlight ms-1"
                     >*</span
                   >
-                  <span class="contrib-font-size-xs contrib-highlight ms-auto"
+                  <span class="contrib-font-size-xs text-highlight ms-auto"
                     >必填</span
                   >
                 </p>
@@ -272,10 +288,10 @@
               <div class="me-6 w-100">
                 <p class="px-2 d-flex mb-2">
                   <span class="contrib-font-size-sm neutral-900">特殊配方</span>
-                  <span class="contrib-font-size-sm contrib-highlight ms-1"
+                  <span class="contrib-font-size-sm text-highlight ms-1"
                     >*</span
                   >
-                  <span class="contrib-font-size-xs contrib-highlight ms-auto"
+                  <span class="contrib-font-size-xs text-highlight ms-auto"
                     >必填</span
                   >
                 </p>
@@ -299,10 +315,10 @@
               <div class="w-100">
                 <p class="px-2 d-flex mb-2">
                   <span class="contrib-font-size-sm neutral-900">適合年齡</span>
-                  <span class="contrib-font-size-sm contrib-highlight ms-1"
+                  <span class="contrib-font-size-sm text-highlight ms-1"
                     >*</span
                   >
-                  <span class="contrib-font-size-xs contrib-highlight ms-auto"
+                  <span class="contrib-font-size-xs text-highlight ms-auto"
                     >必填</span
                   >
                 </p>
@@ -329,273 +345,454 @@
               <h3 class="me-3 neutral-900">3. 成分資訊</h3>
               <p>
                 <span class="neutral-600">(</span>
-                <span class="contrib-highlight">*</span>
+                <span class="text-highlight">*</span>
                 <span class="neutral-600">為必填欄位)</span>
               </p>
             </div>
             <div class="mb-8 d-flex">
-              <div class="me-6 w-100">
-                <p class="px-2 d-flex mb-2">
-                  <span class="contrib-font-size-sm neutral-900">水分比例</span>
-                  <span class="contrib-font-size-sm contrib-highlight ms-1"
-                    >*</span
-                  >
-                  <span class="contrib-font-size-xs contrib-highlight ms-auto"
-                    >必填</span
-                  >
-                </p>
-                <div class="input-group">
-                  <input
-                    type="text"
-                    class="form-control border-radius contrib-input-heigh"
-                    id="price"
-                    placeholder="請輸入水分比例"
-                  />
-                  <div class="input-group-text neutral-800 bg-neutral-100">
-                    %
+              <label for="water%" class="me-6 w-100">
+                <div>
+                  <p class="px-2 d-flex mb-2">
+                    <span class="contrib-font-size-sm neutral-900"
+                      >水分比例</span
+                    >
+                    <span class="contrib-font-size-sm text-highlight ms-1"
+                      >*</span
+                    >
+                    <span class="contrib-font-size-xs text-highlight ms-auto"
+                      >必填</span
+                    >
+                  </p>
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      class="form-control border-radius contrib-input-heigh"
+                      id="water%"
+                      placeholder="請輸入水分比例"
+                    />
+                    <div class="input-group-text neutral-800 bg-neutral-100">
+                      %
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="w-100">
-                <p class="px-2 d-flex mb-2">
-                  <span class="contrib-font-size-sm neutral-900">水分重量</span>
-                  <span class="contrib-font-size-xs neutral-600 ms-auto"
-                    >選填</span
-                  >
-                </p>
-                <div class="input-group">
-                  <input
-                    type="text"
-                    class="form-control border-radius contrib-input-heigh"
-                    id="price"
-                    placeholder="請輸入水分重量"
-                  />
-                  <div class="input-group-text neutral-800 bg-neutral-100">
-                    g/100g
+              </label>
+              <label for="waterWeight" class="w-100">
+                <div>
+                  <p class="px-2 d-flex mb-2">
+                    <span class="contrib-font-size-sm neutral-900"
+                      >水分重量</span
+                    >
+                    <span class="contrib-font-size-xs neutral-600 ms-auto"
+                      >選填</span
+                    >
+                  </p>
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      class="form-control border-radius contrib-input-heigh"
+                      id="waterWeight"
+                      placeholder="請輸入水分重量"
+                    />
+                    <div class="input-group-text neutral-800 bg-neutral-100">
+                      g/100g
+                    </div>
                   </div>
                 </div>
-              </div>
+              </label>
             </div>
             <div class="mb-8 d-flex">
-              <div class="me-6 w-100">
-                <p class="px-2 d-flex mb-2">
-                  <span class="contrib-font-size-sm neutral-900">脂肪比例</span>
-                  <span class="contrib-font-size-sm contrib-highlight ms-1"
-                    >*</span
-                  >
-                  <span class="contrib-font-size-xs contrib-highlight ms-auto"
-                    >必填</span
-                  >
-                </p>
-                <div class="input-group">
-                  <input
-                    type="text"
-                    class="form-control border-radius contrib-input-heigh"
-                    id="price"
-                    placeholder="請輸入脂肪比例"
-                  />
-                  <div class="input-group-text neutral-800 bg-neutral-100">
-                    %
+              <label for="fat%" class="me-6 w-100">
+                <div>
+                  <p class="px-2 d-flex mb-2">
+                    <span class="contrib-font-size-sm neutral-900"
+                      >脂肪比例</span
+                    >
+                    <span class="contrib-font-size-sm text-highlight ms-1"
+                      >*</span
+                    >
+                    <span class="contrib-font-size-xs text-highlight ms-auto"
+                      >必填</span
+                    >
+                  </p>
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      class="form-control border-radius contrib-input-heigh"
+                      id="fat%"
+                      placeholder="請輸入脂肪比例"
+                    />
+                    <div class="input-group-text neutral-800 bg-neutral-100">
+                      %
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="w-100">
-                <p class="px-2 d-flex mb-2">
-                  <span class="contrib-font-size-sm neutral-900">脂肪重量</span>
-                  <span class="contrib-font-size-xs neutral-600 ms-auto"
-                    >選填</span
-                  >
-                </p>
-                <div class="input-group">
-                  <input
-                    type="text"
-                    class="form-control border-radius contrib-input-heigh"
-                    id="price"
-                    placeholder="請輸入脂肪重量"
-                  />
-                  <div class="input-group-text neutral-800 bg-neutral-100">
-                    g/100g
+              </label>
+              <label for="fatWeight" class="w-100">
+                <div>
+                  <p class="px-2 d-flex mb-2">
+                    <span class="contrib-font-size-sm neutral-900"
+                      >脂肪重量</span
+                    >
+                    <span class="contrib-font-size-xs neutral-600 ms-auto"
+                      >選填</span
+                    >
+                  </p>
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      class="form-control border-radius contrib-input-heigh"
+                      id="fatWeight"
+                      placeholder="請輸入脂肪重量"
+                    />
+                    <div class="input-group-text neutral-800 bg-neutral-100">
+                      g/100g
+                    </div>
                   </div>
                 </div>
-              </div>
+              </label>
             </div>
             <div class="mb-8 d-flex">
-              <div class="me-6 w-100">
-                <p class="px-2 d-flex mb-2">
-                  <span class="contrib-font-size-sm neutral-900"
-                    >蛋白質比例</span
-                  >
-                  <span class="contrib-font-size-sm contrib-highlight ms-1"
-                    >*</span
-                  >
-                  <span class="contrib-font-size-xs contrib-highlight ms-auto"
-                    >必填</span
-                  >
-                </p>
-                <div class="input-group">
-                  <input
-                    type="text"
-                    class="form-control border-radius contrib-input-heigh"
-                    id="price"
-                    placeholder="請輸入蛋白質比例"
-                  />
-                  <div class="input-group-text neutral-800 bg-neutral-100">
-                    %
+              <label for="protein%" class="me-6 w-100">
+                <div>
+                  <p class="px-2 d-flex mb-2">
+                    <span class="contrib-font-size-sm neutral-900"
+                      >蛋白質比例</span
+                    >
+                    <span class="contrib-font-size-sm text-highlight ms-1"
+                      >*</span
+                    >
+                    <span class="contrib-font-size-xs text-highlight ms-auto"
+                      >必填</span
+                    >
+                  </p>
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      class="form-control border-radius contrib-input-heigh"
+                      id="protein%"
+                      placeholder="請輸入蛋白質比例"
+                    />
+                    <div class="input-group-text neutral-800 bg-neutral-100">
+                      %
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="w-100">
-                <p class="px-2 d-flex mb-2">
-                  <span class="contrib-font-size-sm neutral-900"
-                    >蛋白質重量</span
-                  >
-                  <span class="contrib-font-size-xs neutral-600 ms-auto"
-                    >選填</span
-                  >
-                </p>
-                <div class="input-group">
-                  <input
-                    type="text"
-                    class="form-control border-radius contrib-input-heigh"
-                    id="price"
-                    placeholder="請輸入蛋白質重量"
-                  />
-                  <div class="input-group-text neutral-800 bg-neutral-100">
-                    g/100g
+              </label>
+              <label for="proteinWeight" class="w-100">
+                <div>
+                  <p class="px-2 d-flex mb-2">
+                    <span class="contrib-font-size-sm neutral-900"
+                      >蛋白質重量</span
+                    >
+                    <span class="contrib-font-size-xs neutral-600 ms-auto"
+                      >選填</span
+                    >
+                  </p>
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      class="form-control border-radius contrib-input-heigh"
+                      id="proteinWeight"
+                      placeholder="請輸入蛋白質重量"
+                    />
+                    <div class="input-group-text neutral-800 bg-neutral-100">
+                      g/100g
+                    </div>
                   </div>
                 </div>
-              </div>
+              </label>
             </div>
             <div class="mb-8 d-flex">
-              <div class="me-6 w-100">
-                <p class="px-2 d-flex mb-2">
-                  <span class="contrib-font-size-sm neutral-900">熱量</span>
-                  <span class="contrib-font-size-sm contrib-highlight ms-1"
-                    >*</span
-                  >
-                  <span class="contrib-font-size-xs contrib-highlight ms-auto"
-                    >必填</span
-                  >
-                </p>
-                <div class="input-group">
-                  <input
-                    type="text"
-                    class="form-control border-radius contrib-input-heigh"
-                    id="price"
-                    placeholder="請輸入熱量"
-                  />
-                  <div class="input-group-text neutral-800 bg-neutral-100">
-                    cal/kg
+              <label for="calories" class="me-6 w-100">
+                <div>
+                  <p class="px-2 d-flex mb-2">
+                    <span class="contrib-font-size-sm neutral-900">熱量</span>
+                    <span class="contrib-font-size-sm text-highlight ms-1"
+                      >*</span
+                    >
+                    <span class="contrib-font-size-xs text-highlight ms-auto"
+                      >必填</span
+                    >
+                  </p>
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      class="form-control border-radius contrib-input-heigh"
+                      id="calories"
+                      placeholder="請輸入熱量"
+                    />
+                    <div class="input-group-text neutral-800 bg-neutral-100">
+                      cal/kg
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="w-100">
-                <p class="px-2 d-flex mb-2">
-                  <span class="contrib-font-size-sm neutral-900"
-                    >可能過敏原成分</span
-                  >
-                  <span class="contrib-font-size-xs neutral-600 ms-auto"
-                    >選填</span
-                  >
-                </p>
-                <div class="input-group">
-                  <input
-                    type="text"
-                    class="form-control border-radius contrib-input-heigh"
-                    id="price"
-                    placeholder="請輸入可能過敏原成分（例如：大豆）"
-                  />
+              </label>
+              <label for="allergens" class="w-100">
+                <div>
+                  <p class="px-2 d-flex mb-2">
+                    <span class="contrib-font-size-sm neutral-900"
+                      >可能過敏原成分</span
+                    >
+                    <span class="contrib-font-size-xs neutral-600 ms-auto"
+                      >選填</span
+                    >
+                  </p>
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      class="form-control border-radius contrib-input-heigh"
+                      id="allergens"
+                      placeholder="請輸入可能過敏原成分（例如：大豆）"
+                    />
+                  </div>
                 </div>
-              </div>
+              </label>
             </div>
             <div class="mb-8 d-flex">
-              <div class="me-6 w-100">
-                <p class="px-2 d-flex mb-2">
-                  <span class="contrib-font-size-sm neutral-900"
-                    >碳水化合物比例</span
-                  >
-                  <span class="contrib-font-size-xs neutral-600 ms-auto"
-                    >選填</span
-                  >
-                </p>
-                <div class="input-group">
-                  <input
-                    type="text"
-                    class="form-control border-radius contrib-input-heigh"
-                    id="price"
-                    placeholder="請輸入碳水化合物比例"
-                  />
-                  <div class="input-group-text neutral-800 bg-neutral-100">
-                    %
+              <label for="carbohydrate%" class="me-6 w-100">
+                <div>
+                  <p class="px-2 d-flex mb-2">
+                    <span class="contrib-font-size-sm neutral-900"
+                      >碳水化合物比例</span
+                    >
+                    <span class="contrib-font-size-xs neutral-600 ms-auto"
+                      >選填</span
+                    >
+                  </p>
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      class="form-control border-radius contrib-input-heigh"
+                      id="price"
+                      placeholder="請輸入碳水化合物比例"
+                    />
+                    <div class="input-group-text neutral-800 bg-neutral-100">
+                      %
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="w-100">
-                <p class="px-2 d-flex mb-2">
-                  <span class="contrib-font-size-sm neutral-900"
-                    >碳水化合物重量</span
-                  >
-                  <span class="contrib-font-size-xs neutral-600 ms-auto"
-                    >選填</span
-                  >
-                </p>
-                <div class="input-group">
-                  <input
-                    type="text"
-                    class="form-control border-radius contrib-input-heigh"
-                    id="price"
-                    placeholder="請輸入碳水化合物重量"
-                  />
-                  <div class="input-group-text neutral-800 bg-neutral-100">
-                    g/100g
+              </label>
+              <label for="carbohydrateWeight" class="w-100">
+                <div>
+                  <p class="px-2 d-flex mb-2">
+                    <span class="contrib-font-size-sm neutral-900"
+                      >碳水化合物重量</span
+                    >
+                    <span class="contrib-font-size-xs neutral-600 ms-auto"
+                      >選填</span
+                    >
+                  </p>
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      class="form-control border-radius contrib-input-heigh"
+                      id="price"
+                      placeholder="請輸入碳水化合物重量"
+                    />
+                    <div class="input-group-text neutral-800 bg-neutral-100">
+                      g/100g
+                    </div>
                   </div>
                 </div>
-              </div>
+              </label>
             </div>
             <div class="mb-8 d-flex pb-8 border-bottom border-secondary-300">
               <div class="me-6 w-100">
                 <p class="px-2 d-flex mb-2">
                   <span class="contrib-font-size-sm neutral-900">含膠與否</span>
-                  <span class="contrib-font-size-sm contrib-highlight ms-1"
+                  <span class="contrib-font-size-sm text-highlight ms-1"
                     >*</span
                   >
-                  <span class="contrib-font-size-xs contrib-highlight ms-auto"
+                  <span class="contrib-font-size-xs text-highlight ms-auto"
                     >必填</span
                   >
                 </p>
                 <div class="d-flex">
-                  <div class="w-50 me-4">
-                    <div
-                      class="form-check form-control border-radius contrib-input-heigh"
-                    >
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="flexRadioForLoaf"
-                        id="withLoaf"
-                      />
-                      <label class="form-check-label" for="withLoaf">
-                        是
-                      </label>
+                  <label for="withLoaf" class="w-50 me-4">
+                    <div>
+                      <div
+                        class="form-check form-control border-radius contrib-input-heigh"
+                      >
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="flexRadioForLoaf"
+                          id="withLoaf"
+                        />
+                        <label class="form-check-label" for="withLoaf">
+                          是
+                        </label>
+                      </div>
                     </div>
-                  </div>
-                  <div class="w-50">
-                    <div
-                      class="form-check form-control border-radius contrib-input-heigh"
-                    >
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="flexRadioForLoaf"
-                        id="withoutLoaf"
-                        checked
-                      />
-                      <label class="form-check-label" for="withoutLoaf">
-                        否
-                      </label>
+                  </label>
+                  <label for="withoutLoaf" class="w-50">
+                    <div>
+                      <div
+                        class="form-check form-control border-radius contrib-input-heigh"
+                      >
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="flexRadioForLoaf"
+                          id="withoutLoaf"
+                          checked
+                        />
+                        <label class="form-check-label" for="withoutLoaf">
+                          否
+                        </label>
+                      </div>
                     </div>
-                  </div>
+                  </label>
                 </div>
+              </div>
+              <div class="w-100"></div>
+            </div>
+            <div id="extra-container">
+              <div class="mb-8 d-flex">
+                <label for="extraName" class="me-6 w-100">
+                  <div>
+                    <p class="px-2 d-flex mb-2">
+                      <span class="contrib-font-size-sm neutral-900"
+                        >額外成分名稱</span
+                      >
+                      <span class="contrib-font-size-sm text-highlight ms-1"
+                        >*</span
+                      >
+                      <span class="contrib-font-size-xs text-highlight ms-auto"
+                        >必填</span
+                      >
+                    </p>
+                    <div>
+                      <input
+                        type="text"
+                        class="form-control border-radius contrib-input-heigh"
+                        id="extraName"
+                        placeholder="請輸入額外成分（例：牛磺酸）"
+                      />
+                    </div>
+                  </div>
+                </label>
+                <div class="w-100 d-flex align-items-end">
+                  <label for="extra%" class="w-100 me-6">
+                    <p class="px-2 d-flex mb-2">
+                      <span class="contrib-font-size-sm neutral-900"
+                        >額外成分比例</span
+                      >
+                      <span class="contrib-font-size-xs neutral-600 ms-auto"
+                        >選填</span
+                      >
+                    </p>
+                    <div class="input-group">
+                      <input
+                        type="text"
+                        class="form-control border-radius contrib-input-heigh"
+                        id="extra%"
+                        placeholder="請輸入額外成分比例"
+                      />
+                      <div class="input-group-text neutral-800 bg-neutral-100">
+                        %
+                      </div>
+                    </div>
+                  </label>
+                  <button
+                    type="button"
+                    class="btn contrib-delete-btn bg-white border-radius"
+                  >
+                    <img src="../assets/images/contrib/trash.png" alt="trash" />
+                  </button>
+                </div>
+              </div>
+              <div>
+                <button
+                  id="addExtraBtn"
+                  type="button"
+                  class="btn bg-none border-none"
+                >
+                  <img
+                    src="../assets/images/contrib/plus-circle.png"
+                    alt="plus-circle"
+                    class="me-1"
+                  />
+                  <span class="text-secondary-800">新增額外成分</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- 4. 上傳食品圖片 -->
+          <div class="mb-12">
+            <div
+              class="d-flex align-items-baseline pb-8 border-bottom border-secondary-300 mb-8"
+            >
+              <h3 class="me-3 neutral-900">4. 上傳食品圖片</h3>
+              <p>
+                <span class="neutral-600">(</span>
+                <span class="text-highlight">*</span>
+                <span class="neutral-600">為必填欄位)</span>
+              </p>
+            </div>
+            <div class="mb-8 d-flex pb-8 border-bottom border-secondary-300">
+              <div class="me-6 w-100">
+                <p class="px-2 d-flex mb-2">
+                  <span class="contrib-font-size-sm neutral-900"
+                    >上傳外包裝圖片</span
+                  >
+                  <span class="contrib-font-size-sm text-highlight ms-1"
+                    >*</span
+                  >
+                  <span class="contrib-font-size-xs text-highlight ms-auto"
+                    >必填</span
+                  >
+                </p>
+                <label
+                  for="packagingUpload"
+                  class="btn border align-bottom bg-white px-6 py-9"
+                >
+                  <img src="../assets/images/contrib/photo.png" alt="photo" />
+                  <p class="font-weight-bold">將圖片拖曳到此處，或點擊上傳</p>
+                  <p class="contrib-font-size-sm neutral-600">
+                    支援 .jpg .png，上限數量4張，檔案大小不得超過5MB，解析度高於
+                    800*800 px
+                  </p>
+                  <input
+                    type="file"
+                    name="packagingUpload"
+                    id="packagingUpload"
+                    class="d-none"
+                  />
+                </label>
+              </div>
+              <div class="w-100"></div>
+            </div>
+            <div class="mb-8 d-flex pb-8 border-bottom border-secondary-300">
+              <div class="me-6 w-100">
+                <p class="px-2 d-flex mb-2">
+                  <span class="contrib-font-size-sm neutral-900"
+                    >上傳內容物圖片</span
+                  >
+                  <span class="contrib-font-size-sm text-highlight ms-1"
+                    >*</span
+                  >
+                  <span class="contrib-font-size-xs text-highlight ms-auto"
+                    >必填</span
+                  >
+                </p>
+                <label
+                  for="contentsUpload"
+                  class="btn border align-bottom bg-white px-6 py-9"
+                >
+                  <img src="../assets/images/contrib/photo.png" alt="photo" />
+                  <p class="font-weight-bold">將圖片拖曳到此處，或點擊上傳</p>
+                  <p class="contrib-font-size-sm neutral-600">
+                    支援 .jpg .png，上限數量4張，檔案大小不得超過5MB，解析度高於
+                    800*800 px
+                  </p>
+                  <input
+                    type="file"
+                    name="contentsUpload"
+                    id="contentsUpload"
+                    class="d-none"
+                  />
+                </label>
               </div>
               <div class="w-100"></div>
             </div>
