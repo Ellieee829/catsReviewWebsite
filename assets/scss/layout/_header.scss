@@ -1,28 +1,96 @@
-:root {
-  --secondary-300: #DCC9A8;
-  --neutral-600: #787F85;
-}
-// 標題間距
-.me-40 {
-  margin-right: 40px;
-}
-
 .me-72 {
   margin-right: 72px;
 }
 
-.mb-32 {
-  margin-bottom: 32px;
-}
-.my-32 {
-  margin-top: 32px;
-  margin-bottom: 32px;
-}
-.secondary-300 {
-  color: var(--secondary-300);
+.header-navbar-nav {
+  height: calc(100vh - 210px);
+  flex-direction: column;
+  align-items: stretch;
 }
 .goldLine{
   display: block;
   width: 100%;
 }
 
+.header-pet {
+  color: $secondary-300;
+
+  &:hover {
+    color: $primary-800;
+  }
+}
+
+.header-log {
+  border-top: 1px solid $neutral-400;
+  color: $neutral-700;
+  &:hover {
+    color: $primary-800;
+  }
+  &:hover .header-pet {
+    color: $primary-800;
+  }
+}
+
+/* 頂部固定區域（logo + 漢堡按鈕） */
+.header-liner {
+  height: 4px;
+  background: linear-gradient(
+    to right,
+    rgba(118, 81, 68, 1) 0%,
+    rgba(133, 99, 85, 1) 12%,
+    rgba(172, 147, 130, 1) 23%,
+    rgba(235, 224, 202, 1) 36%,
+    rgba(237, 226, 204, 1) 50%,
+    rgba(235, 224, 202, 1) 64%,
+    rgba(172, 147, 130, 1) 76%,
+    rgba(133, 99, 85, 1) 88%,
+    rgba(118, 81, 68, 1) 100%
+  );
+}
+
+.header-food-btn,
+.header-knowledge-btn,
+.header-post-btn {
+  margin: 0 auto;
+  width: 24px;
+  height: 24px;
+  transition: background-image;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("../images/decoration.png");
+
+  &:hover {
+    background-image: url("../images/decoration_hover.png");
+  }
+}
+
+.nav-link:hover .header-food-btn {
+  background-image: url("../images/decoration_hover.png");
+}
+
+.nav-link:hover .header-knowledge-btn {
+  background-image: url("../images/decoration_hover.png");
+}
+
+.nav-link:hover .header-post-btn {
+  background-image: url("../images/decoration_hover.png");
+}
+
+.header-navbar-nav .nav-link {
+  color: $neutral-700;
+  &:hover {
+    color: $primary-800;
+  }
+}
+
+@media (min-width: 992px) {
+  .header-navbar-nav {
+    height: unset;
+    flex-direction: row;
+    align-items: unset;
+  }
+  .header-log {
+    border-top: none;
+  }
+}
