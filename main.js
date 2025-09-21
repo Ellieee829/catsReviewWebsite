@@ -1,6 +1,6 @@
 import "./assets/scss/all.scss";
 
-/* popover 跳出式視窗初始化 */
+/* 所有頁面:popover跳出式視窗初始化 */
 document.addEventListener("DOMContentLoaded", () => {
   const popoverTriggerList = document.querySelectorAll(
     '[data-bs-toggle="popover"]'
@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
   );
 });
 
-/* contrib投稿頁面 動態表單欄位新增&刪除功能 */
+/* contrib投稿頁面:動態表單欄位新增&刪除功能 */
 const addBtn = document.getElementById("addExtraBtn");
 const container = document.getElementById("extra-container");
 
@@ -74,6 +74,36 @@ document.querySelectorAll(".contrib-delete-btn").forEach((btn) => {
   btn.addEventListener("click", (e) => {
     e.target.closest(".extra-item").remove();
   });
+});
+
+/* contrib投稿頁面:刊登規範審核機制 */
+const agreeCheckbox = document.getElementById("agreeCheckbox");
+const publicationSpeciModal = document.getElementById("publicationSpeci");
+const publicationSpeciForm = document.getElementById("publicationSpeciForm");
+
+// 初始 checkbox 禁用
+agreeCheckbox.disabled = true;
+
+// 追蹤是否已經看過 modal
+let hasViewedModal = false;
+
+// 點擊表單區塊
+publicationSpeciForm.addEventListener("click", (e) => {
+  // 如果 checkbox 已經解鎖，允許正常勾選
+  if (hasViewedModal) return;
+
+  // 阻止 checkbox 被直接勾選
+  e.preventDefault();
+
+  // 使用 Bootstrap JS 打開 modal
+  const modal = new bootstrap.Modal(publicationSpeciModal);
+  modal.show();
+});
+
+// 當 modal 關閉後，允許勾選 checkbox
+publicationSpeciModal.addEventListener("hidden.bs.modal", () => {
+  agreeCheckbox.disabled = false;
+  hasViewedModal = true; // 標記已經看過 modal
 });
 
 console.log("Hello world");
