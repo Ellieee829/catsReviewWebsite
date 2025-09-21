@@ -67,3 +67,9 @@
 .font-weight-bold{
     font-weight: 700;
 }
+.contrib-tab-pane {
+  display: none;
+}
+.contrib-tab-pane.active {
+  display: block;
+}
