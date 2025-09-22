@@ -23,8 +23,7 @@ addBtn.addEventListener("click", () => {
         <div>
           <p class="px-2 d-flex mb-2">
             <span class="contrib-font-size-sm neutral-900">額外成分名稱</span>
-            <span class="contrib-font-size-sm text-highlight ms-1">*</span>
-            <span class="contrib-font-size-xs text-highlight ms-auto">必填</span>
+            <span class="contrib-font-size-xs neutral-600 ms-auto">選填</span>
           </p>
           <div>
             <input
@@ -105,5 +104,29 @@ publicationSpeciModal.addEventListener("hidden.bs.modal", () => {
   agreeCheckbox.disabled = false;
   hasViewedModal = true; // 標記已經看過 modal
 });
+
+/* 驗證提示 */
+(function () {
+  "use strict";
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll(".needs-validation");
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms).forEach(function (form) {
+    form.addEventListener(
+      "submit",
+      function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+
+        form.classList.add("was-validated");
+      },
+      false
+    );
+  });
+})();
 
 console.log("Hello world");
