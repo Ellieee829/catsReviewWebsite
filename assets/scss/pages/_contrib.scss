@@ -1,8 +1,47 @@
 .contrib-side-menu{
-    width: 312px;
-    padding: 36px 16px;
-    border: 1px solid #DEE2E6;
-    box-shadow: 2px 4px 8px rgba(184, 150, 104, 0.5);
+  width: 312px;
+  padding: 36px 16px;
+  border: 1px solid #DEE2E6;
+  box-shadow: 2px 4px 8px rgba(184, 150, 104, 0.5);
+  ul{
+    width: 280px;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+  }
+  li{
+    &:hover {
+      background-color: $secondary-200;
+    }
+  }
+  .nav-link{
+    color: $neutral-600;
+  }
+}
+.nav-link.active {
+  background-color: $secondary-100;;
+  color: $neutral-900;
+}
+#food-tab .tab-icon{
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url("/assets/images/contrib/fish.png");
+  background-size: contain;
+}
+#food-tab.active .tab-icon {
+  background-image: url("/assets/images/contrib/fish_hover.png");
+}
+#column-tab .tab-icon{
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url("/assets/images/contrib/newspaper.png");
+  background-size: contain;
+}
+#column-tab.active .tab-icon {
+  background-image: url("/assets/images/contrib/newspaper_hover.png");
 }
 .contrib-position-relative{
     position: relative;
@@ -17,10 +56,6 @@
     width: 20px;
     height: 20px;
     cursor: pointer;
-}
-.contrib-vectorImg{
-    width: 24px;
-    height: 24px;
 }
 .contrib-tab-content{
     width: calc(100% - 312px);
@@ -45,6 +80,14 @@
   padding-left: 40px;
   gap: 8px;
 }
+.radio{
+  &:hover{
+    background-color: $secondary-300;
+  }
+  &:active{
+    background-color: $secondary-500;
+  }
+}
 .form-check-input {
   width: 20px;
   height: 20px;
@@ -53,16 +96,52 @@
 .form-check-label {
   margin-top: 0.25rem;
 }
-.contrib-delete-btn {
+.contrib-delete-area{
   width: 52px;
   height: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
+  img {
+    width: 28px;
+    height: auto;
+  }
 }
-.contrib-delete-btn img {
-  width: 28px;
-  height: auto;
+.contrib-delete-btn{
+  background-color: white;
+  &:hover{
+    background-color: $secondary-100;
+    border: 1px solid $secondary-500;
+  }
+}
+.contrib-add-btn{
+  background-color: none;
+  &:hover{
+    border: 1px solid $secondary-500;
+  }
+}
+.contrib-add-img-btn{
+  background-color: white;
+  border: 2px dashed $neutral-100;
+  &:hover{
+    background-color: $neutral-100;
+    border: 2px dashed $neutral-500;
+  }
+}
+.publicationSpeci{
+  background-color: white;
+  border: 1px solid $neutral-300;
+  &:hover{
+    background-color: $secondary-100;
+    border: 1px solid $secondary-500;
+  }
+}
+.contrib-submit-btn{
+  background-color: $primary-500;
+  &:hover{
+    background-color: $primary-800;
+    border: 1px solid $neutral-900;
+  }
 }
 .font-weight-bold{
     font-weight: 700;

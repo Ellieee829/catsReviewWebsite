@@ -52,7 +52,7 @@ addBtn.addEventListener("click", () => {
         </label>
         <button
           type="button"
-          class="btn contrib-delete-btn bg-white border-radius"
+          class="btn contrib-delete-area contrib-delete-btn border-radius"
         >
           <img src="../assets/images/contrib/trash.png" alt="trash" />
         </button>

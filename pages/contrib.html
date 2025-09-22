@@ -32,37 +32,35 @@
           role="tablist"
         >
           <!-- 食品投稿按鍵 -->
-          <li class="nav-item w-100 bg-secondary-100">
+          <li class="nav-item w-100" role="presentation">
             <button
-              class="nav-link active p-3"
+              class="nav-link active p-3 w-100 text-start d-flex align-center"
               id="food-tab"
               data-bs-toggle="tab"
               data-bs-target="#food"
               type="button"
+              role="tab"
+              aria-controls="food"
+              aria-selected="true"
             >
-              <img
-                class="me-3"
-                src="../assets/images/contrib/fish.png"
-                alt="fish"
-              />
-              食品投稿
+              <span class="me-3 tab-icon"></span>
+              <span>食品投稿</span>
             </button>
           </li>
           <!-- 專欄投稿按鍵 -->
-          <li class="nav-item w-100">
+          <li class="nav-item w-100" role="presentation">
             <button
-              class="nav-link p-3"
+              class="nav-link p-3 w-100 text-start d-flex align-center"
               id="column-tab"
               data-bs-toggle="tab"
               data-bs-target="#column"
               type="button"
+              role="tab"
+              aria-controls="column"
+              aria-selected="false"
             >
-              <img
-                class="contrib-vectorImg me-3"
-                src="../assets/images/contrib/Vector.png"
-                alt="Vector"
-              />
-              專欄投稿
+              <span class="me-3 tab-icon"></span>
+              <span>專欄投稿</span>
             </button>
           </li>
         </ul>
@@ -613,7 +611,7 @@
                   <label for="withLoaf" class="w-50 me-4">
                     <div>
                       <div
-                        class="form-check form-control border-radius contrib-input-heigh"
+                        class="form-check form-control border-radius contrib-input-heigh radio"
                       >
                         <input
                           class="form-check-input"
@@ -630,7 +628,7 @@
                   <label for="withoutLoaf" class="w-50">
                     <div>
                       <div
-                        class="form-check form-control border-radius contrib-input-heigh"
+                        class="form-check form-control border-radius contrib-input-heigh radio"
                       >
                         <input
                           class="form-check-input"
@@ -698,7 +696,7 @@
                   </label>
                   <button
                     type="button"
-                    class="btn contrib-delete-btn bg-white border-radius"
+                    class="btn contrib-delete-area contrib-delete-btn border-radius"
                   >
                     <img src="../assets/images/contrib/trash.png" alt="trash" />
                   </button>
@@ -708,7 +706,7 @@
                 <button
                   id="addExtraBtn"
                   type="button"
-                  class="btn bg-none border-none"
+                  class="btn border-none contrib-add-btn"
                 >
                   <img
                     src="../assets/images/contrib/plus-circle.png"
@@ -748,7 +746,7 @@
                   </p>
                   <label
                     for="packagingUpload"
-                    class="btn border align-bottom bg-white px-6 py-9 w-100"
+                    class="btn align-bottom px-6 py-9 w-100 contrib-add-img-btn"
                   >
                     <img src="../assets/images/contrib/photo.png" alt="photo" />
                     <p class="font-weight-bold">將圖片拖曳到此處，或點擊上傳</p>
@@ -769,7 +767,10 @@
                 <div class="w-100"></div>
               </div>
               <div>
-                <label for="addPackagingImg" class="btn bg-none border-none">
+                <label
+                  for="addPackagingImg"
+                  class="btn bg-none border-none contrib-add-btn"
+                >
                   <img
                     src="../assets/images/contrib/plus-circle.png"
                     alt="plus-circle"
@@ -803,7 +804,7 @@
                   </p>
                   <label
                     for="contentsUpload"
-                    class="btn border align-bottom bg-white px-6 py-9 w-100"
+                    class="btn align-bottom contrib-add-img-btn px-6 py-9 w-100"
                   >
                     <img src="../assets/images/contrib/photo.png" alt="photo" />
                     <p class="font-weight-bold">將圖片拖曳到此處，或點擊上傳</p>
@@ -824,7 +825,10 @@
                 <div class="w-100"></div>
               </div>
               <div>
-                <label for="addContentsImg" class="btn bg-none border-none">
+                <label
+                  for="addContentsImg"
+                  class="btn bg-none border-none contrib-add-btn"
+                >
                   <img
                     src="../assets/images/contrib/plus-circle.png"
                     alt="plus-circle"
@@ -856,7 +860,7 @@
               </p>
             </div>
             <form id="publicationSpeciForm">
-              <label class="btn border align-center bg-white px-3 py-2">
+              <label class="btn align-center publicationSpeci px-3 py-2">
                 <input type="checkbox" id="agreeCheckbox" disabled />
                 我已閱讀並同意平台審核且遵守
                 <a
@@ -996,7 +1000,7 @@
           <!-- 6. 提交&清除表單欄位 -->
           <div class="d-flex">
             <button
-              class="btn btn-border bg-white ms-auto d-flex align-items-center px-3"
+              class="btn btn-border contrib-delete-btn ms-auto d-flex align-items-center px-3"
             >
               <img
                 class="me-2"
@@ -1006,7 +1010,7 @@
               <span class="text-neutral-700">清除重填</span>
             </button>
             <button
-              class="btn btn-border bg-primary-500 ms-4 d-flex align-items-center px-12"
+              class="btn btn-border contrib-submit-btn ms-4 d-flex align-items-center px-12"
             >
               <img
                 class="me-2"
