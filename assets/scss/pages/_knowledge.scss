@@ -1,0 +1,26 @@
+.knowledge-banner {
+  background-image: url("/assets/images/knowledge/knowBanner.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding-top: 266px;
+  padding-bottom: 266px;
+}
+
+.knowledge-card {
+  width: 290px;
+}
+
+.truncate-multi {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.knowledge-tag {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
