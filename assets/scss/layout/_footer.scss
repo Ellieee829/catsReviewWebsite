@@ -1,11 +1,6 @@
-.neutral-600 {
-  color: var(--neutral-600);
-}
-
-.footer-border-bottom {
-  border-bottom: var(--secondary-300) solid 1px;
-}
-
-.text-sm {
-  font-size: 14px;
+.footer-nav .nav-link {
+  color: $secondary-800;
+  &:hover {
+    color: $primary-800;
+  }
 }

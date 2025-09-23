@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <title>膳食探索</title>
+  </head>
+  <body class="foodmain-body">
+    <%- include('./layout/header'); -%>
+
+    <!-- 標題欄 -->
+    <nav>
+      <div class="index-header mb-12">
+        <div class="food-box">
+          <img class="pb-10 " src="../assets/images/food/section02_decoration.png" alt="food-deco1">
+          <h2 class=" text-center pb-5">膳 食 探 索</h2>
+          <h4 class=" text-center">讓你找到最適合喵皇的膳食</h4>
+        </div>  
+      </div>
+    </nav>
+
+    <!-- 主要內容 -->
+      <div class="container">
+        <div class="row">
+          <!-- 左側導覽 -->
+          <div class="col-3 d-flex ">
+            <nav  style="background-color: white;">
+              <img src="../assets/images/food/Decoration1.png" alt="">
+              
+                <div class="px-6 pt-60  pb-7">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <p class="ms-2 ">搜尋食品</p>
+                    <i class="bi bi-info-circle food-info-icon"></i>
+                  </div>
+                  <div class="food_searchbg">
+                    <div class="navbar navbar-light ">
+                      <div class="container-fluid rounded-pill ">
+                        <form class="d-flex ">
+                          <input class="form-control py-2 food-form" type="search" placeholder="#搜尋食品" aria-label="Search">
+                          <button class="btn food_searchbtn " type="submit"><i class="bi bi-search "></i></button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 口味種類 -->
+                <div class="px-6">
+                  <p class="ms-2 pb-2">口味種類</p>                  
+                  <div class="dropdown pb-7">
+                    <button class="btn rounded-pill food-dropdown  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      口味種類
+                    </button>
+                    <ul class="dropdown-menu food-dropdown-menu">
+                      <li><a class="dropdown-item" href="#">雞肉</a></li>
+                      <li><a class="dropdown-item" href="#">牛肉</a></li>
+                      <li><a class="dropdown-item" href="#">鴨肉</a></li>
+                      <li><a class="dropdown-item" href="#">羊肉</a></li>
+                      <li><a class="dropdown-item" href="#">海鮮</a></li>
+                      <li><a class="dropdown-item" href="#">火雞肉</a></li>
+                      <li><a class="dropdown-item" href="#">鹿肉</a></li>
+                      <li><a class="dropdown-item" href="#">其他</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- 內容物類別 -->
+                <div class="px-6">
+                  <p class="ms-2 pb-2">內容物類別</p>
+                  <div class="dropdown pb-7">
+                    <button class="btn rounded-pill food-dropdown dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      內容物類別
+                    </button>
+                    <ul class="dropdown-menu food-dropdown-menu">
+                      <li><a class="dropdown-item" href="#">泥狀</a></li>
+                      <li><a class="dropdown-item" href="#">肉塊</a></li>
+                      <li><a class="dropdown-item" href="#">膠狀</a></li>
+                      <li><a class="dropdown-item" href="#">湯罐</a></li>
+                      <li><a class="dropdown-item" href="#">乾飼料</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- 特殊配方 -->
+                <div class="px-6">
+                  <p class="ms-2 pb-2">特殊配方</p>
+                  <div class="dropdown pb-7">
+                    <button class="btn rounded-pill food-dropdown dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      特殊配方
+                    </button>
+                    <ul class="dropdown-menu food-dropdown-menu">
+                      <li><a class="dropdown-item" href="#">無</a></li>
+                      <li><a class="dropdown-item" href="#">減重</a></li>
+                      <li><a class="dropdown-item" href="#">腸胃敏感</a></li>
+                      <li><a class="dropdown-item" href="#">泌尿道保健</a></li>
+                      <li><a class="dropdown-item" href="#">強化免疫力</a></li>
+                      <li><a class="dropdown-item" href="#">改善皮膚&毛髮</a></li>
+                      <li><a class="dropdown-item" href="#">骨骼保養</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- 適合年齡 -->
+                <div class="px-6">
+                  <p class="ms-2 pb-2">適合年齡</p>
+                  <div class="dropdown pb-7">
+                    <button class="btn rounded-pill food-dropdown dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      適合年齡
+                    </button>
+                    <ul class="dropdown-menu food-dropdown-menu">
+                      <li><a class="dropdown-item" href="#">幼貓</a></li>
+                      <li><a class="dropdown-item" href="#">成貓</a></li>
+                      <li><a class="dropdown-item" href="#">熟齡貓</a></li>
+                      <li><a class="dropdown-item" href="#">全齡貓</a></li>
+                    </ul>
+                  </div>
+                </div>
+            </nav>
+          </div>
+
+          <!-- 右側食品卡片 -->
+          <div class="col-9 " >
+            <div class="row">
+                <!-- 1 -->
+                <div class="card food-card me-6 mb-10" style="width: 18rem;  ">
+                  <img src="../assets/images/food/food_eximg1.png" class="card-img-1" alt="...">
+                  <div class="card-body ">
+                    <h5 class="card-title">雞+南瓜主食罐</h5>
+                    <p class="card-text">600g  900NT</p>
+                    <p class="card-text">雞肉 | 乾飼料 | 腸胃敏感 | 成貓</p>
+                    <a href="#" class="btn btn-outline-primary mt-2">查看食品內容</a>
+                  </div>
+                </div>
+                <!-- 2 -->
+                <div class="card food-card me-6 mb-10" style="width: 18rem;  ">
+                  <img src="../assets/images/food/food_eximg1.png" class="card-img-1" alt="...">
+                  <div class="card-body ">
+                    <h5 class="card-title">雞+南瓜主食罐</h5>
+                    <p class="card-text">600g  900NT</p>
+                    <p class="card-text">雞肉 | 乾飼料 | 腸胃敏感 | 成貓</p>
+                    <a href="#" class="btn btn-outline-primary mt-2">查看食品內容</a>
+                  </div>
+                </div>
+                <!-- 3 -->
+                <div class="card food-card mb-10" style="width: 18rem;  ">
+                  <img src="../assets/images/food/food_eximg1.png" class="card-img-1" alt="...">
+                  <div class="card-body ">
+                    <h5 class="card-title">雞+南瓜主食罐</h5>
+                    <p class="card-text">600g  900NT</p>
+                    <p class="card-text">雞肉 | 乾飼料 | 腸胃敏感 | 成貓</p>
+                    <a href="#" class="btn btn-outline-primary mt-2">查看食品內容</a>
+                  </div>
+                </div>
+                <!-- 4 -->
+                <div class="card food-card me-6 mb-10" style="width: 18rem;  ">
+                  <img src="../assets/images/food/food_eximg1.png" class="card-img-1" alt="...">
+                  <div class="card-body ">
+                    <h5 class="card-title">雞+南瓜主食罐</h5>
+                    <p class="card-text">600g  900NT</p>
+                    <p class="card-text">雞肉 | 乾飼料 | 腸胃敏感 | 成貓</p>
+                    <a href="#" class="btn btn-outline-primary mt-2">查看食品內容</a>
+                  </div>
+                </div>
+                <!-- 5 -->
+                <div class="card food-card me-6 mb-10" style="width: 18rem;  ">
+                  <img src="../assets/images/food/food_eximg1.png" class="card-img-1" alt="...">
+                  <div class="card-body ">
+                    <h5 class="card-title">雞+南瓜主食罐</h5>
+                    <p class="card-text">600g  900NT</p>
+                    <p class="card-text">雞肉 | 乾飼料 | 腸胃敏感 | 成貓</p>
+                    <a href="#" class="btn btn-outline-primary mt-2">查看食品內容</a>
+                  </div>
+                </div>
+                <!-- 6 -->
+                <div class="card food-card mb-10" style="width: 18rem;  ">
+                  <img src="../assets/images/food/food_eximg1.png" class="card-img-1" alt="...">
+                  <div class="card-body ">
+                    <h5 class="card-title">雞+南瓜主食罐</h5>
+                    <p class="card-text">600g  900NT</p>
+                    <p class="card-text">雞肉 | 乾飼料 | 腸胃敏感 | 成貓</p>
+                    <a href="#" class="btn btn-outline-primary mt-2">查看食品內容</a>
+                  </div>
+                </div>
+                <!-- 7 -->
+                <div class="card food-card me-6 mb-60" style="width: 18rem;  ">
+                  <img src="../assets/images/food/food_eximg1.png" class="card-img-1" alt="...">
+                  <div class="card-body ">
+                    <h5 class="card-title">雞+南瓜主食罐</h5>
+                    <p class="card-text">600g  900NT</p>
+                    <p class="card-text">雞肉 | 乾飼料 | 腸胃敏感 | 成貓</p>
+                    <a href="#" class="btn btn-outline-primary mt-2">查看食品內容</a>
+                  </div>
+                </div>
+                <!-- 8 -->
+                <div class="card food-card me-6 mb-60" style="width: 18rem;  ">
+                  <img src="../assets/images/food/food_eximg1.png" class="card-img-1" alt="...">
+                  <div class="card-body ">
+                    <h5 class="card-title">雞+南瓜主食罐</h5>
+                    <p class="card-text">600g  900NT</p>
+                    <p class="card-text">雞肉 | 乾飼料 | 腸胃敏感 | 成貓</p>
+                    <a href="#" class="btn btn-outline-primary mt-2">查看食品內容</a>
+                  </div>
+                </div>
+                <!-- 9 -->
+                <div class="card food-card mb-60" style="width: 18rem;  ">
+                  <img src="../assets/images/food/food_eximg1.png" class="card-img-1" alt="...">
+                  <div class="card-body ">
+                    <h5 class="card-title">雞+南瓜主食罐</h5>
+                    <p class="card-text">600g  900NT</p>
+                    <p class="card-text">雞肉 | 乾飼料 | 腸胃敏感 | 成貓</p>
+                    <a href="#" class="btn btn-outline-primary mt-2">查看食品內容</a>
+                  </div>
+                </div>
+
+                <!-- pagination -->
+                <ul class="d-flex justify-content-center align-items-center  ">
+                    <li class="me-3 page-item">
+                        <button type="button " class="food-left-btn" disabled>
+                        <i class="bi bi-chevron-left"></i>
+                        </button>
+                    </li>
+                    <li class="me-3 page-item">
+                        <button type="button" class="btn active">
+                        1
+                        </button>
+                    </li>
+                    <li class="me-3 page-item">
+                        <button type="button" class="btn">
+                        2
+                        </button>
+                    </li>
+                    
+                    <li class="me-3 page-item">
+                        ...
+                    </li>
+                    <li class="me-3 page-item">
+                        <button type="button" class="btn">
+                        8
+                        </button>
+                    </li>
+                    <li class="me-3 page-item">
+                        <button type="button" class="btn">
+                        <i class="bi bi-chevron-right"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+          </div>
+          <div class="mt-144"></div>
+        </div>
+      </div>
+      
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
