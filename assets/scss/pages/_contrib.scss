@@ -61,8 +61,10 @@
     width: calc(100% - 312px);
 }
 .contrib-tab-pane{
-    max-width: 1032px;
+    max-width: 912px;
     margin: 0 auto;
+    padding-left: 72px;
+    padding-right: 72px;
 }
 .contrib-font-size-sm{
     font-size: 14px;
