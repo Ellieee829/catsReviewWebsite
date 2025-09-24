@@ -8,6 +8,11 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
       rel="stylesheet"
     />
+    <!-- Quill 樣式 -->
+    <link
+      href="https://cdn.quilljs.com/1.3.6/quill.snow.css"
+      rel="stylesheet"
+    />
     <title>喵皇御膳房</title>
   </head>
   <body>
@@ -1184,64 +1189,28 @@
                   </div>
                 </label>
               </div>
-              <div class="mb-8 d-flex">
-                <div class="me-6 w-100">
+              <div class="mb-8">
+                <label for="columnContent" class="w-100">
                   <p class="px-2 d-flex mb-2">
-                    <span class="contrib-font-size-sm neutral-900">產地</span>
-                    <span class="contrib-font-size-sm text-highlight ms-1"
-                      >*</span
+                    <span class="contrib-font-size-sm neutral-900"
+                      >3. 內文欄位（詳細撰寫專欄內文，可插入圖片）</span
                     >
+                    <span class="contrib-font-size-sm text-highlight">*</span>
                     <span class="contrib-font-size-xs text-highlight ms-auto"
                       >必填</span
                     >
                   </p>
                   <div>
-                    <select
-                      class="form-select border-radius contrib-input-heigh"
-                      aria-label="Default select example"
+                    <input
+                      type="text"
+                      class="form-control border-radius contrib-input-heigh"
+                      id="columnContent"
+                      placeholder="請輸入文章摘要 (總字數不得少於20字，不得多於100字)"
                       required
-                    >
-                      <option value="" selected>請選擇</option>
-                      <option value="Tiawan">台灣</option>
-                      <option value="Canada">加拿大</option>
-                      <option value="France">法國</option>
-                      <option value="Germany">德國</option>
-                      <option value="Thailand">泰國</option>
-                      <option value="Poland">波蘭</option>
-                      <option value="China">中國</option>
-                      <option value="New Zealand">紐西蘭</option>
-                      <option value="Australia">澳洲</option>
-                      <option value="Others">其他</option>
-                    </select>
-                    <p class="invalid-feedback px-2 mt-2">請選擇食品產地</p>
-                  </div>
-                </div>
-                <label for="foodWeight" class="w-100">
-                  <div>
-                    <p class="px-2 d-flex mb-2">
-                      <span class="contrib-font-size-sm neutral-900">重量</span>
-                      <span class="contrib-font-size-sm text-highlight ms-1"
-                        >*</span
-                      >
-                      <span class="contrib-font-size-xs text-highlight ms-auto"
-                        >必填</span
-                      >
+                    />
+                    <p class="invalid-feedback px-2 mt-2">
+                      請輸入文章摘要 (總字數不得少於20字，不得多於100字)
                     </p>
-                    <div class="input-group">
-                      <input
-                        type="text"
-                        class="form-control border-radius contrib-input-heigh"
-                        id="foodWeight"
-                        placeholder="請輸入食品重量"
-                        required
-                      />
-                      <div
-                        class="input-group-text neutral-800 bg-neutral-100 rounded-end"
-                      >
-                        g
-                      </div>
-                      <p class="invalid-feedback px-2 mt-2">請輸入食品重量</p>
-                    </div>
                   </div>
                 </label>
               </div>
