@@ -140,6 +140,8 @@ document.addEventListener("DOMContentLoaded", () => {
     modules: {
       toolbar: "#toolbar",
     },
+    placeholder:
+      "請輸入內文 (可自定義段落樣式、插入圖片、Youtube影片連結)\n(總字數不得少於200字，不得多於2,000字)\n(圖片檔案大小不得超過10MB，解析度需高於1280 × 720 px)",
   });
 
   // 表單送出時，把內容存進隱藏 input

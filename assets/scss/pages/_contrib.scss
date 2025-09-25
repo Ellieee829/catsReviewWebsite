@@ -180,6 +180,7 @@
 
 /* 編輯器本體 */
 #editor-container {
+  position: relative;
   height: 400px;
   background-color: white;
   border: 1px solid $neutral-400;
@@ -190,4 +191,15 @@
     outline: none;
     border: solid 4px rgba(184, 150, 104, 0.4);
   }
+}
+
+.ql-editor.ql-blank::before {
+  font-size: 16px !important;
+  color: $neutral-500 !important;
+  content: attr(data-placeholder);
+  font-style: normal !important;
+  left: 35px !important;
+  pointer-events: none;
+  position: absolute;
+  right: 40px !important;
 }
