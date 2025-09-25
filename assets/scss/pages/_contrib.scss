@@ -20,7 +20,7 @@
   }
 }
 .nav-link.active {
-  background-color: $secondary-100;;
+  background-color: $secondary-100;
   color: $neutral-900;
 }
 #food-tab .tab-icon{
@@ -153,4 +153,41 @@
 }
 .contrib-tab-pane.active {
   display: block;
+}
+
+/* 工具列 toolbar */
+#toolbar {
+  background-color: $neutral-100;
+  border: 1px solid $neutral-400;
+  border-radius: 24px 24px 0 0;
+
+  .ql-picker,
+  .ql-formats button {
+    border-radius: 8px;
+    transition: background-color 0.2s, color 0.2s;
+  }
+
+  .ql-formats button:hover,
+  .ql-picker:hover {
+    background-color: $neutral-400;
+  }
+
+  .ql-active {
+    border-radius: 8px;
+    background-color: $neutral-400;
+  }
+}
+
+/* 編輯器本體 */
+#editor-container {
+  height: 400px;
+  background-color: white;
+  border: 1px solid $neutral-400;
+  border-top: none;
+  font-family: "Noto Sans TC", sans-serif;
+  border-radius: 0 0 24px 24px;
+  &:focus-within {
+    outline: none;
+    border: solid 4px rgba(184, 150, 104, 0.4);
+  }
 }

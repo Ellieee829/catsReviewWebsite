@@ -1,4 +1,6 @@
 import "./assets/scss/all.scss";
+import "quill/dist/quill.snow.css"; //先安裝quill -> bash: npm install quill
+import Quill from "quill";
 
 /* 所有頁面:popover跳出式視窗初始化 */
 document.addEventListener("DOMContentLoaded", () => {
@@ -10,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
   );
 });
 
-/* contrib投稿頁面:動態表單欄位新增&刪除功能 */
+/* contrib投稿食品頁面:動態表單欄位新增&刪除功能 */
 const addBtn = document.getElementById("addExtraBtn");
 const container = document.getElementById("extra-container");
 
@@ -105,7 +107,7 @@ publicationSpeciModal.addEventListener("hidden.bs.modal", () => {
   hasViewedModal = true; // 標記已經看過 modal
 });
 
-/* 驗證提示 */
+/* contrib投稿頁面:表單提交驗證提示 */
 (function () {
   "use strict";
 
@@ -128,5 +130,138 @@ publicationSpeciModal.addEventListener("hidden.bs.modal", () => {
     );
   });
 })();
+
+/* contrib專欄投稿頁面:Quill function */
+// DOM Ready 後執行
+document.addEventListener("DOMContentLoaded", () => {
+  // 初始化 Quill 編輯器
+  const quill = new Quill("#editor-container", {
+    theme: "snow",
+    modules: {
+      toolbar: "#toolbar",
+    },
+  });
+
+  // 表單送出時，把內容存進隱藏 input
+  const form = document.querySelector("form");
+  form.addEventListener("submit", () => {
+    const contentInput = document.getElementById("editor-content");
+    contentInput.value = quill.root.innerHTML;
+  });
+});
+
+/* contrib專欄投稿頁面:動態更新第二個select(主題&對應的知識類別) */
+document.addEventListener("DOMContentLoaded", function () {
+  const topicSelect = document.getElementById("topicSelect");
+  const categorySelect = document.getElementById("categorySelect");
+
+  const categoryMap = {
+    Diet: [
+      "糧食類型解析",
+      "成分與標籤知識",
+      "換糧指南",
+      "特殊處方糧",
+      "自製食物",
+      "飲水與水分攝取",
+      "其他",
+    ],
+    Health: [
+      "健康照護",
+      "常見疾病",
+      "身體警訊",
+      "絕育照護",
+      "老貓照護",
+      "保健品解析",
+      "其他",
+    ],
+    Behavior: [
+      "行為解讀",
+      "情緒觀察",
+      "廁所問題",
+      "多貓家庭",
+      "遊戲建議",
+      "其他",
+    ],
+    Ownership: [
+      "養貓前準備",
+      "初養用品",
+      "選貓指南",
+      "環境設置",
+      "外出與就診",
+      "常見錯誤",
+      "其他",
+    ],
+    Others: ["無"],
+  };
+
+  topicSelect.addEventListener("change", function () {
+    const selectedTopic = topicSelect.value;
+
+    // 清空第二個 select
+    categorySelect.innerHTML = `<option value="" selected>請選擇</option>`;
+
+    if (categoryMap[selectedTopic]) {
+      categoryMap[selectedTopic].forEach((category) => {
+        const option = document.createElement("option");
+        option.value = category;
+        option.textContent = category;
+        categorySelect.appendChild(option);
+      });
+    }
+  });
+});
+
+/* contrib投稿專欄頁面:動態表單欄位新增&刪除功能 */
+document.addEventListener("DOMContentLoaded", () => {
+  const addBtn = document.getElementById("addExtraReadingBtn");
+  const container = document.getElementById("extra-reading-container");
+
+  let counter = 1; // 第一筆已存在
+
+  addBtn.addEventListener("click", () => {
+    if (counter >= 3) return; // 最多 3 筆
+
+    const newDiv = document.createElement("div");
+    newDiv.classList.add(
+      "reading-item",
+      "mb-8",
+      "w-100",
+      "d-flex",
+      "align-items-end"
+    );
+
+    newDiv.innerHTML = `
+      <label for="furtherReading${counter}" class="w-100 me-6">
+        <p class="px-2 d-flex mb-2">
+          <span class="contrib-font-size-sm neutral-900">7. 延伸閱讀</span>
+          <span class="contrib-font-size-xs neutral-600 ms-auto">選填</span>
+        </p>
+        <div>
+          <input
+            type="url"
+            class="form-control border-radius contrib-input-heigh px-4"
+            id="furtherReading${counter}"
+            placeholder="請列出相關延伸閱讀網址"
+          />
+        </div>
+      </label>
+      <button type="button" class="btn contrib-delete-area contrib-delete-btn border-radius">
+        <img src="../assets/images/contrib/trash.png" alt="trash" />
+      </button>
+    `;
+
+    // 插入到按鈕上方
+    container.insertBefore(newDiv, addBtn.parentElement);
+
+    counter++;
+
+    // 綁定刪除事件
+    const trashBtn = newDiv.querySelector(".contrib-delete-btn");
+    trashBtn.addEventListener("click", () => {
+      newDiv.remove();
+      counter--;
+    });
+  });
+});
 
 console.log("Hello world");
