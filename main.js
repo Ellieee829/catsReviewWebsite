@@ -77,35 +77,47 @@ document.querySelectorAll(".contrib-delete-btn").forEach((btn) => {
   });
 });
 
-/* contrib投稿頁面:刊登規範審核機制 */
-const agreeCheckbox = document.getElementById("agreeCheckbox");
-const publicationSpeciModal = document.getElementById("publicationSpeci");
-const publicationSpeciForm = document.getElementById("publicationSpeciForm");
+/* contrib投稿頁面:食品&專欄共用刊登規範審核機制 */
+// 共用審核機制
+function setupSpeciCheck(formId, checkboxId, modalId) {
+  const form = document.getElementById(formId);
+  const checkbox = document.getElementById(checkboxId);
+  const modalElement = document.getElementById(modalId);
 
-// 初始 checkbox 禁用
-agreeCheckbox.disabled = true;
+  if (!form || !checkbox || !modalElement) return;
 
-// 追蹤是否已經看過 modal
-let hasViewedModal = false;
+  // 初始 checkbox 禁用
+  checkbox.disabled = true;
 
-// 點擊表單區塊
-publicationSpeciForm.addEventListener("click", (e) => {
-  // 如果 checkbox 已經解鎖，允許正常勾選
-  if (hasViewedModal) return;
+  // 追蹤是否已經看過 modal
+  let hasViewedModal = false;
 
-  // 阻止 checkbox 被直接勾選
-  e.preventDefault();
+  // 點擊表單區塊
+  form.addEventListener("click", (e) => {
+    if (hasViewedModal) return; // 已經解鎖過，就直接勾選
+    e.preventDefault(); // 阻止直接勾選
 
-  // 使用 Bootstrap JS 打開 modal
-  const modal = new bootstrap.Modal(publicationSpeciModal);
-  modal.show();
-});
+    // 使用 Bootstrap JS 打開 modal
+    const modal = new bootstrap.Modal(modalElement);
+    modal.show();
+  });
 
-// 當 modal 關閉後，允許勾選 checkbox
-publicationSpeciModal.addEventListener("hidden.bs.modal", () => {
-  agreeCheckbox.disabled = false;
-  hasViewedModal = true; // 標記已經看過 modal
-});
+  // 當 modal 關閉後，允許勾選 checkbox
+  modalElement.addEventListener("hidden.bs.modal", () => {
+    checkbox.disabled = false;
+    hasViewedModal = true;
+  });
+}
+
+// 第一組: 食品投稿
+setupSpeciCheck("publicationSpeciForm", "agreeCheckbox", "publicationSpeci");
+
+// 第二組: 專欄投稿
+setupSpeciCheck(
+  "columnPublicationSpeciForm",
+  "agreeColumnCheckbox",
+  "columnPublicationSpeci"
+);
 
 /* contrib投稿頁面:表單提交驗證提示 */
 (function () {
