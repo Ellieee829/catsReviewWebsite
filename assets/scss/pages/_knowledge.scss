@@ -11,6 +11,25 @@
   width: 290px;
 }
 
+.knowledge-card:hover {
+  border: solid 8px white;
+  box-shadow: 10px 5px 5px #b8966880;
+  img {
+    opacity: 0.5;
+  }
+  .button {
+    display: block;
+  }
+}
+
+.button {
+  display: none;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 50px;
+}
+
 .truncate-multi {
   overflow: hidden;
   display: -webkit-box;
@@ -23,4 +42,21 @@
   padding-bottom: 4px;
   padding-left: 8px;
   padding-right: 8px;
+}
+
+.knowledge-relative {
+  position: relative;
+}
+
+.knowledge-absolute {
+  position: absolute;
+  right: 8%;
+  top: 96px;
+  height: 238px;
+  width: 416px;
+}
+
+.knowledge-btn:hover {
+  color: #ffffff;
+  background-color: $primary-500;
 }
