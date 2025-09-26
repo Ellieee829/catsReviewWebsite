@@ -7,8 +7,26 @@
   padding-bottom: 266px;
 }
 
+@media (max-width: 767px) {
+  .knowledge-banner {
+    background-image: url("/assets/images/knowledge/rwdknowBanner.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+
 .knowledge-card {
   width: 290px;
+}
+
+@media (max-width: 767px) {
+  .knowledge-card {
+    width: 351px;
+    img {
+      width: 100%;
+    }
+  }
 }
 
 .knowledge-card:hover {
@@ -19,6 +37,10 @@
   }
   .button {
     display: block;
+  }
+  .newspaper-icon {
+    width: 20px;
+    height: 20px;
   }
 }
 
