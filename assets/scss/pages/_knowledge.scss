@@ -24,7 +24,7 @@
 
 @media (max-width: 767px) {
   .knowledge-card {
-    max-width: 351px;
+    width: 351px;
     img {
       width: 100%;
     }
@@ -74,8 +74,8 @@
 
 .knowledge-absolute {
   position: absolute;
+  top: 176px;
   right: 8%;
-  top: 96px;
   height: 238px;
   width: 416px;
 }
