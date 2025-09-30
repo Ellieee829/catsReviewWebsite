@@ -1,0 +1,321 @@
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.foodmain-body{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;    
+    background-image: url(../../assets/images/food/secondary_backgroundTexture.jpg);
+    background-repeat: repeat;
+    width: 100%;
+    z-index: -1; /* 让伪元素在内容下方 */
+}   
+
+.index-header{
+    background-image: url(../../assets/images/food/hero/food-hero1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 300px 0;/*(400-96)/2*/
+    text-align: left;
+    position: relative;
+    
+    .food-box{
+        width: 416px;
+        height: 294px;
+        position: absolute;
+        top: 33%;
+        left: 62%;
+        // background-color: #212529;
+
+        img {
+            padding-left: 130px;
+            
+        }
+
+        h2 {
+            color: white;
+            justify-content: center;
+            font-size: 64px;
+        }
+
+        h4 {
+            color: white;
+            justify-content: center;
+            font-size: 24px;
+        }
+
+        
+    }
+
+    @media (max-width:  992px) {
+        background-image: url(../../assets/images/food/hero/food-hero1-mobile1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 300px 0;/*(400-96)/2*/
+        text-align: left;
+        position: relative;
+
+        .food-box{
+            width: 351px;
+            height: 228px;
+            position: absolute;
+            top: 10%;
+            left: 27%;
+            // background-color: #212529;
+
+                
+            
+                img {
+                    padding-left: calc((351px - 135px)/2);
+                    
+                }
+
+                h2 {
+                    color: rgba(118, 81, 68, 1);
+                    justify-content: center;
+                    font-size: 48px;
+                }
+
+                h4 {
+                    color: rgba(118, 81, 68, 1);
+                    justify-content: center;
+                    font-size: 16px;
+                }
+            }
+    }
+}
+
+.foodmain-searchbar {
+    position: relative;
+
+    .foodmain-form{
+        color: lightgray;
+        width: 416px; /* 為了給按鈕留出空間 */
+        height: 60px;
+        border-radius: 50px;
+
+         @media (max-width:  992px) {
+            width: 351px; /* 為了給按鈕留出空間 */
+            height: 60px;
+         }
+    }
+    .foodmain-search-btn {
+        position: absolute;
+        right: 0%;
+        top: 20%;
+        color: lightgray;
+        font-size: 16px;
+        padding: 10px 15px;
+        border-radius: 50%;
+    }
+}
+
+.food-left-nav {
+    @media (max-width:  992px) {
+        display: none !important;
+    }
+}
+
+.pt-60{
+    padding-top: 60px;
+}
+
+.food-info-icon{
+    font-size: 20px;
+    padding-left: 12px;
+    padding-right: 12px;
+    color: #787F85;
+}
+.food-search-icon{
+    font-size: 24px;
+    padding-left: 16px;
+    padding-right: 16px;}
+
+.food-guidtour {
+    position: relative;
+}
+
+.food-guidtour img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.foodtitle{
+    font-size: 52px;
+    font-weight: 700;
+    color: #EDE2CC;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.food_searchbg li{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.food-form{
+    color: lightgray; /* 為了給按鈕留出空間 */
+}
+.food_searchbg .food_searchbtn {
+    position: absolute;
+    right: 5%;
+    top: 10%;
+    color: lightgray;
+    font-size: 24px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.food-btn{
+    color: #212529;
+    width: 100%;
+}
+
+.food-dropdown{
+    width: 100%;
+    height: 48px;
+    border: 1px solid #CED4DA;
+    border-radius: 4px;
+    background-color: white;
+    color: $neutral-900;
+    text-align: left;
+
+&:hover{
+    width: 100%;
+    height: 48px;
+    border: 1px solid #b89668;
+    border-radius: 4px;
+    background-color: white;
+}
+
+&:focus{
+    width: 100%;
+    height: 48px;
+    border: 1px solid #b89668;
+    border-radius: 4px;
+    background-color: white;
+}
+}
+
+.food-dropdown-menu{
+    width: 100%;
+    border: 1px solid #b89668;
+
+&:hover{
+    width: 100%;
+
+    color: #b89668;
+}
+}
+
+.mb-60{
+    margin-bottom: 60px;
+}
+
+.mt-144{
+    margin-top: 144px;
+
+    @media (max-width:  992px) {
+        margin-top: 48px;
+    }
+}
+
+.food-card {
+    background-color: transparent;
+    border-radius: 0px;
+    border: 1px solid transparent;
+    padding: 8px;
+    position: relative;
+    overflow-x: hidden;
+
+    .card-deco {
+        position: absolute;
+        top: 8px;
+        left: 8px;
+    }
+    .food-btn{
+        background-repeat: 0;
+
+    }
+
+    .card-title{
+        font-family: "Cactus Classical Serif", serif;
+        font-weight: 400;
+        font-size: 20px;
+    }
+    
+
+}
+
+
+.food-left-btn {
+    border: none;
+}
+
+.food-info-btn {
+    border: none;
+    background-color: white !important;
+    
+}
+
+
+.bs-popover-top > .popover-arrow::after, .bs-popover-auto[data-popper-placement^=top] > .popover-arrow::after {
+    bottom: var(--bs-popover-border-width);
+    border-top-color: black;
+}
+
+.popover {
+    --bs-popover-bg: black;
+}
+
+.popover-header {
+    padding: var(--bs-popover-header-padding-y) var(--bs-popover-header-padding-x);
+    margin-bottom: 0;
+    font-size: var(--bs-popover-header-font-size);
+    color: white;
+    background-color: black;
+    border-top: var(--bs-popover-border-width) solid black;
+    border-bottom: var(--bs-popover-border-width) solid black;
+    border-radius: 8px;
+    //border-top-right-radius: 8px;
+    font-family: "Noto Sans TC" ,    serif;
+}
+
+.popover-body {
+    padding: var(--bs-popover-body-padding-y) var(--bs-popover-body-padding-x);
+    background-color: #000;
+    color: white;
+    border-radius: 8px;
+    //border-bottom-right-radius: 8px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.food-pagination {
+    .active {
+                color: white;
+                background-color: $primary-500 !important;
+                border-radius: 50px;
+    }
+    .page-item {
+        a {
+            background-color: transparent;
+            border-color:  transparent;
+
+            &:active  {
+                color: white;
+                background-color: $primary-500 !important;
+            }
+        }
+        
+    }
+}
+
