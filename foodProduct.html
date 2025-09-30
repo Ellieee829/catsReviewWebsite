@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <title>膳食探索</title>
+    <script type="module" crossorigin src="/catsReviewWebsite/assets/main-B-RgfI3d.js"></script>
+    <link rel="stylesheet" crossorigin href="/catsReviewWebsite/assets/main-DXMCtZOy.css">
+  </head>
+  <body>
+    <!-- 引入Material Icons -->
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=pets"
+/>
+<script src="/javascripts/vendor.js"></script>
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container">
+    <!-- logo -->
+    <a class="navbar-brand d-none d-lg-block" href="../pages/index.html">
+      <img src="/catsReviewWebsite/assets/logo-BcaSIhxh.svg" alt="logo" class="me-72" />
+    </a>
+    <!-- 手機板header -->
+    <div
+      class="navbar-header d-lg-none w-100 d-flex justify-content-between align-items-center py-1 flex-shrink-0"
+    >
+      <!-- logo -->
+      <a class="navbar-brand" href="../pages/index.html">
+        <img src="/catsReviewWebsite/assets/logo-BcaSIhxh.svg" alt="logo" class="me-72" />
+      </a>
+      <!-- 漢堡按鈕 -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    <!-- nav內容 -->
+    <div
+      class="collapse navbar-collapse justify-content-between mt-11 mt-lg-0"
+      id="navbarNav"
+    >
+      <ul class="header-navbar-nav navbar-nav">
+        <!-- 膳食探索 -->
+        <li class="nav-item me-lg-10 mb-10 mb-lg-0">
+          <a class="nav-link d-flex justify-content-center" href="foodmain.html">
+            <div class="header-food-btn me-1 d-none d-lg-block"></div>
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAILSURBVHgBzVVRctpADJV2oZ+tmSQf/aH4BnSadKZfcW+QniBwgqQnAE6Q9gSFE5SeAPpb6ISewCb9C2SSz0yGXUVa2wnDgGNP8oFmPCvL0tM+SbsG2CaZh38bs3AUFIkpFXFGTS0FGLE6zBuj8jrOL8ZHvNQIICjCIncCdjxJda2xVSDuaZn9HwWy8/S9CItcCRTh8aotL4u8JTpaNTCLGuQQN0VheO691uYsAfJ4Xrp35q7z1v8UOTCCHuJjDxLbr1S/DP/US1qdcdJ6bMG+MuprxX9/4xi80eYHL40Y3IU3XunyuQTG/mvG0sY28dFaDZIeefFDDdLmZxzKcnUxJlgvN8po3+Fpc738ge2VW7j1eCMD2FCuneo+OgZk4AsZbFpDn51Otpf4eAu1OBWqkmw5sdjKqnyagvMOh8sYsord9WDX3++vJO/PpqNIIbYUKpmgNnONGKWegE0cfQWH8mKJOnvvDtrrWGycIgngRn5nuJoDtfAv/YbxdQFxQuxuAs9MIKKtbqc6AUWpbslOHwB42rIwMhNInWMWvE+Lk9Se6lLzSjLKLyLz6fgb96YN2yT4lIOccq9kT4goMEgdWHBdNR4T2N+71Y/dZyfgQxiC+w/YJoI6lBBrbI+TDGSCdqofmlnxuS47mXO3W3TnINjzD4Zi4zYH8JIiV0rGtbJWCv2T+TBMYNvkHiCK3IAkMCJVAAAAAElFTkSuQmCC"
+              alt="decoration"
+              class="align-bottom me-1 d-lg-none d-block"
+            />
+            膳食探索
+          </a>
+        </li>
+        <!-- 喵皇學堂 -->
+        <li class="nav-item me-lg-10 mb-10 mb-lg-0">
+          <a
+            class="nav-link d-flex justify-content-center"
+            href="knowledge.html"
+          >
+            <div class="header-knowledge-btn me-1 d-none d-lg-block"></div>
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAILSURBVHgBzVVRctpADJV2oZ+tmSQf/aH4BnSadKZfcW+QniBwgqQnAE6Q9gSFE5SeAPpb6ISewCb9C2SSz0yGXUVa2wnDgGNP8oFmPCvL0tM+SbsG2CaZh38bs3AUFIkpFXFGTS0FGLE6zBuj8jrOL8ZHvNQIICjCIncCdjxJda2xVSDuaZn9HwWy8/S9CItcCRTh8aotL4u8JTpaNTCLGuQQN0VheO691uYsAfJ4Xrp35q7z1v8UOTCCHuJjDxLbr1S/DP/US1qdcdJ6bMG+MuprxX9/4xi80eYHL40Y3IU3XunyuQTG/mvG0sY28dFaDZIeefFDDdLmZxzKcnUxJlgvN8po3+Fpc738ge2VW7j1eCMD2FCuneo+OgZk4AsZbFpDn51Otpf4eAu1OBWqkmw5sdjKqnyagvMOh8sYsord9WDX3++vJO/PpqNIIbYUKpmgNnONGKWegE0cfQWH8mKJOnvvDtrrWGycIgngRn5nuJoDtfAv/YbxdQFxQuxuAs9MIKKtbqc6AUWpbslOHwB42rIwMhNInWMWvE+Lk9Se6lLzSjLKLyLz6fgb96YN2yT4lIOccq9kT4goMEgdWHBdNR4T2N+71Y/dZyfgQxiC+w/YJoI6lBBrbI+TDGSCdqofmlnxuS47mXO3W3TnINjzD4Zi4zYH8JIiV0rGtbJWCv2T+TBMYNvkHiCK3IAkMCJVAAAAAElFTkSuQmCC"
+              alt="decoration"
+              class="align-bottom me-1 d-lg-none d-block"
+            />
+            喵皇學堂
+          </a>
+        </li>
+        <!-- 我要投稿 -->
+        <li class="nav-item">
+          <a
+            class="nav-link d-flex justify-content-center"
+            href="../pages/contrib.html"
+          >
+            <div class="header-post-btn me-1 d-none d-lg-block"></div>
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAILSURBVHgBzVVRctpADJV2oZ+tmSQf/aH4BnSadKZfcW+QniBwgqQnAE6Q9gSFE5SeAPpb6ISewCb9C2SSz0yGXUVa2wnDgGNP8oFmPCvL0tM+SbsG2CaZh38bs3AUFIkpFXFGTS0FGLE6zBuj8jrOL8ZHvNQIICjCIncCdjxJda2xVSDuaZn9HwWy8/S9CItcCRTh8aotL4u8JTpaNTCLGuQQN0VheO691uYsAfJ4Xrp35q7z1v8UOTCCHuJjDxLbr1S/DP/US1qdcdJ6bMG+MuprxX9/4xi80eYHL40Y3IU3XunyuQTG/mvG0sY28dFaDZIeefFDDdLmZxzKcnUxJlgvN8po3+Fpc738ge2VW7j1eCMD2FCuneo+OgZk4AsZbFpDn51Otpf4eAu1OBWqkmw5sdjKqnyagvMOh8sYsord9WDX3++vJO/PpqNIIbYUKpmgNnONGKWegE0cfQWH8mKJOnvvDtrrWGycIgngRn5nuJoDtfAv/YbxdQFxQuxuAs9MIKKtbqc6AUWpbslOHwB42rIwMhNInWMWvE+Lk9Se6lLzSjLKLyLz6fgb96YN2yT4lIOccq9kT4goMEgdWHBdNR4T2N+71Y/dZyfgQxiC+w/YJoI6lBBrbI+TDGSCdqofmlnxuS47mXO3W3TnINjzD4Zi4zYH8JIiV0rGtbJWCv2T+TBMYNvkHiCK3IAkMCJVAAAAAElFTkSuQmCC"
+              alt="decoration"
+              class="align-bottom me-1 d-lg-none d-block"
+            />
+            我要投稿
+          </a>
+        </li>
+      </ul>
+      <!-- 註冊登入 -->
+      <a
+        class="nav-link header-log p-lg-1 d-flex justify-content-center mt-auto py-6"
+        href="#"
+      >
+        <span class="header-pet material-symbols-outlined align-bottom me-2"
+          >pets</span
+        >
+        註冊 / 登入
+      </a>
+    </div>
+  </div>
+</nav>
+<!-- 漸層線條 -->
+<div class="header-liner"></div>
+    <!-- 內容 -->
+    <div class="section-1 ">
+
+      <a class="btn btn-primary food-back-btn" href="#" role="button"><i class="bi bi-arrow-up-circle"></i>  回到頂端</a>
+      
+      <div class="container">
+        <div class="row">
+          <!-- breadcrumb -->
+          <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>';" class="pt-3" >
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item food-breadcrumb-item"><a href="#">首頁</a></li>
+              <li class="breadcrumb-item food-breadcrumb-item active " aria-current="page">膳食探索</li>
+            </ol>
+          </nav>       
+        </div>
+      </div>
+    </div>
+    <div class="section-2  pb-144 pt-md-12">      
+      <div class="container container-style px-96" >
+        <img src="/catsReviewWebsite/assets/Decoration-LT-CsMwfrpW.png" alt="Decoration-LT" class="decoration-LT">
+        <img src="/catsReviewWebsite/assets/Decoration-RT-DRPYYta-.png" alt="Decoration-RT" class="decoration-RT">
+        <div class="col-12 head-content ">
+          <div class="row food-prod-header">
+            <div class="food-text">
+              <!--title-->            
+              <h1>雞+南瓜主食罐</h1>
+              <p>Cool Meow・發佈時間  2025-07-30</p>
+            </div>
+            <div class="food-pic">
+              <!-- picture -->
+              <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="/catsReviewWebsite/assets/food-img1-Dt2R5P5x.png" alt="food-img1" class="d-block w-100" alt="food-img1">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="/catsReviewWebsite/assets/food-img2-iN1T4CDg.png" alt="food-img2" class="d-block w-100" alt="food-img2">
+                    </div>
+                    
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+              </div>          
+            </div>
+            
+            
+
+          </div>
+        </div>
+      </div>
+      <div class="container  px-96 py-md-72" style="background-color: #F4F1E9;"><!--py-12-->
+        <div class="row">
+          <!-- food content -->
+            <!-- 1. 基本資訊 -->
+            <div class="foodproduct-content pb-7" >
+              <h3>1. 基本資訊</h3>
+                <p class="product-border "></p>
+            </div>
+
+            <div class="d-md-flex">
+            <div class="col-md-6 d-flex pb-3 pe-48 col-12">            
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAB/CAYAAADmUULuAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAVOSURBVHgB7VhdchpHEO6eIQbkB5MTmJxA5ASWXvTjPAAnkHiwDVJcwAlknQBUtiTipArpBEgPsX6qUpZugE4QdAKjh4hFYafTPbBE6M+7bKoUV9FVql1tzXzb3fN93b0ATOxx7Y/fVp8rCGmPC+B0r74PBaCMTnzjOZgA/B8ASGM4IiHR4zMxOeHBNw+AGp+F8yA0ExkgAmPawfv8DCC0x/dAQbJ/GcOON98UDbjNsQDEdaMwdXX1tCVyxiCb7ZsRM0RwqpCmgWDGtwcHlXxS3rywUpvVQF9cULuE6P8UKGJSYNSp3AuQAkqxB/5zgKDayG+U+4VCLcd71/nhCQSxw63850allBj+v53/HOgUFLnlqWhnbeQZBLC51V+bhvDsaDvfB3HNvu9jlFPA70yGUCU49iQCNhdWtqu+AIQ8SlPRuLihldt2UZcUYPqyG/3BVwiy+bLbzQn/JYzFldoyEe3Go91lXwBMmDZAQs5y5vfNVyn7TEGVW9O0Pw+MuxGPOQ0mz7Of2AN55jhOW66BtHDdbD1QAbRw0zACSwywMxbA0VahQgbOFwu11oMhCGGIWL4ule1bkQWlVNoAbrxc2d6TZw+q0SW8EBcpAhlFkAZLntrs9TWBkniwmV9GhCXqQm6xXGsFBrAg20xpgnqnG8tmy9XgVVkSRy6se6q81wM5Z3tUAyMH1j23xQ5rhUanE83d6YHNvoJMJxYre9VHRani0VjM/O3uxp44mVsAIlvekHy5Wis9vfwrKZvEbRGTVrrorcOIEkrfnpGkeFIPdhuV5YRB3fA2Zcs7bemFQw+Msve3ABQKqknYDdAXklw/bRUyXI3Oh+vApJQxzREiyTkbY1qolMS6xzUwyxVo7WjrDRiis0UOaxgC82H+7cfZIcAxx9pj3SutuVyZacnF3GpN4szCHUlmlm7cCgFdaoNxQUoXRqEuHo14yEfL3jQMC8nTAkpsmkzdKDhFZMYbygjnO/HobNxxGtx9ksyWFhpKcTgtl3o5r6hYgOvog+wkyRgORRW5ie46U7G9bK7a9taghrXrahwCfHr/OmNvtOaToLSQR84f7rCDD/kd9mxn8W3tZITKhx9elwxBS2t8Mb/yS/m48ipFUSU14RwVfJkv1NaHa7nNiaBGkrjw88eq8ICTuC//m6huSEIX+PgkcZzUd8PFxuzHIk7qNhNRtYVIwkQ7gQwExRzYQRkqvHVa7d1ZVJ0rZ48iKi1MNAazQmsbN/MCBu2978A9VJaNUjCFLJIk+ZOWjk9gjROb89ah6SX5cn9RteVLY5p6dCGv0eRW566dP88GdTtkjGMSjgDIfeBJ1bZ5prkXTqCaaJkom5GrcsFHVbZzocIMLzphWstsDFzmsh61v+pBD5lWLCa3Z86kEstIE+84jZsqDWzCyMOtQumrITxkUhcuu/Hc2O1dNCIjjq9jlKOTvsC3LVGpfRiBFitiyd+Iw5sv4/EcKQVecxEtsEIvfIcQazsJ6LnnXjnTyhQ5gU3fcyLyqOeSWVdKtxVhkYB46IRZ/5Mqt3UwsCz3XJ1ecOHYl0kVghrPR0teZRKmBhKTbbxEP3odSmgeCECE1InHRjqVb4B+38B9EdK/Hx1OgHogDYfIqpDHmzo3lwvpVr55IMXWZp+Nv9hODZc4+WoLOua9Y5DnLOszApWSDhZ8zBvMipLMqU6nPpacuaOXeBRoStMZf9wfhDP+57+Bk0BqvGlOz2myuqfHBhiMfSF+wRBTqhXuB0mXLsJ5AJPf0kIDIJlwPOhPdCEtpAcYzgP5PJgQaQLw+ABP4vrPxw9hYv+B/QPH/5s875TUkwAAAABJRU5ErkJggg==" alt="Decoration2" class="pe-3">
+              <div class="foodproduct-info ps-6 pt-2 pb-2">
+                <p>品牌</p>
+                <p class="p2">NUTRIPE 紐萃寶</p>
+              </div>
+            </div>
+            <div class="col-md-6 d-flex pb-3 col-12">              
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAB/CAYAAADmUULuAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAVOSURBVHgB7VhdchpHEO6eIQbkB5MTmJxA5ASWXvTjPAAnkHiwDVJcwAlknQBUtiTipArpBEgPsX6qUpZugE4QdAKjh4hFYafTPbBE6M+7bKoUV9FVql1tzXzb3fN93b0ATOxx7Y/fVp8rCGmPC+B0r74PBaCMTnzjOZgA/B8ASGM4IiHR4zMxOeHBNw+AGp+F8yA0ExkgAmPawfv8DCC0x/dAQbJ/GcOON98UDbjNsQDEdaMwdXX1tCVyxiCb7ZsRM0RwqpCmgWDGtwcHlXxS3rywUpvVQF9cULuE6P8UKGJSYNSp3AuQAkqxB/5zgKDayG+U+4VCLcd71/nhCQSxw63850allBj+v53/HOgUFLnlqWhnbeQZBLC51V+bhvDsaDvfB3HNvu9jlFPA70yGUCU49iQCNhdWtqu+AIQ8SlPRuLihldt2UZcUYPqyG/3BVwiy+bLbzQn/JYzFldoyEe3Go91lXwBMmDZAQs5y5vfNVyn7TEGVW9O0Pw+MuxGPOQ0mz7Of2AN55jhOW66BtHDdbD1QAbRw0zACSwywMxbA0VahQgbOFwu11oMhCGGIWL4ule1bkQWlVNoAbrxc2d6TZw+q0SW8EBcpAhlFkAZLntrs9TWBkniwmV9GhCXqQm6xXGsFBrAg20xpgnqnG8tmy9XgVVkSRy6se6q81wM5Z3tUAyMH1j23xQ5rhUanE83d6YHNvoJMJxYre9VHRani0VjM/O3uxp44mVsAIlvekHy5Wis9vfwrKZvEbRGTVrrorcOIEkrfnpGkeFIPdhuV5YRB3fA2Zcs7bemFQw+Msve3ABQKqknYDdAXklw/bRUyXI3Oh+vApJQxzREiyTkbY1qolMS6xzUwyxVo7WjrDRiis0UOaxgC82H+7cfZIcAxx9pj3SutuVyZacnF3GpN4szCHUlmlm7cCgFdaoNxQUoXRqEuHo14yEfL3jQMC8nTAkpsmkzdKDhFZMYbygjnO/HobNxxGtx9ksyWFhpKcTgtl3o5r6hYgOvog+wkyRgORRW5ie46U7G9bK7a9taghrXrahwCfHr/OmNvtOaToLSQR84f7rCDD/kd9mxn8W3tZITKhx9elwxBS2t8Mb/yS/m48ipFUSU14RwVfJkv1NaHa7nNiaBGkrjw88eq8ICTuC//m6huSEIX+PgkcZzUd8PFxuzHIk7qNhNRtYVIwkQ7gQwExRzYQRkqvHVa7d1ZVJ0rZ48iKi1MNAazQmsbN/MCBu2978A9VJaNUjCFLJIk+ZOWjk9gjROb89ah6SX5cn9RteVLY5p6dCGv0eRW566dP88GdTtkjGMSjgDIfeBJ1bZ5prkXTqCaaJkom5GrcsFHVbZzocIMLzphWstsDFzmsh61v+pBD5lWLCa3Z86kEstIE+84jZsqDWzCyMOtQumrITxkUhcuu/Hc2O1dNCIjjq9jlKOTvsC3LVGpfRiBFitiyd+Iw5sv4/EcKQVecxEtsEIvfIcQazsJ6LnnXjnTyhQ5gU3fcyLyqOeSWVdKtxVhkYB46IRZ/5Mqt3UwsCz3XJ1ecOHYl0kVghrPR0teZRKmBhKTbbxEP3odSmgeCECE1InHRjqVb4B+38B9EdK/Hx1OgHogDYfIqpDHmzo3lwvpVr55IMXWZp+Nv9hODZc4+WoLOua9Y5DnLOszApWSDhZ8zBvMipLMqU6nPpacuaOXeBRoStMZf9wfhDP+57+Bk0BqvGlOz2myuqfHBhiMfSF+wRBTqhXuB0mXLsJ5AJPf0kIDIJlwPOhPdCEtpAcYzgP5PJgQaQLw+ABP4vrPxw9hYv+B/QPH/5s875TUkwAAAABJRU5ErkJggg==" alt="Decoration2" class="pe-3">
+              <div class="foodproduct-info ps-6 pt-2 pb-2">
+                <p>參考價格</p>
+                <p class="p2">NT$ 1,000</p>
+              </div>
+            </div>
+            </div>
+
+            <div class="d-md-flex">
+            <div class="col-md-6 d-flex pb-3 pe-48 col-12">            
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAB/CAYAAADmUULuAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAVOSURBVHgB7VhdchpHEO6eIQbkB5MTmJxA5ASWXvTjPAAnkHiwDVJcwAlknQBUtiTipArpBEgPsX6qUpZugE4QdAKjh4hFYafTPbBE6M+7bKoUV9FVql1tzXzb3fN93b0ATOxx7Y/fVp8rCGmPC+B0r74PBaCMTnzjOZgA/B8ASGM4IiHR4zMxOeHBNw+AGp+F8yA0ExkgAmPawfv8DCC0x/dAQbJ/GcOON98UDbjNsQDEdaMwdXX1tCVyxiCb7ZsRM0RwqpCmgWDGtwcHlXxS3rywUpvVQF9cULuE6P8UKGJSYNSp3AuQAkqxB/5zgKDayG+U+4VCLcd71/nhCQSxw63850allBj+v53/HOgUFLnlqWhnbeQZBLC51V+bhvDsaDvfB3HNvu9jlFPA70yGUCU49iQCNhdWtqu+AIQ8SlPRuLihldt2UZcUYPqyG/3BVwiy+bLbzQn/JYzFldoyEe3Go91lXwBMmDZAQs5y5vfNVyn7TEGVW9O0Pw+MuxGPOQ0mz7Of2AN55jhOW66BtHDdbD1QAbRw0zACSwywMxbA0VahQgbOFwu11oMhCGGIWL4ule1bkQWlVNoAbrxc2d6TZw+q0SW8EBcpAhlFkAZLntrs9TWBkniwmV9GhCXqQm6xXGsFBrAg20xpgnqnG8tmy9XgVVkSRy6se6q81wM5Z3tUAyMH1j23xQ5rhUanE83d6YHNvoJMJxYre9VHRani0VjM/O3uxp44mVsAIlvekHy5Wis9vfwrKZvEbRGTVrrorcOIEkrfnpGkeFIPdhuV5YRB3fA2Zcs7bemFQw+Msve3ABQKqknYDdAXklw/bRUyXI3Oh+vApJQxzREiyTkbY1qolMS6xzUwyxVo7WjrDRiis0UOaxgC82H+7cfZIcAxx9pj3SutuVyZacnF3GpN4szCHUlmlm7cCgFdaoNxQUoXRqEuHo14yEfL3jQMC8nTAkpsmkzdKDhFZMYbygjnO/HobNxxGtx9ksyWFhpKcTgtl3o5r6hYgOvog+wkyRgORRW5ie46U7G9bK7a9taghrXrahwCfHr/OmNvtOaToLSQR84f7rCDD/kd9mxn8W3tZITKhx9elwxBS2t8Mb/yS/m48ipFUSU14RwVfJkv1NaHa7nNiaBGkrjw88eq8ICTuC//m6huSEIX+PgkcZzUd8PFxuzHIk7qNhNRtYVIwkQ7gQwExRzYQRkqvHVa7d1ZVJ0rZ48iKi1MNAazQmsbN/MCBu2978A9VJaNUjCFLJIk+ZOWjk9gjROb89ah6SX5cn9RteVLY5p6dCGv0eRW566dP88GdTtkjGMSjgDIfeBJ1bZ5prkXTqCaaJkom5GrcsFHVbZzocIMLzphWstsDFzmsh61v+pBD5lWLCa3Z86kEstIE+84jZsqDWzCyMOtQumrITxkUhcuu/Hc2O1dNCIjjq9jlKOTvsC3LVGpfRiBFitiyd+Iw5sv4/EcKQVecxEtsEIvfIcQazsJ6LnnXjnTyhQ5gU3fcyLyqOeSWVdKtxVhkYB46IRZ/5Mqt3UwsCz3XJ1ecOHYl0kVghrPR0teZRKmBhKTbbxEP3odSmgeCECE1InHRjqVb4B+38B9EdK/Hx1OgHogDYfIqpDHmzo3lwvpVr55IMXWZp+Nv9hODZc4+WoLOua9Y5DnLOszApWSDhZ8zBvMipLMqU6nPpacuaOXeBRoStMZf9wfhDP+57+Bk0BqvGlOz2myuqfHBhiMfSF+wRBTqhXuB0mXLsJ5AJPf0kIDIJlwPOhPdCEtpAcYzgP5PJgQaQLw+ABP4vrPxw9hYv+B/QPH/5s875TUkwAAAABJRU5ErkJggg==" alt="Decoration2" class="pe-3">
+              <div class="foodproduct-info ps-6 pt-2 pb-2">
+                <p>產地</p>
+                <p class="p2">紐西蘭</p>
+              </div>
+            </div>
+                        
+            <div class="col-md-6 d-flex pb-3 col-12">         
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAB/CAYAAADmUULuAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAVOSURBVHgB7VhdchpHEO6eIQbkB5MTmJxA5ASWXvTjPAAnkHiwDVJcwAlknQBUtiTipArpBEgPsX6qUpZugE4QdAKjh4hFYafTPbBE6M+7bKoUV9FVql1tzXzb3fN93b0ATOxx7Y/fVp8rCGmPC+B0r74PBaCMTnzjOZgA/B8ASGM4IiHR4zMxOeHBNw+AGp+F8yA0ExkgAmPawfv8DCC0x/dAQbJ/GcOON98UDbjNsQDEdaMwdXX1tCVyxiCb7ZsRM0RwqpCmgWDGtwcHlXxS3rywUpvVQF9cULuE6P8UKGJSYNSp3AuQAkqxB/5zgKDayG+U+4VCLcd71/nhCQSxw63850allBj+v53/HOgUFLnlqWhnbeQZBLC51V+bhvDsaDvfB3HNvu9jlFPA70yGUCU49iQCNhdWtqu+AIQ8SlPRuLihldt2UZcUYPqyG/3BVwiy+bLbzQn/JYzFldoyEe3Go91lXwBMmDZAQs5y5vfNVyn7TEGVW9O0Pw+MuxGPOQ0mz7Of2AN55jhOW66BtHDdbD1QAbRw0zACSwywMxbA0VahQgbOFwu11oMhCGGIWL4ule1bkQWlVNoAbrxc2d6TZw+q0SW8EBcpAhlFkAZLntrs9TWBkniwmV9GhCXqQm6xXGsFBrAg20xpgnqnG8tmy9XgVVkSRy6se6q81wM5Z3tUAyMH1j23xQ5rhUanE83d6YHNvoJMJxYre9VHRani0VjM/O3uxp44mVsAIlvekHy5Wis9vfwrKZvEbRGTVrrorcOIEkrfnpGkeFIPdhuV5YRB3fA2Zcs7bemFQw+Msve3ABQKqknYDdAXklw/bRUyXI3Oh+vApJQxzREiyTkbY1qolMS6xzUwyxVo7WjrDRiis0UOaxgC82H+7cfZIcAxx9pj3SutuVyZacnF3GpN4szCHUlmlm7cCgFdaoNxQUoXRqEuHo14yEfL3jQMC8nTAkpsmkzdKDhFZMYbygjnO/HobNxxGtx9ksyWFhpKcTgtl3o5r6hYgOvog+wkyRgORRW5ie46U7G9bK7a9taghrXrahwCfHr/OmNvtOaToLSQR84f7rCDD/kd9mxn8W3tZITKhx9elwxBS2t8Mb/yS/m48ipFUSU14RwVfJkv1NaHa7nNiaBGkrjw88eq8ICTuC//m6huSEIX+PgkcZzUd8PFxuzHIk7qNhNRtYVIwkQ7gQwExRzYQRkqvHVa7d1ZVJ0rZ48iKi1MNAazQmsbN/MCBu2978A9VJaNUjCFLJIk+ZOWjk9gjROb89ah6SX5cn9RteVLY5p6dCGv0eRW566dP88GdTtkjGMSjgDIfeBJ1bZ5prkXTqCaaJkom5GrcsFHVbZzocIMLzphWstsDFzmsh61v+pBD5lWLCa3Z86kEstIE+84jZsqDWzCyMOtQumrITxkUhcuu/Hc2O1dNCIjjq9jlKOTvsC3LVGpfRiBFitiyd+Iw5sv4/EcKQVecxEtsEIvfIcQazsJ6LnnXjnTyhQ5gU3fcyLyqOeSWVdKtxVhkYB46IRZ/5Mqt3UwsCz3XJ1ecOHYl0kVghrPR0teZRKmBhKTbbxEP3odSmgeCECE1InHRjqVb4B+38B9EdK/Hx1OgHogDYfIqpDHmzo3lwvpVr55IMXWZp+Nv9hODZc4+WoLOua9Y5DnLOszApWSDhZ8zBvMipLMqU6nPpacuaOXeBRoStMZf9wfhDP+57+Bk0BqvGlOz2myuqfHBhiMfSF+wRBTqhXuB0mXLsJ5AJPf0kIDIJlwPOhPdCEtpAcYzgP5PJgQaQLw+ABP4vrPxw9hYv+B/QPH/5s875TUkwAAAABJRU5ErkJggg==" alt="Decoration2" class="pe-3">
+              <div class="foodproduct-info ps-6 pt-2 pb-2">
+                <p>重量</p>
+                <p class="p2">400 g </p>
+              </div>
+            </div>
+            </div>
+
+            <!-- 2. 成分描述 -->
+            <div class="foodproduct-content pb-7 pt-md-72" >
+              <h3>2. 成分描述</h3>
+                <p class="product-border "></p>
+            </div>
+
+            <div class="d-md-flex">
+            <div class="col-md-6 d-flex pb-3 pe-48 col-12">            
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAB/CAYAAADmUULuAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAVOSURBVHgB7VhdchpHEO6eIQbkB5MTmJxA5ASWXvTjPAAnkHiwDVJcwAlknQBUtiTipArpBEgPsX6qUpZugE4QdAKjh4hFYafTPbBE6M+7bKoUV9FVql1tzXzb3fN93b0ATOxx7Y/fVp8rCGmPC+B0r74PBaCMTnzjOZgA/B8ASGM4IiHR4zMxOeHBNw+AGp+F8yA0ExkgAmPawfv8DCC0x/dAQbJ/GcOON98UDbjNsQDEdaMwdXX1tCVyxiCb7ZsRM0RwqpCmgWDGtwcHlXxS3rywUpvVQF9cULuE6P8UKGJSYNSp3AuQAkqxB/5zgKDayG+U+4VCLcd71/nhCQSxw63850allBj+v53/HOgUFLnlqWhnbeQZBLC51V+bhvDsaDvfB3HNvu9jlFPA70yGUCU49iQCNhdWtqu+AIQ8SlPRuLihldt2UZcUYPqyG/3BVwiy+bLbzQn/JYzFldoyEe3Go91lXwBMmDZAQs5y5vfNVyn7TEGVW9O0Pw+MuxGPOQ0mz7Of2AN55jhOW66BtHDdbD1QAbRw0zACSwywMxbA0VahQgbOFwu11oMhCGGIWL4ule1bkQWlVNoAbrxc2d6TZw+q0SW8EBcpAhlFkAZLntrs9TWBkniwmV9GhCXqQm6xXGsFBrAg20xpgnqnG8tmy9XgVVkSRy6se6q81wM5Z3tUAyMH1j23xQ5rhUanE83d6YHNvoJMJxYre9VHRani0VjM/O3uxp44mVsAIlvekHy5Wis9vfwrKZvEbRGTVrrorcOIEkrfnpGkeFIPdhuV5YRB3fA2Zcs7bemFQw+Msve3ABQKqknYDdAXklw/bRUyXI3Oh+vApJQxzREiyTkbY1qolMS6xzUwyxVo7WjrDRiis0UOaxgC82H+7cfZIcAxx9pj3SutuVyZacnF3GpN4szCHUlmlm7cCgFdaoNxQUoXRqEuHo14yEfL3jQMC8nTAkpsmkzdKDhFZMYbygjnO/HobNxxGtx9ksyWFhpKcTgtl3o5r6hYgOvog+wkyRgORRW5ie46U7G9bK7a9taghrXrahwCfHr/OmNvtOaToLSQR84f7rCDD/kd9mxn8W3tZITKhx9elwxBS2t8Mb/yS/m48ipFUSU14RwVfJkv1NaHa7nNiaBGkrjw88eq8ICTuC//m6huSEIX+PgkcZzUd8PFxuzHIk7qNhNRtYVIwkQ7gQwExRzYQRkqvHVa7d1ZVJ0rZ48iKi1MNAazQmsbN/MCBu2978A9VJaNUjCFLJIk+ZOWjk9gjROb89ah6SX5cn9RteVLY5p6dCGv0eRW566dP88GdTtkjGMSjgDIfeBJ1bZ5prkXTqCaaJkom5GrcsFHVbZzocIMLzphWstsDFzmsh61v+pBD5lWLCa3Z86kEstIE+84jZsqDWzCyMOtQumrITxkUhcuu/Hc2O1dNCIjjq9jlKOTvsC3LVGpfRiBFitiyd+Iw5sv4/EcKQVecxEtsEIvfIcQazsJ6LnnXjnTyhQ5gU3fcyLyqOeSWVdKtxVhkYB46IRZ/5Mqt3UwsCz3XJ1ecOHYl0kVghrPR0teZRKmBhKTbbxEP3odSmgeCECE1InHRjqVb4B+38B9EdK/Hx1OgHogDYfIqpDHmzo3lwvpVr55IMXWZp+Nv9hODZc4+WoLOua9Y5DnLOszApWSDhZ8zBvMipLMqU6nPpacuaOXeBRoStMZf9wfhDP+57+Bk0BqvGlOz2myuqfHBhiMfSF+wRBTqhXuB0mXLsJ5AJPf0kIDIJlwPOhPdCEtpAcYzgP5PJgQaQLw+ABP4vrPxw9hYv+B/QPH/5s875TUkwAAAABJRU5ErkJggg==" alt="Decoration2" class="pe-3">
+              <div class="foodproduct-info ps-6 pt-2 pb-2">
+                <p>口味類別</p>
+                <p class="p2">雞肉</p>
+              </div>
+            </div>
+            
+            <div class="col-md-6 d-flex pb-3 col-12">              
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAB/CAYAAADmUULuAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAVOSURBVHgB7VhdchpHEO6eIQbkB5MTmJxA5ASWXvTjPAAnkHiwDVJcwAlknQBUtiTipArpBEgPsX6qUpZugE4QdAKjh4hFYafTPbBE6M+7bKoUV9FVql1tzXzb3fN93b0ATOxx7Y/fVp8rCGmPC+B0r74PBaCMTnzjOZgA/B8ASGM4IiHR4zMxOeHBNw+AGp+F8yA0ExkgAmPawfv8DCC0x/dAQbJ/GcOON98UDbjNsQDEdaMwdXX1tCVyxiCb7ZsRM0RwqpCmgWDGtwcHlXxS3rywUpvVQF9cULuE6P8UKGJSYNSp3AuQAkqxB/5zgKDayG+U+4VCLcd71/nhCQSxw63850allBj+v53/HOgUFLnlqWhnbeQZBLC51V+bhvDsaDvfB3HNvu9jlFPA70yGUCU49iQCNhdWtqu+AIQ8SlPRuLihldt2UZcUYPqyG/3BVwiy+bLbzQn/JYzFldoyEe3Go91lXwBMmDZAQs5y5vfNVyn7TEGVW9O0Pw+MuxGPOQ0mz7Of2AN55jhOW66BtHDdbD1QAbRw0zACSwywMxbA0VahQgbOFwu11oMhCGGIWL4ule1bkQWlVNoAbrxc2d6TZw+q0SW8EBcpAhlFkAZLntrs9TWBkniwmV9GhCXqQm6xXGsFBrAg20xpgnqnG8tmy9XgVVkSRy6se6q81wM5Z3tUAyMH1j23xQ5rhUanE83d6YHNvoJMJxYre9VHRani0VjM/O3uxp44mVsAIlvekHy5Wis9vfwrKZvEbRGTVrrorcOIEkrfnpGkeFIPdhuV5YRB3fA2Zcs7bemFQw+Msve3ABQKqknYDdAXklw/bRUyXI3Oh+vApJQxzREiyTkbY1qolMS6xzUwyxVo7WjrDRiis0UOaxgC82H+7cfZIcAxx9pj3SutuVyZacnF3GpN4szCHUlmlm7cCgFdaoNxQUoXRqEuHo14yEfL3jQMC8nTAkpsmkzdKDhFZMYbygjnO/HobNxxGtx9ksyWFhpKcTgtl3o5r6hYgOvog+wkyRgORRW5ie46U7G9bK7a9taghrXrahwCfHr/OmNvtOaToLSQR84f7rCDD/kd9mxn8W3tZITKhx9elwxBS2t8Mb/yS/m48ipFUSU14RwVfJkv1NaHa7nNiaBGkrjw88eq8ICTuC//m6huSEIX+PgkcZzUd8PFxuzHIk7qNhNRtYVIwkQ7gQwExRzYQRkqvHVa7d1ZVJ0rZ48iKi1MNAazQmsbN/MCBu2978A9VJaNUjCFLJIk+ZOWjk9gjROb89ah6SX5cn9RteVLY5p6dCGv0eRW566dP88GdTtkjGMSjgDIfeBJ1bZ5prkXTqCaaJkom5GrcsFHVbZzocIMLzphWstsDFzmsh61v+pBD5lWLCa3Z86kEstIE+84jZsqDWzCyMOtQumrITxkUhcuu/Hc2O1dNCIjjq9jlKOTvsC3LVGpfRiBFitiyd+Iw5sv4/EcKQVecxEtsEIvfIcQazsJ6LnnXjnTyhQ5gU3fcyLyqOeSWVdKtxVhkYB46IRZ/5Mqt3UwsCz3XJ1ecOHYl0kVghrPR0teZRKmBhKTbbxEP3odSmgeCECE1InHRjqVb4B+38B9EdK/Hx1OgHogDYfIqpDHmzo3lwvpVr55IMXWZp+Nv9hODZc4+WoLOua9Y5DnLOszApWSDhZ8zBvMipLMqU6nPpacuaOXeBRoStMZf9wfhDP+57+Bk0BqvGlOz2myuqfHBhiMfSF+wRBTqhXuB0mXLsJ5AJPf0kIDIJlwPOhPdCEtpAcYzgP5PJgQaQLw+ABP4vrPxw9hYv+B/QPH/5s875TUkwAAAABJRU5ErkJggg==" alt="Decoration2" class="pe-3">
+              <div class="foodproduct-info ps-6 pt-2 pb-2">
+                <p>內容物類別</p>
+                <p class="p2">腸胃敏感</p>
+              </div>
+            </div>
+            </div>
+
+            <div class="d-md-flex">
+            <div class="col-md-6 d-flex pb-3 pe-48 col-12">            
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAB/CAYAAADmUULuAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAVOSURBVHgB7VhdchpHEO6eIQbkB5MTmJxA5ASWXvTjPAAnkHiwDVJcwAlknQBUtiTipArpBEgPsX6qUpZugE4QdAKjh4hFYafTPbBE6M+7bKoUV9FVql1tzXzb3fN93b0ATOxx7Y/fVp8rCGmPC+B0r74PBaCMTnzjOZgA/B8ASGM4IiHR4zMxOeHBNw+AGp+F8yA0ExkgAmPawfv8DCC0x/dAQbJ/GcOON98UDbjNsQDEdaMwdXX1tCVyxiCb7ZsRM0RwqpCmgWDGtwcHlXxS3rywUpvVQF9cULuE6P8UKGJSYNSp3AuQAkqxB/5zgKDayG+U+4VCLcd71/nhCQSxw63850allBj+v53/HOgUFLnlqWhnbeQZBLC51V+bhvDsaDvfB3HNvu9jlFPA70yGUCU49iQCNhdWtqu+AIQ8SlPRuLihldt2UZcUYPqyG/3BVwiy+bLbzQn/JYzFldoyEe3Go91lXwBMmDZAQs5y5vfNVyn7TEGVW9O0Pw+MuxGPOQ0mz7Of2AN55jhOW66BtHDdbD1QAbRw0zACSwywMxbA0VahQgbOFwu11oMhCGGIWL4ule1bkQWlVNoAbrxc2d6TZw+q0SW8EBcpAhlFkAZLntrs9TWBkniwmV9GhCXqQm6xXGsFBrAg20xpgnqnG8tmy9XgVVkSRy6se6q81wM5Z3tUAyMH1j23xQ5rhUanE83d6YHNvoJMJxYre9VHRani0VjM/O3uxp44mVsAIlvekHy5Wis9vfwrKZvEbRGTVrrorcOIEkrfnpGkeFIPdhuV5YRB3fA2Zcs7bemFQw+Msve3ABQKqknYDdAXklw/bRUyXI3Oh+vApJQxzREiyTkbY1qolMS6xzUwyxVo7WjrDRiis0UOaxgC82H+7cfZIcAxx9pj3SutuVyZacnF3GpN4szCHUlmlm7cCgFdaoNxQUoXRqEuHo14yEfL3jQMC8nTAkpsmkzdKDhFZMYbygjnO/HobNxxGtx9ksyWFhpKcTgtl3o5r6hYgOvog+wkyRgORRW5ie46U7G9bK7a9taghrXrahwCfHr/OmNvtOaToLSQR84f7rCDD/kd9mxn8W3tZITKhx9elwxBS2t8Mb/yS/m48ipFUSU14RwVfJkv1NaHa7nNiaBGkrjw88eq8ICTuC//m6huSEIX+PgkcZzUd8PFxuzHIk7qNhNRtYVIwkQ7gQwExRzYQRkqvHVa7d1ZVJ0rZ48iKi1MNAazQmsbN/MCBu2978A9VJaNUjCFLJIk+ZOWjk9gjROb89ah6SX5cn9RteVLY5p6dCGv0eRW566dP88GdTtkjGMSjgDIfeBJ1bZ5prkXTqCaaJkom5GrcsFHVbZzocIMLzphWstsDFzmsh61v+pBD5lWLCa3Z86kEstIE+84jZsqDWzCyMOtQumrITxkUhcuu/Hc2O1dNCIjjq9jlKOTvsC3LVGpfRiBFitiyd+Iw5sv4/EcKQVecxEtsEIvfIcQazsJ6LnnXjnTyhQ5gU3fcyLyqOeSWVdKtxVhkYB46IRZ/5Mqt3UwsCz3XJ1ecOHYl0kVghrPR0teZRKmBhKTbbxEP3odSmgeCECE1InHRjqVb4B+38B9EdK/Hx1OgHogDYfIqpDHmzo3lwvpVr55IMXWZp+Nv9hODZc4+WoLOua9Y5DnLOszApWSDhZ8zBvMipLMqU6nPpacuaOXeBRoStMZf9wfhDP+57+Bk0BqvGlOz2myuqfHBhiMfSF+wRBTqhXuB0mXLsJ5AJPf0kIDIJlwPOhPdCEtpAcYzgP5PJgQaQLw+ABP4vrPxw9hYv+B/QPH/5s875TUkwAAAABJRU5ErkJggg==" alt="Decoration2" class="pe-3">
+              <div class="foodproduct-info ps-6 pt-2 pb-2">
+                <p>特殊配方</p>
+                <p class="p2">紐西蘭</p>
+              </div>
+            </div>
+            <div class="col-md-6 d-flex pb-3 col-12">         
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAB/CAYAAADmUULuAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAVOSURBVHgB7VhdchpHEO6eIQbkB5MTmJxA5ASWXvTjPAAnkHiwDVJcwAlknQBUtiTipArpBEgPsX6qUpZugE4QdAKjh4hFYafTPbBE6M+7bKoUV9FVql1tzXzb3fN93b0ATOxx7Y/fVp8rCGmPC+B0r74PBaCMTnzjOZgA/B8ASGM4IiHR4zMxOeHBNw+AGp+F8yA0ExkgAmPawfv8DCC0x/dAQbJ/GcOON98UDbjNsQDEdaMwdXX1tCVyxiCb7ZsRM0RwqpCmgWDGtwcHlXxS3rywUpvVQF9cULuE6P8UKGJSYNSp3AuQAkqxB/5zgKDayG+U+4VCLcd71/nhCQSxw63850allBj+v53/HOgUFLnlqWhnbeQZBLC51V+bhvDsaDvfB3HNvu9jlFPA70yGUCU49iQCNhdWtqu+AIQ8SlPRuLihldt2UZcUYPqyG/3BVwiy+bLbzQn/JYzFldoyEe3Go91lXwBMmDZAQs5y5vfNVyn7TEGVW9O0Pw+MuxGPOQ0mz7Of2AN55jhOW66BtHDdbD1QAbRw0zACSwywMxbA0VahQgbOFwu11oMhCGGIWL4ule1bkQWlVNoAbrxc2d6TZw+q0SW8EBcpAhlFkAZLntrs9TWBkniwmV9GhCXqQm6xXGsFBrAg20xpgnqnG8tmy9XgVVkSRy6se6q81wM5Z3tUAyMH1j23xQ5rhUanE83d6YHNvoJMJxYre9VHRani0VjM/O3uxp44mVsAIlvekHy5Wis9vfwrKZvEbRGTVrrorcOIEkrfnpGkeFIPdhuV5YRB3fA2Zcs7bemFQw+Msve3ABQKqknYDdAXklw/bRUyXI3Oh+vApJQxzREiyTkbY1qolMS6xzUwyxVo7WjrDRiis0UOaxgC82H+7cfZIcAxx9pj3SutuVyZacnF3GpN4szCHUlmlm7cCgFdaoNxQUoXRqEuHo14yEfL3jQMC8nTAkpsmkzdKDhFZMYbygjnO/HobNxxGtx9ksyWFhpKcTgtl3o5r6hYgOvog+wkyRgORRW5ie46U7G9bK7a9taghrXrahwCfHr/OmNvtOaToLSQR84f7rCDD/kd9mxn8W3tZITKhx9elwxBS2t8Mb/yS/m48ipFUSU14RwVfJkv1NaHa7nNiaBGkrjw88eq8ICTuC//m6huSEIX+PgkcZzUd8PFxuzHIk7qNhNRtYVIwkQ7gQwExRzYQRkqvHVa7d1ZVJ0rZ48iKi1MNAazQmsbN/MCBu2978A9VJaNUjCFLJIk+ZOWjk9gjROb89ah6SX5cn9RteVLY5p6dCGv0eRW566dP88GdTtkjGMSjgDIfeBJ1bZ5prkXTqCaaJkom5GrcsFHVbZzocIMLzphWstsDFzmsh61v+pBD5lWLCa3Z86kEstIE+84jZsqDWzCyMOtQumrITxkUhcuu/Hc2O1dNCIjjq9jlKOTvsC3LVGpfRiBFitiyd+Iw5sv4/EcKQVecxEtsEIvfIcQazsJ6LnnXjnTyhQ5gU3fcyLyqOeSWVdKtxVhkYB46IRZ/5Mqt3UwsCz3XJ1ecOHYl0kVghrPR0teZRKmBhKTbbxEP3odSmgeCECE1InHRjqVb4B+38B9EdK/Hx1OgHogDYfIqpDHmzo3lwvpVr55IMXWZp+Nv9hODZc4+WoLOua9Y5DnLOszApWSDhZ8zBvMipLMqU6nPpacuaOXeBRoStMZf9wfhDP+57+Bk0BqvGlOz2myuqfHBhiMfSF+wRBTqhXuB0mXLsJ5AJPf0kIDIJlwPOhPdCEtpAcYzgP5PJgQaQLw+ABP4vrPxw9hYv+B/QPH/5s875TUkwAAAABJRU5ErkJggg==" alt="Decoration2" class="pe-3">
+              <div class="foodproduct-info ps-6 pt-2 pb-2">
+                <p>適合年齡</p>
+                <p class="p2">成貓 </p>
+              </div>
+            </div>
+            </div>
+
+            <!-- 3. 營養資訊 -->
+            <div class="foodproduct-content pb-7 pt-md-72" >
+              <h3>3. 營養資訊</h3>
+                <p class="product-border "></p>
+            </div>
+
+            <div class="d-md-flex">
+              <div class="col-md-6 d-flex pb-3 pe-48 col-12">            
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAB/CAYAAADmUULuAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAVOSURBVHgB7VhdchpHEO6eIQbkB5MTmJxA5ASWXvTjPAAnkHiwDVJcwAlknQBUtiTipArpBEgPsX6qUpZugE4QdAKjh4hFYafTPbBE6M+7bKoUV9FVql1tzXzb3fN93b0ATOxx7Y/fVp8rCGmPC+B0r74PBaCMTnzjOZgA/B8ASGM4IiHR4zMxOeHBNw+AGp+F8yA0ExkgAmPawfv8DCC0x/dAQbJ/GcOON98UDbjNsQDEdaMwdXX1tCVyxiCb7ZsRM0RwqpCmgWDGtwcHlXxS3rywUpvVQF9cULuE6P8UKGJSYNSp3AuQAkqxB/5zgKDayG+U+4VCLcd71/nhCQSxw63850allBj+v53/HOgUFLnlqWhnbeQZBLC51V+bhvDsaDvfB3HNvu9jlFPA70yGUCU49iQCNhdWtqu+AIQ8SlPRuLihldt2UZcUYPqyG/3BVwiy+bLbzQn/JYzFldoyEe3Go91lXwBMmDZAQs5y5vfNVyn7TEGVW9O0Pw+MuxGPOQ0mz7Of2AN55jhOW66BtHDdbD1QAbRw0zACSwywMxbA0VahQgbOFwu11oMhCGGIWL4ule1bkQWlVNoAbrxc2d6TZw+q0SW8EBcpAhlFkAZLntrs9TWBkniwmV9GhCXqQm6xXGsFBrAg20xpgnqnG8tmy9XgVVkSRy6se6q81wM5Z3tUAyMH1j23xQ5rhUanE83d6YHNvoJMJxYre9VHRani0VjM/O3uxp44mVsAIlvekHy5Wis9vfwrKZvEbRGTVrrorcOIEkrfnpGkeFIPdhuV5YRB3fA2Zcs7bemFQw+Msve3ABQKqknYDdAXklw/bRUyXI3Oh+vApJQxzREiyTkbY1qolMS6xzUwyxVo7WjrDRiis0UOaxgC82H+7cfZIcAxx9pj3SutuVyZacnF3GpN4szCHUlmlm7cCgFdaoNxQUoXRqEuHo14yEfL3jQMC8nTAkpsmkzdKDhFZMYbygjnO/HobNxxGtx9ksyWFhpKcTgtl3o5r6hYgOvog+wkyRgORRW5ie46U7G9bK7a9taghrXrahwCfHr/OmNvtOaToLSQR84f7rCDD/kd9mxn8W3tZITKhx9elwxBS2t8Mb/yS/m48ipFUSU14RwVfJkv1NaHa7nNiaBGkrjw88eq8ICTuC//m6huSEIX+PgkcZzUd8PFxuzHIk7qNhNRtYVIwkQ7gQwExRzYQRkqvHVa7d1ZVJ0rZ48iKi1MNAazQmsbN/MCBu2978A9VJaNUjCFLJIk+ZOWjk9gjROb89ah6SX5cn9RteVLY5p6dCGv0eRW566dP88GdTtkjGMSjgDIfeBJ1bZ5prkXTqCaaJkom5GrcsFHVbZzocIMLzphWstsDFzmsh61v+pBD5lWLCa3Z86kEstIE+84jZsqDWzCyMOtQumrITxkUhcuu/Hc2O1dNCIjjq9jlKOTvsC3LVGpfRiBFitiyd+Iw5sv4/EcKQVecxEtsEIvfIcQazsJ6LnnXjnTyhQ5gU3fcyLyqOeSWVdKtxVhkYB46IRZ/5Mqt3UwsCz3XJ1ecOHYl0kVghrPR0teZRKmBhKTbbxEP3odSmgeCECE1InHRjqVb4B+38B9EdK/Hx1OgHogDYfIqpDHmzo3lwvpVr55IMXWZp+Nv9hODZc4+WoLOua9Y5DnLOszApWSDhZ8zBvMipLMqU6nPpacuaOXeBRoStMZf9wfhDP+57+Bk0BqvGlOz2myuqfHBhiMfSF+wRBTqhXuB0mXLsJ5AJPf0kIDIJlwPOhPdCEtpAcYzgP5PJgQaQLw+ABP4vrPxw9hYv+B/QPH/5s875TUkwAAAABJRU5ErkJggg==" alt="Decoration2" class="pe-3">
+                <div class="foodproduct-info ps-6 pt-2 pb-2">
+                  <p>水分比例</p>
+                  <p class="p2">低於10%以下↓</p>
+                </div>
+              </div>
+              
+              <div class="col-md-6 d-flex pb-3 col-12">              
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAB/CAYAAADmUULuAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAVOSURBVHgB7VhdchpHEO6eIQbkB5MTmJxA5ASWXvTjPAAnkHiwDVJcwAlknQBUtiTipArpBEgPsX6qUpZugE4QdAKjh4hFYafTPbBE6M+7bKoUV9FVql1tzXzb3fN93b0ATOxx7Y/fVp8rCGmPC+B0r74PBaCMTnzjOZgA/B8ASGM4IiHR4zMxOeHBNw+AGp+F8yA0ExkgAmPawfv8DCC0x/dAQbJ/GcOON98UDbjNsQDEdaMwdXX1tCVyxiCb7ZsRM0RwqpCmgWDGtwcHlXxS3rywUpvVQF9cULuE6P8UKGJSYNSp3AuQAkqxB/5zgKDayG+U+4VCLcd71/nhCQSxw63850allBj+v53/HOgUFLnlqWhnbeQZBLC51V+bhvDsaDvfB3HNvu9jlFPA70yGUCU49iQCNhdWtqu+AIQ8SlPRuLihldt2UZcUYPqyG/3BVwiy+bLbzQn/JYzFldoyEe3Go91lXwBMmDZAQs5y5vfNVyn7TEGVW9O0Pw+MuxGPOQ0mz7Of2AN55jhOW66BtHDdbD1QAbRw0zACSwywMxbA0VahQgbOFwu11oMhCGGIWL4ule1bkQWlVNoAbrxc2d6TZw+q0SW8EBcpAhlFkAZLntrs9TWBkniwmV9GhCXqQm6xXGsFBrAg20xpgnqnG8tmy9XgVVkSRy6se6q81wM5Z3tUAyMH1j23xQ5rhUanE83d6YHNvoJMJxYre9VHRani0VjM/O3uxp44mVsAIlvekHy5Wis9vfwrKZvEbRGTVrrorcOIEkrfnpGkeFIPdhuV5YRB3fA2Zcs7bemFQw+Msve3ABQKqknYDdAXklw/bRUyXI3Oh+vApJQxzREiyTkbY1qolMS6xzUwyxVo7WjrDRiis0UOaxgC82H+7cfZIcAxx9pj3SutuVyZacnF3GpN4szCHUlmlm7cCgFdaoNxQUoXRqEuHo14yEfL3jQMC8nTAkpsmkzdKDhFZMYbygjnO/HobNxxGtx9ksyWFhpKcTgtl3o5r6hYgOvog+wkyRgORRW5ie46U7G9bK7a9taghrXrahwCfHr/OmNvtOaToLSQR84f7rCDD/kd9mxn8W3tZITKhx9elwxBS2t8Mb/yS/m48ipFUSU14RwVfJkv1NaHa7nNiaBGkrjw88eq8ICTuC//m6huSEIX+PgkcZzUd8PFxuzHIk7qNhNRtYVIwkQ7gQwExRzYQRkqvHVa7d1ZVJ0rZ48iKi1MNAazQmsbN/MCBu2978A9VJaNUjCFLJIk+ZOWjk9gjROb89ah6SX5cn9RteVLY5p6dCGv0eRW566dP88GdTtkjGMSjgDIfeBJ1bZ5prkXTqCaaJkom5GrcsFHVbZzocIMLzphWstsDFzmsh61v+pBD5lWLCa3Z86kEstIE+84jZsqDWzCyMOtQumrITxkUhcuu/Hc2O1dNCIjjq9jlKOTvsC3LVGpfRiBFitiyd+Iw5sv4/EcKQVecxEtsEIvfIcQazsJ6LnnXjnTyhQ5gU3fcyLyqOeSWVdKtxVhkYB46IRZ/5Mqt3UwsCz3XJ1ecOHYl0kVghrPR0teZRKmBhKTbbxEP3odSmgeCECE1InHRjqVb4B+38B9EdK/Hx1OgHogDYfIqpDHmzo3lwvpVr55IMXWZp+Nv9hODZc4+WoLOua9Y5DnLOszApWSDhZ8zBvMipLMqU6nPpacuaOXeBRoStMZf9wfhDP+57+Bk0BqvGlOz2myuqfHBhiMfSF+wRBTqhXuB0mXLsJ5AJPf0kIDIJlwPOhPdCEtpAcYzgP5PJgQaQLw+ABP4vrPxw9hYv+B/QPH/5s875TUkwAAAABJRU5ErkJggg==" alt="Decoration2" class="pe-3">
+                <div class="foodproduct-info ps-6 pt-2 pb-2">
+                  <p>熱量</p>
+                  <p class="p2">3,760 cal/kg</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-md-flex">
+              <div class="col-md-6 d-flex pb-3 pe-48 col-12">            
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAB/CAYAAADmUULuAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAVOSURBVHgB7VhdchpHEO6eIQbkB5MTmJxA5ASWXvTjPAAnkHiwDVJcwAlknQBUtiTipArpBEgPsX6qUpZugE4QdAKjh4hFYafTPbBE6M+7bKoUV9FVql1tzXzb3fN93b0ATOxx7Y/fVp8rCGmPC+B0r74PBaCMTnzjOZgA/B8ASGM4IiHR4zMxOeHBNw+AGp+F8yA0ExkgAmPawfv8DCC0x/dAQbJ/GcOON98UDbjNsQDEdaMwdXX1tCVyxiCb7ZsRM0RwqpCmgWDGtwcHlXxS3rywUpvVQF9cULuE6P8UKGJSYNSp3AuQAkqxB/5zgKDayG+U+4VCLcd71/nhCQSxw63850allBj+v53/HOgUFLnlqWhnbeQZBLC51V+bhvDsaDvfB3HNvu9jlFPA70yGUCU49iQCNhdWtqu+AIQ8SlPRuLihldt2UZcUYPqyG/3BVwiy+bLbzQn/JYzFldoyEe3Go91lXwBMmDZAQs5y5vfNVyn7TEGVW9O0Pw+MuxGPOQ0mz7Of2AN55jhOW66BtHDdbD1QAbRw0zACSwywMxbA0VahQgbOFwu11oMhCGGIWL4ule1bkQWlVNoAbrxc2d6TZw+q0SW8EBcpAhlFkAZLntrs9TWBkniwmV9GhCXqQm6xXGsFBrAg20xpgnqnG8tmy9XgVVkSRy6se6q81wM5Z3tUAyMH1j23xQ5rhUanE83d6YHNvoJMJxYre9VHRani0VjM/O3uxp44mVsAIlvekHy5Wis9vfwrKZvEbRGTVrrorcOIEkrfnpGkeFIPdhuV5YRB3fA2Zcs7bemFQw+Msve3ABQKqknYDdAXklw/bRUyXI3Oh+vApJQxzREiyTkbY1qolMS6xzUwyxVo7WjrDRiis0UOaxgC82H+7cfZIcAxx9pj3SutuVyZacnF3GpN4szCHUlmlm7cCgFdaoNxQUoXRqEuHo14yEfL3jQMC8nTAkpsmkzdKDhFZMYbygjnO/HobNxxGtx9ksyWFhpKcTgtl3o5r6hYgOvog+wkyRgORRW5ie46U7G9bK7a9taghrXrahwCfHr/OmNvtOaToLSQR84f7rCDD/kd9mxn8W3tZITKhx9elwxBS2t8Mb/yS/m48ipFUSU14RwVfJkv1NaHa7nNiaBGkrjw88eq8ICTuC//m6huSEIX+PgkcZzUd8PFxuzHIk7qNhNRtYVIwkQ7gQwExRzYQRkqvHVa7d1ZVJ0rZ48iKi1MNAazQmsbN/MCBu2978A9VJaNUjCFLJIk+ZOWjk9gjROb89ah6SX5cn9RteVLY5p6dCGv0eRW566dP88GdTtkjGMSjgDIfeBJ1bZ5prkXTqCaaJkom5GrcsFHVbZzocIMLzphWstsDFzmsh61v+pBD5lWLCa3Z86kEstIE+84jZsqDWzCyMOtQumrITxkUhcuu/Hc2O1dNCIjjq9jlKOTvsC3LVGpfRiBFitiyd+Iw5sv4/EcKQVecxEtsEIvfIcQazsJ6LnnXjnTyhQ5gU3fcyLyqOeSWVdKtxVhkYB46IRZ/5Mqt3UwsCz3XJ1ecOHYl0kVghrPR0teZRKmBhKTbbxEP3odSmgeCECE1InHRjqVb4B+38B9EdK/Hx1OgHogDYfIqpDHmzo3lwvpVr55IMXWZp+Nv9hODZc4+WoLOua9Y5DnLOszApWSDhZ8zBvMipLMqU6nPpacuaOXeBRoStMZf9wfhDP+57+Bk0BqvGlOz2myuqfHBhiMfSF+wRBTqhXuB0mXLsJ5AJPf0kIDIJlwPOhPdCEtpAcYzgP5PJgQaQLw+ABP4vrPxw9hYv+B/QPH/5s875TUkwAAAABJRU5ErkJggg==" alt="Decoration2" class="pe-3">
+                <div class="foodproduct-info ps-6 pt-2 pb-2">
+                  <p>脂肪比例</p>
+                  <p class="p2">高於16%以上↑</p>
+                </div>
+              </div>
+
+              <div class="col-md-6 d-flex pb-3 col-12">         
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAB/CAYAAADmUULuAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAVOSURBVHgB7VhdchpHEO6eIQbkB5MTmJxA5ASWXvTjPAAnkHiwDVJcwAlknQBUtiTipArpBEgPsX6qUpZugE4QdAKjh4hFYafTPbBE6M+7bKoUV9FVql1tzXzb3fN93b0ATOxx7Y/fVp8rCGmPC+B0r74PBaCMTnzjOZgA/B8ASGM4IiHR4zMxOeHBNw+AGp+F8yA0ExkgAmPawfv8DCC0x/dAQbJ/GcOON98UDbjNsQDEdaMwdXX1tCVyxiCb7ZsRM0RwqpCmgWDGtwcHlXxS3rywUpvVQF9cULuE6P8UKGJSYNSp3AuQAkqxB/5zgKDayG+U+4VCLcd71/nhCQSxw63850allBj+v53/HOgUFLnlqWhnbeQZBLC51V+bhvDsaDvfB3HNvu9jlFPA70yGUCU49iQCNhdWtqu+AIQ8SlPRuLihldt2UZcUYPqyG/3BVwiy+bLbzQn/JYzFldoyEe3Go91lXwBMmDZAQs5y5vfNVyn7TEGVW9O0Pw+MuxGPOQ0mz7Of2AN55jhOW66BtHDdbD1QAbRw0zACSwywMxbA0VahQgbOFwu11oMhCGGIWL4ule1bkQWlVNoAbrxc2d6TZw+q0SW8EBcpAhlFkAZLntrs9TWBkniwmV9GhCXqQm6xXGsFBrAg20xpgnqnG8tmy9XgVVkSRy6se6q81wM5Z3tUAyMH1j23xQ5rhUanE83d6YHNvoJMJxYre9VHRani0VjM/O3uxp44mVsAIlvekHy5Wis9vfwrKZvEbRGTVrrorcOIEkrfnpGkeFIPdhuV5YRB3fA2Zcs7bemFQw+Msve3ABQKqknYDdAXklw/bRUyXI3Oh+vApJQxzREiyTkbY1qolMS6xzUwyxVo7WjrDRiis0UOaxgC82H+7cfZIcAxx9pj3SutuVyZacnF3GpN4szCHUlmlm7cCgFdaoNxQUoXRqEuHo14yEfL3jQMC8nTAkpsmkzdKDhFZMYbygjnO/HobNxxGtx9ksyWFhpKcTgtl3o5r6hYgOvog+wkyRgORRW5ie46U7G9bK7a9taghrXrahwCfHr/OmNvtOaToLSQR84f7rCDD/kd9mxn8W3tZITKhx9elwxBS2t8Mb/yS/m48ipFUSU14RwVfJkv1NaHa7nNiaBGkrjw88eq8ICTuC//m6huSEIX+PgkcZzUd8PFxuzHIk7qNhNRtYVIwkQ7gQwExRzYQRkqvHVa7d1ZVJ0rZ48iKi1MNAazQmsbN/MCBu2978A9VJaNUjCFLJIk+ZOWjk9gjROb89ah6SX5cn9RteVLY5p6dCGv0eRW566dP88GdTtkjGMSjgDIfeBJ1bZ5prkXTqCaaJkom5GrcsFHVbZzocIMLzphWstsDFzmsh61v+pBD5lWLCa3Z86kEstIE+84jZsqDWzCyMOtQumrITxkUhcuu/Hc2O1dNCIjjq9jlKOTvsC3LVGpfRiBFitiyd+Iw5sv4/EcKQVecxEtsEIvfIcQazsJ6LnnXjnTyhQ5gU3fcyLyqOeSWVdKtxVhkYB46IRZ/5Mqt3UwsCz3XJ1ecOHYl0kVghrPR0teZRKmBhKTbbxEP3odSmgeCECE1InHRjqVb4B+38B9EdK/Hx1OgHogDYfIqpDHmzo3lwvpVr55IMXWZp+Nv9hODZc4+WoLOua9Y5DnLOszApWSDhZ8zBvMipLMqU6nPpacuaOXeBRoStMZf9wfhDP+57+Bk0BqvGlOz2myuqfHBhiMfSF+wRBTqhXuB0mXLsJ5AJPf0kIDIJlwPOhPdCEtpAcYzgP5PJgQaQLw+ABP4vrPxw9hYv+B/QPH/5s875TUkwAAAABJRU5ErkJggg==" alt="Decoration2" class="pe-3">
+                <div class="foodproduct-info ps-6 pt-2 pb-2">
+                  <p>含膠與否</p>
+                  <p class="p2">否</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-md-flex">
+              <div class="col-md-6 d-flex pb-3 pe-48 col-12">         
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAB/CAYAAADmUULuAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAVOSURBVHgB7VhdchpHEO6eIQbkB5MTmJxA5ASWXvTjPAAnkHiwDVJcwAlknQBUtiTipArpBEgPsX6qUpZugE4QdAKjh4hFYafTPbBE6M+7bKoUV9FVql1tzXzb3fN93b0ATOxx7Y/fVp8rCGmPC+B0r74PBaCMTnzjOZgA/B8ASGM4IiHR4zMxOeHBNw+AGp+F8yA0ExkgAmPawfv8DCC0x/dAQbJ/GcOON98UDbjNsQDEdaMwdXX1tCVyxiCb7ZsRM0RwqpCmgWDGtwcHlXxS3rywUpvVQF9cULuE6P8UKGJSYNSp3AuQAkqxB/5zgKDayG+U+4VCLcd71/nhCQSxw63850allBj+v53/HOgUFLnlqWhnbeQZBLC51V+bhvDsaDvfB3HNvu9jlFPA70yGUCU49iQCNhdWtqu+AIQ8SlPRuLihldt2UZcUYPqyG/3BVwiy+bLbzQn/JYzFldoyEe3Go91lXwBMmDZAQs5y5vfNVyn7TEGVW9O0Pw+MuxGPOQ0mz7Of2AN55jhOW66BtHDdbD1QAbRw0zACSwywMxbA0VahQgbOFwu11oMhCGGIWL4ule1bkQWlVNoAbrxc2d6TZw+q0SW8EBcpAhlFkAZLntrs9TWBkniwmV9GhCXqQm6xXGsFBrAg20xpgnqnG8tmy9XgVVkSRy6se6q81wM5Z3tUAyMH1j23xQ5rhUanE83d6YHNvoJMJxYre9VHRani0VjM/O3uxp44mVsAIlvekHy5Wis9vfwrKZvEbRGTVrrorcOIEkrfnpGkeFIPdhuV5YRB3fA2Zcs7bemFQw+Msve3ABQKqknYDdAXklw/bRUyXI3Oh+vApJQxzREiyTkbY1qolMS6xzUwyxVo7WjrDRiis0UOaxgC82H+7cfZIcAxx9pj3SutuVyZacnF3GpN4szCHUlmlm7cCgFdaoNxQUoXRqEuHo14yEfL3jQMC8nTAkpsmkzdKDhFZMYbygjnO/HobNxxGtx9ksyWFhpKcTgtl3o5r6hYgOvog+wkyRgORRW5ie46U7G9bK7a9taghrXrahwCfHr/OmNvtOaToLSQR84f7rCDD/kd9mxn8W3tZITKhx9elwxBS2t8Mb/yS/m48ipFUSU14RwVfJkv1NaHa7nNiaBGkrjw88eq8ICTuC//m6huSEIX+PgkcZzUd8PFxuzHIk7qNhNRtYVIwkQ7gQwExRzYQRkqvHVa7d1ZVJ0rZ48iKi1MNAazQmsbN/MCBu2978A9VJaNUjCFLJIk+ZOWjk9gjROb89ah6SX5cn9RteVLY5p6dCGv0eRW566dP88GdTtkjGMSjgDIfeBJ1bZ5prkXTqCaaJkom5GrcsFHVbZzocIMLzphWstsDFzmsh61v+pBD5lWLCa3Z86kEstIE+84jZsqDWzCyMOtQumrITxkUhcuu/Hc2O1dNCIjjq9jlKOTvsC3LVGpfRiBFitiyd+Iw5sv4/EcKQVecxEtsEIvfIcQazsJ6LnnXjnTyhQ5gU3fcyLyqOeSWVdKtxVhkYB46IRZ/5Mqt3UwsCz3XJ1ecOHYl0kVghrPR0teZRKmBhKTbbxEP3odSmgeCECE1InHRjqVb4B+38B9EdK/Hx1OgHogDYfIqpDHmzo3lwvpVr55IMXWZp+Nv9hODZc4+WoLOua9Y5DnLOszApWSDhZ8zBvMipLMqU6nPpacuaOXeBRoStMZf9wfhDP+57+Bk0BqvGlOz2myuqfHBhiMfSF+wRBTqhXuB0mXLsJ5AJPf0kIDIJlwPOhPdCEtpAcYzgP5PJgQaQLw+ABP4vrPxw9hYv+B/QPH/5s875TUkwAAAABJRU5ErkJggg==" alt="Decoration2" class="pe-3">
+                <div class="foodproduct-info ps-6 pt-2 pb-2">
+                  <p>蛋白質比例</p>
+                  <p class="p2">高於34%以上↑</p>
+                </div>
+              </div>
+            </div>
+            <!-- 4. 額外成分 -->
+            <div class="foodproduct-content pb-7  pt-md-72" >
+              <h3>4. 額外成分</h3>
+                <p class="product-border "></p>
+            </div>
+
+            <div class="d-md-flex">
+              <div class="col-md-6 d-flex pb-3 pe-48 col-12">            
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAB/CAYAAADmUULuAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAVOSURBVHgB7VhdchpHEO6eIQbkB5MTmJxA5ASWXvTjPAAnkHiwDVJcwAlknQBUtiTipArpBEgPsX6qUpZugE4QdAKjh4hFYafTPbBE6M+7bKoUV9FVql1tzXzb3fN93b0ATOxx7Y/fVp8rCGmPC+B0r74PBaCMTnzjOZgA/B8ASGM4IiHR4zMxOeHBNw+AGp+F8yA0ExkgAmPawfv8DCC0x/dAQbJ/GcOON98UDbjNsQDEdaMwdXX1tCVyxiCb7ZsRM0RwqpCmgWDGtwcHlXxS3rywUpvVQF9cULuE6P8UKGJSYNSp3AuQAkqxB/5zgKDayG+U+4VCLcd71/nhCQSxw63850allBj+v53/HOgUFLnlqWhnbeQZBLC51V+bhvDsaDvfB3HNvu9jlFPA70yGUCU49iQCNhdWtqu+AIQ8SlPRuLihldt2UZcUYPqyG/3BVwiy+bLbzQn/JYzFldoyEe3Go91lXwBMmDZAQs5y5vfNVyn7TEGVW9O0Pw+MuxGPOQ0mz7Of2AN55jhOW66BtHDdbD1QAbRw0zACSwywMxbA0VahQgbOFwu11oMhCGGIWL4ule1bkQWlVNoAbrxc2d6TZw+q0SW8EBcpAhlFkAZLntrs9TWBkniwmV9GhCXqQm6xXGsFBrAg20xpgnqnG8tmy9XgVVkSRy6se6q81wM5Z3tUAyMH1j23xQ5rhUanE83d6YHNvoJMJxYre9VHRani0VjM/O3uxp44mVsAIlvekHy5Wis9vfwrKZvEbRGTVrrorcOIEkrfnpGkeFIPdhuV5YRB3fA2Zcs7bemFQw+Msve3ABQKqknYDdAXklw/bRUyXI3Oh+vApJQxzREiyTkbY1qolMS6xzUwyxVo7WjrDRiis0UOaxgC82H+7cfZIcAxx9pj3SutuVyZacnF3GpN4szCHUlmlm7cCgFdaoNxQUoXRqEuHo14yEfL3jQMC8nTAkpsmkzdKDhFZMYbygjnO/HobNxxGtx9ksyWFhpKcTgtl3o5r6hYgOvog+wkyRgORRW5ie46U7G9bK7a9taghrXrahwCfHr/OmNvtOaToLSQR84f7rCDD/kd9mxn8W3tZITKhx9elwxBS2t8Mb/yS/m48ipFUSU14RwVfJkv1NaHa7nNiaBGkrjw88eq8ICTuC//m6huSEIX+PgkcZzUd8PFxuzHIk7qNhNRtYVIwkQ7gQwExRzYQRkqvHVa7d1ZVJ0rZ48iKi1MNAazQmsbN/MCBu2978A9VJaNUjCFLJIk+ZOWjk9gjROb89ah6SX5cn9RteVLY5p6dCGv0eRW566dP88GdTtkjGMSjgDIfeBJ1bZ5prkXTqCaaJkom5GrcsFHVbZzocIMLzphWstsDFzmsh61v+pBD5lWLCa3Z86kEstIE+84jZsqDWzCyMOtQumrITxkUhcuu/Hc2O1dNCIjjq9jlKOTvsC3LVGpfRiBFitiyd+Iw5sv4/EcKQVecxEtsEIvfIcQazsJ6LnnXjnTyhQ5gU3fcyLyqOeSWVdKtxVhkYB46IRZ/5Mqt3UwsCz3XJ1ecOHYl0kVghrPR0teZRKmBhKTbbxEP3odSmgeCECE1InHRjqVb4B+38B9EdK/Hx1OgHogDYfIqpDHmzo3lwvpVr55IMXWZp+Nv9hODZc4+WoLOua9Y5DnLOszApWSDhZ8zBvMipLMqU6nPpacuaOXeBRoStMZf9wfhDP+57+Bk0BqvGlOz2myuqfHBhiMfSF+wRBTqhXuB0mXLsJ5AJPf0kIDIJlwPOhPdCEtpAcYzgP5PJgQaQLw+ABP4vrPxw9hYv+B/QPH/5s875TUkwAAAABJRU5ErkJggg==" alt="Decoration2" class="pe-3">
+                <div class="foodproduct-info ps-6 pt-2 pb-2">
+                  <p>額外成分一</p>
+                  <p class="p2">鈣 1.8%</p>
+                </div>
+              </div>
+              <div class="col-md-6 d-flex pb-3 col-12">              
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAB/CAYAAADmUULuAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAVOSURBVHgB7VhdchpHEO6eIQbkB5MTmJxA5ASWXvTjPAAnkHiwDVJcwAlknQBUtiTipArpBEgPsX6qUpZugE4QdAKjh4hFYafTPbBE6M+7bKoUV9FVql1tzXzb3fN93b0ATOxx7Y/fVp8rCGmPC+B0r74PBaCMTnzjOZgA/B8ASGM4IiHR4zMxOeHBNw+AGp+F8yA0ExkgAmPawfv8DCC0x/dAQbJ/GcOON98UDbjNsQDEdaMwdXX1tCVyxiCb7ZsRM0RwqpCmgWDGtwcHlXxS3rywUpvVQF9cULuE6P8UKGJSYNSp3AuQAkqxB/5zgKDayG+U+4VCLcd71/nhCQSxw63850allBj+v53/HOgUFLnlqWhnbeQZBLC51V+bhvDsaDvfB3HNvu9jlFPA70yGUCU49iQCNhdWtqu+AIQ8SlPRuLihldt2UZcUYPqyG/3BVwiy+bLbzQn/JYzFldoyEe3Go91lXwBMmDZAQs5y5vfNVyn7TEGVW9O0Pw+MuxGPOQ0mz7Of2AN55jhOW66BtHDdbD1QAbRw0zACSwywMxbA0VahQgbOFwu11oMhCGGIWL4ule1bkQWlVNoAbrxc2d6TZw+q0SW8EBcpAhlFkAZLntrs9TWBkniwmV9GhCXqQm6xXGsFBrAg20xpgnqnG8tmy9XgVVkSRy6se6q81wM5Z3tUAyMH1j23xQ5rhUanE83d6YHNvoJMJxYre9VHRani0VjM/O3uxp44mVsAIlvekHy5Wis9vfwrKZvEbRGTVrrorcOIEkrfnpGkeFIPdhuV5YRB3fA2Zcs7bemFQw+Msve3ABQKqknYDdAXklw/bRUyXI3Oh+vApJQxzREiyTkbY1qolMS6xzUwyxVo7WjrDRiis0UOaxgC82H+7cfZIcAxx9pj3SutuVyZacnF3GpN4szCHUlmlm7cCgFdaoNxQUoXRqEuHo14yEfL3jQMC8nTAkpsmkzdKDhFZMYbygjnO/HobNxxGtx9ksyWFhpKcTgtl3o5r6hYgOvog+wkyRgORRW5ie46U7G9bK7a9taghrXrahwCfHr/OmNvtOaToLSQR84f7rCDD/kd9mxn8W3tZITKhx9elwxBS2t8Mb/yS/m48ipFUSU14RwVfJkv1NaHa7nNiaBGkrjw88eq8ICTuC//m6huSEIX+PgkcZzUd8PFxuzHIk7qNhNRtYVIwkQ7gQwExRzYQRkqvHVa7d1ZVJ0rZ48iKi1MNAazQmsbN/MCBu2978A9VJaNUjCFLJIk+ZOWjk9gjROb89ah6SX5cn9RteVLY5p6dCGv0eRW566dP88GdTtkjGMSjgDIfeBJ1bZ5prkXTqCaaJkom5GrcsFHVbZzocIMLzphWstsDFzmsh61v+pBD5lWLCa3Z86kEstIE+84jZsqDWzCyMOtQumrITxkUhcuu/Hc2O1dNCIjjq9jlKOTvsC3LVGpfRiBFitiyd+Iw5sv4/EcKQVecxEtsEIvfIcQazsJ6LnnXjnTyhQ5gU3fcyLyqOeSWVdKtxVhkYB46IRZ/5Mqt3UwsCz3XJ1ecOHYl0kVghrPR0teZRKmBhKTbbxEP3odSmgeCECE1InHRjqVb4B+38B9EdK/Hx1OgHogDYfIqpDHmzo3lwvpVr55IMXWZp+Nv9hODZc4+WoLOua9Y5DnLOszApWSDhZ8zBvMipLMqU6nPpacuaOXeBRoStMZf9wfhDP+57+Bk0BqvGlOz2myuqfHBhiMfSF+wRBTqhXuB0mXLsJ5AJPf0kIDIJlwPOhPdCEtpAcYzgP5PJgQaQLw+ABP4vrPxw9hYv+B/QPH/5s875TUkwAAAABJRU5ErkJggg==" alt="Decoration2" class="pe-3">
+                <div class="foodproduct-info ps-6 pt-2 pb-2">
+                  <p>額外成分二</p>
+                  <p class="p2">磷 1.2%</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-md-flex">
+              <div class="col-md-6 d-flex pb-3 pe-48 col-12">            
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAB/CAYAAADmUULuAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAVOSURBVHgB7VhdchpHEO6eIQbkB5MTmJxA5ASWXvTjPAAnkHiwDVJcwAlknQBUtiTipArpBEgPsX6qUpZugE4QdAKjh4hFYafTPbBE6M+7bKoUV9FVql1tzXzb3fN93b0ATOxx7Y/fVp8rCGmPC+B0r74PBaCMTnzjOZgA/B8ASGM4IiHR4zMxOeHBNw+AGp+F8yA0ExkgAmPawfv8DCC0x/dAQbJ/GcOON98UDbjNsQDEdaMwdXX1tCVyxiCb7ZsRM0RwqpCmgWDGtwcHlXxS3rywUpvVQF9cULuE6P8UKGJSYNSp3AuQAkqxB/5zgKDayG+U+4VCLcd71/nhCQSxw63850allBj+v53/HOgUFLnlqWhnbeQZBLC51V+bhvDsaDvfB3HNvu9jlFPA70yGUCU49iQCNhdWtqu+AIQ8SlPRuLihldt2UZcUYPqyG/3BVwiy+bLbzQn/JYzFldoyEe3Go91lXwBMmDZAQs5y5vfNVyn7TEGVW9O0Pw+MuxGPOQ0mz7Of2AN55jhOW66BtHDdbD1QAbRw0zACSwywMxbA0VahQgbOFwu11oMhCGGIWL4ule1bkQWlVNoAbrxc2d6TZw+q0SW8EBcpAhlFkAZLntrs9TWBkniwmV9GhCXqQm6xXGsFBrAg20xpgnqnG8tmy9XgVVkSRy6se6q81wM5Z3tUAyMH1j23xQ5rhUanE83d6YHNvoJMJxYre9VHRani0VjM/O3uxp44mVsAIlvekHy5Wis9vfwrKZvEbRGTVrrorcOIEkrfnpGkeFIPdhuV5YRB3fA2Zcs7bemFQw+Msve3ABQKqknYDdAXklw/bRUyXI3Oh+vApJQxzREiyTkbY1qolMS6xzUwyxVo7WjrDRiis0UOaxgC82H+7cfZIcAxx9pj3SutuVyZacnF3GpN4szCHUlmlm7cCgFdaoNxQUoXRqEuHo14yEfL3jQMC8nTAkpsmkzdKDhFZMYbygjnO/HobNxxGtx9ksyWFhpKcTgtl3o5r6hYgOvog+wkyRgORRW5ie46U7G9bK7a9taghrXrahwCfHr/OmNvtOaToLSQR84f7rCDD/kd9mxn8W3tZITKhx9elwxBS2t8Mb/yS/m48ipFUSU14RwVfJkv1NaHa7nNiaBGkrjw88eq8ICTuC//m6huSEIX+PgkcZzUd8PFxuzHIk7qNhNRtYVIwkQ7gQwExRzYQRkqvHVa7d1ZVJ0rZ48iKi1MNAazQmsbN/MCBu2978A9VJaNUjCFLJIk+ZOWjk9gjROb89ah6SX5cn9RteVLY5p6dCGv0eRW566dP88GdTtkjGMSjgDIfeBJ1bZ5prkXTqCaaJkom5GrcsFHVbZzocIMLzphWstsDFzmsh61v+pBD5lWLCa3Z86kEstIE+84jZsqDWzCyMOtQumrITxkUhcuu/Hc2O1dNCIjjq9jlKOTvsC3LVGpfRiBFitiyd+Iw5sv4/EcKQVecxEtsEIvfIcQazsJ6LnnXjnTyhQ5gU3fcyLyqOeSWVdKtxVhkYB46IRZ/5Mqt3UwsCz3XJ1ecOHYl0kVghrPR0teZRKmBhKTbbxEP3odSmgeCECE1InHRjqVb4B+38B9EdK/Hx1OgHogDYfIqpDHmzo3lwvpVr55IMXWZp+Nv9hODZc4+WoLOua9Y5DnLOszApWSDhZ8zBvMipLMqU6nPpacuaOXeBRoStMZf9wfhDP+57+Bk0BqvGlOz2myuqfHBhiMfSF+wRBTqhXuB0mXLsJ5AJPf0kIDIJlwPOhPdCEtpAcYzgP5PJgQaQLw+ABP4vrPxw9hYv+B/QPH/5s875TUkwAAAABJRU5ErkJggg==" alt="Decoration2" class="pe-3">
+                <div class="foodproduct-info ps-6 pt-2 pb-2">
+                  <p>額外成分三</p>
+                  <p class="p2">牛磺酸 0.1%</p>
+                </div>
+              </div>
+              
+              <div class="col-md-6 d-flex pb-3 col-12">         
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAB/CAYAAADmUULuAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAVOSURBVHgB7VhdchpHEO6eIQbkB5MTmJxA5ASWXvTjPAAnkHiwDVJcwAlknQBUtiTipArpBEgPsX6qUpZugE4QdAKjh4hFYafTPbBE6M+7bKoUV9FVql1tzXzb3fN93b0ATOxx7Y/fVp8rCGmPC+B0r74PBaCMTnzjOZgA/B8ASGM4IiHR4zMxOeHBNw+AGp+F8yA0ExkgAmPawfv8DCC0x/dAQbJ/GcOON98UDbjNsQDEdaMwdXX1tCVyxiCb7ZsRM0RwqpCmgWDGtwcHlXxS3rywUpvVQF9cULuE6P8UKGJSYNSp3AuQAkqxB/5zgKDayG+U+4VCLcd71/nhCQSxw63850allBj+v53/HOgUFLnlqWhnbeQZBLC51V+bhvDsaDvfB3HNvu9jlFPA70yGUCU49iQCNhdWtqu+AIQ8SlPRuLihldt2UZcUYPqyG/3BVwiy+bLbzQn/JYzFldoyEe3Go91lXwBMmDZAQs5y5vfNVyn7TEGVW9O0Pw+MuxGPOQ0mz7Of2AN55jhOW66BtHDdbD1QAbRw0zACSwywMxbA0VahQgbOFwu11oMhCGGIWL4ule1bkQWlVNoAbrxc2d6TZw+q0SW8EBcpAhlFkAZLntrs9TWBkniwmV9GhCXqQm6xXGsFBrAg20xpgnqnG8tmy9XgVVkSRy6se6q81wM5Z3tUAyMH1j23xQ5rhUanE83d6YHNvoJMJxYre9VHRani0VjM/O3uxp44mVsAIlvekHy5Wis9vfwrKZvEbRGTVrrorcOIEkrfnpGkeFIPdhuV5YRB3fA2Zcs7bemFQw+Msve3ABQKqknYDdAXklw/bRUyXI3Oh+vApJQxzREiyTkbY1qolMS6xzUwyxVo7WjrDRiis0UOaxgC82H+7cfZIcAxx9pj3SutuVyZacnF3GpN4szCHUlmlm7cCgFdaoNxQUoXRqEuHo14yEfL3jQMC8nTAkpsmkzdKDhFZMYbygjnO/HobNxxGtx9ksyWFhpKcTgtl3o5r6hYgOvog+wkyRgORRW5ie46U7G9bK7a9taghrXrahwCfHr/OmNvtOaToLSQR84f7rCDD/kd9mxn8W3tZITKhx9elwxBS2t8Mb/yS/m48ipFUSU14RwVfJkv1NaHa7nNiaBGkrjw88eq8ICTuC//m6huSEIX+PgkcZzUd8PFxuzHIk7qNhNRtYVIwkQ7gQwExRzYQRkqvHVa7d1ZVJ0rZ48iKi1MNAazQmsbN/MCBu2978A9VJaNUjCFLJIk+ZOWjk9gjROb89ah6SX5cn9RteVLY5p6dCGv0eRW566dP88GdTtkjGMSjgDIfeBJ1bZ5prkXTqCaaJkom5GrcsFHVbZzocIMLzphWstsDFzmsh61v+pBD5lWLCa3Z86kEstIE+84jZsqDWzCyMOtQumrITxkUhcuu/Hc2O1dNCIjjq9jlKOTvsC3LVGpfRiBFitiyd+Iw5sv4/EcKQVecxEtsEIvfIcQazsJ6LnnXjnTyhQ5gU3fcyLyqOeSWVdKtxVhkYB46IRZ/5Mqt3UwsCz3XJ1ecOHYl0kVghrPR0teZRKmBhKTbbxEP3odSmgeCECE1InHRjqVb4B+38B9EdK/Hx1OgHogDYfIqpDHmzo3lwvpVr55IMXWZp+Nv9hODZc4+WoLOua9Y5DnLOszApWSDhZ8zBvMipLMqU6nPpacuaOXeBRoStMZf9wfhDP+57+Bk0BqvGlOz2myuqfHBhiMfSF+wRBTqhXuB0mXLsJ5AJPf0kIDIJlwPOhPdCEtpAcYzgP5PJgQaQLw+ABP4vrPxw9hYv+B/QPH/5s875TUkwAAAABJRU5ErkJggg==" alt="Decoration2" class="pe-3">
+                <div class="foodproduct-info ps-6 pt-2 pb-2">
+                  <p>額外成分四</p>
+                  <p class="p2">Omega-6 2%</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-md-flex">
+              <div class="col-md-6 d-flex pb-3 pe-48 col-12">         
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAB/CAYAAADmUULuAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAVOSURBVHgB7VhdchpHEO6eIQbkB5MTmJxA5ASWXvTjPAAnkHiwDVJcwAlknQBUtiTipArpBEgPsX6qUpZugE4QdAKjh4hFYafTPbBE6M+7bKoUV9FVql1tzXzb3fN93b0ATOxx7Y/fVp8rCGmPC+B0r74PBaCMTnzjOZgA/B8ASGM4IiHR4zMxOeHBNw+AGp+F8yA0ExkgAmPawfv8DCC0x/dAQbJ/GcOON98UDbjNsQDEdaMwdXX1tCVyxiCb7ZsRM0RwqpCmgWDGtwcHlXxS3rywUpvVQF9cULuE6P8UKGJSYNSp3AuQAkqxB/5zgKDayG+U+4VCLcd71/nhCQSxw63850allBj+v53/HOgUFLnlqWhnbeQZBLC51V+bhvDsaDvfB3HNvu9jlFPA70yGUCU49iQCNhdWtqu+AIQ8SlPRuLihldt2UZcUYPqyG/3BVwiy+bLbzQn/JYzFldoyEe3Go91lXwBMmDZAQs5y5vfNVyn7TEGVW9O0Pw+MuxGPOQ0mz7Of2AN55jhOW66BtHDdbD1QAbRw0zACSwywMxbA0VahQgbOFwu11oMhCGGIWL4ule1bkQWlVNoAbrxc2d6TZw+q0SW8EBcpAhlFkAZLntrs9TWBkniwmV9GhCXqQm6xXGsFBrAg20xpgnqnG8tmy9XgVVkSRy6se6q81wM5Z3tUAyMH1j23xQ5rhUanE83d6YHNvoJMJxYre9VHRani0VjM/O3uxp44mVsAIlvekHy5Wis9vfwrKZvEbRGTVrrorcOIEkrfnpGkeFIPdhuV5YRB3fA2Zcs7bemFQw+Msve3ABQKqknYDdAXklw/bRUyXI3Oh+vApJQxzREiyTkbY1qolMS6xzUwyxVo7WjrDRiis0UOaxgC82H+7cfZIcAxx9pj3SutuVyZacnF3GpN4szCHUlmlm7cCgFdaoNxQUoXRqEuHo14yEfL3jQMC8nTAkpsmkzdKDhFZMYbygjnO/HobNxxGtx9ksyWFhpKcTgtl3o5r6hYgOvog+wkyRgORRW5ie46U7G9bK7a9taghrXrahwCfHr/OmNvtOaToLSQR84f7rCDD/kd9mxn8W3tZITKhx9elwxBS2t8Mb/yS/m48ipFUSU14RwVfJkv1NaHa7nNiaBGkrjw88eq8ICTuC//m6huSEIX+PgkcZzUd8PFxuzHIk7qNhNRtYVIwkQ7gQwExRzYQRkqvHVa7d1ZVJ0rZ48iKi1MNAazQmsbN/MCBu2978A9VJaNUjCFLJIk+ZOWjk9gjROb89ah6SX5cn9RteVLY5p6dCGv0eRW566dP88GdTtkjGMSjgDIfeBJ1bZ5prkXTqCaaJkom5GrcsFHVbZzocIMLzphWstsDFzmsh61v+pBD5lWLCa3Z86kEstIE+84jZsqDWzCyMOtQumrITxkUhcuu/Hc2O1dNCIjjq9jlKOTvsC3LVGpfRiBFitiyd+Iw5sv4/EcKQVecxEtsEIvfIcQazsJ6LnnXjnTyhQ5gU3fcyLyqOeSWVdKtxVhkYB46IRZ/5Mqt3UwsCz3XJ1ecOHYl0kVghrPR0teZRKmBhKTbbxEP3odSmgeCECE1InHRjqVb4B+38B9EdK/Hx1OgHogDYfIqpDHmzo3lwvpVr55IMXWZp+Nv9hODZc4+WoLOua9Y5DnLOszApWSDhZ8zBvMipLMqU6nPpacuaOXeBRoStMZf9wfhDP+57+Bk0BqvGlOz2myuqfHBhiMfSF+wRBTqhXuB0mXLsJ5AJPf0kIDIJlwPOhPdCEtpAcYzgP5PJgQaQLw+ABP4vrPxw9hYv+B/QPH/5s875TUkwAAAABJRU5ErkJggg==" alt="Decoration2" class="pe-3">
+                <div class="foodproduct-info ps-6 pt-2 pb-2">
+                  <p>額外成分五</p>
+                  <p class="p2">Omega-3 0.5%</p>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- 引入Material Icons -->
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=pets"
+/>
+
+<div class="container">
+  <div
+    class="d-flex align-items-center justify-content-lg-between py-8 border-bottom border-secondary-300 flex-column flex-lg-row"
+  >
+    <!-- logo -->
+    <a class="navbar-brand" href="../pages/index.html">
+      <img src="/catsReviewWebsite/assets/logo-BcaSIhxh.svg" alt="logo" />
+    </a>
+    <!-- 選單內容 -->
+    <ul
+      class="footer-nav d-flex gap-lg-10 gap-6 align-items-center mt-7 mt-lg-0"
+    >
+      <!-- 膳食探索 -->
+      <li class="nav-item">
+        <a class="nav-link" href="foodmain.html"> 膳食探索 </a>
+      </li>
+      <!-- 喵皇學堂 -->
+      <li class="nav-item">
+        <a class="nav-link" href="../pages/knowledge.html"> 喵皇學堂 </a>
+      </li>
+      <!-- 我要投稿 -->
+      <li class="nav-item">
+        <a class="nav-link" href="../pages/contrib.html"> 我要投稿 </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"> 會員中心 </a>
+      </li>
+    </ul>
+  </div>
+  <!-- 版權 -->
+  <div class="text-center my-8 text-neutral-600 fs-8">
+    <p>本作品為專題製作使用，所有內容均受版權法保護</p>
+    <p>未經作者書面許可，禁止任何形式的複製、修改、發佈或商業使用</p>
+    <p>若需使用，請聯繫作者取得授權。感謝您的理解與尊重</p>
+  </div>
+</div>
+  </body>
+  
+</html>
