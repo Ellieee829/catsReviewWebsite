@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <title>膳食探索</title>
+    <script type="module" crossorigin src="/catsReviewWebsite/assets/main-vMtapqE2.js"></script>
+    <link rel="stylesheet" crossorigin href="/catsReviewWebsite/assets/main-gEgqs47K.css">
+  </head>
+  <body>
+    <!-- 引入Material Icons -->
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=pets"
+/>
+<script src="/javascripts/vendor.js"></script>
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container">
+    <!-- logo -->
+    <a class="navbar-brand d-none d-lg-block" href="../pages/index.html">
+      <img src="/catsReviewWebsite/assets/logo-BiAbFSc0.svg" alt="logo" class="me-72" />
+    </a>
+    <!-- 手機板header -->
+    <div
+      class="navbar-header d-lg-none w-100 d-flex justify-content-between align-items-center py-1 flex-shrink-0"
+    >
+      <!-- logo -->
+      <a class="navbar-brand" href="../pages/index.html">
+        <img src="/catsReviewWebsite/assets/logo-BiAbFSc0.svg" alt="logo" class="me-72" />
+      </a>
+      <!-- 漢堡按鈕 -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    <!-- nav內容 -->
+    <div
+      class="collapse navbar-collapse justify-content-between mt-11 mt-lg-0"
+      id="navbarNav"
+    >
+      <ul class="header-navbar-nav navbar-nav">
+        <!-- 膳食探索 -->
+        <li class="nav-item me-lg-10 mb-10 mb-lg-0">
+          <a class="nav-link d-flex justify-content-center" href="foodmain.html">
+            <div class="header-food-btn me-1 d-none d-lg-block"></div>
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAILSURBVHgBzVVRctpADJV2oZ+tmSQf/aH4BnSadKZfcW+QniBwgqQnAE6Q9gSFE5SeAPpb6ISewCb9C2SSz0yGXUVa2wnDgGNP8oFmPCvL0tM+SbsG2CaZh38bs3AUFIkpFXFGTS0FGLE6zBuj8jrOL8ZHvNQIICjCIncCdjxJda2xVSDuaZn9HwWy8/S9CItcCRTh8aotL4u8JTpaNTCLGuQQN0VheO691uYsAfJ4Xrp35q7z1v8UOTCCHuJjDxLbr1S/DP/US1qdcdJ6bMG+MuprxX9/4xi80eYHL40Y3IU3XunyuQTG/mvG0sY28dFaDZIeefFDDdLmZxzKcnUxJlgvN8po3+Fpc738ge2VW7j1eCMD2FCuneo+OgZk4AsZbFpDn51Otpf4eAu1OBWqkmw5sdjKqnyagvMOh8sYsord9WDX3++vJO/PpqNIIbYUKpmgNnONGKWegE0cfQWH8mKJOnvvDtrrWGycIgngRn5nuJoDtfAv/YbxdQFxQuxuAs9MIKKtbqc6AUWpbslOHwB42rIwMhNInWMWvE+Lk9Se6lLzSjLKLyLz6fgb96YN2yT4lIOccq9kT4goMEgdWHBdNR4T2N+71Y/dZyfgQxiC+w/YJoI6lBBrbI+TDGSCdqofmlnxuS47mXO3W3TnINjzD4Zi4zYH8JIiV0rGtbJWCv2T+TBMYNvkHiCK3IAkMCJVAAAAAElFTkSuQmCC"
+              alt="decoration"
+              class="align-bottom me-1 d-lg-none d-block"
+            />
+            膳食探索
+          </a>
+        </li>
+        <!-- 喵皇學堂 -->
+        <li class="nav-item me-lg-10 mb-10 mb-lg-0">
+          <a
+            class="nav-link d-flex justify-content-center"
+            href="knowledge.html"
+          >
+            <div class="header-knowledge-btn me-1 d-none d-lg-block"></div>
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAILSURBVHgBzVVRctpADJV2oZ+tmSQf/aH4BnSadKZfcW+QniBwgqQnAE6Q9gSFE5SeAPpb6ISewCb9C2SSz0yGXUVa2wnDgGNP8oFmPCvL0tM+SbsG2CaZh38bs3AUFIkpFXFGTS0FGLE6zBuj8jrOL8ZHvNQIICjCIncCdjxJda2xVSDuaZn9HwWy8/S9CItcCRTh8aotL4u8JTpaNTCLGuQQN0VheO691uYsAfJ4Xrp35q7z1v8UOTCCHuJjDxLbr1S/DP/US1qdcdJ6bMG+MuprxX9/4xi80eYHL40Y3IU3XunyuQTG/mvG0sY28dFaDZIeefFDDdLmZxzKcnUxJlgvN8po3+Fpc738ge2VW7j1eCMD2FCuneo+OgZk4AsZbFpDn51Otpf4eAu1OBWqkmw5sdjKqnyagvMOh8sYsord9WDX3++vJO/PpqNIIbYUKpmgNnONGKWegE0cfQWH8mKJOnvvDtrrWGycIgngRn5nuJoDtfAv/YbxdQFxQuxuAs9MIKKtbqc6AUWpbslOHwB42rIwMhNInWMWvE+Lk9Se6lLzSjLKLyLz6fgb96YN2yT4lIOccq9kT4goMEgdWHBdNR4T2N+71Y/dZyfgQxiC+w/YJoI6lBBrbI+TDGSCdqofmlnxuS47mXO3W3TnINjzD4Zi4zYH8JIiV0rGtbJWCv2T+TBMYNvkHiCK3IAkMCJVAAAAAElFTkSuQmCC"
+              alt="decoration"
+              class="align-bottom me-1 d-lg-none d-block"
+            />
+            喵皇學堂
+          </a>
+        </li>
+        <!-- 我要投稿 -->
+        <li class="nav-item">
+          <a
+            class="nav-link d-flex justify-content-center"
+            href="../pages/contrib.html"
+          >
+            <div class="header-post-btn me-1 d-none d-lg-block"></div>
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAILSURBVHgBzVVRctpADJV2oZ+tmSQf/aH4BnSadKZfcW+QniBwgqQnAE6Q9gSFE5SeAPpb6ISewCb9C2SSz0yGXUVa2wnDgGNP8oFmPCvL0tM+SbsG2CaZh38bs3AUFIkpFXFGTS0FGLE6zBuj8jrOL8ZHvNQIICjCIncCdjxJda2xVSDuaZn9HwWy8/S9CItcCRTh8aotL4u8JTpaNTCLGuQQN0VheO691uYsAfJ4Xrp35q7z1v8UOTCCHuJjDxLbr1S/DP/US1qdcdJ6bMG+MuprxX9/4xi80eYHL40Y3IU3XunyuQTG/mvG0sY28dFaDZIeefFDDdLmZxzKcnUxJlgvN8po3+Fpc738ge2VW7j1eCMD2FCuneo+OgZk4AsZbFpDn51Otpf4eAu1OBWqkmw5sdjKqnyagvMOh8sYsord9WDX3++vJO/PpqNIIbYUKpmgNnONGKWegE0cfQWH8mKJOnvvDtrrWGycIgngRn5nuJoDtfAv/YbxdQFxQuxuAs9MIKKtbqc6AUWpbslOHwB42rIwMhNInWMWvE+Lk9Se6lLzSjLKLyLz6fgb96YN2yT4lIOccq9kT4goMEgdWHBdNR4T2N+71Y/dZyfgQxiC+w/YJoI6lBBrbI+TDGSCdqofmlnxuS47mXO3W3TnINjzD4Zi4zYH8JIiV0rGtbJWCv2T+TBMYNvkHiCK3IAkMCJVAAAAAElFTkSuQmCC"
+              alt="decoration"
+              class="align-bottom me-1 d-lg-none d-block"
+            />
+            我要投稿
+          </a>
+        </li>
+      </ul>
+      <!-- 註冊登入 -->
+      <a
+        class="nav-link header-log p-lg-1 d-flex justify-content-center mt-auto py-6"
+        href="#"
+      >
+        <span class="header-pet material-symbols-outlined align-bottom me-2"
+          >pets</span
+        >
+        註冊 / 登入
+      </a>
+    </div>
+  </div>
+</nav>
+<!-- 漸層線條 -->
+<div class="header-liner"></div>
+
+    <div  class="foodmain-body">
+    <!-- 標題欄 -->
+    <nav>
+      <div class="index-header mb-12">
+        <div class="food-box ">
+          <img class="pb-10 " src="/catsReviewWebsite/assets/section02_decoration-fJIip5fA.png" alt="food-deco1">
+          <h2 class=" text-center pb-5">膳 食 探 索</h2>
+          <h4 class=" text-center">讓你找到最適合喵皇的膳食</h4>
+          <div class="foodmain-searchbar pt-10">
+            <div class="navbar navbar-light ">
+              <div class="container-fluid rounded-pill ">
+                <form class="d-flex ">
+                  <input class="form-control py-2 foodmain-form" type="search" placeholder="#搜尋食品" aria-label="Search">
+                  <button class="btn btn-primary-500 foodmain-search-btn" type="submit"><i class="bi bi-search " style="color: #EEDED9 ;"></i></button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>  
+      </div>
+    </nav>
+
+    <!-- 主要內容 -->
+      <div class="container">
+        <div class="row">
+          <!-- 左側導覽 -->
+          <div class="col-3 d-flex food-left-nav">
+            <nav  style="background-color: white;">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAM2SURBVHgB7ZnNThNRGIbfmRZa+Q0IMSwkagIGXREXDXHlJbgScMUdyB3IHcAdwI4lXoF14QISk7qQBUFpWED4b0uxLe2c4/cdmVpoZ9pOZ4aZxGfRv+nifc95v+/MOaPtbq5LBB0NSQjxXUgtBRFJdelGJhMvZqanFzJRBBUSLQy5dhUvbrBQq78FzUBGCrmSjxeX7UTXEhQDbQs3cWygK9ZPsSzDKBfRERSVsiEXpmbm0nBA2wYiXXEMj79S7yz+5OdXOEVKLE4kZpfRAZYGRp4kUC5dopA9wPXvf7PaO/xYiZeiguzhNhzCkXk7MTOXRIdYGrgunKNnaBwPBsfUSGcPfygj0diAup472qHvF3BAuizkG6eRuYtudaF4eVr9zCM+OPYSuh5FpZRTv5UuT+AAV8UzlgZ4dDkmJmyih+JjGtMibZeP6+IZ3e5i5mD7VpfpG3lGrxL50z3E+0fRDga0RbfFM7YGSvkT1WVYsAlH6W9ht55/Ktil54l3G/CAhjngrHNcuNfzDBTzxzjfvyDxL1SUeqm4c8c7aJE0dZuP8IiGBh4+TSihJmwmf/qLTHxT4o1KQV0feDSJWN8ozva2VMttBOceHlJnoLtnqNrnOTqFzAEi3XFqn/30+wM18uYMXZ3vq3ZquRprWPUi97XU1UCFRlL1fSpgFijISLmYp9wfVnPPKzGvCfxuV8x0i7AEj6mbAWFUmt4eRON9ZLJwU9xa4z/5MPpKCxxwlt5Us8R1YYUoGyvwAR0O4EjZQVu81OTr9yn4gCMDTZFYg094YkAaRhI+4d6OjDYm0pBf6FPSr/gwnRugbkPC19y4t3eCcwMknPu8H63SjrYNSI3OZgyxeF8jfpf2DEixMpGY/4AA0aqBmz3sfBIBoxUDnuyk3KLZOhBo8YydgcCLZywNUOYXgi6eaWiA97BBaZPNqDdAtwRe7mHdps4AH7QiRNwywNEJQ+5rqTWQpnO4VYSM6kImoW1MzcymETKqM1ARwpc9rNsoA/Sg4VPYsm9yY0B6cm7pB8oAP8pEWNndWv+MEKPzE3CEGF1CTyPE6FTBvh2BeIHeG+veQ4jRj7RcFv+5P/4AkraOaRj7FF8AAAAASUVORK5CYII=" alt="">
+              
+                <div class="px-6 pt-60  pb-7">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <p class="ms-2 ">搜尋食品</p>
+
+                    <button data-bs-trigger="focus" data-bs-placement="top" type="button" class="food-info-btn" id="myPopover" data-bs-toggle="popover" title="​快速​搜尋​食品​" data-bs-content="​喵～​你​在​找什​麼？​這裡​是​你​的​小幫手，​只要​輸入​關​鍵字，​就​能​馬​上​找到​你​想​知道​ ​的​貓咪​食品。​不管​是​「品牌​名稱」​還​是​「特定​成分​名​稱」，​輸入​一下​就​幫​你​找到​相關​食品！" ><i class="bi bi-info-circle food-info-icon"></i></button>
+                  </div>
+                  <div class="food_searchbg">
+                    <div class="navbar navbar-light ">
+                      <div class="container-fluid rounded-pill ">
+                        <form class="d-flex ">
+                          <input class="form-control py-2 food-form" type="search" placeholder="#搜尋食品" aria-label="Search">
+                          <button class="btn food_searchbtn " type="submit"><i class="bi bi-search "></i></button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 口味種類 -->
+                <div class="px-6">
+                  <p class="ms-2 pb-2">口味種類</p>                  
+                  <div class="dropdown pb-7">
+                    <button class="btn rounded-pill food-dropdown  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      口味種類
+                    </button>
+                    <ul class="dropdown-menu food-dropdown-menu">
+                      <li><a class="dropdown-item" href="#">雞肉</a></li>
+                      <li><a class="dropdown-item" href="#">牛肉</a></li>
+                      <li><a class="dropdown-item" href="#">鴨肉</a></li>
+                      <li><a class="dropdown-item" href="#">羊肉</a></li>
+                      <li><a class="dropdown-item" href="#">海鮮</a></li>
+                      <li><a class="dropdown-item" href="#">火雞肉</a></li>
+                      <li><a class="dropdown-item" href="#">鹿肉</a></li>
+                      <li><a class="dropdown-item" href="#">其他</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- 內容物類別 -->
+                <div class="px-6">
+                  <p class="ms-2 pb-2">內容物類別</p>
+                  <div class="dropdown pb-7">
+                    <button class="btn rounded-pill food-dropdown dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      內容物類別
+                    </button>
+                    <ul class="dropdown-menu food-dropdown-menu">
+                      <li><a class="dropdown-item" href="#">泥狀</a></li>
+                      <li><a class="dropdown-item" href="#">肉塊</a></li>
+                      <li><a class="dropdown-item" href="#">膠狀</a></li>
+                      <li><a class="dropdown-item" href="#">湯罐</a></li>
+                      <li><a class="dropdown-item" href="#">乾飼料</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- 特殊配方 -->
+                <div class="px-6">
+                  <p class="ms-2 pb-2">特殊配方</p>
+                  <div class="dropdown pb-7">
+                    <button class="btn rounded-pill food-dropdown dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      特殊配方
+                    </button>
+                    <ul class="dropdown-menu food-dropdown-menu">
+                      <li><a class="dropdown-item" href="#">無</a></li>
+                      <li><a class="dropdown-item" href="#">減重</a></li>
+                      <li><a class="dropdown-item" href="#">腸胃敏感</a></li>
+                      <li><a class="dropdown-item" href="#">泌尿道保健</a></li>
+                      <li><a class="dropdown-item" href="#">強化免疫力</a></li>
+                      <li><a class="dropdown-item" href="#">改善皮膚&毛髮</a></li>
+                      <li><a class="dropdown-item" href="#">骨骼保養</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- 適合年齡 -->
+                <div class="px-6">
+                  <p class="ms-2 pb-2">適合年齡</p>
+                  <div class="dropdown pb-7">
+                    <button class="btn rounded-pill food-dropdown dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      適合年齡
+                    </button>
+                    <ul class="dropdown-menu food-dropdown-menu">
+                      <li><a class="dropdown-item" href="#">幼貓</a></li>
+                      <li><a class="dropdown-item" href="#">成貓</a></li>
+                      <li><a class="dropdown-item" href="#">熟齡貓</a></li>
+                      <li><a class="dropdown-item" href="#">全齡貓</a></li>
+                    </ul>
+                  </div>
+                </div>
+            </nav>
+          </div>
+
+          <!-- 右側食品卡片 -->
+           
+          <div class="col " ><!--col-lg-9 col-12-->
+            <div class="row row-cols-1 row-cols-lg-3">            
+                <!-- 1 -->
+                <div class="card food-card me-6 mb-10" >
+                  <img src="/catsReviewWebsite/assets/food0-zwyZV0lO.png"  alt="card-img-1">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAM2SURBVHgB7ZnNThNRGIbfmRZa+Q0IMSwkagIGXREXDXHlJbgScMUdyB3IHcAdwI4lXoF14QISk7qQBUFpWED4b0uxLe2c4/cdmVpoZ9pOZ4aZxGfRv+nifc95v+/MOaPtbq5LBB0NSQjxXUgtBRFJdelGJhMvZqanFzJRBBUSLQy5dhUvbrBQq78FzUBGCrmSjxeX7UTXEhQDbQs3cWygK9ZPsSzDKBfRERSVsiEXpmbm0nBA2wYiXXEMj79S7yz+5OdXOEVKLE4kZpfRAZYGRp4kUC5dopA9wPXvf7PaO/xYiZeiguzhNhzCkXk7MTOXRIdYGrgunKNnaBwPBsfUSGcPfygj0diAup472qHvF3BAuizkG6eRuYtudaF4eVr9zCM+OPYSuh5FpZRTv5UuT+AAV8UzlgZ4dDkmJmyih+JjGtMibZeP6+IZ3e5i5mD7VpfpG3lGrxL50z3E+0fRDga0RbfFM7YGSvkT1WVYsAlH6W9ht55/Ktil54l3G/CAhjngrHNcuNfzDBTzxzjfvyDxL1SUeqm4c8c7aJE0dZuP8IiGBh4+TSihJmwmf/qLTHxT4o1KQV0feDSJWN8ozva2VMttBOceHlJnoLtnqNrnOTqFzAEi3XFqn/30+wM18uYMXZ3vq3ZquRprWPUi97XU1UCFRlL1fSpgFijISLmYp9wfVnPPKzGvCfxuV8x0i7AEj6mbAWFUmt4eRON9ZLJwU9xa4z/5MPpKCxxwlt5Us8R1YYUoGyvwAR0O4EjZQVu81OTr9yn4gCMDTZFYg094YkAaRhI+4d6OjDYm0pBf6FPSr/gwnRugbkPC19y4t3eCcwMknPu8H63SjrYNSI3OZgyxeF8jfpf2DEixMpGY/4AA0aqBmz3sfBIBoxUDnuyk3KLZOhBo8YydgcCLZywNUOYXgi6eaWiA97BBaZPNqDdAtwRe7mHdps4AH7QiRNwywNEJQ+5rqTWQpnO4VYSM6kImoW1MzcymETKqM1ARwpc9rNsoA/Sg4VPYsm9yY0B6cm7pB8oAP8pEWNndWv+MEKPzE3CEGF1CTyPE6FTBvh2BeIHeG+veQ4jRj7RcFv+5P/4AkraOaRj7FF8AAAAASUVORK5CYII=" class="card-deco" alt="card-decoration">
+                  <div class="card-body ">
+                    <h5 class="card-title">雞+南瓜主食罐</h5>
+                    <p class="card-text">600g  900NT</p>
+                    <p class="card-text">雞肉 | 肉塊 | 腸胃敏感 | 成貓</p>
+                    <a href="foodProduct.html" class="btn btn-outline-primary mt-2">查看食品內容</a>
+                  </div>
+                </div>
+                <!-- 2 -->
+                <div class="card food-card me-6 mb-10" >
+                  <img src="/catsReviewWebsite/assets/food1-DVhKdzOE.png"  alt="card-img-2">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAM2SURBVHgB7ZnNThNRGIbfmRZa+Q0IMSwkagIGXREXDXHlJbgScMUdyB3IHcAdwI4lXoF14QISk7qQBUFpWED4b0uxLe2c4/cdmVpoZ9pOZ4aZxGfRv+nifc95v+/MOaPtbq5LBB0NSQjxXUgtBRFJdelGJhMvZqanFzJRBBUSLQy5dhUvbrBQq78FzUBGCrmSjxeX7UTXEhQDbQs3cWygK9ZPsSzDKBfRERSVsiEXpmbm0nBA2wYiXXEMj79S7yz+5OdXOEVKLE4kZpfRAZYGRp4kUC5dopA9wPXvf7PaO/xYiZeiguzhNhzCkXk7MTOXRIdYGrgunKNnaBwPBsfUSGcPfygj0diAup472qHvF3BAuizkG6eRuYtudaF4eVr9zCM+OPYSuh5FpZRTv5UuT+AAV8UzlgZ4dDkmJmyih+JjGtMibZeP6+IZ3e5i5mD7VpfpG3lGrxL50z3E+0fRDga0RbfFM7YGSvkT1WVYsAlH6W9ht55/Ktil54l3G/CAhjngrHNcuNfzDBTzxzjfvyDxL1SUeqm4c8c7aJE0dZuP8IiGBh4+TSihJmwmf/qLTHxT4o1KQV0feDSJWN8ozva2VMttBOceHlJnoLtnqNrnOTqFzAEi3XFqn/30+wM18uYMXZ3vq3ZquRprWPUi97XU1UCFRlL1fSpgFijISLmYp9wfVnPPKzGvCfxuV8x0i7AEj6mbAWFUmt4eRON9ZLJwU9xa4z/5MPpKCxxwlt5Us8R1YYUoGyvwAR0O4EjZQVu81OTr9yn4gCMDTZFYg094YkAaRhI+4d6OjDYm0pBf6FPSr/gwnRugbkPC19y4t3eCcwMknPu8H63SjrYNSI3OZgyxeF8jfpf2DEixMpGY/4AA0aqBmz3sfBIBoxUDnuyk3KLZOhBo8YydgcCLZywNUOYXgi6eaWiA97BBaZPNqDdAtwRe7mHdps4AH7QiRNwywNEJQ+5rqTWQpnO4VYSM6kImoW1MzcymETKqM1ARwpc9rNsoA/Sg4VPYsm9yY0B6cm7pB8oAP8pEWNndWv+MEKPzE3CEGF1CTyPE6FTBvh2BeIHeG+veQ4jRj7RcFv+5P/4AkraOaRj7FF8AAAAASUVORK5CYII=" class="card-deco" alt="card-decoration">
+                  <div class="card-body ">
+                    <h5 class="card-title">鮭魚佐鮪魚貓罐頭</h5>
+                    <p class="card-text">480g　420NT</p>
+                    <p class="card-text">海鮮 | 肉塊 | 無 | 全齡貓</p>
+                    <a href="#" class="btn btn-outline-primary mt-2 ">查看食品內容</a>
+                  </div>
+                </div>
+                <!-- 3 -->
+                <div class="card food-card mb-10">
+                  <img src="/catsReviewWebsite/assets/food2-Dwl2KagH.png"  alt="card-img-3">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAM2SURBVHgB7ZnNThNRGIbfmRZa+Q0IMSwkagIGXREXDXHlJbgScMUdyB3IHcAdwI4lXoF14QISk7qQBUFpWED4b0uxLe2c4/cdmVpoZ9pOZ4aZxGfRv+nifc95v+/MOaPtbq5LBB0NSQjxXUgtBRFJdelGJhMvZqanFzJRBBUSLQy5dhUvbrBQq78FzUBGCrmSjxeX7UTXEhQDbQs3cWygK9ZPsSzDKBfRERSVsiEXpmbm0nBA2wYiXXEMj79S7yz+5OdXOEVKLE4kZpfRAZYGRp4kUC5dopA9wPXvf7PaO/xYiZeiguzhNhzCkXk7MTOXRIdYGrgunKNnaBwPBsfUSGcPfygj0diAup472qHvF3BAuizkG6eRuYtudaF4eVr9zCM+OPYSuh5FpZRTv5UuT+AAV8UzlgZ4dDkmJmyih+JjGtMibZeP6+IZ3e5i5mD7VpfpG3lGrxL50z3E+0fRDga0RbfFM7YGSvkT1WVYsAlH6W9ht55/Ktil54l3G/CAhjngrHNcuNfzDBTzxzjfvyDxL1SUeqm4c8c7aJE0dZuP8IiGBh4+TSihJmwmf/qLTHxT4o1KQV0feDSJWN8ozva2VMttBOceHlJnoLtnqNrnOTqFzAEi3XFqn/30+wM18uYMXZ3vq3ZquRprWPUi97XU1UCFRlL1fSpgFijISLmYp9wfVnPPKzGvCfxuV8x0i7AEj6mbAWFUmt4eRON9ZLJwU9xa4z/5MPpKCxxwlt5Us8R1YYUoGyvwAR0O4EjZQVu81OTr9yn4gCMDTZFYg094YkAaRhI+4d6OjDYm0pBf6FPSr/gwnRugbkPC19y4t3eCcwMknPu8H63SjrYNSI3OZgyxeF8jfpf2DEixMpGY/4AA0aqBmz3sfBIBoxUDnuyk3KLZOhBo8YydgcCLZywNUOYXgi6eaWiA97BBaZPNqDdAtwRe7mHdps4AH7QiRNwywNEJQ+5rqTWQpnO4VYSM6kImoW1MzcymETKqM1ARwpc9rNsoA/Sg4VPYsm9yY0B6cm7pB8oAP8pEWNndWv+MEKPzE3CEGF1CTyPE6FTBvh2BeIHeG+veQ4jRj7RcFv+5P/4AkraOaRj7FF8AAAAASUVORK5CYII=" class="card-deco" alt="card-decoration">
+                  <div class="card-body ">
+                    <h5 class="card-title">羊肉莓果乾糧</h5>
+                    <p class="card-text">5kg　980NT</p>
+                    <p class="card-text">羊肉 | 乾飼料 | 改善皮膚&毛髮 | 成貓</p>
+                    <a href="#" class="btn btn-outline-primary mt-2 ">查看食品內容</a>
+                  </div>
+                </div>
+                <!-- 4 -->
+                <div class="card food-card me-6 mb-10">
+                  <img src="/catsReviewWebsite/assets/food3-CHvqfDUO.png"  alt="card-img-4">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAM2SURBVHgB7ZnNThNRGIbfmRZa+Q0IMSwkagIGXREXDXHlJbgScMUdyB3IHcAdwI4lXoF14QISk7qQBUFpWED4b0uxLe2c4/cdmVpoZ9pOZ4aZxGfRv+nifc95v+/MOaPtbq5LBB0NSQjxXUgtBRFJdelGJhMvZqanFzJRBBUSLQy5dhUvbrBQq78FzUBGCrmSjxeX7UTXEhQDbQs3cWygK9ZPsSzDKBfRERSVsiEXpmbm0nBA2wYiXXEMj79S7yz+5OdXOEVKLE4kZpfRAZYGRp4kUC5dopA9wPXvf7PaO/xYiZeiguzhNhzCkXk7MTOXRIdYGrgunKNnaBwPBsfUSGcPfygj0diAup472qHvF3BAuizkG6eRuYtudaF4eVr9zCM+OPYSuh5FpZRTv5UuT+AAV8UzlgZ4dDkmJmyih+JjGtMibZeP6+IZ3e5i5mD7VpfpG3lGrxL50z3E+0fRDga0RbfFM7YGSvkT1WVYsAlH6W9ht55/Ktil54l3G/CAhjngrHNcuNfzDBTzxzjfvyDxL1SUeqm4c8c7aJE0dZuP8IiGBh4+TSihJmwmf/qLTHxT4o1KQV0feDSJWN8ozva2VMttBOceHlJnoLtnqNrnOTqFzAEi3XFqn/30+wM18uYMXZ3vq3ZquRprWPUi97XU1UCFRlL1fSpgFijISLmYp9wfVnPPKzGvCfxuV8x0i7AEj6mbAWFUmt4eRON9ZLJwU9xa4z/5MPpKCxxwlt5Us8R1YYUoGyvwAR0O4EjZQVu81OTr9yn4gCMDTZFYg094YkAaRhI+4d6OjDYm0pBf6FPSr/gwnRugbkPC19y4t3eCcwMknPu8H63SjrYNSI3OZgyxeF8jfpf2DEixMpGY/4AA0aqBmz3sfBIBoxUDnuyk3KLZOhBo8YydgcCLZywNUOYXgi6eaWiA97BBaZPNqDdAtwRe7mHdps4AH7QiRNwywNEJQ+5rqTWQpnO4VYSM6kImoW1MzcymETKqM1ARwpc9rNsoA/Sg4VPYsm9yY0B6cm7pB8oAP8pEWNndWv+MEKPzE3CEGF1CTyPE6FTBvh2BeIHeG+veQ4jRj7RcFv+5P/4AkraOaRj7FF8AAAAASUVORK5CYII=" class="card-deco" alt="card-decoration">
+                  <div class="card-body ">
+                    <h5 class="card-title">鮮蝦雞胸肉凍乾塊</h5>
+                    <p class="card-text">50g　280NT</p>
+                    <p class="card-text">雞肉 | 乾飼料 | 強化免疫力 | 全齡貓</p>
+                    <a href="#" class="btn btn-outline-primary mt-2">查看食品內容</a>
+                  </div>
+                </div>
+                <!-- 5 -->
+                <div class="card food-card me-6 mb-10">
+                  <img src="/catsReviewWebsite/assets/food4-Cn3W3eid.png"  alt="card-img-5">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAM2SURBVHgB7ZnNThNRGIbfmRZa+Q0IMSwkagIGXREXDXHlJbgScMUdyB3IHcAdwI4lXoF14QISk7qQBUFpWED4b0uxLe2c4/cdmVpoZ9pOZ4aZxGfRv+nifc95v+/MOaPtbq5LBB0NSQjxXUgtBRFJdelGJhMvZqanFzJRBBUSLQy5dhUvbrBQq78FzUBGCrmSjxeX7UTXEhQDbQs3cWygK9ZPsSzDKBfRERSVsiEXpmbm0nBA2wYiXXEMj79S7yz+5OdXOEVKLE4kZpfRAZYGRp4kUC5dopA9wPXvf7PaO/xYiZeiguzhNhzCkXk7MTOXRIdYGrgunKNnaBwPBsfUSGcPfygj0diAup472qHvF3BAuizkG6eRuYtudaF4eVr9zCM+OPYSuh5FpZRTv5UuT+AAV8UzlgZ4dDkmJmyih+JjGtMibZeP6+IZ3e5i5mD7VpfpG3lGrxL50z3E+0fRDga0RbfFM7YGSvkT1WVYsAlH6W9ht55/Ktil54l3G/CAhjngrHNcuNfzDBTzxzjfvyDxL1SUeqm4c8c7aJE0dZuP8IiGBh4+TSihJmwmf/qLTHxT4o1KQV0feDSJWN8ozva2VMttBOceHlJnoLtnqNrnOTqFzAEi3XFqn/30+wM18uYMXZ3vq3ZquRprWPUi97XU1UCFRlL1fSpgFijISLmYp9wfVnPPKzGvCfxuV8x0i7AEj6mbAWFUmt4eRON9ZLJwU9xa4z/5MPpKCxxwlt5Us8R1YYUoGyvwAR0O4EjZQVu81OTr9yn4gCMDTZFYg094YkAaRhI+4d6OjDYm0pBf6FPSr/gwnRugbkPC19y4t3eCcwMknPu8H63SjrYNSI3OZgyxeF8jfpf2DEixMpGY/4AA0aqBmz3sfBIBoxUDnuyk3KLZOhBo8YydgcCLZywNUOYXgi6eaWiA97BBaZPNqDdAtwRe7mHdps4AH7QiRNwywNEJQ+5rqTWQpnO4VYSM6kImoW1MzcymETKqM1ARwpc9rNsoA/Sg4VPYsm9yY0B6cm7pB8oAP8pEWNndWv+MEKPzE3CEGF1CTyPE6FTBvh2BeIHeG+veQ4jRj7RcFv+5P/4AkraOaRj7FF8AAAAASUVORK5CYII=" class="card-deco" alt="card-decoration">
+                  <div class="card-body ">
+                    <h5 class="card-title">牛肉燉蔬菜貓餐包</h5>
+                    <p class="card-text">680g　560NT</p>
+                    <p class="card-text">牛肉 | 膠狀 | 強化免疫力 | 幼貓</p>
+                    <a href="#" class="btn btn-outline-primary mt-2">查看食品內容</a>
+                  </div>
+                </div>
+                <!-- 6 -->
+                <div class="card food-card mb-10">
+                  <img src="/catsReviewWebsite/assets/food5-DWSn9Dfi.png"  alt="card-img-6">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAM2SURBVHgB7ZnNThNRGIbfmRZa+Q0IMSwkagIGXREXDXHlJbgScMUdyB3IHcAdwI4lXoF14QISk7qQBUFpWED4b0uxLe2c4/cdmVpoZ9pOZ4aZxGfRv+nifc95v+/MOaPtbq5LBB0NSQjxXUgtBRFJdelGJhMvZqanFzJRBBUSLQy5dhUvbrBQq78FzUBGCrmSjxeX7UTXEhQDbQs3cWygK9ZPsSzDKBfRERSVsiEXpmbm0nBA2wYiXXEMj79S7yz+5OdXOEVKLE4kZpfRAZYGRp4kUC5dopA9wPXvf7PaO/xYiZeiguzhNhzCkXk7MTOXRIdYGrgunKNnaBwPBsfUSGcPfygj0diAup472qHvF3BAuizkG6eRuYtudaF4eVr9zCM+OPYSuh5FpZRTv5UuT+AAV8UzlgZ4dDkmJmyih+JjGtMibZeP6+IZ3e5i5mD7VpfpG3lGrxL50z3E+0fRDga0RbfFM7YGSvkT1WVYsAlH6W9ht55/Ktil54l3G/CAhjngrHNcuNfzDBTzxzjfvyDxL1SUeqm4c8c7aJE0dZuP8IiGBh4+TSihJmwmf/qLTHxT4o1KQV0feDSJWN8ozva2VMttBOceHlJnoLtnqNrnOTqFzAEi3XFqn/30+wM18uYMXZ3vq3ZquRprWPUi97XU1UCFRlL1fSpgFijISLmYp9wfVnPPKzGvCfxuV8x0i7AEj6mbAWFUmt4eRON9ZLJwU9xa4z/5MPpKCxxwlt5Us8R1YYUoGyvwAR0O4EjZQVu81OTr9yn4gCMDTZFYg094YkAaRhI+4d6OjDYm0pBf6FPSr/gwnRugbkPC19y4t3eCcwMknPu8H63SjrYNSI3OZgyxeF8jfpf2DEixMpGY/4AA0aqBmz3sfBIBoxUDnuyk3KLZOhBo8YydgcCLZywNUOYXgi6eaWiA97BBaZPNqDdAtwRe7mHdps4AH7QiRNwywNEJQ+5rqTWQpnO4VYSM6kImoW1MzcymETKqM1ARwpc9rNsoA/Sg4VPYsm9yY0B6cm7pB8oAP8pEWNndWv+MEKPzE3CEGF1CTyPE6FTBvh2BeIHeG+veQ4jRj7RcFv+5P/4AkraOaRj7FF8AAAAASUVORK5CYII=" class="card-deco" alt="card-decoration">
+                  <div class="card-body ">
+                    <h5 class="card-title">鮪魚雞肝肉泥條</h5>
+                    <p class="card-text">280g　350NT</p>
+                    <p class="card-text">其他 | 泥狀 | 減重 | 全齡貓</p>
+                    <a href="#" class="btn btn-outline-primary mt-2">查看食品內容</a>
+                  </div>
+                </div>
+                <!-- 7 -->
+                <div class="card food-card me-6 mb-60">
+                  <img src="/catsReviewWebsite/assets/food6-BLo1xY9H.png"  alt="card-img-7">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAM2SURBVHgB7ZnNThNRGIbfmRZa+Q0IMSwkagIGXREXDXHlJbgScMUdyB3IHcAdwI4lXoF14QISk7qQBUFpWED4b0uxLe2c4/cdmVpoZ9pOZ4aZxGfRv+nifc95v+/MOaPtbq5LBB0NSQjxXUgtBRFJdelGJhMvZqanFzJRBBUSLQy5dhUvbrBQq78FzUBGCrmSjxeX7UTXEhQDbQs3cWygK9ZPsSzDKBfRERSVsiEXpmbm0nBA2wYiXXEMj79S7yz+5OdXOEVKLE4kZpfRAZYGRp4kUC5dopA9wPXvf7PaO/xYiZeiguzhNhzCkXk7MTOXRIdYGrgunKNnaBwPBsfUSGcPfygj0diAup472qHvF3BAuizkG6eRuYtudaF4eVr9zCM+OPYSuh5FpZRTv5UuT+AAV8UzlgZ4dDkmJmyih+JjGtMibZeP6+IZ3e5i5mD7VpfpG3lGrxL50z3E+0fRDga0RbfFM7YGSvkT1WVYsAlH6W9ht55/Ktil54l3G/CAhjngrHNcuNfzDBTzxzjfvyDxL1SUeqm4c8c7aJE0dZuP8IiGBh4+TSihJmwmf/qLTHxT4o1KQV0feDSJWN8ozva2VMttBOceHlJnoLtnqNrnOTqFzAEi3XFqn/30+wM18uYMXZ3vq3ZquRprWPUi97XU1UCFRlL1fSpgFijISLmYp9wfVnPPKzGvCfxuV8x0i7AEj6mbAWFUmt4eRON9ZLJwU9xa4z/5MPpKCxxwlt5Us8R1YYUoGyvwAR0O4EjZQVu81OTr9yn4gCMDTZFYg094YkAaRhI+4d6OjDYm0pBf6FPSr/gwnRugbkPC19y4t3eCcwMknPu8H63SjrYNSI3OZgyxeF8jfpf2DEixMpGY/4AA0aqBmz3sfBIBoxUDnuyk3KLZOhBo8YydgcCLZywNUOYXgi6eaWiA97BBaZPNqDdAtwRe7mHdps4AH7QiRNwywNEJQ+5rqTWQpnO4VYSM6kImoW1MzcymETKqM1ARwpc9rNsoA/Sg4VPYsm9yY0B6cm7pB8oAP8pEWNndWv+MEKPzE3CEGF1CTyPE6FTBvh2BeIHeG+veQ4jRj7RcFv+5P/4AkraOaRj7FF8AAAAASUVORK5CYII=" class="card-deco" alt="card-decoration">
+                  <div class="card-body ">
+                    <h5 class="card-title">白魚海藻無穀乾糧</h5>
+                    <p class="card-text">1kg　780NT</p>
+                    <p class="card-text">海鮮 | 乾飼料 | 骨骼保養 | 成貓</p>
+                    <a href="#" class="btn btn-outline-primary mt-2">查看食品內容</a>
+                  </div>
+                </div>
+                <!-- 8 -->
+                <div class="card food-card me-6 mb-60">
+                  <img src="/catsReviewWebsite/assets/food7-mh2sWQ6b.png"  alt="card-img-8">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAM2SURBVHgB7ZnNThNRGIbfmRZa+Q0IMSwkagIGXREXDXHlJbgScMUdyB3IHcAdwI4lXoF14QISk7qQBUFpWED4b0uxLe2c4/cdmVpoZ9pOZ4aZxGfRv+nifc95v+/MOaPtbq5LBB0NSQjxXUgtBRFJdelGJhMvZqanFzJRBBUSLQy5dhUvbrBQq78FzUBGCrmSjxeX7UTXEhQDbQs3cWygK9ZPsSzDKBfRERSVsiEXpmbm0nBA2wYiXXEMj79S7yz+5OdXOEVKLE4kZpfRAZYGRp4kUC5dopA9wPXvf7PaO/xYiZeiguzhNhzCkXk7MTOXRIdYGrgunKNnaBwPBsfUSGcPfygj0diAup472qHvF3BAuizkG6eRuYtudaF4eVr9zCM+OPYSuh5FpZRTv5UuT+AAV8UzlgZ4dDkmJmyih+JjGtMibZeP6+IZ3e5i5mD7VpfpG3lGrxL50z3E+0fRDga0RbfFM7YGSvkT1WVYsAlH6W9ht55/Ktil54l3G/CAhjngrHNcuNfzDBTzxzjfvyDxL1SUeqm4c8c7aJE0dZuP8IiGBh4+TSihJmwmf/qLTHxT4o1KQV0feDSJWN8ozva2VMttBOceHlJnoLtnqNrnOTqFzAEi3XFqn/30+wM18uYMXZ3vq3ZquRprWPUi97XU1UCFRlL1fSpgFijISLmYp9wfVnPPKzGvCfxuV8x0i7AEj6mbAWFUmt4eRON9ZLJwU9xa4z/5MPpKCxxwlt5Us8R1YYUoGyvwAR0O4EjZQVu81OTr9yn4gCMDTZFYg094YkAaRhI+4d6OjDYm0pBf6FPSr/gwnRugbkPC19y4t3eCcwMknPu8H63SjrYNSI3OZgyxeF8jfpf2DEixMpGY/4AA0aqBmz3sfBIBoxUDnuyk3KLZOhBo8YydgcCLZywNUOYXgi6eaWiA97BBaZPNqDdAtwRe7mHdps4AH7QiRNwywNEJQ+5rqTWQpnO4VYSM6kImoW1MzcymETKqM1ARwpc9rNsoA/Sg4VPYsm9yY0B6cm7pB8oAP8pEWNndWv+MEKPzE3CEGF1CTyPE6FTBvh2BeIHeG+veQ4jRj7RcFv+5P/4AkraOaRj7FF8AAAAASUVORK5CYII=" class="card-deco" alt="card-decoration">
+                  <div class="card-body ">
+                    <h5 class="card-title">鴨肉凍乾小粒</h5>
+                    <p class="card-text">80g　320NT</p>
+                    <p class="card-text">鴨肉 | 乾飼料 | 腸胃敏感 | 全齡貓</p>
+                    <a href="#" class="btn btn-outline-primary mt-2">查看食品內容</a>
+                  </div>
+                </div>
+                <!-- 9 -->
+                <div class="card food-card mb-60">
+                  <img src="/catsReviewWebsite/assets/food8-eksQ3hFw.png"  alt="card-img-9">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAM2SURBVHgB7ZnNThNRGIbfmRZa+Q0IMSwkagIGXREXDXHlJbgScMUdyB3IHcAdwI4lXoF14QISk7qQBUFpWED4b0uxLe2c4/cdmVpoZ9pOZ4aZxGfRv+nifc95v+/MOaPtbq5LBB0NSQjxXUgtBRFJdelGJhMvZqanFzJRBBUSLQy5dhUvbrBQq78FzUBGCrmSjxeX7UTXEhQDbQs3cWygK9ZPsSzDKBfRERSVsiEXpmbm0nBA2wYiXXEMj79S7yz+5OdXOEVKLE4kZpfRAZYGRp4kUC5dopA9wPXvf7PaO/xYiZeiguzhNhzCkXk7MTOXRIdYGrgunKNnaBwPBsfUSGcPfygj0diAup472qHvF3BAuizkG6eRuYtudaF4eVr9zCM+OPYSuh5FpZRTv5UuT+AAV8UzlgZ4dDkmJmyih+JjGtMibZeP6+IZ3e5i5mD7VpfpG3lGrxL50z3E+0fRDga0RbfFM7YGSvkT1WVYsAlH6W9ht55/Ktil54l3G/CAhjngrHNcuNfzDBTzxzjfvyDxL1SUeqm4c8c7aJE0dZuP8IiGBh4+TSihJmwmf/qLTHxT4o1KQV0feDSJWN8ozva2VMttBOceHlJnoLtnqNrnOTqFzAEi3XFqn/30+wM18uYMXZ3vq3ZquRprWPUi97XU1UCFRlL1fSpgFijISLmYp9wfVnPPKzGvCfxuV8x0i7AEj6mbAWFUmt4eRON9ZLJwU9xa4z/5MPpKCxxwlt5Us8R1YYUoGyvwAR0O4EjZQVu81OTr9yn4gCMDTZFYg094YkAaRhI+4d6OjDYm0pBf6FPSr/gwnRugbkPC19y4t3eCcwMknPu8H63SjrYNSI3OZgyxeF8jfpf2DEixMpGY/4AA0aqBmz3sfBIBoxUDnuyk3KLZOhBo8YydgcCLZywNUOYXgi6eaWiA97BBaZPNqDdAtwRe7mHdps4AH7QiRNwywNEJQ+5rqTWQpnO4VYSM6kImoW1MzcymETKqM1ARwpc9rNsoA/Sg4VPYsm9yY0B6cm7pB8oAP8pEWNndWv+MEKPzE3CEGF1CTyPE6FTBvh2BeIHeG+veQ4jRj7RcFv+5P/4AkraOaRj7FF8AAAAASUVORK5CYII=" class="card-deco" alt="card-decoration">
+                  <div class="card-body ">
+                    <h5 class="card-title">鴨肉紅薯無穀乾糧</h5>
+                    <p class="card-text">2kg　1,050NT</p>
+                    <p class="card-text">鴨肉 | 乾飼料 | 腸胃敏感 | 成貓</p>
+                    <a href="#" class="btn btn-outline-primary mt-2">查看食品內容</a>
+                  </div>
+                </div>
+
+                                
+            </div>
+            <!-- pagination -->                               
+            <nav aria-label="..." class="">
+              <ul class="pagination food-pagination align-items-center justify-content-center">
+                <li class="me-3 page-item disabled">
+                  <a class="page-link"> <i class="bi bi-chevron-left"></i> </a>
+                </li>
+                <li class="me-3 page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="me-3 page-item " aria-current="page">
+                  <a class="page-link" href="#">2</a>
+                </li>
+                <li class="me-3 page-item"><a class="page-link" href="#">...</a></li>
+                <li class="me-3 page-item"><a class="page-link" href="#">8</a></li>
+                <li class="me-3 page-item">
+                  <a class="me-3 page-link" href="#"><i class="bi bi-chevron-right"></i></a>
+                </li>
+              </ul>
+            </nav>                
+          </div>
+          <div class="mt-144"></div>
+        </div>
+      </div>
+    </div>  
+    <!-- 引入Material Icons -->
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=pets"
+/>
+
+<div class="container">
+  <div
+    class="d-flex align-items-center justify-content-lg-between py-8 border-bottom border-secondary-300 flex-column flex-lg-row"
+  >
+    <!-- logo -->
+    <a class="navbar-brand" href="../pages/index.html">
+      <img src="/catsReviewWebsite/assets/logo-BiAbFSc0.svg" alt="logo" />
+    </a>
+    <!-- 選單內容 -->
+    <ul
+      class="footer-nav d-flex gap-lg-10 gap-6 align-items-center mt-7 mt-lg-0"
+    >
+      <!-- 膳食探索 -->
+      <li class="nav-item">
+        <a class="nav-link" href="foodmain.html"> 膳食探索 </a>
+      </li>
+      <!-- 喵皇學堂 -->
+      <li class="nav-item">
+        <a class="nav-link" href="../pages/knowledge.html"> 喵皇學堂 </a>
+      </li>
+      <!-- 我要投稿 -->
+      <li class="nav-item">
+        <a class="nav-link" href="../pages/contrib.html"> 我要投稿 </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"> 會員中心 </a>
+      </li>
+    </ul>
+  </div>
+  <!-- 版權 -->
+  <div class="text-center my-8 text-neutral-600 fs-8">
+    <p>本作品為專題製作使用，所有內容均受版權法保護</p>
+    <p>未經作者書面許可，禁止任何形式的複製、修改、發佈或商業使用</p>
+    <p>若需使用，請聯繫作者取得授權。感謝您的理解與尊重</p>
+  </div>
+</div>
+
+  </body>
+</html>
