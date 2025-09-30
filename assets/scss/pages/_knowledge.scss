@@ -1,0 +1,91 @@
+.knowledge-banner {
+  background-image: url("/assets/images/knowledge/knowBanner.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding-top: 266px;
+  padding-bottom: 266px;
+}
+
+@media (max-width: 767px) {
+  .knowledge-banner {
+    background-image: url("/assets/images/knowledge/rwdknowBanner.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding-top: 300px;
+    padding-bottom: 300px;
+  }
+}
+
+.knowledge-card {
+  width: 290px;
+}
+
+@media (max-width: 767px) {
+  .knowledge-card {
+    width: 351px;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.knowledge-card:hover {
+  border: solid 8px white;
+  box-shadow: 10px 5px 5px #b8966880;
+  img {
+    opacity: 0.5;
+  }
+  .button {
+    display: block;
+  }
+  .newspaper-icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.button {
+  display: none;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 50px;
+}
+
+.truncate-multi {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.knowledge-tag {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.knowledge-relative {
+  position: relative;
+}
+
+.knowledge-absolute {
+  position: absolute;
+  top: 176px;
+  right: 8%;
+  height: 238px;
+  width: 416px;
+}
+
+.knowledge-btn:hover {
+  color: #ffffff;
+  background-color: $primary-500;
+}
+
+.dropdown-item:hover {
+  color: #ffffff;
+  background-color: $primary-500;
+}
