@@ -63,8 +63,6 @@
 .contrib-tab-pane{
     max-width: 912px;
     margin: 0 auto;
-    padding-left: 72px;
-    padding-right: 72px;
 }
 .contrib-font-size-sm{
     font-size: 14px;
@@ -202,4 +200,26 @@
   pointer-events: none;
   position: absolute;
   right: 40px !important;
+}
+
+/* RWD */
+@media(max-width:991.98px){
+    .contrib-tab-content{
+      width: 100%
+  }
+    .contrib-information-circle{
+      position: absolute;
+      top: 20px;   
+      right: 16px; 
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+  }
+    .nav-link.active {
+    background-color: white;
+    border-bottom: 2px solid $secondary-500;
+  }
+  #editor-container {
+    height: 300px;
+  }
 }
