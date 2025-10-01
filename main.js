@@ -255,15 +255,16 @@ document.addEventListener("DOMContentLoaded", () => {
     const newDiv = document.createElement("div");
     newDiv.classList.add(
       "reading-item",
-      "mb-8",
+      "mb-md-8",
+      "mb-sm-3",
       "w-100",
       "d-flex",
       "align-items-end"
     );
 
     newDiv.innerHTML = `
-      <label for="furtherReading${counter}" class="w-100 me-6">
-        <p class="px-2 d-flex mb-2">
+      <label for="furtherReading${counter}" class="w-100 me-6 mb-3 mb-sm-0">
+        <p class="px-2 d-flex mb-1 mb-md-2">
           <span class="contrib-font-size-sm neutral-900">7. 延伸閱讀</span>
           <span class="contrib-font-size-xs neutral-600 ms-auto">選填</span>
         </p>
@@ -276,7 +277,7 @@ document.addEventListener("DOMContentLoaded", () => {
           />
         </div>
       </label>
-      <button type="button" class="btn contrib-delete-area contrib-delete-btn border-radius">
+      <button type="button" class="btn contrib-delete-area contrib-delete-btn border-radius mb-3 mb-sm-0">
         <img src="../assets/images/contrib/trash.png" alt="trash" />
       </button>
     `;
