@@ -18,9 +18,11 @@
   <body>
     <%- include('./layout/header'); -%>
     <!-- 投稿區塊 -->
-    <div class="d-flex">
-      <!-- 投稿選單 -->
-      <div class="contrib-side-menu contrib-position-relative">
+    <div class="d-lg-flex">
+      <!-- 投稿選單: lg -->
+      <div
+        class="d-none d-lg-block contrib-side-menu contrib-position-relative"
+      >
         <img
           class="contrib-position-absolute contrib-information-circle"
           src="../assets/images/contrib/information-circle.png"
@@ -32,7 +34,7 @@
           data-bs-content="選擇想要投稿的類型"
         />
         <ul
-          class="nav flex-column justify-content-center align-items-center"
+          class="nav d-flex flex-column justify-content-center align-items-center"
           id="myTab"
           role="tablist"
         >
@@ -70,17 +72,69 @@
           </li>
         </ul>
       </div>
+      <!-- 投稿選單: sm -->
+      <div class="d-block d-lg-none contrib-top-menu contrib-position-relative">
+        <img
+          class="contrib-position-absolute contrib-information-circle"
+          src="../assets/images/contrib/information-circle.png"
+          alt="information-circle"
+          tabindex="0"
+          data-bs-toggle="popover"
+          data-bs-placement="bottom"
+          data-bs-trigger="focus"
+          data-bs-content="選擇想要投稿的類型"
+        />
+        <ul
+          class="nav d-flex justify-content-center align-items-center"
+          id="myTab"
+          role="tablist"
+        >
+          <!-- 食品投稿按鍵 -->
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active px-5 py-3 w-100 text-start d-flex align-center"
+              id="food-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#food"
+              type="button"
+              role="tab"
+              aria-controls="food"
+              aria-selected="true"
+            >
+              <span class="me-3 tab-icon"></span>
+              <span>食品投稿</span>
+            </button>
+          </li>
+          <!-- 專欄投稿按鍵 -->
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link px-5 py-3 w-100 text-start d-flex align-center"
+              id="column-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#column"
+              type="button"
+              role="tab"
+              aria-controls="column"
+              aria-selected="false"
+            >
+              <span class="me-3 tab-icon"></span>
+              <span>專欄投稿</span>
+            </button>
+          </li>
+        </ul>
+      </div>
       <!-- 撰寫投稿 -->
       <div class="contrib-tab-content bg-secondary-100 py-12" id="myTabContent">
         <!-- 撰寫食品投稿 -->
-        <div class="contrib-tab-pane fade show active" id="food">
+        <div class="contrib-tab-pane px-2 px-md-12 fade show active" id="food">
           <form class="needs-validation" novalidate>
             <!-- １. 基本資訊 -->
-            <div class="mb-12">
+            <div class="mb-11 mb-md-12">
               <div
-                class="d-flex align-items-baseline pb-8 border-bottom border-secondary-300 mb-8"
+                class="d-flex align-items-baseline pb-3 pb-md-8 border-bottom border-secondary-300 mb-3 mb-md-8"
               >
-                <h3 class="me-3 neutral-900">１. 基本資訊</h3>
+                <h3 class="me-3 neutral-900 d-none d-md-block">１. 基本資訊</h3>
+                <h5 class="me-3 neutral-900 d-block d-md-none">１. 基本資訊</h5>
                 <p>
                   <span class="neutral-600">(</span>
                   <span class="text-highlight">*</span>
@@ -98,9 +152,9 @@
                   data-bs-content="請輸入食品投稿<br>所需的詳細資訊"
                 />
               </div>
-              <div class="mb-8">
+              <div class="mb-3 mb-md-8">
                 <label for="foodName" class="w-100">
-                  <p class="px-2 d-flex mb-2">
+                  <p class="px-2 d-flex mb-1 mb-md-2">
                     <span class="contrib-font-size-sm neutral-900"
                       >食品名稱</span
                     >
@@ -123,10 +177,10 @@
                   </div>
                 </label>
               </div>
-              <div class="mb-8 d-flex">
-                <label for="brandName" class="w-100 me-6">
+              <div class="mb-3 mb-md-8 d-sm-flex">
+                <label for="brandName" class="w-100 me-sm-6 mb-3 mb-sm-0">
                   <div>
-                    <p class="px-2 d-flex mb-2">
+                    <p class="px-2 d-flex mb-1 mb-md-2">
                       <span class="contrib-font-size-sm neutral-900"
                         >品牌名稱</span
                       >
@@ -151,7 +205,7 @@
                 </label>
                 <label for="price" class="w-100">
                   <div>
-                    <p class="px-2 d-flex mb-2">
+                    <p class="px-2 d-flex mb-1 mb-md-2">
                       <span class="contrib-font-size-sm neutral-900"
                         >參考價格</span
                       >
@@ -180,9 +234,9 @@
                   </div>
                 </label>
               </div>
-              <div class="mb-8 d-flex">
-                <div class="me-6 w-100">
-                  <p class="px-2 d-flex mb-2">
+              <div class="mb-md-8 d-sm-flex">
+                <div class="me-sm-6 w-100 mb-3 mb-sm-0">
+                  <p class="px-2 d-flex mb-1 mb-md-2">
                     <span class="contrib-font-size-sm neutral-900">產地</span>
                     <span class="contrib-font-size-sm text-highlight ms-1"
                       >*</span
@@ -214,7 +268,7 @@
                 </div>
                 <label for="foodWeight" class="w-100">
                   <div>
-                    <p class="px-2 d-flex mb-2">
+                    <p class="px-2 d-flex mb-1 mb-md-2">
                       <span class="contrib-font-size-sm neutral-900">重量</span>
                       <span class="contrib-font-size-sm text-highlight ms-1"
                         >*</span
@@ -243,21 +297,22 @@
               </div>
             </div>
             <!-- 2. 成分描述 -->
-            <div class="mb-12">
+            <div class="mb-11 mb-md-12">
               <div
-                class="d-flex align-items-baseline pb-8 border-bottom border-secondary-300 mb-8"
+                class="d-flex align-items-baseline pb-3 pb-md-8 border-bottom border-secondary-300 mb-3 mb-md-8"
               >
-                <h3 class="me-3 neutral-900">2. 成分描述</h3>
+                <h3 class="me-3 neutral-900 d-none d-md-block">２. 成分描述</h3>
+                <h5 class="me-3 neutral-900 d-block d-md-none">２. 成分描述</h5>
                 <p>
                   <span class="neutral-600">(</span>
                   <span class="text-highlight">*</span>
                   <span class="neutral-600">為必填欄位)</span>
                 </p>
               </div>
-              <div class="mb-8 d-flex">
-                <label for="flavor" class="w-100 me-6">
+              <div class="mb-3 mb-md-8 d-sm-flex">
+                <label for="flavor" class="w-100 me-sm-6 mb-3 mb-sm-0">
                   <div>
-                    <p class="px-2 d-flex mb-2">
+                    <p class="px-2 d-flex mb-1 mb-md-2">
                       <span class="contrib-font-size-sm neutral-900"
                         >口味種類</span
                       >
@@ -283,7 +338,7 @@
                   </div>
                 </label>
                 <div class="w-100">
-                  <p class="px-2 d-flex mb-2">
+                  <p class="px-2 d-flex mb-1 mb-md-2">
                     <span class="contrib-font-size-sm neutral-900"
                       >內容物類型</span
                     >
@@ -312,9 +367,9 @@
                   </div>
                 </div>
               </div>
-              <div class="mb-8 d-flex">
-                <div class="me-6 w-100">
-                  <p class="px-2 d-flex mb-2">
+              <div class="mb-md-8 d-sm-flex">
+                <div class="me-sm-6 w-100 mb-3 mb-sm-0">
+                  <p class="px-2 d-flex mb-1 mb-md-2">
                     <span class="contrib-font-size-sm neutral-900"
                       >特殊配方</span
                     >
@@ -347,7 +402,7 @@
                   </div>
                 </div>
                 <div class="w-100">
-                  <p class="px-2 d-flex mb-2">
+                  <p class="px-2 d-flex mb-1 mb-md-2">
                     <span class="contrib-font-size-sm neutral-900"
                       >適合年齡</span
                     >
@@ -376,21 +431,22 @@
               </div>
             </div>
             <!-- 3. 成分資訊 -->
-            <div class="mb-12">
+            <div class="mb-11 mb-md-12">
               <div
-                class="d-flex align-items-baseline pb-8 border-bottom border-secondary-300 mb-8"
+                class="d-flex align-items-baseline pb-3 pb-md-8 border-bottom border-secondary-300 mb-3 mb-md-8"
               >
-                <h3 class="me-3 neutral-900">3. 成分資訊</h3>
+                <h3 class="me-3 neutral-900 d-none d-md-block">３. 成分資訊</h3>
+                <h5 class="me-3 neutral-900 d-block d-md-none">３. 成分資訊</h5>
                 <p>
                   <span class="neutral-600">(</span>
                   <span class="text-highlight">*</span>
                   <span class="neutral-600">為必填欄位)</span>
                 </p>
               </div>
-              <div class="mb-8 d-flex">
-                <label for="water%" class="me-6 w-100">
+              <div class="mb-3 mb-md-8 d-sm-flex">
+                <label for="water%" class="w-100 me-sm-6 mb-3 mb-sm-0">
                   <div>
-                    <p class="px-2 d-flex mb-2">
+                    <p class="px-2 d-flex mb-1 mb-md-2">
                       <span class="contrib-font-size-sm neutral-900"
                         >水分比例</span
                       >
@@ -420,7 +476,7 @@
                 </label>
                 <label for="waterWeight" class="w-100">
                   <div>
-                    <p class="px-2 d-flex mb-2">
+                    <p class="px-2 d-flex mb-1 mb-md-2">
                       <span class="contrib-font-size-sm neutral-900"
                         >水分重量</span
                       >
@@ -442,10 +498,10 @@
                   </div>
                 </label>
               </div>
-              <div class="mb-8 d-flex">
-                <label for="fat%" class="me-6 w-100">
+              <div class="mb-3 mb-md-8 d-sm-flex">
+                <label for="fat%" class="me-sm-6 mb-3 mb-sm-0 w-100">
                   <div>
-                    <p class="px-2 d-flex mb-2">
+                    <p class="px-2 d-flex mb-1 mb-md-2">
                       <span class="contrib-font-size-sm neutral-900"
                         >脂肪比例</span
                       >
@@ -475,7 +531,7 @@
                 </label>
                 <label for="fatWeight" class="w-100">
                   <div>
-                    <p class="px-2 d-flex mb-2">
+                    <p class="px-2 d-flex mb-1 mb-md-2">
                       <span class="contrib-font-size-sm neutral-900"
                         >脂肪重量</span
                       >
@@ -497,10 +553,10 @@
                   </div>
                 </label>
               </div>
-              <div class="mb-8 d-flex">
-                <label for="protein%" class="me-6 w-100">
+              <div class="mb-3 mb-md-8 d-sm-flex">
+                <label for="protein%" class="me-sm-6 mb-3 mb-sm-0 w-100">
                   <div>
-                    <p class="px-2 d-flex mb-2">
+                    <p class="px-2 d-flex mb-1 mb-md-2">
                       <span class="contrib-font-size-sm neutral-900"
                         >蛋白質比例</span
                       >
@@ -530,7 +586,7 @@
                 </label>
                 <label for="proteinWeight" class="w-100">
                   <div>
-                    <p class="px-2 d-flex mb-2">
+                    <p class="px-2 d-flex mb-1 mb-md-2">
                       <span class="contrib-font-size-sm neutral-900"
                         >蛋白質重量</span
                       >
@@ -552,10 +608,10 @@
                   </div>
                 </label>
               </div>
-              <div class="mb-8 d-flex">
-                <label for="calories" class="me-6 w-100">
+              <div class="mb-3 mb-md-8 d-sm-flex">
+                <label for="calories" class="me-sm-6 mb-3 mb-sm-0 w-100">
                   <div>
-                    <p class="px-2 d-flex mb-2">
+                    <p class="px-2 d-flex mb-1 mb-md-2">
                       <span class="contrib-font-size-sm neutral-900">熱量</span>
                       <span class="contrib-font-size-sm text-highlight ms-1"
                         >*</span
@@ -583,7 +639,7 @@
                 </label>
                 <label for="allergens" class="w-100">
                   <div>
-                    <p class="px-2 d-flex mb-2">
+                    <p class="px-2 d-flex mb-1 mb-md-2">
                       <span class="contrib-font-size-sm neutral-900"
                         >可能過敏原成分</span
                       >
@@ -602,10 +658,10 @@
                   </div>
                 </label>
               </div>
-              <div class="mb-8 d-flex">
-                <label for="carbohydrate%" class="me-6 w-100">
+              <div class="mb-3 mb-md-8 d-sm-flex">
+                <label for="carbohydrate%" class="me-sm-6 mb-3 mb-sm-0 w-100">
                   <div>
-                    <p class="px-2 d-flex mb-2">
+                    <p class="px-2 d-flex mb-1 mb-md-2">
                       <span class="contrib-font-size-sm neutral-900"
                         >碳水化合物比例</span
                       >
@@ -630,7 +686,7 @@
                 </label>
                 <label for="carbohydrateWeight" class="w-100">
                   <div>
-                    <p class="px-2 d-flex mb-2">
+                    <p class="px-2 d-flex mb-1 mb-md-2">
                       <span class="contrib-font-size-sm neutral-900"
                         >碳水化合物重量</span
                       >
@@ -652,9 +708,11 @@
                   </div>
                 </label>
               </div>
-              <div class="mb-8 d-flex pb-8 border-bottom border-secondary-300">
-                <div class="me-6 w-100">
-                  <p class="px-2 d-flex mb-2">
+              <div
+                class="mb-3 mb-md-8 d-sm-flex pb-3 pb-md-8 border-bottom border-secondary-300"
+              >
+                <div class="me-sm-6 w-100">
+                  <p class="px-2 d-flex mb-1 mb-md-2">
                     <span class="contrib-font-size-sm neutral-900"
                       >含膠與否</span
                     >
@@ -706,10 +764,10 @@
                 <div class="w-100"></div>
               </div>
               <div id="extra-container">
-                <div class="mb-8 d-flex">
-                  <label for="extraName" class="me-6 w-100">
+                <div class="mb-md-8 mb-sm-3 d-sm-flex">
+                  <label for="extraName" class="me-sm-6 mb-3 mb-sm-0 w-100">
                     <div>
-                      <p class="px-2 d-flex mb-2">
+                      <p class="px-2 d-flex mb-1 mb-md-2">
                         <span class="contrib-font-size-sm neutral-900"
                           >額外成分名稱</span
                         >
@@ -728,8 +786,8 @@
                     </div>
                   </label>
                   <div class="w-100 d-flex align-items-end">
-                    <label for="extra%" class="w-100 me-6">
-                      <p class="px-2 d-flex mb-2">
+                    <label for="extra%" class="w-100 me-6 mb-3 mb-sm-0">
+                      <p class="px-2 d-flex mb-1 mb-md-2">
                         <span class="contrib-font-size-sm neutral-900"
                           >額外成分比例</span
                         >
@@ -753,7 +811,7 @@
                     </label>
                     <button
                       type="button"
-                      class="btn contrib-delete-area contrib-delete-btn border-radius"
+                      class="btn contrib-delete-area contrib-delete-btn border-radius mb-3 mb-sm-0"
                     >
                       <img
                         src="../assets/images/contrib/trash.png"
@@ -779,21 +837,28 @@
               </div>
             </div>
             <!-- 4. 上傳食品圖片 -->
-            <div class="mb-12">
+            <div class="mb-11 mb-md-12">
               <div
-                class="d-flex align-items-baseline pb-8 border-bottom border-secondary-300 mb-8"
+                class="d-flex align-items-baseline pb-3 pb-md-8 border-bottom border-secondary-300 mb-3 mb-md-8"
               >
-                <h3 class="me-3 neutral-900">4. 上傳食品圖片</h3>
+                <h3 class="me-3 neutral-900 d-none d-md-block">
+                  ４. 上傳食品圖片
+                </h3>
+                <h5 class="me-3 neutral-900 d-block d-md-none">
+                  ４. 上傳食品圖片
+                </h5>
                 <p>
                   <span class="neutral-600">(</span>
                   <span class="text-highlight">*</span>
                   <span class="neutral-600">為必填欄位)</span>
                 </p>
               </div>
-              <div class="mb-8 pb-8 border-bottom border-secondary-300">
-                <div class="d-flex mb-8">
-                  <div class="me-6 w-100">
-                    <p class="px-2 d-flex mb-2">
+              <div
+                class="mb-3 mb-sm-8 pb-3 pb-sm-8 border-bottom border-secondary-300"
+              >
+                <div class="mb-md-8 d-sm-flex">
+                  <div class="me-md-6 mb-3 w-100">
+                    <p class="px-2 d-flex mb-1 mb-md-2">
                       <span class="contrib-font-size-sm neutral-900"
                         >上傳外包裝圖片</span
                       >
@@ -834,7 +899,7 @@
                       </p>
                     </label>
                   </div>
-                  <div class="w-100"></div>
+                  <div class="w-100 d-none d-lg-block"></div>
                 </div>
                 <div>
                   <label
@@ -859,9 +924,9 @@
                 </div>
               </div>
               <div>
-                <div class="d-flex mb-8">
-                  <div class="me-6 w-100">
-                    <p class="px-2 d-flex mb-2">
+                <div class="mb-md-8 d-sm-flex">
+                  <div class="me-md-6 mb-3 w-100">
+                    <p class="px-2 d-flex mb-1 mb-md-2">
                       <span class="contrib-font-size-sm neutral-900"
                         >上傳內容物圖片</span
                       >
@@ -902,7 +967,7 @@
                       </p>
                     </label>
                   </div>
-                  <div class="w-100"></div>
+                  <div class="w-100 d-none d-lg-block"></div>
                 </div>
                 <div>
                   <label
@@ -928,11 +993,12 @@
               </div>
             </div>
             <!-- 5. 聲明欄位 -->
-            <div class="mb-12">
+            <div class="mb-11 mb-md-12">
               <div
-                class="d-flex align-items-baseline pb-8 border-bottom border-secondary-300 mb-8"
+                class="d-flex align-items-baseline pb-3 pb-md-8 border-bottom border-secondary-300 mb-3 mb-md-8"
               >
-                <h3 class="me-3 neutral-900">5. 聲明欄位</h3>
+                <h3 class="me-3 neutral-900 d-none d-md-block">５. 聲明欄位</h3>
+                <h5 class="me-3 neutral-900 d-block d-md-none">５. 聲明欄位</h5>
                 <p>
                   <span class="neutral-600">(</span>
                   <span class="text-highlight">*</span>
@@ -1098,7 +1164,7 @@
                 <span class="text-neutral-700">清除重填</span>
               </button>
               <button
-                class="btn btn-border contrib-submit-btn ms-4 d-flex align-items-center px-12"
+                class="btn btn-border contrib-submit-btn ms-4 d-flex align-items-center px-3 px-md-12"
                 type="submit"
               >
                 <img
@@ -1112,7 +1178,7 @@
           </form>
         </div>
         <!-- 撰寫專欄投稿 -->
-        <div class="contrib-tab-pane fade" id="column">
+        <div class="contrib-tab-pane px-2 px-md-12 fade" id="column">
           <!-- １. 專欄資訊 -->
           <div>
             <form
@@ -1124,7 +1190,8 @@
               <div
                 class="d-flex align-items-baseline pb-8 border-bottom border-secondary-300 mb-8"
               >
-                <h3 class="me-3 neutral-900">１. 專欄資訊</h3>
+                <h3 class="me-3 neutral-900 d-none d-md-block">１. 專欄資訊</h3>
+                <h5 class="me-3 neutral-900 d-block d-md-none">１. 專欄資訊</h5>
                 <p>
                   <span class="neutral-600">(</span>
                   <span class="text-highlight">*</span>
