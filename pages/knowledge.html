@@ -23,8 +23,8 @@
     <%- include('./layout/header'); -%>
     <!-- 首頁 -->
 
-    <!-- 1.banner -->
-    <section class="knowledge-banner knowledge-ralative">
+    <!-- 1-1.banner 桌面版-->
+    <section class="knowledge-banner knowledge-relative d-lg-block d-none">
       <div class="text-center knowledge-absolute">
         <img
           src="/assets/images/index/section02_decoration.svg"
@@ -40,7 +40,9 @@
           讓你更懂你的喵皇！
         </h1>
         <div class="pb-7">
-          <div class="input-group position-lg-relative start-lg-0 translate-middle-lg-none position-absolute start-50 translate-middle searchBar">
+          <div
+            class="input-group position-lg-relative start-lg-0 translate-middle-lg-none position-absolute start-50 translate-middle searchBar"
+          >
             <input
               type="text"
               class="form-control rounded-pill py-2 ps-3"
@@ -61,12 +63,57 @@
         </div>
       </div>
     </section>
+    <!-- 1-2.banner 行動版 -->
+    <section
+      class="knowledge-md-banner knowledge-md-relative d-lg-none d-block"
+    >
+      <div
+        class="knowledge-search d-flex flex-column align-items-center justify-content-center knowledge-md-absolute"
+      >
+        <img
+          src="/assets/images/index/section02_decoration.svg"
+          alt="deco"
+          class="mb-10"
+        />
+        <img
+          src="/assets/images/knowledge/rwdknowledge-banner-title.png"
+          alt="banner-title"
+          class="mb-5"
+        />
+        <h1 class="fs-7 text-secondary-100 mb-10">讓你更懂你的喵皇！</h1>
+        <div class="pb-7">
+          <div
+            class="input-group position-lg-relative start-lg-0 translate-middle-lg-none position-absolute start-50 translate-middle searchBar"
+          >
+            <input
+              type="text"
+              class="form-control rounded-pill py-2 ps-3"
+              placeholder="＃搜尋文章主題"
+              aria-label="＃搜尋文章主題"
+              aria-describedby="button-addon2"
+              data-searchinput=""
+            />
+            <button
+              class="btn btn-primary-600 rounded position-absolute px-2 top-50 end-0 translate-middle searchBtn"
+              type="button"
+              id="button-addon2"
+              data-searchbtn=""
+            >
+              <i class="bi bi-search text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- 2.喵皇學堂 -->
-    <section class="bg-secondary-100 pt-lg-12 pb-0">
+    <section class="bg-secondary-100 pt-lg-11 pb-0">
       <div class="container">
         <div class="row">
           <!-- 2-1-1.桌面版 專欄篩選區 -->
-          <div class="col-lg-3 col-12 pe-2 pt-7 pb-12 mb-12 bg-white d-lg-block d-none">
+          <div
+            class="col-lg-3 col-12 pe-2 pt-7 pb-12 mb-12 bg-white d-lg-block d-none"
+          >
             <div class="pb-lg-7">
               <div class="d-flex ps-2 pe-2 align-items-center">
                 <p class="fs-8 pb-1 me-auto">搜尋主題</p>
@@ -81,7 +128,8 @@
                   data-bs-content="<p>快速搜尋主題</p></br>
                   <p>喵～你在找什麼？
                   這裡是你的小幫手，只要輸入關鍵字，就能馬上找到你想知道的貓咪知識。不管是「貓咪不喝水怎麼辦？」還是「如何跟貓咪培養感情」，輸入一下就幫你找到答案！</p></br><p>例如：<br>
-                  輸入「嘔吐」，系統就會跳出「常見貓咪疾病」、「嘔吐原因與處理」等相關主題，超方便～</p>"/>
+                  輸入「嘔吐」，系統就會跳出「常見貓咪疾病」、「嘔吐原因與處理」等相關主題，超方便～</p>"
+                />
               </div>
               <input
                 type="text"
@@ -93,7 +141,7 @@
             <div class="pb-lg-7">
               <div class="d-flex ps-2 pe-2 align-items-center">
                 <p class="fs-8 pb-1 me-auto">主題</p>
-                <img        
+                <img
                   src="../assets/images/knowledge/info-tip.svg"
                   alt="information-circle"
                   tabindex="0"
@@ -105,25 +153,52 @@
                   <p>貓咪的大小事，這裡通通有！ 每個主題就是一個完整的小天地，專門介紹貓咪生活中的某個面向，像是飲食、健康、行為、訓練等。每個主題裡都有文章、圖片、甚至影片，幫你一次了解所有相關知識。  </p></br>
                   <p>例如：<br>
                   點進「貓咪飲食指南」主題，你會看到：該怎麼選飼料？能不能吃罐頭？要不要加營養品？都整理好了！ </p>"
-                  />
+                />
               </div>
               <div class="dropdown">
-                <button class="btn dropdown-toggle border text-start text-neutral-500 w-100 py-2" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <button
+                  class="btn dropdown-toggle border text-start text-neutral-500 w-100 py-2"
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
                   選擇主題
                 </button>
-                <ul class="dropdown-menu w-100 border-secondary-500 border-3 py-2" aria-labelledby="dropdownMenuButton1">
-                  <li><a class="dropdown-item border-bottom py-1" href="#">所有主題</a></li>
-                  <li><a class="dropdown-item border-bottom py-1" href="#">貓咪飲食指南</a></li>
-                  <li"><a class="dropdown-item border-bottom py-1" href="#">健康與疾病</a></li>
-                  <li"><a class="dropdown-item border-bottom py-1" href="#">行為與心理</a></li>
-                  <li"><a class="dropdown-item py-1" href="#">新手貓奴入門</a></li>
+                <ul
+                  class="dropdown-menu w-100 border-secondary-500 border-3 py-2"
+                  aria-labelledby="dropdownMenuButton1"
+                >
+                  <li>
+                    <a class="dropdown-item border-bottom py-1" href="#"
+                      >所有主題</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item border-bottom py-1" href="#"
+                      >貓咪飲食指南</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item border-bottom py-1" href="#"
+                      >健康與疾病</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item border-bottom py-1" href="#"
+                      >行為與心理</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item py-1" href="#">新手貓奴入門</a>
+                  </li>
                 </ul>
               </div>
             </div>
             <div class="pb-lg-7">
               <div class="d-flex ps-2 pe-2 align-items-center">
                 <p class="fs-8 pb-1 me-auto">知識類別</p>
-                <img        
+                <img
                   src="../assets/images/knowledge/info-tip.svg"
                   alt="information-circle"
                   tabindex="0"
@@ -135,20 +210,55 @@
                   <p>想從哪個方向了解貓咪呢？ 這是貓咪知識的大地圖，幫你把所有主題分成幾個分類，像是「貓咪飲食指南」、「健康與疾病」、「行為與心理」、「新手貓奴入門」等等。從你最關心的方向開始探索就對了！  </p></br>
                   <p>例如：<br>
                   如果你是新手鏟屎官，點「新手貓奴入門」就能看到像是「如何讓貓適應新環境」、「貓砂盆怎麼選」這些基本但超實用的內容。 </p>"
-                  />
+                />
               </div>
               <div class="dropdown">
-                <button class="btn dropdown-toggle border  text-start text-neutral-500 w-100 py-2" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <button
+                  class="btn dropdown-toggle border text-start text-neutral-500 w-100 py-2"
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
                   選擇知識類別
                 </button>
-                <ul class="dropdown-menu w-100 border-secondary-500 border-3 py-2" aria-labelledby="dropdownMenuButton1">
-                  <li><a class="dropdown-item border-bottom py-1" href="#">所有知識類別</a></li>
-                  <li><a class="dropdown-item border-bottom py-1" href="#">糧食類型解析</a></li>
-                  <li"><a class="dropdown-item border-bottom py-1" href="#">成份與標籤知識</a></li>
-                  <li"><a class="dropdown-item border-bottom py-1" href="#">換糧指南</a></li>
-                  <li"><a class="dropdown-item border-bottom py-1" href="#">特殊處方糧</a></li>
-                  <li"><a class="dropdown-item border-bottom py-1" href="#">自製食物</a></li>
-                  <li"><a class="dropdown-item py-1" href="#">飲水與水分攝取</a></li>
+                <ul
+                  class="dropdown-menu w-100 border-secondary-500 border-3 py-2"
+                  aria-labelledby="dropdownMenuButton1"
+                >
+                  <li>
+                    <a class="dropdown-item border-bottom py-1" href="#"
+                      >所有知識類別</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item border-bottom py-1" href="#"
+                      >糧食類型解析</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item border-bottom py-1" href="#"
+                      >成份與標籤知識</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item border-bottom py-1" href="#"
+                      >換糧指南</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item border-bottom py-1" href="#"
+                      >特殊處方糧</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item border-bottom py-1" href="#"
+                      >自製食物</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item py-1" href="#">飲水與水分攝取</a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -167,44 +277,64 @@
                 placeholder="＃搜尋文章主題"
               />
               <img
-              src="../assets/images/knowledge/info-tip.svg"
-              alt="information-circle"
-              class="mx-1"
-              tabindex="0"
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
-              data-bs-placement="bottom"
-              data-bs-trigger="focus"
-              data-bs-html="true"
-              />        
+                src="../assets/images/knowledge/info-tip.svg"
+                alt="information-circle"
+                class="mx-1"
+                tabindex="0"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                data-bs-placement="bottom"
+                data-bs-trigger="focus"
+                data-bs-html="true"
+              />
               <!-- Modal -->
-              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
                 <div class="modal-dialog modal-dialog-scrollable">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">功能用途說明</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        功能用途說明
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
                     </div>
                     <div class="modal-body">
                       <div class="my-2">
-                        <p class="fs-7 fw-bold mb-2 ">快速搜尋主題</p>
-                        <p class="text-neutral-600 fs-8 pb-2">喵～你在找什麼？<br>
-                        這裡是你的小幫手，只要輸入關鍵字，就能馬上找到你想知道的貓咪知識。不管是「貓咪不喝水怎麼辦？」還是「如何跟貓咪培養感情」，輸入一下就幫你找到答案！<br>
-                        例如：<br>
-                        輸入「嘔吐」，系統就會跳出「常見貓咪疾病」、「嘔吐原因與處理」等相關主題，超方便～
+                        <p class="fs-7 fw-bold mb-2">快速搜尋主題</p>
+                        <p class="text-neutral-600 fs-8 pb-2">
+                          喵～你在找什麼？<br />
+                          這裡是你的小幫手，只要輸入關鍵字，就能馬上找到你想知道的貓咪知識。不管是「貓咪不喝水怎麼辦？」還是「如何跟貓咪培養感情」，輸入一下就幫你找到答案！<br />
+                          例如：<br />
+                          輸入「嘔吐」，系統就會跳出「常見貓咪疾病」、「嘔吐原因與處理」等相關主題，超方便～
                         </p>
                       </div>
                       <div class="my-2">
-                        <p class="fs-7 fw-bold mb-2 ">主題</p>
-                        <p class="text-neutral-600 fs-8 pb-2">貓咪的大小事，這裡通通有！ 每個主題就是一個完整的小天地，專門介紹貓咪生活中的某個面向，像是飲食、健康、行為、訓練等。每個主題裡都有文章、圖片、甚至影片，幫你一次了解所有相關知識。<br>
-                        例如：<br>
-                        點進「貓咪飲食指南」主題，你會看到：該怎麼選飼料？能不能吃罐頭？要不要加營養品？都整理好了！</p>
+                        <p class="fs-7 fw-bold mb-2">主題</p>
+                        <p class="text-neutral-600 fs-8 pb-2">
+                          貓咪的大小事，這裡通通有！
+                          每個主題就是一個完整的小天地，專門介紹貓咪生活中的某個面向，像是飲食、健康、行為、訓練等。每個主題裡都有文章、圖片、甚至影片，幫你一次了解所有相關知識。<br />
+                          例如：<br />
+                          點進「貓咪飲食指南」主題，你會看到：該怎麼選飼料？能不能吃罐頭？要不要加營養品？都整理好了！
+                        </p>
                       </div>
                       <div class="my-2">
-                        <p class="fs-7 fw-bold mb-2 ">知識類別</p>
-                        <p class="text-neutral-600 fs-8 pb-2">想從哪個方向了解貓咪呢？ 這是貓咪知識的大地圖，幫你把所有主題分成幾個分類，像是「貓咪飲食指南」、「健康與疾病」、「行為與心理」、「新手貓奴入門」等等。從你最關心的方向開始探索就對了！<br>
-                        例如：<br>
-                        如果你是新手鏟屎官，點「新手貓奴入門」就能看到像是「如何讓貓適應新環境」、「貓砂盆怎麼選」這些基本但超實用的內容。</p>
+                        <p class="fs-7 fw-bold mb-2">知識類別</p>
+                        <p class="text-neutral-600 fs-8 pb-2">
+                          想從哪個方向了解貓咪呢？
+                          這是貓咪知識的大地圖，幫你把所有主題分成幾個分類，像是「貓咪飲食指南」、「健康與疾病」、「行為與心理」、「新手貓奴入門」等等。從你最關心的方向開始探索就對了！<br />
+                          例如：<br />
+                          如果你是新手鏟屎官，點「新手貓奴入門」就能看到像是「如何讓貓適應新環境」、「貓砂盆怎麼選」這些基本但超實用的內容。
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -212,23 +342,36 @@
               </div>
               <!-- 漢堡選單 -->
               <img
-              src="../assets/images/knowledge/adjustment.svg"
-              alt="information-circle"
-              class="me-1"
-              tabindex="0"
-              data-bs-toggle="modal"
-              data-bs-target="#knowledge-list"
-              data-bs-placement="bottom"
-              data-bs-trigger="focus"
-              data-bs-html="true"
-              />        
+                src="../assets/images/knowledge/adjustment.svg"
+                alt="information-circle"
+                class="me-1"
+                tabindex="0"
+                data-bs-toggle="modal"
+                data-bs-target="#knowledge-list"
+                data-bs-placement="bottom"
+                data-bs-trigger="focus"
+                data-bs-html="true"
+              />
               <!-- Modal -->
-              <div class="modal fade" id="knowledge-list" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div
+                class="modal fade"
+                id="knowledge-list"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">設定篩選條件</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        設定篩選條件
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
                     </div>
                     <div class="modal-body">
                       <div class="pb-lg-7">
@@ -236,15 +379,52 @@
                           <p class="fs-8 pb-1 me-auto">主題</p>
                         </div>
                         <div class="dropdown">
-                          <button class="btn dropdown-toggle border text-start text-neutral-500 w-100 py-2 mb-6" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                          <button
+                            class="btn dropdown-toggle border text-start text-neutral-500 w-100 py-2 mb-6"
+                            type="button"
+                            id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
                             選擇主題
                           </button>
-                          <ul class="dropdown-menu w-100 border-secondary-500 border-3 py-2" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item border-bottom py-1" href="#">所有主題</a></li>
-                            <li><a class="dropdown-item border-bottom py-1" href="#">貓咪飲食指南</a></li>
-                            <li"><a class="dropdown-item border-bottom py-1" href="#">健康與疾病</a></li>
-                            <li"><a class="dropdown-item border-bottom py-1" href="#">行為與心理</a></li>
-                            <li"><a class="dropdown-item py-1" href="#">新手貓奴入門</a></li>
+                          <ul
+                            class="dropdown-menu w-100 border-secondary-500 border-3 py-2"
+                            aria-labelledby="dropdownMenuButton1"
+                          >
+                            <li>
+                              <a
+                                class="dropdown-item border-bottom py-1"
+                                href="#"
+                                >所有主題</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                class="dropdown-item border-bottom py-1"
+                                href="#"
+                                >貓咪飲食指南</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                class="dropdown-item border-bottom py-1"
+                                href="#"
+                                >健康與疾病</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                class="dropdown-item border-bottom py-1"
+                                href="#"
+                                >行為與心理</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item py-1" href="#"
+                                >新手貓奴入門</a
+                              >
+                            </li>
                           </ul>
                         </div>
                       </div>
@@ -253,43 +433,103 @@
                           <p class="fs-8 pb-1 me-auto">知識類別</p>
                         </div>
                         <div class="dropdown">
-                          <button class="btn dropdown-toggle border  text-start text-neutral-500 w-100 py-2" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                          <button
+                            class="btn dropdown-toggle border text-start text-neutral-500 w-100 py-2"
+                            type="button"
+                            id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
                             選擇知識類別
                           </button>
-                          <ul class="dropdown-menu w-100 border-secondary-500 border-3 py-2" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item border-bottom py-1" href="#">所有知識類別</a></li>
-                            <li><a class="dropdown-item border-bottom py-1" href="#">糧食類型解析</a></li>
-                            <li"><a class="dropdown-item border-bottom py-1" href="#">成份與標籤知識</a></li>
-                            <li"><a class="dropdown-item border-bottom py-1" href="#">換糧指南</a></li>
-                            <li"><a class="dropdown-item border-bottom py-1" href="#">特殊處方糧</a></li>
-                            <li"><a class="dropdown-item border-bottom py-1" href="#">自製食物</a></li>
-                            <li"><a class="dropdown-item py-1" href="#">飲水與水分攝取</a></li>
+                          <ul
+                            class="dropdown-menu w-100 border-secondary-500 border-3 py-2"
+                            aria-labelledby="dropdownMenuButton1"
+                          >
+                            <li>
+                              <a
+                                class="dropdown-item border-bottom py-1"
+                                href="#"
+                                >所有知識類別</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                class="dropdown-item border-bottom py-1"
+                                href="#"
+                                >糧食類型解析</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                class="dropdown-item border-bottom py-1"
+                                href="#"
+                                >成份與標籤知識</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                class="dropdown-item border-bottom py-1"
+                                href="#"
+                                >換糧指南</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                class="dropdown-item border-bottom py-1"
+                                href="#"
+                                >特殊處方糧</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                class="dropdown-item border-bottom py-1"
+                                href="#"
+                                >自製食物</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item py-1" href="#"
+                                >飲水與水分攝取</a
+                              >
+                            </li>
                           </ul>
                         </div>
                       </div>
                     </div>
                     <div class="modal-footer">
                       <button type="button" class="btn" data-bs-dismiss="modal">
-                        <img src="/assets/images/knowledge/trash.svg" alt="trash-icon">
+                        <img
+                          src="/assets/images/knowledge/trash.svg"
+                          alt="trash-icon"
+                        />
                         清除重填
                       </button>
-                      <button type="button" class="btn btn-primary-500 text-white">
-                        <img src="/assets/images/knowledge/funnel.svg" alt="funnel-icon">
+                      <button
+                        type="button"
+                        class="btn btn-primary-500 text-white"
+                      >
+                        <img
+                          src="/assets/images/knowledge/funnel.svg"
+                          alt="funnel-icon"
+                        />
                         篩選
                       </button>
                     </div>
                   </div>
                 </div>
-              </div> 
-            </div>  
+              </div>
+            </div>
           </div>
           <!-- 2-2.專欄文章區 -->
-          <div class="col-lg-9 d-flex justify-content-center flex-wrap mb-12">
-            <div class="knowledge-card mt-lg-1 mt-2 ms-2 me-2 mb-3 position-relative">
+          <div class="col-lg-9 d-flex justify-content-center flex-wrap mb-11">
+            <div
+              class="knowledge-card mt-lg-1 mt-2 ms-2 me-2 mb-3 position-relative"
+            >
               <a href="./knowledge-article-01.html">
                 <img
                   src="/assets/images/knowledge/know-img1.png"
-                  alt="#"
+                  alt="article-img-01"
                   class="img mb-3"
                 />
                 <p
@@ -321,12 +561,14 @@
                 </div>
               </a>
             </div>
-            <div class="knowledge-card mt-lg-1 mt-2 ms-2 me-2 mb-3 position-relative">
+            <div
+              class="knowledge-card mt-lg-1 mt-2 ms-2 me-2 mb-3 position-relative"
+            >
               <a href="./knowledge-article-02.html">
                 <div class="text-center">
                   <img
                     src="/assets/images/knowledge/know-img2.png"
-                    alt="#"
+                    alt="article-img-02"
                     class="mb-3"
                   />
                   <p
@@ -361,12 +603,14 @@
                 </div>
               </a>
             </div>
-            <div class="knowledge-card mt-lg-1 mt-2 ms-2 me-2 mb-3 position-relative">
+            <div
+              class="knowledge-card mt-lg-1 mt-2 ms-2 me-2 mb-3 position-relative"
+            >
               <a href="#">
                 <div class="text-center">
                   <img
                     src="/assets/images/knowledge/know-img3.png"
-                    alt="#"
+                    alt="article-img-03"
                     class="mb-3"
                   />
                   <p
@@ -401,12 +645,14 @@
                 </div>
               </a>
             </div>
-            <div class="knowledge-card mt-lg-1 mt-2 ms-2 me-2 mb-3 position-relative">
+            <div
+              class="knowledge-card mt-lg-1 mt-2 ms-2 me-2 mb-3 position-relative"
+            >
               <a href="#">
                 <div class="text-center">
                   <img
                     src="/assets/images/knowledge/know-img4.png"
-                    alt="#"
+                    alt="article-img-04"
                     class="mb-3"
                   />
                   <p
@@ -441,12 +687,14 @@
                 </div>
               </a>
             </div>
-            <div class="knowledge-card mt-lg-1 mt-2 ms-2 me-2 mb-3 position-relative">
+            <div
+              class="knowledge-card mt-lg-1 mt-2 ms-2 me-2 mb-3 position-relative"
+            >
               <a href="#">
                 <div class="text-center">
                   <img
                     src="/assets/images/knowledge/know-img5.png"
-                    alt="#"
+                    alt="article-img-05"
                     class="mb-3"
                   />
                   <p
@@ -481,12 +729,14 @@
                 </div>
               </a>
             </div>
-            <div class="knowledge-card mt-lg-1 mt-2 ms-2 me-2 mb-3 position-relative">
+            <div
+              class="knowledge-card mt-lg-1 mt-2 ms-2 me-2 mb-3 position-relative"
+            >
               <a href="#">
                 <div class="text-center">
                   <img
                     src="/assets/images/knowledge/know-img6.png"
-                    alt="#"
+                    alt="article-img-06"
                     class="mb-3"
                   />
                   <p
@@ -521,12 +771,14 @@
                 </div>
               </a>
             </div>
-            <div class="knowledge-card mt-lg-1 mt-2 ms-2 me-2 mb-3 position-relative">
+            <div
+              class="knowledge-card mt-lg-1 mt-2 ms-2 me-2 mb-3 position-relative"
+            >
               <a href="#">
                 <div class="text-center">
                   <img
                     src="/assets/images/knowledge/know-img7.png"
-                    alt="#"
+                    alt="article-img-07"
                     class="mb-3"
                   />
                   <p
@@ -561,12 +813,14 @@
                 </div>
               </a>
             </div>
-            <div class="knowledge-card mt-lg-1 mt-2 ms-2 me-2 mb-3 position-relative">
+            <div
+              class="knowledge-card mt-lg-1 mt-2 ms-2 me-2 mb-3 position-relative"
+            >
               <a href="#">
                 <div class="text-center">
                   <img
                     src="/assets/images/knowledge/know-img8.png"
-                    alt="#"
+                    alt="article-img-08"
                     class="mb-3"
                   />
                   <p
@@ -601,12 +855,14 @@
                 </div>
               </a>
             </div>
-            <div class="knowledge-card mt-lg-1 mt-2 ms-2 me-2 mb-3 position-relative">
+            <div
+              class="knowledge-card mt-lg-1 mt-2 ms-2 me-2 mb-3 position-relative"
+            >
               <a href="#">
                 <div class="text-center">
                   <img
                     src="/assets/images/knowledge/know-img9.png"
-                    alt="#"
+                    alt="article-img-09"
                     class="mb-3"
                   />
                   <p
@@ -641,38 +897,38 @@
                 </div>
               </a>
             </div>
-            <!-- 2-3.專欄頁碼 -->
-            <div class="m-auto">
-              <ul class="d-flex justify-content-center align-items-center">
-                <li class="page-item me-2">
-                  <button type="button" class="btn knowledge-btn">
-                    <i class="bi bi-chevron-left"></i>
-                  </button>
-                </li>
-                <li class="page-item me-2">
-                  <button
-                    type="button"
-                    class="btn knowledge-btn btn-primary-600 text-white active"
-                  >
-                    1
-                  </button>
-                </li>
-                <li class="page-item me-2">
-                  <button type="button" class="btn knowledge-btn">2</button>
-                </li>
-                <li class="page-item me-2">
-                  <button type="button" class="btn knowledge-btn">...</button>
-                </li>
-                <li class="page-item me-2">
-                  <button type="button" class="btn knowledge-btn">8</button>
-                </li>
-                <li class="page-item">
-                  <button type="button" class="btn knowledge-btn">
-                    <i class="bi bi-chevron-right"></i>
-                  </button>
-                </li>
-              </ul>
-            </div>
+          </div>
+          <!-- 2-3.專欄頁碼 -->
+          <div class="m-auto mb-md-11">
+            <ul class="d-flex justify-content-center align-items-center">
+              <li class="page-item me-2">
+                <button type="button" class="btn knowledge-btn">
+                  <i class="bi bi-chevron-left"></i>
+                </button>
+              </li>
+              <li class="page-item me-2">
+                <button
+                  type="button"
+                  class="btn knowledge-btn btn-primary-600 border-0 text-white active"
+                >
+                  1
+                </button>
+              </li>
+              <li class="page-item me-2">
+                <button type="button" class="btn knowledge-btn">2</button>
+              </li>
+              <li class="page-item me-2">
+                <button type="button" class="btn knowledge-btn">...</button>
+              </li>
+              <li class="page-item me-2">
+                <button type="button" class="btn knowledge-btn">8</button>
+              </li>
+              <li class="page-item">
+                <button type="button" class="btn knowledge-btn">
+                  <i class="bi bi-chevron-right"></i>
+                </button>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -682,6 +938,5 @@
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
-    
   </body>
 </html>
