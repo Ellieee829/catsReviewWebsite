@@ -5,16 +5,54 @@
   background-repeat: no-repeat;
   padding-top: 266px;
   padding-bottom: 266px;
+  max-height: 532px;
 }
 
-@media (max-width: 767px) {
-  .knowledge-banner {
-    background-image: url("/assets/images/knowledge/rwdknowBanner.jpg");
+@media (max-width: 996px) {
+  .knowledge-md-banner {
+    background-image: url("/assets/images/knowledge/rwdKnowBanner.jpg");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     padding-top: 300px;
     padding-bottom: 300px;
+  }
+  .knowledge-search {
+    max-width: 100%;
+  }
+  img {
+    max-width: 100%;
+  }
+}
+
+.knowledge-relative {
+  position: relative;
+}
+
+.knowledge-absolute {
+  position: absolute;
+  top: 176px;
+  left: calc(1240 / 1920 * 100%);
+  height: 238px;
+  width: 416px;
+}
+.knowledge-md-relative {
+  position: relative;
+}
+
+.knowledge-md-absolute {
+  position: absolute;
+  bottom: 56px;
+  left: 20px;
+}
+
+.knowledge-search {
+  width: 416px;
+}
+
+@media (max-width: 767px) {
+  .knowledge-md-search {
+    width: 351px;
   }
 }
 
@@ -68,21 +106,9 @@
   padding-right: 8px;
 }
 
-.knowledge-relative {
-  position: relative;
-}
-
-.knowledge-absolute {
-  position: absolute;
-  top: 176px;
-  right: 8%;
-  height: 238px;
-  width: 416px;
-}
-
 .knowledge-btn:hover {
-  color: #ffffff;
-  background-color: $primary-500;
+  color: $primary-800;
+  background-color: $primary-200;
 }
 
 .dropdown-item:hover {
