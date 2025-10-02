@@ -7,7 +7,7 @@
   flex-direction: column;
   align-items: stretch;
 }
-.goldLine{
+.goldLine {
   display: block;
   width: 100%;
 }
@@ -31,9 +31,9 @@
   }
 }
 
-/* 頂部固定區域（logo + 漢堡按鈕） */
 .header-liner {
   height: 4px;
+  max-width: 100%;
   background: linear-gradient(
     to right,
     rgba(118, 81, 68, 1) 0%,
