@@ -11,17 +11,16 @@
   <body>
     <%- include('./layout/header'); -%>
     <!-- 內容 -->
+    
     <div class="section-1 ">
-
-      <a class="btn btn-primary food-back-btn" href="#" role="button"><i class="bi bi-arrow-up-circle"></i>  回到頂端</a>
-      
       <div class="container">
         <div class="row">
           <!-- breadcrumb -->
           <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>';" class="pt-3" >
             <ol class="breadcrumb">
-              <li class="breadcrumb-item food-breadcrumb-item"><a href="#">首頁</a></li>
-              <li class="breadcrumb-item food-breadcrumb-item active " aria-current="page">膳食探索</li>
+              <li class="breadcrumb-item food-breadcrumb-item"><a href="index.html">首頁</a></li>
+              <li class="breadcrumb-item food-breadcrumb-item"><a href="foodmain.html">膳食探索</a></li>
+              <li class="breadcrumb-item food-breadcrumb-item active " aria-current="page">雞+南瓜主食罐</li>
             </ol>
           </nav>       
         </div>
@@ -255,7 +254,7 @@
         </div>
       </div>
     </div>
-    
+    <a class="btn btn-primary food-back-btn" href="#top" role="button"><i class="bi bi-arrow-up-circle"></i>  回到頂端</a>
     <%- include('./layout/footer'); -%>
     <script type="module" src="../main.js"></script>
   </body>
