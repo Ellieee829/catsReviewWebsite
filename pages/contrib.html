@@ -248,14 +248,14 @@
                   <div>
                     <div class="dropdown">
                       <button
-                        class="btn rounded-pill food-dropdown dropdown-toggle w-100"
+                        class="btn rounded-pill contrib-dropdown dropdown-toggle w-100"
                         type="button"
                         data-bs-toggle="dropdown"
                         aria-expanded="false"
                       >
                         請選擇食品產地
                       </button>
-                      <ul class="dropdown-menu food-dropdown-menu">
+                      <ul class="dropdown-menu contrib-dropdown-menu">
                         <li><a class="dropdown-item" href="#">台灣</a></li>
                         <li><a class="dropdown-item" href="#">加拿大</a></li>
                         <li><a class="dropdown-item" href="#">法國</a></li>
@@ -354,20 +354,24 @@
                     >
                   </p>
                   <div>
-                    <select
-                      class="form-select border-radius contrib-input-heigh px-4"
-                      aria-label="Default select example"
-                      required
-                    >
-                      <option value="" selected>請選擇</option>
-                      <option value="Pâté">泥狀</option>
-                      <option value="Chunks">肉塊</option>
-                      <option value="Loaf">膠狀</option>
-                      <option value="Broth">湯罐</option>
-                      <option value="Dry food">乾飼料</option>
-                      <option value="Others">其他</option>
-                    </select>
-                    <p class="invalid-feedback px-2 mt-2">請選擇內容物類型</p>
+                    <div class="dropdown">
+                      <button
+                        class="btn rounded-pill contrib-dropdown dropdown-toggle w-100"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        請選擇內容物類型
+                      </button>
+                      <ul class="dropdown-menu contrib-dropdown-menu">
+                        <li><a class="dropdown-item" href="#">泥狀</a></li>
+                        <li><a class="dropdown-item" href="#">肉塊</a></li>
+                        <li><a class="dropdown-item" href="#">膠狀</a></li>
+                        <li><a class="dropdown-item" href="#">湯罐</a></li>
+                        <li><a class="dropdown-item" href="#">乾飼料</a></li>
+                        <li><a class="dropdown-item" href="#">其他</a></li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -385,24 +389,32 @@
                     >
                   </p>
                   <div>
-                    <select
-                      class="form-select border-radius contrib-input-heigh px-4"
-                      aria-label="Default select example"
-                      required
-                    >
-                      <option value="" selected>請選擇</option>
-                      <option value="None">無</option>
-                      <option value="Weight Control">減重</option>
-                      <option value="Sensitive Digestion">腸胃敏感</option>
-                      <option value="Urinary Care">泌尿道保健</option>
-                      <option value="Immune Support">強化免疫力</option>
-                      <option value="Skin & Fur Health">改善皮膚&毛髮</option>
-                      <option value="Joint & Bone Health">骨骼保養</option>
-                      <option value="Others">其他</option>
-                    </select>
-                    <p class="invalid-feedback px-2 mt-2">
-                      請選擇是否為特殊配方
-                    </p>
+                    <div class="dropdown">
+                      <button
+                        class="btn rounded-pill contrib-dropdown dropdown-toggle w-100"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        請選擇是否為特殊配方
+                      </button>
+                      <ul class="dropdown-menu contrib-dropdown-menu">
+                        <li><a class="dropdown-item" href="#">無</a></li>
+                        <li><a class="dropdown-item" href="#">減重</a></li>
+                        <li><a class="dropdown-item" href="#">腸胃敏感</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">泌尿道保健</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">強化免疫力</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">改善皮膚&毛髮</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#">骨骼保養</a></li>
+                        <li><a class="dropdown-item" href="#">其他</a></li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
                 <div class="w-100">
@@ -418,18 +430,22 @@
                     >
                   </p>
                   <div>
-                    <select
-                      class="form-select border-radius contrib-input-heigh px-4"
-                      aria-label="Default select example"
-                      required
-                    >
-                      <option value="" selected>請選擇</option>
-                      <option value="Kitten">幼貓</option>
-                      <option value="Adult">成貓</option>
-                      <option value="Mature">熟齡貓</option>
-                      <option value="All Life Stages">全齡貓</option>
-                    </select>
-                    <p class="invalid-feedback px-2 mt-2">請選擇適合年齡</p>
+                    <div class="dropdown">
+                      <button
+                        class="btn rounded-pill contrib-dropdown dropdown-toggle w-100"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        請選擇適合年齡
+                      </button>
+                      <ul class="dropdown-menu contrib-dropdown-menu">
+                        <li><a class="dropdown-item" href="#">幼貓</a></li>
+                        <li><a class="dropdown-item" href="#">成貓</a></li>
+                        <li><a class="dropdown-item" href="#">熟齡貓</a></li>
+                        <li><a class="dropdown-item" href="#">全齡貓</a></li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1155,9 +1171,9 @@
               </div>
             </div>
             <!-- 6. 提交&清除表單欄位 -->
-            <div class="d-flex">
+            <div class="d-flex justify-content-between justify-content-md-none">
               <button
-                class="btn btn-border contrib-delete-btn ms-auto d-flex align-items-center px-3"
+                class="btn btn-border contrib-delete-btn ms-md-auto d-flex align-items-center justify-content-center px-md-3"
                 type="reset"
               >
                 <img
@@ -1168,7 +1184,7 @@
                 <span class="text-neutral-700">清除重填</span>
               </button>
               <button
-                class="btn btn-border contrib-submit-btn ms-4 d-flex align-items-center px-3 px-md-12"
+                class="btn btn-border contrib-submit-btn ms-md-4 d-flex align-items-center justify-content-center px-md-12"
                 type="submit"
               >
                 <img
@@ -1622,9 +1638,11 @@
                 </div>
               </div>
               <!-- 提交&清除表單欄位 -->
-              <div class="d-flex">
+              <div
+                class="d-flex justify-content-between justify-content-md-none"
+              >
                 <button
-                  class="btn btn-border contrib-delete-btn ms-auto d-flex align-items-center px-3"
+                  class="btn btn-border contrib-delete-btn ms-md-auto d-flex align-items-center justify-content-center px-md-3"
                   type="reset"
                 >
                   <img
@@ -1635,7 +1653,7 @@
                   <span class="text-neutral-700">清除重填</span>
                 </button>
                 <button
-                  class="btn btn-border contrib-submit-btn ms-4 d-flex align-items-center px-3 px-md-12"
+                  class="btn btn-border contrib-submit-btn ms-md-4 d-flex align-items-center justify-content-center px-md-12"
                   type="submit"
                 >
                   <img
