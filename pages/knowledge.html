@@ -23,92 +23,59 @@
     <%- include('./layout/header'); -%>
     <!-- 首頁 -->
 
-    <!-- 1-1.banner 桌面版-->
-    <section class="knowledge-banner knowledge-relative d-lg-block d-none">
-      <div class="text-center knowledge-absolute">
-        <img
-          src="/assets/images/index/section02_decoration.svg"
-          alt="deco"
-          class="mb-10"
-        />
-        <img
-          src="/assets/images/knowledge/knowledge-banner-title.png"
-          alt="banner-title"
-          class="mb-5"
-        />
-        <h1 class="fs-lg-5 fs-7 text-secondary-100 mb-10">
-          讓你更懂你的喵皇！
-        </h1>
-        <div class="pb-7">
-          <div
-            class="input-group position-lg-relative start-lg-0 translate-middle-lg-none position-absolute start-50 translate-middle searchBar"
-          >
-            <input
-              type="text"
-              class="form-control rounded-pill py-2 ps-3"
-              placeholder="＃搜尋文章主題"
-              aria-label="＃搜尋文章主題"
-              aria-describedby="button-addon2"
-              data-searchinput=""
-            />
-            <button
-              class="btn btn-primary-600 rounded position-absolute px-2 top-50 end-0 translate-middle searchBtn"
-              type="button"
-              id="button-addon2"
-              data-searchbtn=""
-            >
-              <i class="bi bi-search text-white"></i>
-            </button>
+    <!-- 1.banner-->
+    <section class="knowledge-banner">
+      <div class="container">
+        <div class="row justify-content-lg-end">
+          <div class="col-lg-4 col-12">
+            <div class="d-flex flex-column">
+              <img
+                src="/assets/images/index/section02_decoration.svg"
+                alt="deco"
+                class="mb-lg-10 mb-6 align-self-center"
+              />
+              <img
+                src="/assets/images/knowledge/knowledge-banner-title.png"
+                alt="banner-title"
+                class="mb-lg-5 align-self-center d-lg-block d-none"
+              />
+              <img
+                src="/assets/images/knowledge/rwdknowledge-banner-title.png"
+                alt="banner-title"
+                class="mb-2 align-self-center d-lg-none d-block"
+              />
+              <h1
+                class="fs-lg-5 fs-7 mb-lg-10 mb-6 text-secondary-100 align-self-center"
+              >
+                讓你更懂你的喵皇！
+              </h1>
+              <div class="align-self-center search-position-relative">
+                <input
+                  type="text"
+                  class="form-control rounded-pill py-2 ps-3 knowledge-search"
+                  placeholder="＃搜尋文章主題"
+                  aria-label="＃搜尋文章主題"
+                  aria-describedby="button-addon2"
+                  data-searchinput=""
+                />
+                <button
+                  class="btn btn-primary-600 rounded search-position-absolute"
+                  type="button"
+                  id="button-addon2"
+                  data-searchbtn=""
+                >
+                  <i class="bi bi-search text-white"></i>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- 1-2.banner 行動版 -->
-    <!-- <section
-      class="knowledge-md-banner knowledge-md-relative d-lg-none d-block"
-    >
-      <div
-        class="knowledge-search d-flex flex-column align-items-center justify-content-center knowledge-md-absolute"
-      >
-        <img
-          src="/assets/images/index/section02_decoration.svg"
-          alt="deco"
-          class="mb-10"
-        />
-        <img
-          src="/assets/images/knowledge/rwdknowledge-banner-title.png"
-          alt="banner-title"
-          class="mb-5"
-        />
-        <h1 class="fs-7 text-secondary-100 mb-10">讓你更懂你的喵皇！</h1>
-        <div class="pb-7">
-          <div
-            class="input-group position-lg-relative start-lg-0 translate-middle-lg-none position-absolute start-50 translate-middle searchBar"
-          >
-            <input
-              type="text"
-              class="form-control rounded-pill py-2 ps-3"
-              placeholder="＃搜尋文章主題"
-              aria-label="＃搜尋文章主題"
-              aria-describedby="button-addon2"
-              data-searchinput=""
-            />
-            <button
-              class="btn btn-primary-600 rounded position-absolute px-2 top-50 end-0 translate-middle searchBtn"
-              type="button"
-              id="button-addon2"
-              data-searchbtn=""
-            >
-              <i class="bi bi-search text-white"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-    </section> -->
 
     <!-- 2.喵皇學堂 -->
     <section class="bg-secondary-100 pt-lg-11 pb-0 pb-lg-12 pb-11">
-      <div class="container">
+      <div class="container pt-0">
         <div class="row">
           <!-- 2-1-1.桌面版 專欄篩選區 -->
           <div class="col-lg-3 col-12 pe-2 pt-7 bg-white d-lg-block d-none">
@@ -938,7 +905,7 @@
               </a> -->
             </div>
             <!-- 2-3.專欄頁碼 -->
-            <div class="m-auto mb-md-11">
+            <div class="m-auto">
               <ul class="d-flex justify-content-center align-items-center">
                 <li class="page-item me-2">
                   <button type="button" class="btn knowledge-btn">
