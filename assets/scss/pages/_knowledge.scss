@@ -1,62 +1,72 @@
+// .knowledge-banner {
+//   background-image: url("/assets/images/knowledge/knowBanner.png");
+//   background-size: cover;
+//   background-position: center center;
+//   background-repeat: no-repeat;
+//   padding-top: 266px;
+//   padding-bottom: 266px;
+//   max-height: 532px;
+// }
+
 .knowledge-banner {
   background-image: url("/assets/images/knowledge/knowBanner.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  padding-top: 266px;
-  padding-bottom: 266px;
+  padding-top: 56px;
+  padding-bottom: 396px;
   max-height: 532px;
 }
-
 @media (max-width: 996px) {
-  .knowledge-md-banner {
+  .knowledge-banner {
     background-image: url("/assets/images/knowledge/rwdKnowBanner.jpg");
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    padding-top: 300px;
-    padding-bottom: 300px;
-  }
-  .knowledge-search {
-    max-width: 100%;
-  }
-  img {
-    max-width: 100%;
+    padding-top: 56px;
+    padding-bottom: 374px;
+    max-height: 600px;
   }
 }
 
-.knowledge-relative {
+// @media (max-width: 996px) {
+//   .knowledge-md-banner {
+//     background-image: url("/assets/images/knowledge/rwdKnowBanner.jpg");
+//     background-size: cover;
+//     background-position: center center;
+//     background-repeat: no-repeat;
+//     padding-top: 300px;
+//     padding-bottom: 300px;
+//   }
+//   .knowledge-search {
+//     max-width: 100%;
+//   }
+//   img {
+//     max-width: 100%;
+//   }
+// }
+
+.search-position-relative {
   position: relative;
 }
-
-.knowledge-absolute {
+.search-position-absolute {
   position: absolute;
-  top: 176px;
-  left: calc(1240 / 1920 * 100%);
-  height: 238px;
-  width: 416px;
-}
-.knowledge-md-relative {
-  position: relative;
-}
-
-.knowledge-md-absolute {
-  position: absolute;
-  bottom: 56px;
-  left: 20px;
+  top: 10%;
+  right: 3%;
 }
 
 .knowledge-search {
   width: 416px;
 }
 
-@media (max-width: 767px) {
-  .knowledge-md-search {
+@media (max-width: 996px) {
+  .knowledge-search {
     width: 351px;
   }
 }
 
 .knowledge-card {
+  width: 290px;
+}
+
+.knowledge-card-1 {
   width: 290px;
 }
 

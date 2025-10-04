@@ -5,14 +5,9 @@ ul {
 }
 
 
-.foodmain-body{
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;    
+.foodmain-body{ 
     background-image: url(../../assets/images/food/secondary_backgroundTexture.jpg);
     background-repeat: repeat;
-    width: 100%;
     z-index: -1; /* 让伪元素在内容下方 */
 }   
 
@@ -53,7 +48,7 @@ ul {
         
     }
 
-    @media (max-width:  992px) {
+    @media (max-width:  1130px) {
         background-image: url(../../assets/images/food/hero/food-hero1-mobile1.png);
         background-repeat: no-repeat;
         background-size: cover;
@@ -101,8 +96,8 @@ ul {
         height: 60px;
         border-radius: 50px;
 
-         @media (max-width:  992px) {
-            width: 351px; /* 為了給按鈕留出空間 */
+        @media (max-width:  1130px) {
+            width: 351px; /*為了給按鈕留出空間 */
             height: 60px;
          }
     }
@@ -235,16 +230,14 @@ ul {
     padding: 8px;
     position: relative;
     overflow-x: hidden;
+    height: auto;
 
     .card-deco {
         position: absolute;
         top: 8px;
         left: 8px;
     }
-    .food-btn{
-        background-repeat: 0;
-
-    }
+    
 
     .card-title{
         font-family: "Cactus Classical Serif", serif;
@@ -252,7 +245,30 @@ ul {
         font-size: 20px;
     }
     
+    
 
+    button {
+        // position: absolute;
+        bottom: 0px;
+        vertical-align: bottom;
+        align-self: flex-end;
+    }
+
+}
+
+.food-card:hover {
+    border: solid 8px white;
+    box-shadow: 10px 5px 5px #b8966880;
+    img {
+        opacity: 0.5;
+    }
+    .button {
+        display: block;
+    }
+    .newspaper-icon {
+        width: 20px;
+        height: 20px;
+    }
 }
 
 
@@ -285,7 +301,6 @@ ul {
     border-top: var(--bs-popover-border-width) solid black;
     border-bottom: var(--bs-popover-border-width) solid black;
     border-radius: 8px;
-    //border-top-right-radius: 8px;
     font-family: "Noto Sans TC" ,    serif;
 }
 
@@ -294,7 +309,6 @@ ul {
     background-color: #000;
     color: white;
     border-radius: 8px;
-    //border-bottom-right-radius: 8px;
     font-size: 14px;
     font-weight: 400;
 }
@@ -318,4 +332,7 @@ ul {
         
     }
 }
+
+
+
 
