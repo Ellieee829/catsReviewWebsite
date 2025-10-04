@@ -305,6 +305,7 @@ $primary-100: #f7f2f1 !default;
 $primary-200: #eeded9 !default;
 $primary-300: #e1beb6 !default;
 $primary-500: #ca847d !default;
+$primary-600: #c36d64 !default;
 $primary-800: #7c443d !default;
 $primary: $primary-800;
 
@@ -345,6 +346,7 @@ $theme-colors: (
   "primary-200": $primary-200,
   "primary-300": $primary-300,
   "primary-500": $primary-500,
+  "primary-600": $primary-600,
   "primary-800": $primary-800,
 
   "secondary": $secondary,
@@ -1689,7 +1691,8 @@ $modal-footer-border-color: $modal-header-border-color !default;
 $modal-footer-border-width: $modal-header-border-width !default;
 
 $modal-sm: 300px !default;
-$modal-md: 500px !default;
+// $modal-md: 500px !default;
+$modal-md: 416px !default;
 $modal-lg: 800px !default;
 $modal-xl: 1140px !default;
 

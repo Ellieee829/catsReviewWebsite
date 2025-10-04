@@ -18,6 +18,7 @@
     "bootstrap": "^5.3.7",
     "gh-pages": "^5.0.0",
     "glob": "^10.2.2",
+    "quill": "^2.0.3",
     "sass": "^1.61.0",
     "sass-loader": "^13.2.2",
     "vite-plugin-live-reload": "^3.0.2"

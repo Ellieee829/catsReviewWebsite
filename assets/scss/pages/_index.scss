@@ -224,6 +224,9 @@
   }
 
   //section2
+  .index-idea-h2 {
+    text-align: left;
+  }
   .index-section2-words-bg {
     max-width: 351px;
     height: 426px;
@@ -336,6 +339,10 @@
 
 @media (min-width: 1200px) {
   //section2
+  .index-idea-h2 {
+    text-align: center;
+  }
+
   .index-idea-container {
     text-align: center;
   }
@@ -362,6 +369,10 @@
 
 @media (min-width: 1400px) {
   //section2
+  .index-idea-h2 {
+    text-align: center;
+  }
+
   .index-section2-words-bg {
     max-width: 636px;
     height: 455px;

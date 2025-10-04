@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=info"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+
+    <title>喵皇學堂</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <!-- 首頁 -->
+
+    <!-- 1.banner-->
+    <section class="knowledge-banner">
+      <div class="container">
+        <div class="row justify-content-lg-end">
+          <div class="col-lg-4 col-12">
+            <div class="d-flex flex-column">
+              <img
+                src="/assets/images/index/section02_decoration.svg"
+                alt="deco"
+                class="mb-lg-10 mb-6 align-self-center"
+              />
+              <img
+                src="/assets/images/knowledge/knowledge-banner-title.png"
+                alt="banner-title"
+                class="mb-lg-5 align-self-center d-lg-block d-none"
+              />
+              <img
+                src="/assets/images/knowledge/rwdknowledge-banner-title.png"
+                alt="banner-title"
+                class="mb-2 align-self-center d-lg-none d-block"
+              />
+              <h1
+                class="fs-lg-5 fs-7 mb-lg-10 mb-6 text-secondary-100 align-self-center"
+              >
+                讓你更懂你的喵皇！
+              </h1>
+              <div class="align-self-center search-position-relative">
+                <input
+                  type="text"
+                  class="form-control rounded-pill py-2 ps-3 knowledge-search"
+                  placeholder="＃搜尋文章主題"
+                  aria-label="＃搜尋文章主題"
+                  aria-describedby="button-addon2"
+                  data-searchinput=""
+                />
+                <button
+                  class="btn btn-primary-600 rounded search-position-absolute"
+                  type="button"
+                  id="button-addon2"
+                  data-searchbtn=""
+                >
+                  <i class="bi bi-search text-white"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2.喵皇學堂 -->
+    <section class="bg-secondary-100 pt-lg-11 pb-0 pb-lg-12 pb-11">
+      <div class="container pt-0">
+        <div class="row">
+          <!-- 2-1-1.桌面版 專欄篩選區 -->
+          <div class="col-lg-3 col-12 pe-2 pt-7 bg-white d-lg-block d-none">
+            <div class="pb-lg-7">
+              <div class="d-flex ps-2 pe-2 align-items-center">
+                <p class="fs-8 pb-1 me-auto">搜尋主題</p>
+                <img
+                  src="../assets/images/knowledge/info-tip.svg"
+                  alt="information-circle"
+                  tabindex="0"
+                  data-bs-toggle="popover"
+                  data-bs-placement="bottom"
+                  data-bs-trigger="focus"
+                  data-bs-html="true"
+                  data-bs-content="<p>快速搜尋主題</p></br>
+                  <p>喵～你在找什麼？
+                  這裡是你的小幫手，只要輸入關鍵字，就能馬上找到你想知道的貓咪知識。不管是「貓咪不喝水怎麼辦？」還是「如何跟貓咪培養感情」，輸入一下就幫你找到答案！</p></br><p>例如：<br>
+                  輸入「嘔吐」，系統就會跳出「常見貓咪疾病」、「嘔吐原因與處理」等相關主題，超方便～</p>"
+                />
+              </div>
+              <input
+                type="text"
+                class="form-control border-radius contrib-input-heigh"
+                id="knowledgeName"
+                placeholder="＃搜尋文章主題"
+              />
+            </div>
+            <div class="pb-lg-7">
+              <div class="d-flex ps-2 pe-2 align-items-center">
+                <p class="fs-8 pb-1 me-auto">主題</p>
+                <img
+                  src="../assets/images/knowledge/info-tip.svg"
+                  alt="information-circle"
+                  tabindex="0"
+                  data-bs-toggle="popover"
+                  data-bs-placement="bottom"
+                  data-bs-trigger="focus"
+                  data-bs-html="true"
+                  data-bs-content="<p>主題</p></br>
+                  <p>貓咪的大小事，這裡通通有！ 每個主題就是一個完整的小天地，專門介紹貓咪生活中的某個面向，像是飲食、健康、行為、訓練等。每個主題裡都有文章、圖片、甚至影片，幫你一次了解所有相關知識。  </p></br>
+                  <p>例如：<br>
+                  點進「貓咪飲食指南」主題，你會看到：該怎麼選飼料？能不能吃罐頭？要不要加營養品？都整理好了！ </p>"
+                />
+              </div>
+              <div class="dropdown">
+                <button
+                  class="btn dropdown-toggle border text-start text-neutral-500 w-100 py-2"
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  選擇主題
+                </button>
+                <ul
+                  class="dropdown-menu w-100 border-secondary-500 border-3 py-2"
+                  aria-labelledby="dropdownMenuButton1"
+                >
+                  <li>
+                    <a class="dropdown-item border-bottom py-1" href="#"
+                      >所有主題</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item border-bottom py-1" href="#"
+                      >貓咪飲食指南</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item border-bottom py-1" href="#"
+                      >健康與疾病</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item border-bottom py-1" href="#"
+                      >行為與心理</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item py-1" href="#">新手貓奴入門</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="pb-lg-7">
+              <div class="d-flex ps-2 pe-2 align-items-center">
+                <p class="fs-8 pb-1 me-auto">知識類別</p>
+                <img
+                  src="../assets/images/knowledge/info-tip.svg"
+                  alt="information-circle"
+                  tabindex="0"
+                  data-bs-toggle="popover"
+                  data-bs-placement="bottom"
+                  data-bs-trigger="focus"
+                  data-bs-html="true"
+                  data-bs-content="<p>知識類別</p></br>
+                  <p>想從哪個方向了解貓咪呢？ 這是貓咪知識的大地圖，幫你把所有主題分成幾個分類，像是「貓咪飲食指南」、「健康與疾病」、「行為與心理」、「新手貓奴入門」等等。從你最關心的方向開始探索就對了！  </p></br>
+                  <p>例如：<br>
+                  如果你是新手鏟屎官，點「新手貓奴入門」就能看到像是「如何讓貓適應新環境」、「貓砂盆怎麼選」這些基本但超實用的內容。 </p>"
+                />
+              </div>
+              <div class="dropdown">
+                <button
+                  class="btn dropdown-toggle border text-start text-neutral-500 w-100 py-2"
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  選擇知識類別
+                </button>
+                <ul
+                  class="dropdown-menu w-100 border-secondary-500 border-3 py-2"
+                  aria-labelledby="dropdownMenuButton1"
+                >
+                  <li>
+                    <a class="dropdown-item border-bottom py-1" href="#"
+                      >所有知識類別</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item border-bottom py-1" href="#"
+                      >糧食類型解析</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item border-bottom py-1" href="#"
+                      >成份與標籤知識</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item border-bottom py-1" href="#"
+                      >換糧指南</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item border-bottom py-1" href="#"
+                      >特殊處方糧</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item border-bottom py-1" href="#"
+                      >自製食物</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item py-1" href="#">飲水與水分攝取</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- 2-1-2.行動版 專欄篩選區 -->
+          <div class="col-12 pt-1 pb-1 mb-1 d-lg-none d-block bg-white">
+            <div class="d-flex ps-2 pe-2 align-items-center">
+              <p class="fs-8 pb-1 me-auto">搜尋主題</p>
+            </div>
+            <div class="d-flex">
+              <!-- 功能用途說明 -->
+              <input
+                type="text"
+                class="form-control border-radius contrib-input-heigh"
+                id="knowledgeName"
+                placeholder="＃搜尋文章主題"
+              />
+              <img
+                src="../assets/images/knowledge/info-tip.svg"
+                alt="information-circle"
+                class="mx-1"
+                tabindex="0"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                data-bs-placement="bottom"
+                data-bs-trigger="focus"
+                data-bs-html="true"
+              />
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-scrollable">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        功能用途說明
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="my-2">
+                        <p class="fs-7 fw-bold mb-2">快速搜尋主題</p>
+                        <p class="text-neutral-600 fs-8 pb-2">
+                          喵～你在找什麼？<br />
+                          這裡是你的小幫手，只要輸入關鍵字，就能馬上找到你想知道的貓咪知識。不管是「貓咪不喝水怎麼辦？」還是「如何跟貓咪培養感情」，輸入一下就幫你找到答案！<br />
+                          例如：<br />
+                          輸入「嘔吐」，系統就會跳出「常見貓咪疾病」、「嘔吐原因與處理」等相關主題，超方便～
+                        </p>
+                      </div>
+                      <div class="my-2">
+                        <p class="fs-7 fw-bold mb-2">主題</p>
+                        <p class="text-neutral-600 fs-8 pb-2">
+                          貓咪的大小事，這裡通通有！
+                          每個主題就是一個完整的小天地，專門介紹貓咪生活中的某個面向，像是飲食、健康、行為、訓練等。每個主題裡都有文章、圖片、甚至影片，幫你一次了解所有相關知識。<br />
+                          例如：<br />
+                          點進「貓咪飲食指南」主題，你會看到：該怎麼選飼料？能不能吃罐頭？要不要加營養品？都整理好了！
+                        </p>
+                      </div>
+                      <div class="my-2">
+                        <p class="fs-7 fw-bold mb-2">知識類別</p>
+                        <p class="text-neutral-600 fs-8 pb-2">
+                          想從哪個方向了解貓咪呢？
+                          這是貓咪知識的大地圖，幫你把所有主題分成幾個分類，像是「貓咪飲食指南」、「健康與疾病」、「行為與心理」、「新手貓奴入門」等等。從你最關心的方向開始探索就對了！<br />
+                          例如：<br />
+                          如果你是新手鏟屎官，點「新手貓奴入門」就能看到像是「如何讓貓適應新環境」、「貓砂盆怎麼選」這些基本但超實用的內容。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 漢堡選單 -->
+              <img
+                src="../assets/images/knowledge/adjustment.svg"
+                alt="information-circle"
+                class="me-1"
+                tabindex="0"
+                data-bs-toggle="modal"
+                data-bs-target="#knowledge-list"
+                data-bs-placement="bottom"
+                data-bs-trigger="focus"
+                data-bs-html="true"
+              />
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="knowledge-list"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        設定篩選條件
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="pb-lg-7">
+                        <div class="d-flex ps-2 pe-2 align-items-center">
+                          <p class="fs-8 pb-1 me-auto">主題</p>
+                        </div>
+                        <div class="dropdown">
+                          <button
+                            class="btn dropdown-toggle border text-start text-neutral-500 w-100 py-2 mb-6"
+                            type="button"
+                            id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            選擇主題
+                          </button>
+                          <ul
+                            class="dropdown-menu w-100 border-secondary-500 border-3 py-2"
+                            aria-labelledby="dropdownMenuButton1"
+                          >
+                            <li>
+                              <a
+                                class="dropdown-item border-bottom py-1"
+                                href="#"
+                                >所有主題</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                class="dropdown-item border-bottom py-1"
+                                href="#"
+                                >貓咪飲食指南</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                class="dropdown-item border-bottom py-1"
+                                href="#"
+                                >健康與疾病</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                class="dropdown-item border-bottom py-1"
+                                href="#"
+                                >行為與心理</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item py-1" href="#"
+                                >新手貓奴入門</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="pb-lg-7">
+                        <div class="d-flex ps-2 pe-2 align-items-center">
+                          <p class="fs-8 pb-1 me-auto">知識類別</p>
+                        </div>
+                        <div class="dropdown">
+                          <button
+                            class="btn dropdown-toggle border text-start text-neutral-500 w-100 py-2"
+                            type="button"
+                            id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            選擇知識類別
+                          </button>
+                          <ul
+                            class="dropdown-menu w-100 border-secondary-500 border-3 py-2"
+                            aria-labelledby="dropdownMenuButton1"
+                          >
+                            <li>
+                              <a
+                                class="dropdown-item border-bottom py-1"
+                                href="#"
+                                >所有知識類別</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                class="dropdown-item border-bottom py-1"
+                                href="#"
+                                >糧食類型解析</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                class="dropdown-item border-bottom py-1"
+                                href="#"
+                                >成份與標籤知識</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                class="dropdown-item border-bottom py-1"
+                                href="#"
+                                >換糧指南</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                class="dropdown-item border-bottom py-1"
+                                href="#"
+                                >特殊處方糧</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                class="dropdown-item border-bottom py-1"
+                                href="#"
+                                >自製食物</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item py-1" href="#"
+                                >飲水與水分攝取</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn" data-bs-dismiss="modal">
+                        <img
+                          src="/assets/images/knowledge/trash.svg"
+                          alt="trash-icon"
+                        />
+                        清除重填
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-primary-500 text-white"
+                      >
+                        <img
+                          src="/assets/images/knowledge/funnel.svg"
+                          alt="funnel-icon"
+                        />
+                        篩選
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 2-2.專欄文章區 -->
+          <div class="col-lg-9 col-12 d-flex justify-content-center flex-wrap">
+            <div
+              class="knowledge-card mt-lg-1 mt-2 ms-2 me-2 mb-3 position-relative"
+            >
+              <a href="./knowledge-article-01.html">
+                <img
+                  src="/assets/images/knowledge/know-img1.png"
+                  alt="article-img-01"
+                  class="img mb-3"
+                />
+                <p
+                  class="button border-pill position-absolute top-50 start-50 translate-middle"
+                >
+                  <img
+                    src="/assets/images/contrib/newspaper_hover.png"
+                    class="newspaper-icon"
+                  />
+                  <span class="material-symbols-outlined fs-7"> 閱讀全文 </span>
+                </p>
+                <div class="ms-2 me-2">
+                  <h5 class="mb-1">如何判斷貓咪是否生氣？</h5>
+                  <p class="fs-8 text-neutral-600 mb-3 truncate-multi">
+                    貓咪雖然不會說話，但它們肯定能用其他方式表達自己的感受。你的貓咪生氣的時候可能會有
+                  </p>
+                  <div class="d-flex mb-3">
+                    <p
+                      class="knowledge-tag fs-8 text-primary-600 border border-primary-600 me-2"
+                    >
+                      #行為與心理
+                    </p>
+                    <p
+                      class="knowledge-tag fs-8 text-primary-600 border border-primary-600"
+                    >
+                      #情緒觀察
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div
+              class="knowledge-card mt-lg-1 mt-2 ms-2 me-2 mb-3 position-relative"
+            >
+              <a href="./knowledge-article-02.html">
+                <div class="text-center">
+                  <img
+                    src="/assets/images/knowledge/know-img2.png"
+                    alt="article-img-02"
+                    class="mb-3"
+                  />
+                  <p
+                    class="button border-pill position-absolute top-50 start-50 translate-middle"
+                  >
+                    <img
+                      src="/assets/images/contrib/newspaper_hover.png"
+                      class="newspaper-icon"
+                    />
+                    <span class="material-symbols-outlined fs-7">
+                      閱讀全文
+                    </span>
+                  </p>
+                </div>
+                <div class="ms-2 me-2">
+                  <h5 class="mb-1">各式糧食類型大解析</h5>
+                  <p class="fs-8 text-neutral-600 mb-3 truncate-multi">
+                    市面貓糧種類繁多，乾糧、濕糧、生食、冷凍乾燥差在哪？掌握各類糧食特色、優缺，才能為...
+                  </p>
+                </div>
+                <div class="d-flex ms-2 mb-3">
+                  <p
+                    class="knowledge-tag fs-8 text-primary-600 border border-primary-600 me-2"
+                  >
+                    #貓咪飲食指南
+                  </p>
+                  <p
+                    class="knowledge-tag fs-8 text-primary-600 border border-primary-600"
+                  >
+                    #糧食類型解析
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div
+              class="knowledge-card mt-lg-1 mt-2 ms-2 me-2 mb-3 position-relative"
+            >
+              <a href="#">
+                <div class="text-center">
+                  <img
+                    src="/assets/images/knowledge/know-img3.png"
+                    alt="article-img-03"
+                    class="mb-3"
+                  />
+                  <p
+                    class="button border-pill position-absolute top-50 start-50 translate-middle"
+                  >
+                    <img
+                      src="/assets/images/contrib/newspaper_hover.png"
+                      class="newspaper-icon"
+                    />
+                    <span class="material-symbols-outlined fs-7">
+                      閱讀全文
+                    </span>
+                  </p>
+                </div>
+                <div class="ms-2 me-2">
+                  <h5 class="mb-1">如何閱讀貓糧成分？</h5>
+                  <p class="fs-8 text-neutral-600 mb-3 truncate-multi">
+                    我們都想給貓咪餵食營養豐富的食物，但閱讀貓糧標籤卻並非易事。市售貓糧包裝上琳瑯滿目...
+                  </p>
+                </div>
+                <div class="d-flex ms-2 mb-3">
+                  <p
+                    class="knowledge-tag fs-8 text-primary-600 border border-primary-600 me-2"
+                  >
+                    #貓咪飲食指南
+                  </p>
+                  <p
+                    class="knowledge-tag fs-8 text-primary-600 border border-primary-600"
+                  >
+                    #糧食類型解析
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div
+              class="knowledge-card mt-lg-1 mt-2 ms-2 me-2 mb-3 position-relative"
+            >
+              <a href="#">
+                <div class="text-center">
+                  <img
+                    src="/assets/images/knowledge/know-img4.png"
+                    alt="article-img-04"
+                    class="mb-3"
+                  />
+                  <p
+                    class="button border-pill position-absolute top-50 start-50 translate-middle"
+                  >
+                    <img
+                      src="/assets/images/contrib/newspaper_hover.png"
+                      class="newspaper-icon"
+                    />
+                    <span class="material-symbols-outlined fs-7">
+                      閱讀全文
+                    </span>
+                  </p>
+                </div>
+                <div class="ms-2 me-2">
+                  <h5 class="mb-1">關於貓爪的10個有趣事情</h5>
+                  <p class="fs-8 text-neutral-600 mb-3 truncate-multi">
+                    貓咪真是奇妙的生物。它們的靈活性、瘋狂的貓科動物行為，以及人類無法理解的理解能力等...
+                  </p>
+                </div>
+                <div class="d-flex ms-2 mb-3">
+                  <p
+                    class="knowledge-tag fs-8 text-primary-600 border border-primary-600 me-2"
+                  >
+                    #行為與心理
+                  </p>
+                  <p
+                    class="knowledge-tag fs-8 text-primary-600 border border-primary-600"
+                  >
+                    #情緒觀察
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div
+              class="knowledge-card mt-lg-1 mt-2 ms-2 me-2 mb-3 position-relative"
+            >
+              <a href="#">
+                <div class="text-center">
+                  <img
+                    src="/assets/images/knowledge/know-img5.png"
+                    alt="article-img-05"
+                    class="mb-3"
+                  />
+                  <p
+                    class="button border-pill position-absolute top-50 start-50 translate-middle"
+                  >
+                    <img
+                      src="/assets/images/contrib/newspaper_hover.png"
+                      class="newspaper-icon"
+                    />
+                    <span class="material-symbols-outlined fs-7">
+                      閱讀全文
+                    </span>
+                  </p>
+                </div>
+                <div class="ms-2 me-2">
+                  <h5 class="mb-1">多貓家庭的壓力是否比較大</h5>
+                  <p class="fs-8 text-neutral-600 mb-3 truncate-multi">
+                    人類天生具有社會性，而狗狗則以群體生活聞名。你可能想知道，你的貓咪家庭成員是否有以...
+                  </p>
+                </div>
+                <div class="d-flex ms-2 mb-3">
+                  <p
+                    class="knowledge-tag fs-8 text-primary-600 border border-primary-600 me-2"
+                  >
+                    #行為與心理
+                  </p>
+                  <p
+                    class="knowledge-tag fs-8 text-primary-600 border border-primary-600"
+                  >
+                    #多貓家庭
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div
+              class="knowledge-card mt-lg-1 mt-2 ms-2 me-2 mb-3 position-relative"
+            >
+              <a href="#">
+                <div class="text-center">
+                  <img
+                    src="/assets/images/knowledge/know-img6.png"
+                    alt="article-img-06"
+                    class="mb-3"
+                  />
+                  <p
+                    class="button border-pill position-absolute top-50 start-50 translate-middle"
+                  >
+                    <img
+                      src="/assets/images/contrib/newspaper_hover.png"
+                      class="newspaper-icon"
+                    />
+                    <span class="material-symbols-outlined fs-7">
+                      閱讀全文
+                    </span>
+                  </p>
+                </div>
+                <div class="ms-2 me-2">
+                  <h5 class="mb-1">如何讓貓糧保存期限更長？</h5>
+                  <p class="fs-8 text-neutral-600 mb-3 truncate-multi">
+                    營養豐富的飲食是健康的基礎。維持貓糧營養豐富的關鍵在於遵循適當的食物儲存指南。乾貓...
+                  </p>
+                </div>
+                <div class="d-flex ms-2 mb-3">
+                  <p
+                    class="knowledge-tag fs-8 text-primary-600 border border-primary-600 me-2"
+                  >
+                    #貓咪飲食指南
+                  </p>
+                  <p
+                    class="knowledge-tag fs-8 text-primary-600 border border-primary-600"
+                  >
+                    #糧食類型解析
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div
+              class="knowledge-card mt-lg-1 mt-2 ms-2 me-2 mb-3 position-relative"
+            >
+              <a href="#">
+                <div class="text-center">
+                  <img
+                    src="/assets/images/knowledge/know-img7.png"
+                    alt="article-img-07"
+                    class="mb-3"
+                  />
+                  <p
+                    class="button border-pill position-absolute top-50 start-50 translate-middle"
+                  >
+                    <img
+                      src="/assets/images/contrib/newspaper_hover.png"
+                      class="newspaper-icon"
+                    />
+                    <span class="material-symbols-outlined fs-7">
+                      閱讀全文
+                    </span>
+                  </p>
+                </div>
+                <div class="ms-2 me-2">
+                  <h5 class="mb-1">如何滿足貓咪的基本需求</h5>
+                  <p class="fs-8 text-neutral-600 mb-3 truncate-multi">
+                    養任何新寵物都是一項重大的承諾，需要大量的研究和準備。如果你是新貓主人，你可能會有...
+                  </p>
+                </div>
+                <div class="d-flex ms-2 mb-3">
+                  <p
+                    class="knowledge-tag fs-8 text-primary-600 border border-primary-600 me-2"
+                  >
+                    #新手貓奴入門
+                  </p>
+                  <p
+                    class="knowledge-tag fs-8 text-primary-600 border border-primary-600"
+                  >
+                    #養貓前準備
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div
+              class="knowledge-card mt-lg-1 mt-2 ms-2 me-2 mb-3 position-relative"
+            >
+              <a href="#">
+                <div class="text-center">
+                  <img
+                    src="/assets/images/knowledge/know-img8.png"
+                    alt="article-img-08"
+                    class="mb-3"
+                  />
+                  <p
+                    class="button border-pill position-absolute top-50 start-50 translate-middle"
+                  >
+                    <img
+                      src="/assets/images/contrib/newspaper_hover.png"
+                      class="newspaper-icon"
+                    />
+                    <span class="material-symbols-outlined fs-7">
+                      閱讀全文
+                    </span>
+                  </p>
+                </div>
+                <div class="ms-2 me-2">
+                  <h5 class="mb-1">如何從濕糧轉換成乾糧</h5>
+                  <p class="fs-8 text-neutral-600 mb-3 truncate-multi">
+                    您是否需要將貓糧從濕糧換成乾糧？您是否想知道如何才能讓您和貓咪都安全順利地過渡食品…
+                  </p>
+                </div>
+                <div class="d-flex ms-2 mb-3">
+                  <p
+                    class="knowledge-tag fs-8 text-primary-600 border border-primary-600 me-2"
+                  >
+                    #貓咪飲食指南
+                  </p>
+                  <p
+                    class="knowledge-tag fs-8 text-primary-600 border border-primary-600"
+                  >
+                    #換糧指南
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div
+              class="knowledge-card mt-lg-1 mt-2 ms-2 me-2 mb-12 position-relative"
+            >
+              <a href="#">
+                <div class="text-center">
+                  <img
+                    src="/assets/images/knowledge/know-img9.png"
+                    alt="article-img-09"
+                    class="mb-3"
+                  />
+                  <p
+                    class="button border-pill position-absolute top-50 start-50 translate-middle"
+                  >
+                    <img
+                      src="/assets/images/contrib/newspaper_hover.png"
+                      class="newspaper-icon"
+                    />
+                    <span class="material-symbols-outlined fs-7">
+                      閱讀全文
+                    </span>
+                  </p>
+                </div>
+                <div class="ms-2 me-2">
+                  <h5 class="mb-1">如何判斷小貓的性別？</h5>
+                  <p class="fs-8 text-neutral-600 mb-3 truncate-multi">
+                    如果你養了一隻小貓，或者你家的母貓最近剛生了一窩小貓，那麼照顧小貓的其中一項就是判...
+                  </p>
+                </div>
+                <div class="d-flex ms-2 mb-3">
+                  <p
+                    class="knowledge-tag fs-8 text-primary-600 border border-primary-600 me-2"
+                  >
+                    #新手貓奴入門
+                  </p>
+                  <p
+                    class="knowledge-tag fs-8 text-primary-600 border border-primary-600"
+                  >
+                    #養貓前準備
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div
+              class="knowledge-card-1 mt-lg-1 mt-2 ms-2 me-2 mb-3 position-relative d-xxl-none d-xl-block d-lg-block d-md-block d-none"
+            >
+              <!-- <a href="#">
+                <div class="text-center">
+                  <img
+                    src="/assets/images/knowledge/know-img9.png"
+                    alt="article-img-09"
+                    class="mb-3"
+                  />
+                  <p
+                    class="button border-pill position-absolute top-50 start-50 translate-middle"
+                  >
+                    <img
+                      src="/assets/images/contrib/newspaper_hover.png"
+                      class="newspaper-icon"
+                    />
+                    <span class="material-symbols-outlined fs-7">
+                      閱讀全文
+                    </span>
+                  </p>
+                </div>
+                <div class="ms-2 me-2">
+                  <h5 class="mb-1">如何判斷小貓的性別？</h5>
+                  <p class="fs-8 text-neutral-600 mb-3 truncate-multi">
+                    如果你養了一隻小貓，或者你家的母貓最近剛生了一窩小貓，那麼照顧小貓的其中一項就是判...
+                  </p>
+                </div>
+                <div class="d-flex ms-2 mb-3">
+                  <p
+                    class="knowledge-tag fs-8 text-primary-600 border border-primary-600 me-2"
+                  >
+                    #新手貓奴入門
+                  </p>
+                  <p
+                    class="knowledge-tag fs-8 text-primary-600 border border-primary-600"
+                  >
+                    #養貓前準備
+                  </p>
+                </div>
+              </a> -->
+            </div>
+            <!-- 2-3.專欄頁碼 -->
+            <div class="m-auto">
+              <ul class="d-flex justify-content-center align-items-center">
+                <li class="page-item me-2">
+                  <button type="button" class="btn knowledge-btn">
+                    <i class="bi bi-chevron-left"></i>
+                  </button>
+                </li>
+                <li class="page-item me-2">
+                  <button
+                    type="button"
+                    class="btn knowledge-btn btn-primary-600 border-0 text-white active"
+                  >
+                    1
+                  </button>
+                </li>
+                <li class="page-item me-2">
+                  <button type="button" class="btn knowledge-btn">2</button>
+                </li>
+                <li class="page-item me-2">
+                  <button type="button" class="btn knowledge-btn">...</button>
+                </li>
+                <li class="page-item me-2">
+                  <button type="button" class="btn knowledge-btn">8</button>
+                </li>
+                <li class="page-item">
+                  <button type="button" class="btn knowledge-btn">
+                    <i class="bi bi-chevron-right"></i>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 頁尾 -->
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

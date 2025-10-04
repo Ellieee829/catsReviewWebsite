@@ -1,0 +1,244 @@
+.section-1 {
+    background-color: #F7F2F1;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+            .container {
+                max-width: none; /* 取消最大宽度限制，占满屏幕 */
+                padding: 15px; /* 手机版适当减小内边距 */
+                margin: 0; /* 取消居中的外边距（可选，不影响全屏） */
+            }
+        }
+
+.section-2 {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #EEDED9;
+    background-image: url(../../assets/images/food/section01_background.png);
+    background-repeat: repeat;
+    width: 100%;
+    z-index: -1; /* 让伪元素在内容下方 */
+
+    @media (max-width: 768px) {
+        background-color: #F4F1E9;
+    }
+}
+
+.food-breadcrumb-item {
+    color: #7B6543;
+} 
+  
+.container-style{
+    background-color: white;
+    position: relative;
+    opacity: 1;
+
+    .decoration-LT{
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+
+    .decoration-RT{
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+}
+
+.head-content{
+    // padding-left: 96px !important;
+    // padding-right: 96px !important;
+    padding-top: 72px;
+
+    p {
+        padding-top: 10px;
+        color: #787F85;
+        padding-bottom: 32px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    @media (max-width: 768px) {
+        padding-top: 0px;
+        flex-direction: column-reverse; 
+
+        .food-text {
+            padding-top: 16px;
+            
+
+            h1 {
+            font-size: 24px;
+            }
+
+            p {
+                padding-bottom: 0;
+            }
+        }
+        
+    }
+
+
+}
+
+.food-prod-header{
+    display: flex;
+    flex-direction: column;
+
+    .food-pic {
+        padding-bottom: 72px;
+    }
+
+    @media (max-width: 768px) {
+        flex-direction: column-reverse;
+
+        .food-pic {
+            padding-bottom: 0px;
+        }
+    }
+}
+
+.foodproduct-content {
+    .product-border {
+        border-bottom: 1px solid #DCC9A8;
+        padding-top: 28px;
+
+        @media (max-width: 768px){
+            border-bottom: 1px solid #DCC9A8;
+            padding-top: 16px;
+
+        }
+        
+    }
+
+    h3{
+        font-family: "Cactus Classical Serif", serif;
+    }
+}
+
+.foodproduct-info {    
+    background-color: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 100%;
+    
+
+    p {
+        
+        color: #9E7844;
+        font-size: 14px;
+        padding-top: 24px;
+        
+    }
+
+    .p2 {
+        
+        color: #212529;
+        font-size: 20px;
+        font-family: "Cactus Classical Serif", serif;
+        padding-top: 8px;
+        
+    }
+}
+
+.pb-144{
+        padding-bottom: 144px;
+        @media (max-width: 768px) {
+        padding-bottom: 0px;
+    }
+}
+
+.px-96{
+    padding-left: 96px !important;
+    padding-right: 96px !important;
+
+    @media (max-width: 768px) {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+    }
+}
+
+.pe-48 {
+    padding-right: 48px;
+
+    @media (max-width: 768px) {
+        padding-right: 0px;
+    }
+}
+
+.py-md-24 {
+    padding-top: 72px;
+    padding-bottom: 72px;
+
+    @media (max-width: 768px) {
+        padding-top: 24px;
+        padding-bottom: 56px;
+    }
+}
+
+.py-md-72 {
+    padding-top: 72px;
+    padding-bottom: 72px;
+
+    @media (max-width: 768px) {
+        padding-top: 24px;
+        padding-bottom: 56px;
+    }
+}
+
+pt-pb-md-72 {
+    padding-top: 72px;
+    padding-bottom: 28px;
+
+    @media (max-width: 768px) {
+        padding-top: 32px;
+        padding-bottom: 16px;
+    }
+}
+
+.pt-md-72{
+    padding-top: 72px;
+
+    @media (max-width: 768px) {
+        padding-top: 32px;
+    }
+}
+
+.pt-md-12 {
+    padding-top: 72px;
+
+    @media (max-width: 768px) {
+        padding-top: 0px;
+    }
+}
+
+.food-card {
+    width: 18rem;
+    @media (max-width: 969px) {
+        width: 100%;
+    }
+}
+
+.food-back-btn {
+    position: fixed;
+    right: 48px;
+    bottom: 48px;
+    background-color: $primary-500;
+    color: white;
+    border-color: $primary-500;
+}
+
