@@ -15,11 +15,11 @@
     <title>膳食探索</title>
   </head>
   <body>
-    <%- include('./layout/header'); -%>
+    <header><%- include('./layout/header'); -%></header>
 
     <div class="foodmain-body">
       <!-- 標題欄 -->
-      <header>
+      <section>
         <div class="index-header mb-12">
           <div class="food-box">
             <img
@@ -51,7 +51,7 @@
             </div>
           </div>
         </div>
-      </header>
+      </section>
 
       <!-- 主要內容 -->
       <main class="container">
@@ -550,7 +550,8 @@
         </div>
       </main>
     </div>
-    <%- include('./layout/footer'); -%>
+
+    <footer><%- include('./layout/footer'); -%></footer>
 
     <script type="module" src="../main.js"></script>
   </body>
