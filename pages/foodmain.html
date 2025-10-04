@@ -4,395 +4,554 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
     <title>膳食探索</title>
   </head>
   <body>
-    <%- include('./layout/header'); -%>
+    <header><%- include('./layout/header'); -%></header>
 
-    <div  class="foodmain-body">
-    <!-- 標題欄 -->
-    <header>
-      <div class="index-header mb-12">
-        <div class="food-box ">
-          <img class="pb-10 " src="../assets/images/food/section02_decoration.png" alt="food-deco1">
-          <h2 class=" text-center pb-5">膳 食 探 索</h2>
-          <h4 class=" text-center">讓你找到最適合喵皇的膳食</h4>
-          <div class="foodmain-searchbar pt-10">
-            <div class="navbar navbar-light ">
-              <div class="container-fluid rounded-pill ">
-                <form class="d-flex ">
-                  <input class="form-control py-2 foodmain-form" type="search" placeholder="#搜尋食品" aria-label="Search">
-                  <button class="btn btn-primary-500 foodmain-search-btn" type="submit"><i class="bi bi-search " style="color: #EEDED9 ;"></i></button>
-                </form>
+    <div class="foodmain-body">
+      <!-- 標題欄 -->
+      <section>
+        <div class="index-header mb-12">
+          <div class="food-box">
+            <img
+              class="pb-10"
+              src="../assets/images/food/section02_decoration.png"
+              alt="food-deco1"
+            />
+            <h2 class="text-center pb-5">膳 食 探 索</h2>
+            <h4 class="text-center">讓你找到最適合喵皇的膳食</h4>
+            <div class="foodmain-searchbar pt-10">
+              <div class="navbar navbar-light">
+                <div class="container-fluid rounded-pill">
+                  <form class="d-flex">
+                    <input
+                      class="form-control py-2 foodmain-form"
+                      type="search"
+                      placeholder="#搜尋食品"
+                      aria-label="Search"
+                    />
+                    <button
+                      class="btn btn-primary-500 foodmain-search-btn"
+                      type="submit"
+                    >
+                      <i class="bi bi-search" style="color: #eeded9"></i>
+                    </button>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
-        </div>  
-      </div>
-    </header>
+        </div>
+      </section>
 
-    <!-- 主要內容 -->
+      <!-- 主要內容 -->
       <main class="container">
         <div class="row">
           <!-- 左側導覽 -->
           <aside class="col-lg-3 d-flex food-left-nav">
-            <nav  style="background-color: white;">
-              <img src="../assets/images/food/Decoration1.png" alt="">
-              
-                <div class="px-6 pt-60  pb-7">
-                  <div class="d-flex justify-content-between align-items-center">
-                    <p class="ms-2 ">搜尋食品</p>
+            <nav style="background-color: white">
+              <img src="../assets/images/food/Decoration1.png" alt="" />
 
-                    <button data-bs-trigger="focus" data-bs-placement="top" type="button" class="food-info-btn" id="myPopover" data-bs-toggle="popover" title="​快速​搜尋​食品​" data-bs-content="​喵～​你​在​找什​麼？​這裡​是​你​的​小幫手，​只要​輸入​關​鍵字，​就​能​馬​上​找到​你​想​知道​ ​的​貓咪​食品。​不管​是​「品牌​名稱」​還​是​「特定​成分​名​稱」，​輸入​一下​就​幫​你​找到​相關​食品！" ><i class="bi bi-info-circle food-info-icon"></i></button>
-                  </div>
-                  <div class="food_searchbg">
-                    <div class="navbar navbar-light ">
-                      <div class="container-fluid rounded-pill ">
-                        <form class="d-flex ">
-                          <input class="form-control py-2 food-form" type="search" placeholder="#搜尋食品" aria-label="Search">
-                          <button class="btn food_searchbtn " type="submit"><i class="bi bi-search "></i></button>
-                        </form>
-                      </div>
+              <div class="px-6 pt-60 pb-7">
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="ms-2">搜尋食品</p>
+
+                  <button
+                    data-bs-trigger="focus"
+                    data-bs-placement="top"
+                    type="button"
+                    class="food-info-btn"
+                    id="myPopover"
+                    data-bs-toggle="popover"
+                    title="​快速​搜尋​食品​"
+                    data-bs-content="​喵～​你​在​找什​麼？​這裡​是​你​的​小幫手，​只要​輸入​關​鍵字，​就​能​馬​上​找到​你​想​知道​ ​的​貓咪​食品。​不管​是​「品牌​名稱」​還​是​「特定​成分​名​稱」，​輸入​一下​就​幫​你​找到​相關​食品！"
+                  >
+                    <i class="bi bi-info-circle food-info-icon"></i>
+                  </button>
+                </div>
+                <div class="food_searchbg">
+                  <div class="navbar navbar-light">
+                    <div class="container-fluid rounded-pill">
+                      <form class="d-flex">
+                        <input
+                          class="form-control py-2 food-form"
+                          type="search"
+                          placeholder="#搜尋食品"
+                          aria-label="Search"
+                        />
+                        <button class="btn food_searchbtn" type="submit">
+                          <i class="bi bi-search"></i>
+                        </button>
+                      </form>
                     </div>
                   </div>
                 </div>
-                <!-- 口味種類 -->
-                <div class="px-6">
-                  <p class="ms-2 pb-2">口味種類</p>                  
-                  <div class="dropdown pb-7">
-                    <button class="btn rounded-pill food-dropdown  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      口味種類
-                    </button>
-                    <ul class="dropdown-menu food-dropdown-menu">
-                      <li><a class="dropdown-item" href="#">雞肉</a></li>
-                      <li><a class="dropdown-item" href="#">牛肉</a></li>
-                      <li><a class="dropdown-item" href="#">鴨肉</a></li>
-                      <li><a class="dropdown-item" href="#">羊肉</a></li>
-                      <li><a class="dropdown-item" href="#">海鮮</a></li>
-                      <li><a class="dropdown-item" href="#">火雞肉</a></li>
-                      <li><a class="dropdown-item" href="#">鹿肉</a></li>
-                      <li><a class="dropdown-item" href="#">其他</a></li>
-                    </ul>
-                  </div>
+              </div>
+              <!-- 口味種類 -->
+              <div class="px-6">
+                <p class="ms-2 pb-2">口味種類</p>
+                <div class="dropdown pb-7">
+                  <button
+                    class="btn rounded-pill food-dropdown dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    口味種類
+                  </button>
+                  <ul class="dropdown-menu food-dropdown-menu">
+                    <li><a class="dropdown-item" href="#">雞肉</a></li>
+                    <li><a class="dropdown-item" href="#">牛肉</a></li>
+                    <li><a class="dropdown-item" href="#">鴨肉</a></li>
+                    <li><a class="dropdown-item" href="#">羊肉</a></li>
+                    <li><a class="dropdown-item" href="#">海鮮</a></li>
+                    <li><a class="dropdown-item" href="#">火雞肉</a></li>
+                    <li><a class="dropdown-item" href="#">鹿肉</a></li>
+                    <li><a class="dropdown-item" href="#">其他</a></li>
+                  </ul>
                 </div>
-                <!-- 內容物類別 -->
-                <div class="px-6">
-                  <p class="ms-2 pb-2">內容物類別</p>
-                  <div class="dropdown pb-7">
-                    <button class="btn rounded-pill food-dropdown dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      內容物類別
-                    </button>
-                    <ul class="dropdown-menu food-dropdown-menu">
-                      <li><a class="dropdown-item" href="#">泥狀</a></li>
-                      <li><a class="dropdown-item" href="#">肉塊</a></li>
-                      <li><a class="dropdown-item" href="#">膠狀</a></li>
-                      <li><a class="dropdown-item" href="#">湯罐</a></li>
-                      <li><a class="dropdown-item" href="#">乾飼料</a></li>
-                    </ul>
-                  </div>
+              </div>
+              <!-- 內容物類別 -->
+              <div class="px-6">
+                <p class="ms-2 pb-2">內容物類別</p>
+                <div class="dropdown pb-7">
+                  <button
+                    class="btn rounded-pill food-dropdown dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    內容物類別
+                  </button>
+                  <ul class="dropdown-menu food-dropdown-menu">
+                    <li><a class="dropdown-item" href="#">泥狀</a></li>
+                    <li><a class="dropdown-item" href="#">肉塊</a></li>
+                    <li><a class="dropdown-item" href="#">膠狀</a></li>
+                    <li><a class="dropdown-item" href="#">湯罐</a></li>
+                    <li><a class="dropdown-item" href="#">乾飼料</a></li>
+                  </ul>
                 </div>
-                <!-- 特殊配方 -->
-                <div class="px-6">
-                  <p class="ms-2 pb-2">特殊配方</p>
-                  <div class="dropdown pb-7">
-                    <button class="btn rounded-pill food-dropdown dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      特殊配方
-                    </button>
-                    <ul class="dropdown-menu food-dropdown-menu">
-                      <li><a class="dropdown-item" href="#">無</a></li>
-                      <li><a class="dropdown-item" href="#">減重</a></li>
-                      <li><a class="dropdown-item" href="#">腸胃敏感</a></li>
-                      <li><a class="dropdown-item" href="#">泌尿道保健</a></li>
-                      <li><a class="dropdown-item" href="#">強化免疫力</a></li>
-                      <li><a class="dropdown-item" href="#">改善皮膚&毛髮</a></li>
-                      <li><a class="dropdown-item" href="#">骨骼保養</a></li>
-                    </ul>
-                  </div>
+              </div>
+              <!-- 特殊配方 -->
+              <div class="px-6">
+                <p class="ms-2 pb-2">特殊配方</p>
+                <div class="dropdown pb-7">
+                  <button
+                    class="btn rounded-pill food-dropdown dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    特殊配方
+                  </button>
+                  <ul class="dropdown-menu food-dropdown-menu">
+                    <li><a class="dropdown-item" href="#">無</a></li>
+                    <li><a class="dropdown-item" href="#">減重</a></li>
+                    <li><a class="dropdown-item" href="#">腸胃敏感</a></li>
+                    <li><a class="dropdown-item" href="#">泌尿道保健</a></li>
+                    <li><a class="dropdown-item" href="#">強化免疫力</a></li>
+                    <li><a class="dropdown-item" href="#">改善皮膚&毛髮</a></li>
+                    <li><a class="dropdown-item" href="#">骨骼保養</a></li>
+                  </ul>
                 </div>
-                <!-- 適合年齡 -->
-                <div class="px-6">
-                  <p class="ms-2 pb-2">適合年齡</p>
-                  <div class="dropdown pb-7">
-                    <button class="btn rounded-pill food-dropdown dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      適合年齡
-                    </button>
-                    <ul class="dropdown-menu food-dropdown-menu">
-                      <li><a class="dropdown-item" href="#">幼貓</a></li>
-                      <li><a class="dropdown-item" href="#">成貓</a></li>
-                      <li><a class="dropdown-item" href="#">熟齡貓</a></li>
-                      <li><a class="dropdown-item" href="#">全齡貓</a></li>
-                    </ul>
-                  </div>
+              </div>
+              <!-- 適合年齡 -->
+              <div class="px-6">
+                <p class="ms-2 pb-2">適合年齡</p>
+                <div class="dropdown pb-7">
+                  <button
+                    class="btn rounded-pill food-dropdown dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    適合年齡
+                  </button>
+                  <ul class="dropdown-menu food-dropdown-menu">
+                    <li><a class="dropdown-item" href="#">幼貓</a></li>
+                    <li><a class="dropdown-item" href="#">成貓</a></li>
+                    <li><a class="dropdown-item" href="#">熟齡貓</a></li>
+                    <li><a class="dropdown-item" href="#">全齡貓</a></li>
+                  </ul>
                 </div>
+              </div>
             </nav>
           </aside>
 
-          <!-- 右側食品卡片 -->           
-          <div class="col-lg-9 d-flex justify-content-center flex-wrap" >
+          <!-- 右側食品卡片 -->
+          <div class="col-lg-9 d-flex justify-content-center flex-wrap">
             <div class="row">
-                <!-- 1 -->                
-                <div class="col-lg-6 col-12 col-xl-4 d-flex justify-content-center">
-                  <a class="food-a" href="foodProduct.html">
-                  <div class=" card food-card mb-10 h-100" >                  
-                    <img src="../assets/images/food/food0.png" alt="card-img-1">
-                    <img src="../assets/images/food/Decoration1.png" class="card-deco" alt="card-decoration">
+              <!-- 1 -->
+              <div
+                class="col-lg-6 col-12 col-xl-4 d-flex justify-content-center"
+              >
+                <a class="food-a" href="foodProduct.html">
+                  <div class="card food-card mb-10 h-100">
+                    <img
+                      src="../assets/images/food/food0.png"
+                      alt="card-img-1"
+                    />
+                    <img
+                      src="../assets/images/food/Decoration1.png"
+                      class="card-deco"
+                      alt="card-decoration"
+                    />
                     <div class="card-body">
                       <h5 class="card-title">雞+南瓜主食罐</h5>
-                      <p class="card-text">600g  900NT$</p>
+                      <p class="card-text">600g 900NT$</p>
                       <p class="card-text">雞肉 | 肉塊 | 腸胃敏感 | 成貓</p>
-                      <p class="btn btn-outline-primary mt-2 mt-lg-9">查看食品內容</p>
+                      <p class="btn btn-outline-primary mt-2 mt-lg-9">
+                        查看食品內容
+                      </p>
                     </div>
-                    <p class="button border-pill position-absolute top-50 start-50 translate-middle"                    >
+                    <!-- <p class="button border-pill position-absolute top-50 start-50 translate-middle"                    >
                       <img
                         src="/assets/images/contrib/newspaper_hover.png"
                         class="newspaper-icon"
                       />
                       <span class="material-symbols-outlined fs-7"> 閱讀全文 </span>
-                    </p>
+                    </p> -->
                   </div>
-                  </a>
-                </div>         
-                                
-                <!-- 2 -->                
-                <div class="col-lg-6 col-12 col-xl-4 d-flex justify-content-center">
-                  <a class="food-a" href="">
-                  <div class="card food-card mb-10 h-100" >
-                    <img src="../assets/images/food/food1.png" alt="card-img-2">
-                    <img src="../assets/images/food/Decoration1.png" class="card-deco" alt="card-decoration">
-                    <div class="card-body">
-                      <h5 class="card-title">鮭魚佐鮪魚貓罐頭</h5>
-                      <p class="card-text">480g  420NT$</p>
-                      <p class="card-text">海鮮 | 肉塊 | 無 | 全齡貓</p>
-                      <p class="btn btn-outline-primary mt-2 mt-lg-9">查看食品內容</p>
-                    </div>
-                    <p class="button border-pill position-absolute top-50 start-50 translate-middle"                    >
-                      <img
-                        src="/assets/images/contrib/newspaper_hover.png"
-                        class="newspaper-icon"
-                      />
-                      <span class="material-symbols-outlined fs-7"> 閱讀全文 </span>
-                    </p>
-                  </div>
-                  </a>
-                </div>
-                
-                <!-- 3 -->
-                
-                <div class="col-lg-6 col-12 col-xl-4 d-flex justify-content-center">
+                </a>
+              </div>
+
+              <!-- 2 -->
+              <div
+                class="col-lg-6 col-12 col-xl-4 d-flex justify-content-center"
+              >
                 <a class="food-a" href="">
                   <div class="card food-card mb-10 h-100">
-                    <img src="../assets/images/food/food2.png"  alt="card-img-3">
-                    <img src="../assets/images/food/Decoration1.png" class="card-deco" alt="card-decoration">
+                    <img
+                      src="../assets/images/food/food1.png"
+                      alt="card-img-2"
+                    />
+                    <img
+                      src="../assets/images/food/Decoration1.png"
+                      class="card-deco"
+                      alt="card-decoration"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">鮭魚佐鮪魚貓罐頭</h5>
+                      <p class="card-text">480g 420NT$</p>
+                      <p class="card-text">海鮮 | 肉塊 | 無 | 全齡貓</p>
+                      <p class="btn btn-outline-primary mt-2 mt-lg-9">
+                        查看食品內容
+                      </p>
+                    </div>
+                    <!-- <p class="button border-pill position-absolute top-50 start-50 translate-middle"                    >
+                      <img
+                        src="/assets/images/contrib/newspaper_hover.png"
+                        class="newspaper-icon"
+                      />
+                      <span class="material-symbols-outlined fs-7"> 閱讀全文 </span>
+                    </p> -->
+                  </div>
+                </a>
+              </div>
+
+              <!-- 3 -->
+
+              <div
+                class="col-lg-6 col-12 col-xl-4 d-flex justify-content-center"
+              >
+                <a class="food-a" href="">
+                  <div class="card food-card mb-10 h-100">
+                    <img
+                      src="../assets/images/food/food2.png"
+                      alt="card-img-3"
+                    />
+                    <img
+                      src="../assets/images/food/Decoration1.png"
+                      class="card-deco"
+                      alt="card-decoration"
+                    />
                     <div class="card-body">
                       <h5 class="card-title">羊肉莓果乾糧</h5>
-                      <p class="card-text">5kg  980NT$</p>
-                      <p class="card-text">羊肉 | 乾飼料 | 改善皮膚&毛髮 | 成貓</p>
+                      <p class="card-text">5kg 980NT$</p>
+                      <p class="card-text">
+                        羊肉 | 乾飼料 | 改善皮膚&毛髮 | 成貓
+                      </p>
                       <p class="btn btn-outline-primary mt-2">查看食品內容</p>
                     </div>
-                    <p class="button border-pill position-absolute top-50 start-50 translate-middle"                    >
+                    <!-- <p class="button border-pill position-absolute top-50 start-50 translate-middle"                    >
                       <img
                         src="/assets/images/contrib/newspaper_hover.png"
                         class="newspaper-icon"
                       />
                       <span class="material-symbols-outlined fs-7"> 閱讀全文 </span>
-                    </p>
+                    </p> -->
                   </div>
                 </a>
-                </div>
-                
-                <!-- 4 -->
-                <div class="col-lg-6 col-12 col-xl-4 d-flex justify-content-center">
-                  <a class="food-a" href="">
+              </div>
+
+              <!-- 4 -->
+              <div
+                class="col-lg-6 col-12 col-xl-4 d-flex justify-content-center"
+              >
+                <a class="food-a" href="">
                   <div class="card food-card mb-10 h-100">
-                    <img src="../assets/images/food/food3.png"  alt="card-img-4">
-                    <img src="../assets/images/food/Decoration1.png" class="card-deco" alt="card-decoration">
+                    <img
+                      src="../assets/images/food/food3.png"
+                      alt="card-img-4"
+                    />
+                    <img
+                      src="../assets/images/food/Decoration1.png"
+                      class="card-deco"
+                      alt="card-decoration"
+                    />
                     <div class="card-body">
                       <h5 class="card-title">鮮蝦雞胸肉凍乾塊</h5>
-                      <p class="card-text">50g  280NT$</p>
-                      <p class="card-text">雞肉 | 乾飼料 | 強化免疫力 | 全齡貓</p>
-                      <p class="btn btn-outline-primary mt-2 ">查看食品內容</p>
+                      <p class="card-text">50g 280NT$</p>
+                      <p class="card-text">
+                        雞肉 | 乾飼料 | 強化免疫力 | 全齡貓
+                      </p>
+                      <p class="btn btn-outline-primary mt-2">查看食品內容</p>
                     </div>
-                    <p class="button border-pill position-absolute top-50 start-50 translate-middle"                    >
+                    <!-- <p class="button border-pill position-absolute top-50 start-50 translate-middle"                    >
                       <img
                         src="/assets/images/contrib/newspaper_hover.png"
                         class="newspaper-icon"
                       />
                       <span class="material-symbols-outlined fs-7"> 閱讀全文 </span>
-                    </p>
-                  </div>
-                  </a>
-                </div>
-                
-                <!-- 5 -->
-                <div class="col-lg-6 col-12 col-xl-4 d-flex justify-content-center">
-                  <a class="food-a" href="">
-                  <div class="card food-card mb-10 h-100">
-                    <img src="../assets/images/food/food4.png"  alt="card-img-5">
-                    <img src="../assets/images/food/Decoration1.png" class="card-deco" alt="card-decoration">
-                    <div class="card-body">
-                      <h5 class="card-title">牛肉燉蔬菜貓餐包</h5>
-                      <p class="card-text">680g  560NT$</p>
-                      <p class="card-text">牛肉 | 膠狀 | 強化免疫力 | 幼貓</p>
-                      <p class="btn btn-outline-primary mt-2 mt-lg-9">查看食品內容</p>
-                    </div>
-                    <p class="button border-pill position-absolute top-50 start-50 translate-middle"                    >
-                      <img
-                        src="/assets/images/contrib/newspaper_hover.png"
-                        class="newspaper-icon"
-                      />
-                      <span class="material-symbols-outlined fs-7"> 閱讀全文 </span>
-                    </p>
+                    </p> -->
                   </div>
                 </a>
-                </div>
-                
-                <!-- 6 -->
-                <div class="col-lg-6 col-12 col-xl-4 d-flex justify-content-center">
-                  <a class="food-a" href="">
+              </div>
+
+              <!-- 5 -->
+              <div
+                class="col-lg-6 col-12 col-xl-4 d-flex justify-content-center"
+              >
+                <a class="food-a" href="">
                   <div class="card food-card mb-10 h-100">
-                    <img src="../assets/images/food/food5.png"  alt="card-img-6">
-                    <img src="../assets/images/food/Decoration1.png" class="card-deco" alt="card-decoration">
+                    <img
+                      src="../assets/images/food/food4.png"
+                      alt="card-img-5"
+                    />
+                    <img
+                      src="../assets/images/food/Decoration1.png"
+                      class="card-deco"
+                      alt="card-decoration"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">牛肉燉蔬菜貓餐包</h5>
+                      <p class="card-text">680g 560NT$</p>
+                      <p class="card-text">牛肉 | 膠狀 | 強化免疫力 | 幼貓</p>
+                      <p class="btn btn-outline-primary mt-2 mt-lg-9">
+                        查看食品內容
+                      </p>
+                    </div>
+                    <!-- <p class="button border-pill position-absolute top-50 start-50 translate-middle"                    >
+                      <img
+                        src="/assets/images/contrib/newspaper_hover.png"
+                        class="newspaper-icon"
+                      />
+                      <span class="material-symbols-outlined fs-7"> 閱讀全文 </span>
+                    </p> -->
+                  </div>
+                </a>
+              </div>
+
+              <!-- 6 -->
+              <div
+                class="col-lg-6 col-12 col-xl-4 d-flex justify-content-center"
+              >
+                <a class="food-a" href="">
+                  <div class="card food-card mb-10 h-100">
+                    <img
+                      src="../assets/images/food/food5.png"
+                      alt="card-img-6"
+                    />
+                    <img
+                      src="../assets/images/food/Decoration1.png"
+                      class="card-deco"
+                      alt="card-decoration"
+                    />
                     <div class="card-body">
                       <h5 class="card-title">鮪魚雞肝肉泥條</h5>
-                      <p class="card-text">280g  350NT$</p>
+                      <p class="card-text">280g 350NT$</p>
                       <p class="card-text">其他 | 泥狀 | 減重 | 全齡貓</p>
-                      <button class="btn btn-outline-primary mt-2 mt-lg-9">查看食品內容</button>
+                      <button class="btn btn-outline-primary mt-2 mt-lg-9">
+                        查看食品內容
+                      </button>
                     </div>
-                    <p class="button border-pill position-absolute top-50 start-50 translate-middle"                    >
+                    <!-- <p class="button border-pill position-absolute top-50 start-50 translate-middle"                    >
                       <img
                         src="/assets/images/contrib/newspaper_hover.png"
                         class="newspaper-icon"
                       />
                       <span class="material-symbols-outlined fs-7"> 閱讀全文 </span>
-                    </p>
+                    </p> -->
                   </div>
-                  </a>
-                </div>
-                
-                <!-- 7 -->
-                <div class="col-lg-6 col-12 col-xl-4 d-flex justify-content-center">
-                  <a class="food-a" href="">
+                </a>
+              </div>
+
+              <!-- 7 -->
+              <div
+                class="col-lg-6 col-12 col-xl-4 d-flex justify-content-center"
+              >
+                <a class="food-a" href="">
                   <div class="card food-card mb-10 h-100">
-                    <img src="../assets/images/food/food6.png"  alt="card-img-7">
-                    <img src="../assets/images/food/Decoration1.png" class="card-deco" alt="card-decoration">
+                    <img
+                      src="../assets/images/food/food6.png"
+                      alt="card-img-7"
+                    />
+                    <img
+                      src="../assets/images/food/Decoration1.png"
+                      class="card-deco"
+                      alt="card-decoration"
+                    />
                     <div class="card-body">
                       <h5 class="card-title">白魚海藻無穀乾糧</h5>
-                      <p class="card-text">1kg  780NT$</p>
+                      <p class="card-text">1kg 780NT$</p>
                       <p class="card-text">海鮮 | 乾飼料 | 骨骼保養 | 成貓</p>
-                      <button class="btn btn-outline-primary mt-2">查看食品內容</button>
+                      <button class="btn btn-outline-primary mt-2">
+                        查看食品內容
+                      </button>
                       <!-- <a href="#" class="btn btn-outline-primary mt-2">查看食品內容</a> -->
                     </div>
-                    <p class="button border-pill position-absolute top-50 start-50 translate-middle"                    >
+                    <!-- <p class="button border-pill position-absolute top-50 start-50 translate-middle"                    >
                       <img
                         src="/assets/images/contrib/newspaper_hover.png"
                         class="newspaper-icon"
                       />
                       <span class="material-symbols-outlined fs-7"> 閱讀全文 </span>
-                    </p>
+                    </p> -->
                   </div>
-                  </a>
-                </div>
-                
-                <!-- 8 -->
-                <div class="col-lg-6 col-12 col-xl-4 d-flex justify-content-center">
-                  <a class="food-a" href="">
+                </a>
+              </div>
+
+              <!-- 8 -->
+              <div
+                class="col-lg-6 col-12 col-xl-4 d-flex justify-content-center"
+              >
+                <a class="food-a" href="">
                   <div class="card food-card mb-10 h-100">
-                    <img src="../assets/images/food/food7.png"  alt="card-img-8">
-                    <img src="../assets/images/food/Decoration1.png" class="card-deco" alt="card-decoration">
+                    <img
+                      src="../assets/images/food/food7.png"
+                      alt="card-img-8"
+                    />
+                    <img
+                      src="../assets/images/food/Decoration1.png"
+                      class="card-deco"
+                      alt="card-decoration"
+                    />
                     <div class="card-body">
                       <h5 class="card-title">鴨肉凍乾小粒</h5>
-                      <p class="card-text">80g  320NT$</p>
-                      <p class="card-text">鴨肉 | 乾飼料 | 腸胃敏感 | 全齡貓</p>
-                      <button class="btn btn-outline-primary mt-2">查看食品內容</button>
+                      <p class="card-text">80g 320NT$</p>
+                      <p class="card-text">鴨肉 | 乾飼料 | 全齡貓</p>
+                      <button class="btn btn-outline-primary mt-2">
+                        查看食品內容
+                      </button>
                       <!-- <a href="#" class="btn btn-outline-primary mt-2">查看食品內容</a> -->
                     </div>
-                    <p class="button border-pill position-absolute top-50 start-50 translate-middle"                    >
+                    <!-- <p class="button border-pill position-absolute top-50 start-50 translate-middle"                    >
                       <img
                         src="/assets/images/contrib/newspaper_hover.png"
                         class="newspaper-icon"
                       />
                       <span class="material-symbols-outlined fs-7"> 閱讀全文 </span>
-                    </p>
+                    </p> -->
                   </div>
-                  </a>
-                </div>
-                
-                <!-- 9 -->
-                <div class="col-lg-6 col-12 col-xl-4 d-flex justify-content-center">
-                  <a class="food-a" href="">
+                </a>
+              </div>
+
+              <!-- 9 -->
+              <div
+                class="col-lg-6 col-12 col-xl-4 d-flex justify-content-center"
+              >
+                <a class="food-a" href="">
                   <div class="card food-card mb-10 h-100">
-                    <img src="../assets/images/food/food8.png"  alt="card-img-9">
-                    <img src="../assets/images/food/Decoration1.png" class="card-deco" alt="card-decoration">
+                    <img
+                      src="../assets/images/food/food8.png"
+                      alt="card-img-9"
+                    />
+                    <img
+                      src="../assets/images/food/Decoration1.png"
+                      class="card-deco"
+                      alt="card-decoration"
+                    />
                     <div class="card-body">
                       <h5 class="card-title">鴨肉紅薯無穀乾糧</h5>
-                      <p class="card-text">2kg  1,050NT$</p>
+                      <p class="card-text">2kg 1,050NT$</p>
                       <p class="card-text">鴨肉 | 乾飼料 | 腸胃敏感 | 成貓</p>
-                      <button class="btn btn-outline-primary mt-2">查看食品內容</button>                      <!-- <a href="#" class="btn btn-outline-primary mt-2">查看食品內容</a> -->
+                      <button class="btn btn-outline-primary mt-2">
+                        查看食品內容
+                      </button>
+                      <!-- <a href="#" class="btn btn-outline-primary mt-2">查看食品內容</a> -->
                     </div>
-                    <p class="button border-pill position-absolute top-50 start-50 translate-middle"                    >
+                    <!-- <p class="button border-pill position-absolute top-50 start-50 translate-middle"                    >
                       <img
                         src="/assets/images/contrib/newspaper_hover.png"
                         class="newspaper-icon"
                       />
                       <span class="material-symbols-outlined fs-7"> 閱讀全文 </span>
-                    </p>
+                    </p> -->
                   </div>
-                  </a>
-                </div>
-                
-                <!-- 10 只有lg的時候出現-->
-                <div class="d-xl-none d-none d-mg-flex">
-                  <div class="card food-card mb-10">
-                    <img src=""  alt="">
-                    <div class="card-body">
-                      <h5 class="card-title"></h5>
-                      <p class="card-text"></p>
-                      <p class="card-text"></p>
-                    </div>
+                </a>
+              </div>
+
+              <!-- 10 只有lg的時候出現-->
+              <div class="d-xl-none d-none d-mg-flex">
+                <div class="card food-card mb-10">
+                  <img src="" alt="" />
+                  <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text"></p>
+                    <p class="card-text"></p>
                   </div>
                 </div>
-            
-            <!-- pagination -->
-            <div class="m-auto">
-              <ul class="d-flex justify-content-center align-items-center">
-                <li class="page-item me-2">
-                  <button type="button" class="btn knowledge-btn">
-                    <i class="bi bi-chevron-left"></i>
-                  </button>
-                </li>
-                <li class="page-item me-2">
-                  <button
-                    type="button"
-                    class="btn knowledge-btn btn-primary-600 text-white active"
-                  >
-                    1
-                  </button>
-                </li>
-                <li class="page-item me-2">
-                  <button type="button" class="btn knowledge-btn">2</button>
-                </li>
-                <li class="page-item me-2">
-                  <button type="button" class="btn knowledge-btn">...</button>
-                </li>
-                <li class="page-item me-2">
-                  <button type="button" class="btn knowledge-btn">8</button>
-                </li>
-                <li class="page-item">
-                  <button type="button" class="btn knowledge-btn">
-                    <i class="bi bi-chevron-right"></i>
-                  </button>
-                </li>
-              </ul>
-            </div>                           
-          </div>               
+              </div>
+
+              <!-- pagination -->
+              <div class="m-auto mt-10">
+                <ul class="d-flex justify-content-center align-items-center">
+                  <li class="page-item me-2">
+                    <button type="button" class="btn knowledge-btn">
+                      <i class="bi bi-chevron-left"></i>
+                    </button>
+                  </li>
+                  <li class="page-item me-2">
+                    <button
+                      type="button"
+                      class="btn knowledge-btn btn-primary-600 text-white active"
+                    >
+                      1
+                    </button>
+                  </li>
+                  <li class="page-item me-2">
+                    <button type="button" class="btn knowledge-btn">2</button>
+                  </li>
+                  <li class="page-item me-2">
+                    <button type="button" class="btn knowledge-btn">...</button>
+                  </li>
+                  <li class="page-item me-2">
+                    <button type="button" class="btn knowledge-btn">8</button>
+                  </li>
+                  <li class="page-item">
+                    <button type="button" class="btn knowledge-btn">
+                      <i class="bi bi-chevron-right"></i>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
           <div class="mt-144"></div>
         </div>
-      </main> 
-    </div> 
-    <%- include('./layout/footer'); -%>
+      </main>
+    </div>
+
+    <footer><%- include('./layout/footer'); -%></footer>
 
     <script type="module" src="../main.js"></script>
   </body>
