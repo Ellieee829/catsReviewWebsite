@@ -1,5 +1,6 @@
 import "./assets/scss/all.scss";
 import "quill/dist/quill.snow.css"; //先安裝quill -> bash: npm install quill
+import * as bootstrap from "bootstrap";
 import Quill from "quill";
 
 /* 所有頁面:popover跳出式視窗初始化 */
