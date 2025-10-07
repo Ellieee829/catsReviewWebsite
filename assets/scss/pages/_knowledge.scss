@@ -8,6 +8,17 @@
 //   max-height: 532px;
 // }
 
+.search-test {
+  max-width: 100%;
+}
+
+.search-test-btn {
+  max-width: 100%;
+  button {
+    transform: translate(-10%, -115%);
+  }
+}
+
 .knowledge-banner {
   background-image: url("/assets/images/knowledge/knowBanner.png");
   background-size: cover;
