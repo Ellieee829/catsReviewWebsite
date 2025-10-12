@@ -5,12 +5,8 @@ import Quill from "quill";
 
 /* 所有頁面:popover跳出式視窗初始化 */
 document.addEventListener("DOMContentLoaded", () => {
-  const popoverTriggerList = document.querySelectorAll(
-    '[data-bs-toggle="popover"]'
-  );
-  [...popoverTriggerList].map(
-    (popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl)
-  );
+  const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+  [...popoverTriggerList].map((popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl));
 });
 
 /* contrib投稿食品頁面:動態表單欄位新增&刪除功能 */
@@ -131,11 +127,7 @@ function setupSpeciCheck(formId, checkboxId, modalId) {
 setupSpeciCheck("publicationSpeciForm", "agreeCheckbox", "publicationSpeci");
 
 // 第二組: 專欄投稿
-setupSpeciCheck(
-  "columnPublicationSpeciForm",
-  "agreeColumnCheckbox",
-  "columnPublicationSpeci"
-);
+setupSpeciCheck("columnPublicationSpeciForm", "agreeColumnCheckbox", "columnPublicationSpeci");
 
 /* contrib投稿頁面:表單提交驗證提示 */
 (function () {
@@ -197,32 +189,9 @@ document.addEventListener("DOMContentLoaded", function () {
       "飲水與水分攝取",
       "其他",
     ],
-    Health: [
-      "健康照護",
-      "常見疾病",
-      "身體警訊",
-      "絕育照護",
-      "老貓照護",
-      "保健品解析",
-      "其他",
-    ],
-    Behavior: [
-      "行為解讀",
-      "情緒觀察",
-      "廁所問題",
-      "多貓家庭",
-      "遊戲建議",
-      "其他",
-    ],
-    Ownership: [
-      "養貓前準備",
-      "初養用品",
-      "選貓指南",
-      "環境設置",
-      "外出與就診",
-      "常見錯誤",
-      "其他",
-    ],
+    Health: ["健康照護", "常見疾病", "身體警訊", "絕育照護", "老貓照護", "保健品解析", "其他"],
+    Behavior: ["行為解讀", "情緒觀察", "廁所問題", "多貓家庭", "遊戲建議", "其他"],
+    Ownership: ["養貓前準備", "初養用品", "選貓指南", "環境設置", "外出與就診", "常見錯誤", "其他"],
     Others: ["無"],
   };
 
