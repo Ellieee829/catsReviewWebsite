@@ -19,9 +19,9 @@
 
     <div class="foodmain-body">
       <!-- 標題欄 -->
-      <section>
+      <!-- <section>
         <div class="index-header mb-12">
-          <div class="food-box">
+          <div class="d-flex flex-column align-items-center">
             <img
               class="pb-10"
               src="../assets/images/food/section02_decoration.png"
@@ -39,11 +39,60 @@
                       placeholder="#搜尋食品"
                       aria-label="Search"
                     />
-                    <button class="btn btn-primary-500 foodmain-search-btn" type="submit">
+                    <button
+                      class="btn btn-primary-500 foodmain-search-btn"
+                      type="submit"
+                    >
                       <i class="bi bi-search" style="color: #eeded9"></i>
                     </button>
                   </form>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <section class="food-banner">
+        <div class="container">
+          <div class="row justify-content-lg-end">
+            <div class="col-lg-4 col-12">
+              <div class="d-flex flex-column">
+                <img
+                  src="/assets/images/index/section02_decoration.svg"
+                  alt="deco"
+                  class="mb-lg-10 mb-6 align-self-center"
+                />
+                <h1 class="text-center pb-5 fs-1 food-title-color">
+                  膳 食 探 索
+                </h1>
+                <h2
+                  class="fs-lg-5 fs-7 mb-lg-10 mb-6 align-self-center food-title-color"
+                >
+                  讓你更懂你的喵皇！
+                </h2>
+              </div>
+              <div class="justify-content-center w-100">
+                <form>
+                  <input
+                    type="text"
+                    class="form-control rounded-pill py-2 ps-3 search-test"
+                    placeholder="＃搜尋文章主題"
+                    aria-label="＃搜尋文章主題"
+                    aria-describedby="button-addon2"
+                    data-searchinput=""
+                  />
+                  <div class="search-test-btn d-flex justify-content-end">
+                    <button
+                      class="btn btn-primary-600 rounded position-absolute"
+                      type="button"
+                      id="button-addon2"
+                      data-searchbtn=""
+                    >
+                      <i class="bi bi-search text-white"></i>
+                    </button>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
@@ -188,10 +237,15 @@
           <div class="col-lg-9 d-flex justify-content-center flex-wrap">
             <div class="row">
               <!-- 1 -->
-              <div class="col-lg-6 col-12 col-xl-4 d-flex justify-content-center">
+              <div
+                class="col-lg-6 col-12 col-xl-4 d-flex justify-content-center"
+              >
                 <a class="food-a" href="foodProduct.html">
                   <div class="card food-card mb-10 h-100">
-                    <img src="../assets/images/food/food0.png" alt="card-img-1" />
+                    <img
+                      src="../assets/images/food/food0.png"
+                      alt="card-img-1"
+                    />
                     <img
                       src="../assets/images/food/Decoration1.png"
                       class="card-deco"
@@ -201,7 +255,9 @@
                       <h5 class="card-title">雞+南瓜主食罐</h5>
                       <p class="card-text">600g 900NT$</p>
                       <p class="card-text">雞肉 | 肉塊 | 腸胃敏感 | 成貓</p>
-                      <p class="btn btn-outline-primary mt-2 mt-lg-9">查看食品內容</p>
+                      <p class="btn btn-outline-primary mt-2 mt-lg-9">
+                        查看食品內容
+                      </p>
                     </div>
                     <!-- <p class="button border-pill position-absolute top-50 start-50 translate-middle"                    >
                       <img
@@ -215,10 +271,15 @@
               </div>
 
               <!-- 2 -->
-              <div class="col-lg-6 col-12 col-xl-4 d-flex justify-content-center">
+              <div
+                class="col-lg-6 col-12 col-xl-4 d-flex justify-content-center"
+              >
                 <a class="food-a" href="">
                   <div class="card food-card mb-10 h-100">
-                    <img src="../assets/images/food/food1.png" alt="card-img-2" />
+                    <img
+                      src="../assets/images/food/food1.png"
+                      alt="card-img-2"
+                    />
                     <img
                       src="../assets/images/food/Decoration1.png"
                       class="card-deco"
@@ -228,7 +289,9 @@
                       <h5 class="card-title">鮭魚佐鮪魚貓罐頭</h5>
                       <p class="card-text">480g 420NT$</p>
                       <p class="card-text">海鮮 | 肉塊 | 無 | 全齡貓</p>
-                      <p class="btn btn-outline-primary mt-2 mt-lg-9">查看食品內容</p>
+                      <p class="btn btn-outline-primary mt-2 mt-lg-9">
+                        查看食品內容
+                      </p>
                     </div>
                     <!-- <p class="button border-pill position-absolute top-50 start-50 translate-middle"                    >
                       <img
@@ -243,10 +306,15 @@
 
               <!-- 3 -->
 
-              <div class="col-lg-6 col-12 col-xl-4 d-flex justify-content-center">
+              <div
+                class="col-lg-6 col-12 col-xl-4 d-flex justify-content-center"
+              >
                 <a class="food-a" href="">
                   <div class="card food-card mb-10 h-100">
-                    <img src="../assets/images/food/food2.png" alt="card-img-3" />
+                    <img
+                      src="../assets/images/food/food2.png"
+                      alt="card-img-3"
+                    />
                     <img
                       src="../assets/images/food/Decoration1.png"
                       class="card-deco"
@@ -255,7 +323,9 @@
                     <div class="card-body">
                       <h5 class="card-title">羊肉莓果乾糧</h5>
                       <p class="card-text">5kg 980NT$</p>
-                      <p class="card-text">羊肉 | 乾飼料 | 改善皮膚&毛髮 | 成貓</p>
+                      <p class="card-text">
+                        羊肉 | 乾飼料 | 改善皮膚&毛髮 | 成貓
+                      </p>
                       <p class="btn btn-outline-primary mt-2">查看食品內容</p>
                     </div>
                     <!-- <p class="button border-pill position-absolute top-50 start-50 translate-middle"                    >
@@ -270,10 +340,15 @@
               </div>
 
               <!-- 4 -->
-              <div class="col-lg-6 col-12 col-xl-4 d-flex justify-content-center">
+              <div
+                class="col-lg-6 col-12 col-xl-4 d-flex justify-content-center"
+              >
                 <a class="food-a" href="">
                   <div class="card food-card mb-10 h-100">
-                    <img src="../assets/images/food/food3.png" alt="card-img-4" />
+                    <img
+                      src="../assets/images/food/food3.png"
+                      alt="card-img-4"
+                    />
                     <img
                       src="../assets/images/food/Decoration1.png"
                       class="card-deco"
@@ -282,7 +357,9 @@
                     <div class="card-body">
                       <h5 class="card-title">鮮蝦雞胸肉凍乾塊</h5>
                       <p class="card-text">50g 280NT$</p>
-                      <p class="card-text">雞肉 | 乾飼料 | 強化免疫力 | 全齡貓</p>
+                      <p class="card-text">
+                        雞肉 | 乾飼料 | 強化免疫力 | 全齡貓
+                      </p>
                       <p class="btn btn-outline-primary mt-2">查看食品內容</p>
                     </div>
                     <!-- <p class="button border-pill position-absolute top-50 start-50 translate-middle"                    >
@@ -297,10 +374,15 @@
               </div>
 
               <!-- 5 -->
-              <div class="col-lg-6 col-12 col-xl-4 d-flex justify-content-center">
+              <div
+                class="col-lg-6 col-12 col-xl-4 d-flex justify-content-center"
+              >
                 <a class="food-a" href="">
                   <div class="card food-card mb-10 h-100">
-                    <img src="../assets/images/food/food4.png" alt="card-img-5" />
+                    <img
+                      src="../assets/images/food/food4.png"
+                      alt="card-img-5"
+                    />
                     <img
                       src="../assets/images/food/Decoration1.png"
                       class="card-deco"
@@ -310,7 +392,9 @@
                       <h5 class="card-title">牛肉燉蔬菜貓餐包</h5>
                       <p class="card-text">680g 560NT$</p>
                       <p class="card-text">牛肉 | 膠狀 | 強化免疫力 | 幼貓</p>
-                      <p class="btn btn-outline-primary mt-2 mt-lg-9">查看食品內容</p>
+                      <p class="btn btn-outline-primary mt-2 mt-lg-9">
+                        查看食品內容
+                      </p>
                     </div>
                     <!-- <p class="button border-pill position-absolute top-50 start-50 translate-middle"                    >
                       <img
@@ -324,10 +408,15 @@
               </div>
 
               <!-- 6 -->
-              <div class="col-lg-6 col-12 col-xl-4 d-flex justify-content-center">
+              <div
+                class="col-lg-6 col-12 col-xl-4 d-flex justify-content-center"
+              >
                 <a class="food-a" href="">
                   <div class="card food-card mb-10 h-100">
-                    <img src="../assets/images/food/food5.png" alt="card-img-6" />
+                    <img
+                      src="../assets/images/food/food5.png"
+                      alt="card-img-6"
+                    />
                     <img
                       src="../assets/images/food/Decoration1.png"
                       class="card-deco"
@@ -337,7 +426,9 @@
                       <h5 class="card-title">鮪魚雞肝肉泥條</h5>
                       <p class="card-text">280g 350NT$</p>
                       <p class="card-text">其他 | 泥狀 | 減重 | 全齡貓</p>
-                      <button class="btn btn-outline-primary mt-2 mt-lg-9">查看食品內容</button>
+                      <button class="btn btn-outline-primary mt-2 mt-lg-9">
+                        查看食品內容
+                      </button>
                     </div>
                     <!-- <p class="button border-pill position-absolute top-50 start-50 translate-middle"                    >
                       <img
@@ -351,10 +442,15 @@
               </div>
 
               <!-- 7 -->
-              <div class="col-lg-6 col-12 col-xl-4 d-flex justify-content-center">
+              <div
+                class="col-lg-6 col-12 col-xl-4 d-flex justify-content-center"
+              >
                 <a class="food-a" href="">
                   <div class="card food-card mb-10 h-100">
-                    <img src="../assets/images/food/food6.png" alt="card-img-7" />
+                    <img
+                      src="../assets/images/food/food6.png"
+                      alt="card-img-7"
+                    />
                     <img
                       src="../assets/images/food/Decoration1.png"
                       class="card-deco"
@@ -364,7 +460,9 @@
                       <h5 class="card-title">白魚海藻無穀乾糧</h5>
                       <p class="card-text">1kg 780NT$</p>
                       <p class="card-text">海鮮 | 乾飼料 | 骨骼保養 | 成貓</p>
-                      <button class="btn btn-outline-primary mt-2">查看食品內容</button>
+                      <button class="btn btn-outline-primary mt-2">
+                        查看食品內容
+                      </button>
                       <!-- <a href="#" class="btn btn-outline-primary mt-2">查看食品內容</a> -->
                     </div>
                     <!-- <p class="button border-pill position-absolute top-50 start-50 translate-middle"                    >
@@ -379,10 +477,15 @@
               </div>
 
               <!-- 8 -->
-              <div class="col-lg-6 col-12 col-xl-4 d-flex justify-content-center">
+              <div
+                class="col-lg-6 col-12 col-xl-4 d-flex justify-content-center"
+              >
                 <a class="food-a" href="">
                   <div class="card food-card mb-10 h-100">
-                    <img src="../assets/images/food/food7.png" alt="card-img-8" />
+                    <img
+                      src="../assets/images/food/food7.png"
+                      alt="card-img-8"
+                    />
                     <img
                       src="../assets/images/food/Decoration1.png"
                       class="card-deco"
@@ -392,7 +495,9 @@
                       <h5 class="card-title">鴨肉凍乾小粒</h5>
                       <p class="card-text">80g 320NT$</p>
                       <p class="card-text">鴨肉 | 乾飼料 | 全齡貓</p>
-                      <button class="btn btn-outline-primary mt-2">查看食品內容</button>
+                      <button class="btn btn-outline-primary mt-2">
+                        查看食品內容
+                      </button>
                       <!-- <a href="#" class="btn btn-outline-primary mt-2">查看食品內容</a> -->
                     </div>
                     <!-- <p class="button border-pill position-absolute top-50 start-50 translate-middle"                    >
@@ -407,10 +512,15 @@
               </div>
 
               <!-- 9 -->
-              <div class="col-lg-6 col-12 col-xl-4 d-flex justify-content-center">
+              <div
+                class="col-lg-6 col-12 col-xl-4 d-flex justify-content-center"
+              >
                 <a class="food-a" href="">
                   <div class="card food-card mb-10 h-100">
-                    <img src="../assets/images/food/food8.png" alt="card-img-9" />
+                    <img
+                      src="../assets/images/food/food8.png"
+                      alt="card-img-9"
+                    />
                     <img
                       src="../assets/images/food/Decoration1.png"
                       class="card-deco"
@@ -420,7 +530,9 @@
                       <h5 class="card-title">鴨肉紅薯無穀乾糧</h5>
                       <p class="card-text">2kg 1,050NT$</p>
                       <p class="card-text">鴨肉 | 乾飼料 | 腸胃敏感 | 成貓</p>
-                      <button class="btn btn-outline-primary mt-2">查看食品內容</button>
+                      <button class="btn btn-outline-primary mt-2">
+                        查看食品內容
+                      </button>
                       <!-- <a href="#" class="btn btn-outline-primary mt-2">查看食品內容</a> -->
                     </div>
                     <!-- <p class="button border-pill position-absolute top-50 start-50 translate-middle"                    >
