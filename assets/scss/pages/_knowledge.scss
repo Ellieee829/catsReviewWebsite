@@ -24,16 +24,23 @@
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  padding-top: 56px;
+  padding-top: 96px;
   padding-bottom: 396px;
   max-height: 532px;
 }
+.food-title-color {
+  color: $secondary-100;
+}
+
 @media (max-width: 996px) {
   .knowledge-banner {
     background-image: url("/assets/images/knowledge/rwdKnowBanner.jpg");
     padding-top: 56px;
     padding-bottom: 374px;
     max-height: 600px;
+  }
+  .food-title-color {
+    color: $primary-800;
   }
 }
 

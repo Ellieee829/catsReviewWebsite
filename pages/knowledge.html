@@ -97,6 +97,246 @@
 
     <!-- 2.喵皇學堂 -->
     <section class="bg-secondary-100 pt-lg-11 pb-0 pb-lg-12 pb-11">
+      <!-- 2-1-2.行動版 專欄篩選區 -->
+      <div class="col-12 pt-1 pb-1 mb-1 d-lg-none d-block bg-white">
+        <div class="container pt-2 pb-2">
+          <div class="d-flex ps-2 pe-2 align-items-center">
+            <p class="fs-8 pb-1 me-auto">搜尋主題</p>
+          </div>
+          <div class="d-flex">
+            <!-- 功能用途說明 -->
+            <input
+              type="text"
+              class="form-control border-radius contrib-input-heigh"
+              id="knowledgeName"
+              placeholder="＃搜尋文章主題"
+            />
+            <img
+              src="../assets/images/knowledge/info-tip.svg"
+              alt="information-circle"
+              class="mx-1"
+              tabindex="0"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+              data-bs-placement="bottom"
+              data-bs-trigger="focus"
+              data-bs-html="true"
+            />
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      功能用途說明
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="my-2">
+                      <p class="fs-7 fw-bold mb-2">快速搜尋主題</p>
+                      <p class="text-neutral-600 fs-8 pb-2">
+                        喵～你在找什麼？<br />
+                        這裡是你的小幫手，只要輸入關鍵字，就能馬上找到你想知道的貓咪知識。不管是「貓咪不喝水怎麼辦？」還是「如何跟貓咪培養感情」，輸入一下就幫你找到答案！<br />
+                        例如：<br />
+                        輸入「嘔吐」，系統就會跳出「常見貓咪疾病」、「嘔吐原因與處理」等相關主題，超方便～
+                      </p>
+                    </div>
+                    <div class="my-2">
+                      <p class="fs-7 fw-bold mb-2">主題</p>
+                      <p class="text-neutral-600 fs-8 pb-2">
+                        貓咪的大小事，這裡通通有！
+                        每個主題就是一個完整的小天地，專門介紹貓咪生活中的某個面向，像是飲食、健康、行為、訓練等。每個主題裡都有文章、圖片、甚至影片，幫你一次了解所有相關知識。<br />
+                        例如：<br />
+                        點進「貓咪飲食指南」主題，你會看到：該怎麼選飼料？能不能吃罐頭？要不要加營養品？都整理好了！
+                      </p>
+                    </div>
+                    <div class="my-2">
+                      <p class="fs-7 fw-bold mb-2">知識類別</p>
+                      <p class="text-neutral-600 fs-8 pb-2">
+                        想從哪個方向了解貓咪呢？
+                        這是貓咪知識的大地圖，幫你把所有主題分成幾個分類，像是「貓咪飲食指南」、「健康與疾病」、「行為與心理」、「新手貓奴入門」等等。從你最關心的方向開始探索就對了！<br />
+                        例如：<br />
+                        如果你是新手鏟屎官，點「新手貓奴入門」就能看到像是「如何讓貓適應新環境」、「貓砂盆怎麼選」這些基本但超實用的內容。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 漢堡選單 -->
+            <img
+              src="../assets/images/knowledge/adjustment.svg"
+              alt="information-circle"
+              class="me-1"
+              tabindex="0"
+              data-bs-toggle="modal"
+              data-bs-target="#knowledge-list"
+              data-bs-placement="bottom"
+              data-bs-trigger="focus"
+              data-bs-html="true"
+            />
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="knowledge-list"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      設定篩選條件
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="pb-lg-7">
+                      <div class="d-flex ps-2 pe-2 align-items-center">
+                        <p class="fs-8 pb-1 me-auto">主題</p>
+                      </div>
+                      <div class="dropdown">
+                        <button
+                          class="btn dropdown-toggle border text-start text-neutral-500 w-100 py-2 mb-6"
+                          type="button"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          選擇主題
+                        </button>
+                        <ul
+                          class="dropdown-menu w-100 border-secondary-500 border-3 py-2"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>
+                            <a class="dropdown-item border-bottom py-1" href="#"
+                              >所有主題</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item border-bottom py-1" href="#"
+                              >貓咪飲食指南</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item border-bottom py-1" href="#"
+                              >健康與疾病</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item border-bottom py-1" href="#"
+                              >行為與心理</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item py-1" href="#"
+                              >新手貓奴入門</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="pb-lg-7">
+                      <div class="d-flex ps-2 pe-2 align-items-center">
+                        <p class="fs-8 pb-1 me-auto">知識類別</p>
+                      </div>
+                      <div class="dropdown">
+                        <button
+                          class="btn dropdown-toggle border text-start text-neutral-500 w-100 py-2"
+                          type="button"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          選擇知識類別
+                        </button>
+                        <ul
+                          class="dropdown-menu w-100 border-secondary-500 border-3 py-2"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>
+                            <a class="dropdown-item border-bottom py-1" href="#"
+                              >所有知識類別</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item border-bottom py-1" href="#"
+                              >糧食類型解析</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item border-bottom py-1" href="#"
+                              >成份與標籤知識</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item border-bottom py-1" href="#"
+                              >換糧指南</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item border-bottom py-1" href="#"
+                              >特殊處方糧</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item border-bottom py-1" href="#"
+                              >自製食物</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item py-1" href="#"
+                              >飲水與水分攝取</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn" data-bs-dismiss="modal">
+                      <img
+                        src="/assets/images/knowledge/trash.svg"
+                        alt="trash-icon"
+                      />
+                      清除重填
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-primary-500 text-white"
+                    >
+                      <img
+                        src="/assets/images/knowledge/funnel.svg"
+                        alt="funnel-icon"
+                      />
+                      篩選
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="container pt-0">
         <div class="row">
           <!-- 2-1-1.桌面版 專欄篩選區 -->
@@ -247,264 +487,6 @@
                     <a class="dropdown-item py-1" href="#">飲水與水分攝取</a>
                   </li>
                 </ul>
-              </div>
-            </div>
-          </div>
-          <!-- 2-1-2.行動版 專欄篩選區 -->
-          <div class="col-12 pt-1 pb-1 mb-1 d-lg-none d-block bg-white">
-            <div class="d-flex ps-2 pe-2 align-items-center">
-              <p class="fs-8 pb-1 me-auto">搜尋主題</p>
-            </div>
-            <div class="d-flex">
-              <!-- 功能用途說明 -->
-              <input
-                type="text"
-                class="form-control border-radius contrib-input-heigh"
-                id="knowledgeName"
-                placeholder="＃搜尋文章主題"
-              />
-              <img
-                src="../assets/images/knowledge/info-tip.svg"
-                alt="information-circle"
-                class="mx-1"
-                tabindex="0"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-                data-bs-placement="bottom"
-                data-bs-trigger="focus"
-                data-bs-html="true"
-              />
-              <!-- Modal -->
-              <div
-                class="modal fade"
-                id="exampleModal"
-                tabindex="-1"
-                aria-labelledby="exampleModalLabel"
-                aria-hidden="true"
-              >
-                <div class="modal-dialog modal-dialog-scrollable">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">
-                        功能用途說明
-                      </h5>
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
-                    </div>
-                    <div class="modal-body">
-                      <div class="my-2">
-                        <p class="fs-7 fw-bold mb-2">快速搜尋主題</p>
-                        <p class="text-neutral-600 fs-8 pb-2">
-                          喵～你在找什麼？<br />
-                          這裡是你的小幫手，只要輸入關鍵字，就能馬上找到你想知道的貓咪知識。不管是「貓咪不喝水怎麼辦？」還是「如何跟貓咪培養感情」，輸入一下就幫你找到答案！<br />
-                          例如：<br />
-                          輸入「嘔吐」，系統就會跳出「常見貓咪疾病」、「嘔吐原因與處理」等相關主題，超方便～
-                        </p>
-                      </div>
-                      <div class="my-2">
-                        <p class="fs-7 fw-bold mb-2">主題</p>
-                        <p class="text-neutral-600 fs-8 pb-2">
-                          貓咪的大小事，這裡通通有！
-                          每個主題就是一個完整的小天地，專門介紹貓咪生活中的某個面向，像是飲食、健康、行為、訓練等。每個主題裡都有文章、圖片、甚至影片，幫你一次了解所有相關知識。<br />
-                          例如：<br />
-                          點進「貓咪飲食指南」主題，你會看到：該怎麼選飼料？能不能吃罐頭？要不要加營養品？都整理好了！
-                        </p>
-                      </div>
-                      <div class="my-2">
-                        <p class="fs-7 fw-bold mb-2">知識類別</p>
-                        <p class="text-neutral-600 fs-8 pb-2">
-                          想從哪個方向了解貓咪呢？
-                          這是貓咪知識的大地圖，幫你把所有主題分成幾個分類，像是「貓咪飲食指南」、「健康與疾病」、「行為與心理」、「新手貓奴入門」等等。從你最關心的方向開始探索就對了！<br />
-                          例如：<br />
-                          如果你是新手鏟屎官，點「新手貓奴入門」就能看到像是「如何讓貓適應新環境」、「貓砂盆怎麼選」這些基本但超實用的內容。
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- 漢堡選單 -->
-              <img
-                src="../assets/images/knowledge/adjustment.svg"
-                alt="information-circle"
-                class="me-1"
-                tabindex="0"
-                data-bs-toggle="modal"
-                data-bs-target="#knowledge-list"
-                data-bs-placement="bottom"
-                data-bs-trigger="focus"
-                data-bs-html="true"
-              />
-              <!-- Modal -->
-              <div
-                class="modal fade"
-                id="knowledge-list"
-                tabindex="-1"
-                aria-labelledby="exampleModalLabel"
-                aria-hidden="true"
-              >
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">
-                        設定篩選條件
-                      </h5>
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
-                    </div>
-                    <div class="modal-body">
-                      <div class="pb-lg-7">
-                        <div class="d-flex ps-2 pe-2 align-items-center">
-                          <p class="fs-8 pb-1 me-auto">主題</p>
-                        </div>
-                        <div class="dropdown">
-                          <button
-                            class="btn dropdown-toggle border text-start text-neutral-500 w-100 py-2 mb-6"
-                            type="button"
-                            id="dropdownMenuButton1"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false"
-                          >
-                            選擇主題
-                          </button>
-                          <ul
-                            class="dropdown-menu w-100 border-secondary-500 border-3 py-2"
-                            aria-labelledby="dropdownMenuButton1"
-                          >
-                            <li>
-                              <a
-                                class="dropdown-item border-bottom py-1"
-                                href="#"
-                                >所有主題</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="dropdown-item border-bottom py-1"
-                                href="#"
-                                >貓咪飲食指南</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="dropdown-item border-bottom py-1"
-                                href="#"
-                                >健康與疾病</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="dropdown-item border-bottom py-1"
-                                href="#"
-                                >行為與心理</a
-                              >
-                            </li>
-                            <li>
-                              <a class="dropdown-item py-1" href="#"
-                                >新手貓奴入門</a
-                              >
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="pb-lg-7">
-                        <div class="d-flex ps-2 pe-2 align-items-center">
-                          <p class="fs-8 pb-1 me-auto">知識類別</p>
-                        </div>
-                        <div class="dropdown">
-                          <button
-                            class="btn dropdown-toggle border text-start text-neutral-500 w-100 py-2"
-                            type="button"
-                            id="dropdownMenuButton1"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false"
-                          >
-                            選擇知識類別
-                          </button>
-                          <ul
-                            class="dropdown-menu w-100 border-secondary-500 border-3 py-2"
-                            aria-labelledby="dropdownMenuButton1"
-                          >
-                            <li>
-                              <a
-                                class="dropdown-item border-bottom py-1"
-                                href="#"
-                                >所有知識類別</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="dropdown-item border-bottom py-1"
-                                href="#"
-                                >糧食類型解析</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="dropdown-item border-bottom py-1"
-                                href="#"
-                                >成份與標籤知識</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="dropdown-item border-bottom py-1"
-                                href="#"
-                                >換糧指南</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="dropdown-item border-bottom py-1"
-                                href="#"
-                                >特殊處方糧</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="dropdown-item border-bottom py-1"
-                                href="#"
-                                >自製食物</a
-                              >
-                            </li>
-                            <li>
-                              <a class="dropdown-item py-1" href="#"
-                                >飲水與水分攝取</a
-                              >
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn" data-bs-dismiss="modal">
-                        <img
-                          src="/assets/images/knowledge/trash.svg"
-                          alt="trash-icon"
-                        />
-                        清除重填
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-primary-500 text-white"
-                      >
-                        <img
-                          src="/assets/images/knowledge/funnel.svg"
-                          alt="funnel-icon"
-                        />
-                        篩選
-                      </button>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>

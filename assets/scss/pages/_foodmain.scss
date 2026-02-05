@@ -1,3 +1,22 @@
+.food-banner {
+  background-image: url("/assets/images/food/hero/food-hero1.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding-top: 96px;
+  padding-bottom: 396px;
+  max-height: 532px;
+}
+
+@media (max-width: 996px) {
+  .food-banner {
+    background-image: url("/assets/images/food/hero/food-hero1-mobile1.png");
+    padding-top: 56px;
+    padding-bottom: 374px;
+    max-height: 600px;
+  }
+}
+
 ul {
   list-style: none;
   padding: 0;
